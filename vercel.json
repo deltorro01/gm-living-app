@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "src": "/manchester",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/manchester/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
