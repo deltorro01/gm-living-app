@@ -2,11 +2,11 @@
   "routes": [
     {
       "src": "/manchester",
-      "dest": "/index.html"
+      "dest": "/manchester.html"
     },
     {
       "src": "/manchester/(.*)",
-      "dest": "/index.html"
+      "dest": "/manchester.html"
     }
   ]
 }
