@@ -3,7 +3,7 @@
   "rewrites": [
     {
       "source": "/manchester",
-      "destination": "/manchester.html"
+      "destination": "/Manchester.html"
     }
   ]
 }
