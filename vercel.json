@@ -4,11 +4,6 @@
     {
       "source": "/manchester",
       "destination": "/manchester.html"
-    },
-    {
-      "source": "/manchester/:path*",
-      "destination": "/manchester.html"
     }
   ]
 }
-
