@@ -3,11 +3,7 @@
   "rewrites": [
     {
       "source": "/manchester",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/manchester/:path*",
-      "destination": "/index.html"
+      "destination": "/manchester.html"
     }
   ]
 }
