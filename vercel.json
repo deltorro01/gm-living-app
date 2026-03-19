@@ -1,12 +1,13 @@
 {
-  "routes": [
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
     {
-      "src": "/manchester/",
-      "dest": "/manchester.html"
+      "source": "/manchester/",
+      "destination": "/Manchester.html"
     },
     {
-      "src": "/manchester/(.*)",
-      "dest": "/manchester.html"
+      "source": "/manchester/:path*",
+      "destination": "/manchester.html"
     }
   ]
 }
