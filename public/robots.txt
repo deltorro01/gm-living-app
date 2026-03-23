@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://whereshouldiliveinthe.uk/sitemap.xml
