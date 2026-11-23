@@ -1,0 +1,522 @@
+{
+  "source": "OS Open Greenspace",
+  "radiusM": 1000,
+  "results": [
+    {
+      "area": "Bolton",
+      "sites": 40,
+      "greenShare": 6.7,
+      "parkShare": 5.2
+    },
+    {
+      "area": "Horwich",
+      "sites": 27,
+      "greenShare": 9.3,
+      "parkShare": 6.1
+    },
+    {
+      "area": "Kearsley",
+      "sites": 29,
+      "greenShare": 6.1,
+      "parkShare": 2.1
+    },
+    {
+      "area": "Westhoughton",
+      "sites": 34,
+      "greenShare": 11.5,
+      "parkShare": 4.9
+    },
+    {
+      "area": "Farnworth",
+      "sites": 38,
+      "greenShare": 17,
+      "parkShare": 14.1
+    },
+    {
+      "area": "Little Lever",
+      "sites": 21,
+      "greenShare": 5.2,
+      "parkShare": 4.4
+    },
+    {
+      "area": "Blackrod",
+      "sites": 10,
+      "greenShare": 6.1,
+      "parkShare": 1.5
+    },
+    {
+      "area": "Prestwich",
+      "sites": 27,
+      "greenShare": 17.9,
+      "parkShare": 13.2
+    },
+    {
+      "area": "Whitefield",
+      "sites": 32,
+      "greenShare": 22.5,
+      "parkShare": 4.7
+    },
+    {
+      "area": "Ramsbottom",
+      "sites": 29,
+      "greenShare": 6.7,
+      "parkShare": 4.6
+    },
+    {
+      "area": "Radcliffe",
+      "sites": 45,
+      "greenShare": 8.7,
+      "parkShare": 5.4
+    },
+    {
+      "area": "Tottington",
+      "sites": 20,
+      "greenShare": 4.5,
+      "parkShare": 3.2
+    },
+    {
+      "area": "Ainsworth",
+      "sites": 11,
+      "greenShare": 1.7,
+      "parkShare": 0.2
+    },
+    {
+      "area": "Bury",
+      "sites": 28,
+      "greenShare": 4.7,
+      "parkShare": 2.8
+    },
+    {
+      "area": "Ancoats",
+      "sites": 24,
+      "greenShare": 4.4,
+      "parkShare": 4.3
+    },
+    {
+      "area": "Northern Quarter",
+      "sites": 18,
+      "greenShare": 1.5,
+      "parkShare": 1.3
+    },
+    {
+      "area": "Chorlton",
+      "sites": 45,
+      "greenShare": 14.4,
+      "parkShare": 7
+    },
+    {
+      "area": "Didsbury",
+      "sites": 35,
+      "greenShare": 18.4,
+      "parkShare": 10.8
+    },
+    {
+      "area": "Withington",
+      "sites": 29,
+      "greenShare": 6.1,
+      "parkShare": 4.4
+    },
+    {
+      "area": "Fallowfield",
+      "sites": 43,
+      "greenShare": 15.9,
+      "parkShare": 13.2
+    },
+    {
+      "area": "Astley",
+      "sites": 20,
+      "greenShare": 3.4,
+      "parkShare": 2.8
+    },
+    {
+      "area": "Newton Heath",
+      "sites": 29,
+      "greenShare": 16.9,
+      "parkShare": 11.9
+    },
+    {
+      "area": "Harpurhey",
+      "sites": 33,
+      "greenShare": 11.9,
+      "parkShare": 9.9
+    },
+    {
+      "area": "Moston",
+      "sites": 31,
+      "greenShare": 16.7,
+      "parkShare": 10.6
+    },
+    {
+      "area": "Levenshulme",
+      "sites": 35,
+      "greenShare": 27.4,
+      "parkShare": 18.4
+    },
+    {
+      "area": "Burnage",
+      "sites": 35,
+      "greenShare": 19.6,
+      "parkShare": 6.4
+    },
+    {
+      "area": "Gorton",
+      "sites": 30,
+      "greenShare": 8,
+      "parkShare": 4.5
+    },
+    {
+      "area": "Benchill",
+      "sites": 27,
+      "greenShare": 3,
+      "parkShare": 1.8
+    },
+    {
+      "area": "Wythenshawe",
+      "sites": 32,
+      "greenShare": 4.4,
+      "parkShare": 3.9
+    },
+    {
+      "area": "Oldham",
+      "sites": 46,
+      "greenShare": 5.1,
+      "parkShare": 3.3
+    },
+    {
+      "area": "Saddleworth",
+      "sites": 24,
+      "greenShare": 16.8,
+      "parkShare": 4.3
+    },
+    {
+      "area": "Failsworth",
+      "sites": 40,
+      "greenShare": 6.9,
+      "parkShare": 2.3
+    },
+    {
+      "area": "Royton",
+      "sites": 23,
+      "greenShare": 13.5,
+      "parkShare": 2.8
+    },
+    {
+      "area": "Chadderton",
+      "sites": 31,
+      "greenShare": 10.2,
+      "parkShare": 3.5
+    },
+    {
+      "area": "Lees",
+      "sites": 32,
+      "greenShare": 16.5,
+      "parkShare": 9
+    },
+    {
+      "area": "Delph",
+      "sites": 10,
+      "greenShare": 0.9,
+      "parkShare": 0.5
+    },
+    {
+      "area": "Greenfield",
+      "sites": 12,
+      "greenShare": 1.6,
+      "parkShare": 1.2
+    },
+    {
+      "area": "Rochdale",
+      "sites": 46,
+      "greenShare": 8.3,
+      "parkShare": 6.6
+    },
+    {
+      "area": "Littleborough",
+      "sites": 18,
+      "greenShare": 7.1,
+      "parkShare": 5.7
+    },
+    {
+      "area": "Milnrow",
+      "sites": 19,
+      "greenShare": 4.6,
+      "parkShare": 3.7
+    },
+    {
+      "area": "Wardle",
+      "sites": 19,
+      "greenShare": 1.7,
+      "parkShare": 1.3
+    },
+    {
+      "area": "Whitworth",
+      "sites": 16,
+      "greenShare": 4.2,
+      "parkShare": 2.3
+    },
+    {
+      "area": "Heywood",
+      "sites": 36,
+      "greenShare": 11.2,
+      "parkShare": 7.4
+    },
+    {
+      "area": "Middleton",
+      "sites": 40,
+      "greenShare": 15.8,
+      "parkShare": 11
+    },
+    {
+      "area": "Salford Quays",
+      "sites": 8,
+      "greenShare": 6.8,
+      "parkShare": 1.5
+    },
+    {
+      "area": "Monton",
+      "sites": 30,
+      "greenShare": 23.9,
+      "parkShare": 10.1
+    },
+    {
+      "area": "Worsley",
+      "sites": 14,
+      "greenShare": 17,
+      "parkShare": 2.7
+    },
+    {
+      "area": "Eccles",
+      "sites": 20,
+      "greenShare": 2.2,
+      "parkShare": 1.8
+    },
+    {
+      "area": "Boothstown",
+      "sites": 15,
+      "greenShare": 14,
+      "parkShare": 2.9
+    },
+    {
+      "area": "Walkden",
+      "sites": 37,
+      "greenShare": 12.9,
+      "parkShare": 10.8
+    },
+    {
+      "area": "Swinton",
+      "sites": 39,
+      "greenShare": 8.2,
+      "parkShare": 5.7
+    },
+    {
+      "area": "Pendlebury",
+      "sites": 26,
+      "greenShare": 21.2,
+      "parkShare": 19.6
+    },
+    {
+      "area": "Heaton Moor",
+      "sites": 41,
+      "greenShare": 15.5,
+      "parkShare": 1.8
+    },
+    {
+      "area": "Bramhall",
+      "sites": 12,
+      "greenShare": 19.9,
+      "parkShare": 3.2
+    },
+    {
+      "area": "Cheadle",
+      "sites": 45,
+      "greenShare": 15.7,
+      "parkShare": 8
+    },
+    {
+      "area": "Marple",
+      "sites": 27,
+      "greenShare": 7.4,
+      "parkShare": 6.4
+    },
+    {
+      "area": "Stockport",
+      "sites": 41,
+      "greenShare": 5.7,
+      "parkShare": 4.3
+    },
+    {
+      "area": "Broadbottom",
+      "sites": 12,
+      "greenShare": 1.9,
+      "parkShare": 1.6
+    },
+    {
+      "area": "Hattersley",
+      "sites": 20,
+      "greenShare": 2.4,
+      "parkShare": 2
+    },
+    {
+      "area": "Guide Bridge",
+      "sites": 24,
+      "greenShare": 7.6,
+      "parkShare": 5.9
+    },
+    {
+      "area": "Ashton-under-Lyne",
+      "sites": 33,
+      "greenShare": 4.7,
+      "parkShare": 3.1
+    },
+    {
+      "area": "Stalybridge",
+      "sites": 26,
+      "greenShare": 12.8,
+      "parkShare": 10.8
+    },
+    {
+      "area": "Hyde",
+      "sites": 37,
+      "greenShare": 8.2,
+      "parkShare": 6
+    },
+    {
+      "area": "Dukinfield",
+      "sites": 36,
+      "greenShare": 15,
+      "parkShare": 5.2
+    },
+    {
+      "area": "Droylsden",
+      "sites": 44,
+      "greenShare": 13.3,
+      "parkShare": 7.4
+    },
+    {
+      "area": "Mossley",
+      "sites": 26,
+      "greenShare": 2.9,
+      "parkShare": 1.7
+    },
+    {
+      "area": "Audenshaw",
+      "sites": 30,
+      "greenShare": 7,
+      "parkShare": 5.5
+    },
+    {
+      "area": "Altrincham",
+      "sites": 46,
+      "greenShare": 9.8,
+      "parkShare": 4.8
+    },
+    {
+      "area": "Sale",
+      "sites": 42,
+      "greenShare": 7.7,
+      "parkShare": 3.5
+    },
+    {
+      "area": "Stretford",
+      "sites": 34,
+      "greenShare": 15,
+      "parkShare": 11.8
+    },
+    {
+      "area": "Urmston",
+      "sites": 40,
+      "greenShare": 13.3,
+      "parkShare": 6.4
+    },
+    {
+      "area": "Timperley",
+      "sites": 33,
+      "greenShare": 15.5,
+      "parkShare": 3.7
+    },
+    {
+      "area": "Hale",
+      "sites": 27,
+      "greenShare": 14.2,
+      "parkShare": 4.9
+    },
+    {
+      "area": "Hale Barns",
+      "sites": 13,
+      "greenShare": 18.5,
+      "parkShare": 1.9
+    },
+    {
+      "area": "Partington",
+      "sites": 32,
+      "greenShare": 8.8,
+      "parkShare": 5.6
+    },
+    {
+      "area": "Carrington",
+      "sites": 8,
+      "greenShare": 7.8,
+      "parkShare": 0.5
+    },
+    {
+      "area": "Wigan",
+      "sites": 46,
+      "greenShare": 6.9,
+      "parkShare": 5
+    },
+    {
+      "area": "Standish",
+      "sites": 27,
+      "greenShare": 2.7,
+      "parkShare": 1.1
+    },
+    {
+      "area": "Shevington",
+      "sites": 12,
+      "greenShare": 9.3,
+      "parkShare": 2.5
+    },
+    {
+      "area": "Hindley",
+      "sites": 33,
+      "greenShare": 9,
+      "parkShare": 8.1
+    },
+    {
+      "area": "Atherton",
+      "sites": 34,
+      "greenShare": 5.2,
+      "parkShare": 4.4
+    },
+    {
+      "area": "Leigh",
+      "sites": 22,
+      "greenShare": 6.1,
+      "parkShare": 3.8
+    },
+    {
+      "area": "Golborne",
+      "sites": 20,
+      "greenShare": 3.9,
+      "parkShare": 2
+    },
+    {
+      "area": "Lowton",
+      "sites": 19,
+      "greenShare": 3.7,
+      "parkShare": 2.4
+    },
+    {
+      "area": "Ashton-in-Makerfield",
+      "sites": 35,
+      "greenShare": 10.7,
+      "parkShare": 7
+    },
+    {
+      "area": "Tyldesley",
+      "sites": 24,
+      "greenShare": 10.5,
+      "parkShare": 6.3
+    }
+  ]
+}

@@ -1,0 +1,745 @@
+{
+  "source": "ONS Price Index of Private Rents",
+  "official": {
+    "Bolton": {
+      "month": "2026-10",
+      "rent": 908,
+      "twoBed": 828
+    },
+    "Bury": {
+      "month": "2026-10",
+      "rent": 976,
+      "twoBed": 895
+    },
+    "Manchester": {
+      "month": "2026-10",
+      "rent": 1386,
+      "twoBed": 1244
+    },
+    "Oldham": {
+      "month": "2026-10",
+      "rent": 954,
+      "twoBed": 890
+    },
+    "Rochdale": {
+      "month": "2026-10",
+      "rent": 863,
+      "twoBed": 807
+    },
+    "Salford": {
+      "month": "2026-10",
+      "rent": 1177,
+      "twoBed": 1090
+    },
+    "Stockport": {
+      "month": "2026-10",
+      "rent": 1130,
+      "twoBed": 1047
+    },
+    "Tameside": {
+      "month": "2026-10",
+      "rent": 937,
+      "twoBed": 892
+    },
+    "Trafford": {
+      "month": "2026-10",
+      "rent": 1378,
+      "twoBed": 1209
+    },
+    "Wigan": {
+      "month": "2026-10",
+      "rent": 754,
+      "twoBed": 707
+    }
+  },
+  "results": [
+    {
+      "area": "Bolton",
+      "borough": "Bolton",
+      "oldRent": 950,
+      "rent": 890,
+      "boroughOfficial": 908,
+      "month": "2026-10"
+    },
+    {
+      "area": "Horwich",
+      "borough": "Bolton",
+      "oldRent": 1000,
+      "rent": 930,
+      "boroughOfficial": 908,
+      "month": "2026-10"
+    },
+    {
+      "area": "Kearsley",
+      "borough": "Bolton",
+      "oldRent": 950,
+      "rent": 890,
+      "boroughOfficial": 908,
+      "month": "2026-10"
+    },
+    {
+      "area": "Westhoughton",
+      "borough": "Bolton",
+      "oldRent": 1000,
+      "rent": 930,
+      "boroughOfficial": 908,
+      "month": "2026-10"
+    },
+    {
+      "area": "Farnworth",
+      "borough": "Bolton",
+      "oldRent": 900,
+      "rent": 840,
+      "boroughOfficial": 908,
+      "month": "2026-10"
+    },
+    {
+      "area": "Little Lever",
+      "borough": "Bolton",
+      "oldRent": 950,
+      "rent": 890,
+      "boroughOfficial": 908,
+      "month": "2026-10"
+    },
+    {
+      "area": "Blackrod",
+      "borough": "Bolton",
+      "oldRent": 1050,
+      "rent": 980,
+      "boroughOfficial": 908,
+      "month": "2026-10"
+    },
+    {
+      "area": "Prestwich",
+      "borough": "Bury",
+      "oldRent": 1200,
+      "rent": 1080,
+      "boroughOfficial": 976,
+      "month": "2026-10"
+    },
+    {
+      "area": "Whitefield",
+      "borough": "Bury",
+      "oldRent": 1150,
+      "rent": 1030,
+      "boroughOfficial": 976,
+      "month": "2026-10"
+    },
+    {
+      "area": "Ramsbottom",
+      "borough": "Bury",
+      "oldRent": 1100,
+      "rent": 990,
+      "boroughOfficial": 976,
+      "month": "2026-10"
+    },
+    {
+      "area": "Radcliffe",
+      "borough": "Bury",
+      "oldRent": 1000,
+      "rent": 900,
+      "boroughOfficial": 976,
+      "month": "2026-10"
+    },
+    {
+      "area": "Tottington",
+      "borough": "Bury",
+      "oldRent": 1050,
+      "rent": 940,
+      "boroughOfficial": 976,
+      "month": "2026-10"
+    },
+    {
+      "area": "Ainsworth",
+      "borough": "Bury",
+      "oldRent": 1050,
+      "rent": 940,
+      "boroughOfficial": 976,
+      "month": "2026-10"
+    },
+    {
+      "area": "Bury",
+      "borough": "Bury",
+      "oldRent": 1050,
+      "rent": 940,
+      "boroughOfficial": 976,
+      "month": "2026-10"
+    },
+    {
+      "area": "Ancoats",
+      "borough": "Manchester",
+      "oldRent": 1600,
+      "rent": 1930,
+      "boroughOfficial": 1386,
+      "month": "2026-10"
+    },
+    {
+      "area": "Northern Quarter",
+      "borough": "Manchester",
+      "oldRent": 1550,
+      "rent": 1870,
+      "boroughOfficial": 1386,
+      "month": "2026-10"
+    },
+    {
+      "area": "Chorlton",
+      "borough": "Manchester",
+      "oldRent": 1350,
+      "rent": 1630,
+      "boroughOfficial": 1386,
+      "month": "2026-10"
+    },
+    {
+      "area": "Didsbury",
+      "borough": "Manchester",
+      "oldRent": 1500,
+      "rent": 1810,
+      "boroughOfficial": 1386,
+      "month": "2026-10"
+    },
+    {
+      "area": "Withington",
+      "borough": "Manchester",
+      "oldRent": 1150,
+      "rent": 1390,
+      "boroughOfficial": 1386,
+      "month": "2026-10"
+    },
+    {
+      "area": "Fallowfield",
+      "borough": "Manchester",
+      "oldRent": 1000,
+      "rent": 1210,
+      "boroughOfficial": 1386,
+      "month": "2026-10"
+    },
+    {
+      "area": "Astley",
+      "borough": "Wigan",
+      "oldRent": 1100,
+      "rent": 830,
+      "boroughOfficial": 754,
+      "month": "2026-10"
+    },
+    {
+      "area": "Newton Heath",
+      "borough": "Manchester",
+      "oldRent": 950,
+      "rent": 1150,
+      "boroughOfficial": 1386,
+      "month": "2026-10"
+    },
+    {
+      "area": "Harpurhey",
+      "borough": "Manchester",
+      "oldRent": 900,
+      "rent": 1090,
+      "boroughOfficial": 1386,
+      "month": "2026-10"
+    },
+    {
+      "area": "Moston",
+      "borough": "Manchester",
+      "oldRent": 950,
+      "rent": 1150,
+      "boroughOfficial": 1386,
+      "month": "2026-10"
+    },
+    {
+      "area": "Levenshulme",
+      "borough": "Manchester",
+      "oldRent": 1150,
+      "rent": 1390,
+      "boroughOfficial": 1386,
+      "month": "2026-10"
+    },
+    {
+      "area": "Burnage",
+      "borough": "Manchester",
+      "oldRent": 1100,
+      "rent": 1330,
+      "boroughOfficial": 1386,
+      "month": "2026-10"
+    },
+    {
+      "area": "Gorton",
+      "borough": "Manchester",
+      "oldRent": 950,
+      "rent": 1150,
+      "boroughOfficial": 1386,
+      "month": "2026-10"
+    },
+    {
+      "area": "Benchill",
+      "borough": "Manchester",
+      "oldRent": 900,
+      "rent": 1090,
+      "boroughOfficial": 1386,
+      "month": "2026-10"
+    },
+    {
+      "area": "Wythenshawe",
+      "borough": "Manchester",
+      "oldRent": 1000,
+      "rent": 1210,
+      "boroughOfficial": 1386,
+      "month": "2026-10"
+    },
+    {
+      "area": "Oldham",
+      "borough": "Oldham",
+      "oldRent": 900,
+      "rent": 840,
+      "boroughOfficial": 954,
+      "month": "2026-10"
+    },
+    {
+      "area": "Saddleworth",
+      "borough": "Oldham",
+      "oldRent": 1100,
+      "rent": 1030,
+      "boroughOfficial": 954,
+      "month": "2026-10"
+    },
+    {
+      "area": "Failsworth",
+      "borough": "Oldham",
+      "oldRent": 950,
+      "rent": 890,
+      "boroughOfficial": 954,
+      "month": "2026-10"
+    },
+    {
+      "area": "Royton",
+      "borough": "Oldham",
+      "oldRent": 1000,
+      "rent": 940,
+      "boroughOfficial": 954,
+      "month": "2026-10"
+    },
+    {
+      "area": "Chadderton",
+      "borough": "Oldham",
+      "oldRent": 1000,
+      "rent": 940,
+      "boroughOfficial": 954,
+      "month": "2026-10"
+    },
+    {
+      "area": "Lees",
+      "borough": "Oldham",
+      "oldRent": 1000,
+      "rent": 940,
+      "boroughOfficial": 954,
+      "month": "2026-10"
+    },
+    {
+      "area": "Delph",
+      "borough": "Oldham",
+      "oldRent": 1100,
+      "rent": 1030,
+      "boroughOfficial": 954,
+      "month": "2026-10"
+    },
+    {
+      "area": "Greenfield",
+      "borough": "Oldham",
+      "oldRent": 1100,
+      "rent": 1030,
+      "boroughOfficial": 954,
+      "month": "2026-10"
+    },
+    {
+      "area": "Rochdale",
+      "borough": "Rochdale",
+      "oldRent": 900,
+      "rent": 780,
+      "boroughOfficial": 863,
+      "month": "2026-10"
+    },
+    {
+      "area": "Littleborough",
+      "borough": "Rochdale",
+      "oldRent": 1100,
+      "rent": 950,
+      "boroughOfficial": 863,
+      "month": "2026-10"
+    },
+    {
+      "area": "Milnrow",
+      "borough": "Rochdale",
+      "oldRent": 1050,
+      "rent": 910,
+      "boroughOfficial": 863,
+      "month": "2026-10"
+    },
+    {
+      "area": "Wardle",
+      "borough": "Rochdale",
+      "oldRent": 1050,
+      "rent": 910,
+      "boroughOfficial": 863,
+      "month": "2026-10"
+    },
+    {
+      "area": "Whitworth",
+      "borough": "Rochdale",
+      "oldRent": 1000,
+      "rent": 860,
+      "boroughOfficial": 863,
+      "month": "2026-10"
+    },
+    {
+      "area": "Heywood",
+      "borough": "Rochdale",
+      "oldRent": 950,
+      "rent": 820,
+      "boroughOfficial": 863,
+      "month": "2026-10"
+    },
+    {
+      "area": "Middleton",
+      "borough": "Rochdale",
+      "oldRent": 950,
+      "rent": 820,
+      "boroughOfficial": 863,
+      "month": "2026-10"
+    },
+    {
+      "area": "Salford Quays",
+      "borough": "Salford",
+      "oldRent": 1400,
+      "rent": 1430,
+      "boroughOfficial": 1177,
+      "month": "2026-10"
+    },
+    {
+      "area": "Monton",
+      "borough": "Salford",
+      "oldRent": 1200,
+      "rent": 1220,
+      "boroughOfficial": 1177,
+      "month": "2026-10"
+    },
+    {
+      "area": "Worsley",
+      "borough": "Salford",
+      "oldRent": 1250,
+      "rent": 1270,
+      "boroughOfficial": 1177,
+      "month": "2026-10"
+    },
+    {
+      "area": "Eccles",
+      "borough": "Salford",
+      "oldRent": 1000,
+      "rent": 1020,
+      "boroughOfficial": 1177,
+      "month": "2026-10"
+    },
+    {
+      "area": "Boothstown",
+      "borough": "Salford",
+      "oldRent": 1200,
+      "rent": 1220,
+      "boroughOfficial": 1177,
+      "month": "2026-10"
+    },
+    {
+      "area": "Walkden",
+      "borough": "Salford",
+      "oldRent": 1050,
+      "rent": 1070,
+      "boroughOfficial": 1177,
+      "month": "2026-10"
+    },
+    {
+      "area": "Swinton",
+      "borough": "Salford",
+      "oldRent": 1100,
+      "rent": 1120,
+      "boroughOfficial": 1177,
+      "month": "2026-10"
+    },
+    {
+      "area": "Pendlebury",
+      "borough": "Salford",
+      "oldRent": 1050,
+      "rent": 1070,
+      "boroughOfficial": 1177,
+      "month": "2026-10"
+    },
+    {
+      "area": "Heaton Moor",
+      "borough": "Stockport",
+      "oldRent": 1300,
+      "rent": 1180,
+      "boroughOfficial": 1130,
+      "month": "2026-10"
+    },
+    {
+      "area": "Bramhall",
+      "borough": "Stockport",
+      "oldRent": 1400,
+      "rent": 1270,
+      "boroughOfficial": 1130,
+      "month": "2026-10"
+    },
+    {
+      "area": "Cheadle",
+      "borough": "Stockport",
+      "oldRent": 1250,
+      "rent": 1130,
+      "boroughOfficial": 1130,
+      "month": "2026-10"
+    },
+    {
+      "area": "Marple",
+      "borough": "Stockport",
+      "oldRent": 1150,
+      "rent": 1040,
+      "boroughOfficial": 1130,
+      "month": "2026-10"
+    },
+    {
+      "area": "Stockport",
+      "borough": "Stockport",
+      "oldRent": 1150,
+      "rent": 1040,
+      "boroughOfficial": 1130,
+      "month": "2026-10"
+    },
+    {
+      "area": "Broadbottom",
+      "borough": "Tameside",
+      "oldRent": 1050,
+      "rent": 980,
+      "boroughOfficial": 937,
+      "month": "2026-10"
+    },
+    {
+      "area": "Hattersley",
+      "borough": "Tameside",
+      "oldRent": 950,
+      "rent": 890,
+      "boroughOfficial": 937,
+      "month": "2026-10"
+    },
+    {
+      "area": "Guide Bridge",
+      "borough": "Tameside",
+      "oldRent": 1000,
+      "rent": 940,
+      "boroughOfficial": 937,
+      "month": "2026-10"
+    },
+    {
+      "area": "Ashton-under-Lyne",
+      "borough": "Tameside",
+      "oldRent": 950,
+      "rent": 890,
+      "boroughOfficial": 937,
+      "month": "2026-10"
+    },
+    {
+      "area": "Stalybridge",
+      "borough": "Tameside",
+      "oldRent": 1000,
+      "rent": 940,
+      "boroughOfficial": 937,
+      "month": "2026-10"
+    },
+    {
+      "area": "Hyde",
+      "borough": "Tameside",
+      "oldRent": 950,
+      "rent": 890,
+      "boroughOfficial": 937,
+      "month": "2026-10"
+    },
+    {
+      "area": "Dukinfield",
+      "borough": "Tameside",
+      "oldRent": 950,
+      "rent": 890,
+      "boroughOfficial": 937,
+      "month": "2026-10"
+    },
+    {
+      "area": "Droylsden",
+      "borough": "Tameside",
+      "oldRent": 1050,
+      "rent": 980,
+      "boroughOfficial": 937,
+      "month": "2026-10"
+    },
+    {
+      "area": "Mossley",
+      "borough": "Tameside",
+      "oldRent": 1050,
+      "rent": 980,
+      "boroughOfficial": 937,
+      "month": "2026-10"
+    },
+    {
+      "area": "Audenshaw",
+      "borough": "Tameside",
+      "oldRent": 1050,
+      "rent": 980,
+      "boroughOfficial": 937,
+      "month": "2026-10"
+    },
+    {
+      "area": "Altrincham",
+      "borough": "Trafford",
+      "oldRent": 1500,
+      "rent": 1630,
+      "boroughOfficial": 1378,
+      "month": "2026-10"
+    },
+    {
+      "area": "Sale",
+      "borough": "Trafford",
+      "oldRent": 1300,
+      "rent": 1410,
+      "boroughOfficial": 1378,
+      "month": "2026-10"
+    },
+    {
+      "area": "Stretford",
+      "borough": "Trafford",
+      "oldRent": 1150,
+      "rent": 1250,
+      "boroughOfficial": 1378,
+      "month": "2026-10"
+    },
+    {
+      "area": "Urmston",
+      "borough": "Trafford",
+      "oldRent": 1200,
+      "rent": 1310,
+      "boroughOfficial": 1378,
+      "month": "2026-10"
+    },
+    {
+      "area": "Timperley",
+      "borough": "Trafford",
+      "oldRent": 1300,
+      "rent": 1410,
+      "boroughOfficial": 1378,
+      "month": "2026-10"
+    },
+    {
+      "area": "Hale",
+      "borough": "Trafford",
+      "oldRent": 1500,
+      "rent": 1630,
+      "boroughOfficial": 1378,
+      "month": "2026-10"
+    },
+    {
+      "area": "Hale Barns",
+      "borough": "Trafford",
+      "oldRent": 1500,
+      "rent": 1630,
+      "boroughOfficial": 1378,
+      "month": "2026-10"
+    },
+    {
+      "area": "Partington",
+      "borough": "Trafford",
+      "oldRent": 950,
+      "rent": 1030,
+      "boroughOfficial": 1378,
+      "month": "2026-10"
+    },
+    {
+      "area": "Carrington",
+      "borough": "Trafford",
+      "oldRent": 1000,
+      "rent": 1090,
+      "boroughOfficial": 1378,
+      "month": "2026-10"
+    },
+    {
+      "area": "Wigan",
+      "borough": "Wigan",
+      "oldRent": 950,
+      "rent": 710,
+      "boroughOfficial": 754,
+      "month": "2026-10"
+    },
+    {
+      "area": "Standish",
+      "borough": "Wigan",
+      "oldRent": 1100,
+      "rent": 830,
+      "boroughOfficial": 754,
+      "month": "2026-10"
+    },
+    {
+      "area": "Shevington",
+      "borough": "Wigan",
+      "oldRent": 1050,
+      "rent": 790,
+      "boroughOfficial": 754,
+      "month": "2026-10"
+    },
+    {
+      "area": "Hindley",
+      "borough": "Wigan",
+      "oldRent": 900,
+      "rent": 680,
+      "boroughOfficial": 754,
+      "month": "2026-10"
+    },
+    {
+      "area": "Atherton",
+      "borough": "Wigan",
+      "oldRent": 900,
+      "rent": 680,
+      "boroughOfficial": 754,
+      "month": "2026-10"
+    },
+    {
+      "area": "Leigh",
+      "borough": "Wigan",
+      "oldRent": 950,
+      "rent": 710,
+      "boroughOfficial": 754,
+      "month": "2026-10"
+    },
+    {
+      "area": "Golborne",
+      "borough": "Wigan",
+      "oldRent": 1000,
+      "rent": 750,
+      "boroughOfficial": 754,
+      "month": "2026-10"
+    },
+    {
+      "area": "Lowton",
+      "borough": "Wigan",
+      "oldRent": 1100,
+      "rent": 830,
+      "boroughOfficial": 754,
+      "month": "2026-10"
+    },
+    {
+      "area": "Ashton-in-Makerfield",
+      "borough": "Wigan",
+      "oldRent": 1000,
+      "rent": 750,
+      "boroughOfficial": 754,
+      "month": "2026-10"
+    },
+    {
+      "area": "Tyldesley",
+      "borough": "Wigan",
+      "oldRent": 1000,
+      "rent": 750,
+      "boroughOfficial": 754,
+      "month": "2026-10"
+    }
+  ]
+}

@@ -1,0 +1,534 @@
+{
+  "source": "TfGM GTFS (bus and Metrolink)",
+  "travelDate": "20261201",
+  "departTimes": [
+    "07:30",
+    "07:45",
+    "08:00",
+    "08:15",
+    "08:30"
+  ],
+  "cityCentre": {
+    "lat": 53.4808,
+    "lng": -2.2384,
+    "name": "Piccadilly Gardens / Market Street"
+  },
+  "results": [
+    {
+      "area": "Bolton",
+      "doorToDoorMinutes": 85,
+      "onBoardMinutes": 72,
+      "accessStops": 126
+    },
+    {
+      "area": "Horwich",
+      "doorToDoorMinutes": 114,
+      "onBoardMinutes": 108,
+      "accessStops": 58
+    },
+    {
+      "area": "Kearsley",
+      "doorToDoorMinutes": 63,
+      "onBoardMinutes": 57,
+      "accessStops": 55
+    },
+    {
+      "area": "Westhoughton",
+      "doorToDoorMinutes": 114,
+      "onBoardMinutes": 106,
+      "accessStops": 62
+    },
+    {
+      "area": "Farnworth",
+      "doorToDoorMinutes": 69,
+      "onBoardMinutes": 64,
+      "accessStops": 82
+    },
+    {
+      "area": "Little Lever",
+      "doorToDoorMinutes": 60,
+      "onBoardMinutes": 55,
+      "accessStops": 54
+    },
+    {
+      "area": "Blackrod",
+      "doorToDoorMinutes": 135,
+      "onBoardMinutes": 125,
+      "accessStops": 15
+    },
+    {
+      "area": "Prestwich",
+      "doorToDoorMinutes": 27,
+      "onBoardMinutes": 20,
+      "accessStops": 79
+    },
+    {
+      "area": "Whitefield",
+      "doorToDoorMinutes": 34,
+      "onBoardMinutes": 25,
+      "accessStops": 78
+    },
+    {
+      "area": "Ramsbottom",
+      "doorToDoorMinutes": 69,
+      "onBoardMinutes": 61,
+      "accessStops": 50
+    },
+    {
+      "area": "Radcliffe",
+      "doorToDoorMinutes": 42,
+      "onBoardMinutes": 27,
+      "accessStops": 62
+    },
+    {
+      "area": "Tottington",
+      "doorToDoorMinutes": 72,
+      "onBoardMinutes": 55,
+      "accessStops": 34
+    },
+    {
+      "area": "Ainsworth",
+      "doorToDoorMinutes": 72,
+      "onBoardMinutes": 59,
+      "accessStops": 33
+    },
+    {
+      "area": "Bury",
+      "doorToDoorMinutes": 42,
+      "onBoardMinutes": 33,
+      "accessStops": 104
+    },
+    {
+      "area": "Ancoats",
+      "doorToDoorMinutes": 10,
+      "onBoardMinutes": 3,
+      "accessStops": 168
+    },
+    {
+      "area": "Northern Quarter",
+      "doorToDoorMinutes": 6,
+      "onBoardMinutes": 0,
+      "accessStops": 170
+    },
+    {
+      "area": "Chorlton",
+      "doorToDoorMinutes": 27,
+      "onBoardMinutes": 19,
+      "accessStops": 64
+    },
+    {
+      "area": "Didsbury",
+      "doorToDoorMinutes": 37,
+      "onBoardMinutes": 24,
+      "accessStops": 94
+    },
+    {
+      "area": "Withington",
+      "doorToDoorMinutes": 36,
+      "onBoardMinutes": 31,
+      "accessStops": 95
+    },
+    {
+      "area": "Fallowfield",
+      "doorToDoorMinutes": 36,
+      "onBoardMinutes": 23,
+      "accessStops": 86
+    },
+    {
+      "area": "Astley",
+      "doorToDoorMinutes": 87,
+      "onBoardMinutes": 72,
+      "accessStops": 44
+    },
+    {
+      "area": "Newton Heath",
+      "doorToDoorMinutes": 25,
+      "onBoardMinutes": 18,
+      "accessStops": 91
+    },
+    {
+      "area": "Harpurhey",
+      "doorToDoorMinutes": 25,
+      "onBoardMinutes": 19,
+      "accessStops": 102
+    },
+    {
+      "area": "Moston",
+      "doorToDoorMinutes": 37,
+      "onBoardMinutes": 27,
+      "accessStops": 78
+    },
+    {
+      "area": "Levenshulme",
+      "doorToDoorMinutes": 37,
+      "onBoardMinutes": 28,
+      "accessStops": 71
+    },
+    {
+      "area": "Burnage",
+      "doorToDoorMinutes": 49,
+      "onBoardMinutes": 38,
+      "accessStops": 62
+    },
+    {
+      "area": "Gorton",
+      "doorToDoorMinutes": 29,
+      "onBoardMinutes": 22,
+      "accessStops": 89
+    },
+    {
+      "area": "Benchill",
+      "doorToDoorMinutes": 57,
+      "onBoardMinutes": 44,
+      "accessStops": 101
+    },
+    {
+      "area": "Wythenshawe",
+      "doorToDoorMinutes": 57,
+      "onBoardMinutes": 38,
+      "accessStops": 115
+    },
+    {
+      "area": "Oldham",
+      "doorToDoorMinutes": 42,
+      "onBoardMinutes": 34,
+      "accessStops": 124
+    },
+    {
+      "area": "Saddleworth",
+      "doorToDoorMinutes": 73,
+      "onBoardMinutes": 66,
+      "accessStops": 33
+    },
+    {
+      "area": "Failsworth",
+      "doorToDoorMinutes": 27,
+      "onBoardMinutes": 21,
+      "accessStops": 82
+    },
+    {
+      "area": "Royton",
+      "doorToDoorMinutes": 61,
+      "onBoardMinutes": 54,
+      "accessStops": 76
+    },
+    {
+      "area": "Chadderton",
+      "doorToDoorMinutes": 42,
+      "onBoardMinutes": 34,
+      "accessStops": 101
+    },
+    {
+      "area": "Lees",
+      "doorToDoorMinutes": 55,
+      "onBoardMinutes": 50,
+      "accessStops": 64
+    },
+    {
+      "area": "Delph",
+      "doorToDoorMinutes": 78,
+      "onBoardMinutes": 68,
+      "accessStops": 21
+    },
+    {
+      "area": "Greenfield",
+      "doorToDoorMinutes": 88,
+      "onBoardMinutes": 74,
+      "accessStops": 34
+    },
+    {
+      "area": "Rochdale",
+      "doorToDoorMinutes": 72,
+      "onBoardMinutes": 59,
+      "accessStops": 112
+    },
+    {
+      "area": "Littleborough",
+      "doorToDoorMinutes": 103,
+      "onBoardMinutes": 92,
+      "accessStops": 53
+    },
+    {
+      "area": "Milnrow",
+      "doorToDoorMinutes": 57,
+      "onBoardMinutes": 49,
+      "accessStops": 62
+    },
+    {
+      "area": "Wardle",
+      "doorToDoorMinutes": 109,
+      "onBoardMinutes": 95,
+      "accessStops": 18
+    },
+    {
+      "area": "Whitworth",
+      "doorToDoorMinutes": 102,
+      "onBoardMinutes": 96,
+      "accessStops": 24
+    },
+    {
+      "area": "Heywood",
+      "doorToDoorMinutes": 72,
+      "onBoardMinutes": 64,
+      "accessStops": 76
+    },
+    {
+      "area": "Middleton",
+      "doorToDoorMinutes": 45,
+      "onBoardMinutes": 37,
+      "accessStops": 111
+    },
+    {
+      "area": "Salford Quays",
+      "doorToDoorMinutes": 30,
+      "onBoardMinutes": 18,
+      "accessStops": 87
+    },
+    {
+      "area": "Monton",
+      "doorToDoorMinutes": 54,
+      "onBoardMinutes": 47,
+      "accessStops": 55
+    },
+    {
+      "area": "Worsley",
+      "doorToDoorMinutes": 55,
+      "onBoardMinutes": 37,
+      "accessStops": 39
+    },
+    {
+      "area": "Eccles",
+      "doorToDoorMinutes": 38,
+      "onBoardMinutes": 32,
+      "accessStops": 76
+    },
+    {
+      "area": "Boothstown",
+      "doorToDoorMinutes": 58,
+      "onBoardMinutes": 45,
+      "accessStops": 42
+    },
+    {
+      "area": "Walkden",
+      "doorToDoorMinutes": 57,
+      "onBoardMinutes": 52,
+      "accessStops": 74
+    },
+    {
+      "area": "Swinton",
+      "doorToDoorMinutes": 43,
+      "onBoardMinutes": 36,
+      "accessStops": 87
+    },
+    {
+      "area": "Pendlebury",
+      "doorToDoorMinutes": 48,
+      "onBoardMinutes": 40,
+      "accessStops": 73
+    },
+    {
+      "area": "Heaton Moor",
+      "doorToDoorMinutes": 50,
+      "onBoardMinutes": 38,
+      "accessStops": 65
+    },
+    {
+      "area": "Bramhall",
+      "doorToDoorMinutes": 82,
+      "onBoardMinutes": 73,
+      "accessStops": 46
+    },
+    {
+      "area": "Cheadle",
+      "doorToDoorMinutes": 71,
+      "onBoardMinutes": 56,
+      "accessStops": 54
+    },
+    {
+      "area": "Marple",
+      "doorToDoorMinutes": 96,
+      "onBoardMinutes": 81,
+      "accessStops": 42
+    },
+    {
+      "area": "Stockport",
+      "doorToDoorMinutes": 48,
+      "onBoardMinutes": 41,
+      "accessStops": 124
+    },
+    {
+      "area": "Broadbottom",
+      "doorToDoorMinutes": 95,
+      "onBoardMinutes": 84,
+      "accessStops": 28
+    },
+    {
+      "area": "Hattersley",
+      "doorToDoorMinutes": 76,
+      "onBoardMinutes": 69,
+      "accessStops": 80
+    },
+    {
+      "area": "Guide Bridge",
+      "doorToDoorMinutes": 52,
+      "onBoardMinutes": 43,
+      "accessStops": 66
+    },
+    {
+      "area": "Ashton-under-Lyne",
+      "doorToDoorMinutes": 53,
+      "onBoardMinutes": 33,
+      "accessStops": 119
+    },
+    {
+      "area": "Stalybridge",
+      "doorToDoorMinutes": 68,
+      "onBoardMinutes": 60,
+      "accessStops": 88
+    },
+    {
+      "area": "Hyde",
+      "doorToDoorMinutes": 62,
+      "onBoardMinutes": 54,
+      "accessStops": 90
+    },
+    {
+      "area": "Dukinfield",
+      "doorToDoorMinutes": 62,
+      "onBoardMinutes": 56,
+      "accessStops": 104
+    },
+    {
+      "area": "Droylsden",
+      "doorToDoorMinutes": 38,
+      "onBoardMinutes": 32,
+      "accessStops": 79
+    },
+    {
+      "area": "Mossley",
+      "doorToDoorMinutes": 70,
+      "onBoardMinutes": 65,
+      "accessStops": 71
+    },
+    {
+      "area": "Audenshaw",
+      "doorToDoorMinutes": 51,
+      "onBoardMinutes": 34,
+      "accessStops": 58
+    },
+    {
+      "area": "Altrincham",
+      "doorToDoorMinutes": 40,
+      "onBoardMinutes": 30,
+      "accessStops": 62
+    },
+    {
+      "area": "Sale",
+      "doorToDoorMinutes": 33,
+      "onBoardMinutes": 21,
+      "accessStops": 86
+    },
+    {
+      "area": "Stretford",
+      "doorToDoorMinutes": 25,
+      "onBoardMinutes": 18,
+      "accessStops": 65
+    },
+    {
+      "area": "Urmston",
+      "doorToDoorMinutes": 47,
+      "onBoardMinutes": 41,
+      "accessStops": 76
+    },
+    {
+      "area": "Timperley",
+      "doorToDoorMinutes": 53,
+      "onBoardMinutes": 47,
+      "accessStops": 60
+    },
+    {
+      "area": "Hale",
+      "doorToDoorMinutes": 48,
+      "onBoardMinutes": 35,
+      "accessStops": 65
+    },
+    {
+      "area": "Hale Barns",
+      "doorToDoorMinutes": 70,
+      "onBoardMinutes": 57,
+      "accessStops": 38
+    },
+    {
+      "area": "Partington",
+      "doorToDoorMinutes": 64,
+      "onBoardMinutes": 56,
+      "accessStops": 36
+    },
+    {
+      "area": "Carrington",
+      "doorToDoorMinutes": 58,
+      "onBoardMinutes": 47,
+      "accessStops": 19
+    },
+    {
+      "area": "Wigan",
+      "doorToDoorMinutes": 119,
+      "onBoardMinutes": 114,
+      "accessStops": 98
+    },
+    {
+      "area": "Standish",
+      "doorToDoorMinutes": 144,
+      "onBoardMinutes": 137,
+      "accessStops": 46
+    },
+    {
+      "area": "Shevington",
+      "doorToDoorMinutes": 156,
+      "onBoardMinutes": 147,
+      "accessStops": 32
+    },
+    {
+      "area": "Hindley",
+      "doorToDoorMinutes": 106,
+      "onBoardMinutes": 102,
+      "accessStops": 42
+    },
+    {
+      "area": "Atherton",
+      "doorToDoorMinutes": 84,
+      "onBoardMinutes": 71,
+      "accessStops": 72
+    },
+    {
+      "area": "Leigh",
+      "doorToDoorMinutes": 71,
+      "onBoardMinutes": 65,
+      "accessStops": 101
+    },
+    {
+      "area": "Golborne",
+      "doorToDoorMinutes": 111,
+      "onBoardMinutes": 103,
+      "accessStops": 44
+    },
+    {
+      "area": "Lowton",
+      "doorToDoorMinutes": 106,
+      "onBoardMinutes": 90,
+      "accessStops": 65
+    },
+    {
+      "area": "Ashton-in-Makerfield",
+      "doorToDoorMinutes": 121,
+      "onBoardMinutes": 113,
+      "accessStops": 52
+    },
+    {
+      "area": "Tyldesley",
+      "doorToDoorMinutes": 63,
+      "onBoardMinutes": 56,
+      "accessStops": 49
+    }
+  ]
+}

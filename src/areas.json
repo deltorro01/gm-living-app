@@ -2,7 +2,7 @@
   {
     "area": "Bolton",
     "borough": "Bolton",
-    "averageRent": 950,
+    "averageRent": 890,
     "averageHousePrice": 142000,
     "nightlife": 2,
     "cafes": 2,
@@ -27,13 +27,16 @@
     "lng": -2.43104,
     "dataSources": {
       "averageHousePrice": "Median of 131 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.1 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.1 (ranked against the other areas)",
+      "averageRent": "Scaled so the Bolton areas average the ONS borough rent of £908 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 22 primary schools within 2 km and 8 secondary schools within 3 km, average score 3.16 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 72 min, door to door 85 min"
     }
   },
   {
     "area": "Horwich",
     "borough": "Bolton",
-    "averageRent": 1000,
+    "averageRent": 930,
     "averageHousePrice": 210000,
     "nightlife": 1,
     "cafes": 2,
@@ -58,20 +61,23 @@
     "lng": -2.54591,
     "dataSources": {
       "averageHousePrice": "Median of 216 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.7 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.7 (ranked against the other areas)",
+      "averageRent": "Scaled so the Bolton areas average the ONS borough rent of £908 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 5 primary schools within 2 km and 2 secondary schools within 3 km, average score 3.18 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 108 min, door to door 114 min"
     }
   },
   {
     "area": "Kearsley",
     "borough": "Bolton",
-    "averageRent": 950,
+    "averageRent": 890,
     "averageHousePrice": 184000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 3,
     "culture": 1,
     "quietness": 3,
-    "schools": 3,
+    "schools": 4,
     "safety": 3,
     "tram": false,
     "train": true,
@@ -89,20 +95,23 @@
     "lng": -2.3749,
     "dataSources": {
       "averageHousePrice": "Median of 162 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.3 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.3 (ranked against the other areas)",
+      "averageRent": "Scaled so the Bolton areas average the ONS borough rent of £908 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 10 primary schools within 2 km and 7 secondary schools within 3 km, average score 3.33 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 57 min, door to door 63 min"
     }
   },
   {
     "area": "Westhoughton",
     "borough": "Bolton",
-    "averageRent": 1000,
+    "averageRent": 930,
     "averageHousePrice": 235000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 3,
     "culture": 1,
     "quietness": 3,
-    "schools": 3,
+    "schools": 2,
     "safety": 4,
     "tram": false,
     "train": true,
@@ -120,13 +129,16 @@
     "lng": -2.52274,
     "dataSources": {
       "averageHousePrice": "Median of 253 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 5.6 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 5.6 (ranked against the other areas)",
+      "averageRent": "Scaled so the Bolton areas average the ONS borough rent of £908 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 8 primary schools within 2 km and 1 secondary schools within 3 km, average score 2.79 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 106 min, door to door 114 min"
     }
   },
   {
     "area": "Farnworth",
     "borough": "Bolton",
-    "averageRent": 900,
+    "averageRent": 840,
     "averageHousePrice": 174000,
     "nightlife": 1,
     "cafes": 2,
@@ -151,26 +163,29 @@
     "lng": -2.39579,
     "dataSources": {
       "averageHousePrice": "Median of 211 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 1.9 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 1.9 (ranked against the other areas)",
+      "averageRent": "Scaled so the Bolton areas average the ONS borough rent of £908 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 16 primary schools within 2 km and 6 secondary schools within 3 km, average score 3.25 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 64 min, door to door 69 min"
     }
   },
   {
     "area": "Little Lever",
     "borough": "Bolton",
-    "averageRent": 950,
+    "averageRent": 890,
     "averageHousePrice": 215000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 3,
     "culture": 1,
     "quietness": 3,
-    "schools": 3,
+    "schools": 4,
     "safety": 4,
     "tram": false,
     "train": false,
     "cycling": 2,
     "driving": 4,
-    "commuteCityMinutes": 25,
+    "commuteCityMinutes": 55,
     "apartments": 1,
     "terraces": 4,
     "semis": 3,
@@ -182,20 +197,23 @@
     "lng": -2.36896,
     "dataSources": {
       "averageHousePrice": "Median of 182 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.6 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.6 (ranked against the other areas)",
+      "averageRent": "Scaled so the Bolton areas average the ONS borough rent of £908 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 12 primary schools within 2 km and 2 secondary schools within 3 km, average score 3.47 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 55 min (door to door 60 min)"
     }
   },
   {
     "area": "Blackrod",
     "borough": "Bolton",
-    "averageRent": 1050,
+    "averageRent": 980,
     "averageHousePrice": 219000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 4,
     "culture": 1,
     "quietness": 4,
-    "schools": 3,
+    "schools": 4,
     "safety": 4,
     "tram": false,
     "train": true,
@@ -213,26 +231,29 @@
     "lng": -2.58768,
     "dataSources": {
       "averageHousePrice": "Median of 60 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6 (ranked against the other areas)",
+      "averageRent": "Scaled so the Bolton areas average the ONS borough rent of £908 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 10 primary schools within 3 km and 1 secondary schools within 4 km, average score 3.39 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 125 min, door to door 135 min"
     }
   },
   {
     "area": "Prestwich",
     "borough": "Bury",
-    "averageRent": 1200,
+    "averageRent": 1080,
     "averageHousePrice": 293000,
     "nightlife": 2,
     "cafes": 3,
     "greenSpace": 3,
     "culture": 2,
     "quietness": 4,
-    "schools": 4,
+    "schools": 3,
     "safety": 4,
     "tram": true,
     "train": false,
     "cycling": 4,
     "driving": 4,
-    "commuteCityMinutes": 15,
+    "commuteCityMinutes": 20,
     "apartments": 1,
     "terraces": 4,
     "semis": 4,
@@ -244,13 +265,16 @@
     "lng": -2.28586,
     "dataSources": {
       "averageHousePrice": "Median of 326 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.5 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.5 (ranked against the other areas)",
+      "averageRent": "Scaled so the Bury areas average the ONS borough rent of £976 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 13 primary schools within 2 km and 5 secondary schools within 3 km, average score 3.1 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 20 min (door to door 27 min)"
     }
   },
   {
     "area": "Whitefield",
     "borough": "Bury",
-    "averageRent": 1150,
+    "averageRent": 1030,
     "averageHousePrice": 280000,
     "nightlife": 2,
     "cafes": 2,
@@ -263,7 +287,7 @@
     "train": false,
     "cycling": 3,
     "driving": 4,
-    "commuteCityMinutes": 18,
+    "commuteCityMinutes": 25,
     "apartments": 1,
     "terraces": 3,
     "semis": 4,
@@ -275,13 +299,16 @@
     "lng": -2.29352,
     "dataSources": {
       "averageHousePrice": "Median of 295 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.5 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.5 (ranked against the other areas)",
+      "averageRent": "Scaled so the Bury areas average the ONS borough rent of £976 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 14 primary schools within 2 km and 6 secondary schools within 3 km, average score 3.08 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 25 min (door to door 34 min)"
     }
   },
   {
     "area": "Ramsbottom",
     "borough": "Bury",
-    "averageRent": 1100,
+    "averageRent": 990,
     "averageHousePrice": 244000,
     "nightlife": 2,
     "cafes": 3,
@@ -294,7 +321,7 @@
     "train": false,
     "cycling": 2,
     "driving": 4,
-    "commuteCityMinutes": 35,
+    "commuteCityMinutes": 61,
     "apartments": 1,
     "terraces": 3,
     "semis": 3,
@@ -306,13 +333,16 @@
     "lng": -2.31849,
     "dataSources": {
       "averageHousePrice": "Median of 140 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.1 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.1 (ranked against the other areas)",
+      "averageRent": "Scaled so the Bury areas average the ONS borough rent of £976 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 6 primary schools within 2 km and 1 secondary schools within 3 km, average score 3.04 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 61 min (door to door 69 min)"
     }
   },
   {
     "area": "Radcliffe",
     "borough": "Bury",
-    "averageRent": 1000,
+    "averageRent": 900,
     "averageHousePrice": 193000,
     "nightlife": 1,
     "cafes": 2,
@@ -325,7 +355,7 @@
     "train": false,
     "cycling": 3,
     "driving": 4,
-    "commuteCityMinutes": 25,
+    "commuteCityMinutes": 27,
     "apartments": 1,
     "terraces": 4,
     "semis": 3,
@@ -337,13 +367,16 @@
     "lng": -2.32767,
     "dataSources": {
       "averageHousePrice": "Median of 227 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.1 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.1 (ranked against the other areas)",
+      "averageRent": "Scaled so the Bury areas average the ONS borough rent of £976 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 9 primary schools within 2 km and 2 secondary schools within 3 km, average score 2.94 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 27 min (door to door 42 min)"
     }
   },
   {
     "area": "Tottington",
     "borough": "Bury",
-    "averageRent": 1050,
+    "averageRent": 940,
     "averageHousePrice": 228000,
     "nightlife": 1,
     "cafes": 2,
@@ -356,7 +389,7 @@
     "train": false,
     "cycling": 3,
     "driving": 4,
-    "commuteCityMinutes": 30,
+    "commuteCityMinutes": 55,
     "apartments": 1,
     "terraces": 2,
     "semis": 4,
@@ -368,26 +401,29 @@
     "lng": -2.34026,
     "dataSources": {
       "averageHousePrice": "Median of 154 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.5 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.5 (ranked against the other areas)",
+      "averageRent": "Scaled so the Bury areas average the ONS borough rent of £976 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 5 primary schools within 2 km and 3 secondary schools within 3 km, average score 3.03 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 55 min (door to door 72 min)"
     }
   },
   {
     "area": "Ainsworth",
     "borough": "Bury",
-    "averageRent": 1050,
+    "averageRent": 940,
     "averageHousePrice": 260000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 4,
     "culture": 1,
     "quietness": 4,
-    "schools": 4,
+    "schools": 3,
     "safety": 4,
     "tram": false,
     "train": false,
     "cycling": 3,
     "driving": 4,
-    "commuteCityMinutes": 30,
+    "commuteCityMinutes": 59,
     "apartments": 1,
     "terraces": 2,
     "semis": 4,
@@ -399,13 +435,16 @@
     "lng": -2.35791,
     "dataSources": {
       "averageHousePrice": "Median of 51 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 5.1 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 5.1 (ranked against the other areas)",
+      "averageRent": "Scaled so the Bury areas average the ONS borough rent of £976 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 6 primary schools within 2 km and 2 secondary schools within 3 km, average score 2.86 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 59 min (door to door 72 min)"
     }
   },
   {
     "area": "Bury",
     "borough": "Bury",
-    "averageRent": 1050,
+    "averageRent": 940,
     "averageHousePrice": 170000,
     "nightlife": 2,
     "cafes": 3,
@@ -430,26 +469,29 @@
     "lng": -2.29877,
     "dataSources": {
       "averageHousePrice": "Median of 277 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.5 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.5 (ranked against the other areas)",
+      "averageRent": "Scaled so the Bury areas average the ONS borough rent of £976 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 15 primary schools within 2 km and 5 secondary schools within 3 km, average score 3.13 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 33 min, door to door 42 min"
     }
   },
   {
     "area": "Ancoats",
     "borough": "Manchester",
-    "averageRent": 1600,
+    "averageRent": 1930,
     "averageHousePrice": 232000,
     "nightlife": 5,
     "cafes": 5,
     "greenSpace": 1,
     "culture": 5,
     "quietness": 1,
-    "schools": 1,
+    "schools": 3,
     "safety": 2,
     "tram": true,
     "train": true,
     "cycling": 4,
     "driving": 2,
-    "commuteCityMinutes": 5,
+    "commuteCityMinutes": 3,
     "apartments": 5,
     "terraces": 1,
     "semis": 1,
@@ -461,26 +503,29 @@
     "lng": -2.22787,
     "dataSources": {
       "averageHousePrice": "Median of 564 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 1.8 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 1.8 (ranked against the other areas)",
+      "averageRent": "Scaled so the Manchester areas average the ONS borough rent of £1386 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 10 primary schools within 2 km and 7 secondary schools within 3 km, average score 3.14 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 3 min (door to door 10 min)"
     }
   },
   {
     "area": "Northern Quarter",
     "borough": "Manchester",
-    "averageRent": 1550,
+    "averageRent": 1870,
     "averageHousePrice": 230000,
     "nightlife": 5,
     "cafes": 5,
     "greenSpace": 1,
     "culture": 5,
     "quietness": 1,
-    "schools": 1,
+    "schools": 3,
     "safety": 3,
     "tram": true,
     "train": true,
     "cycling": 4,
     "driving": 1,
-    "commuteCityMinutes": 2,
+    "commuteCityMinutes": 0,
     "apartments": 5,
     "terraces": 0,
     "semis": 0,
@@ -492,13 +537,16 @@
     "lng": -2.2353,
     "dataSources": {
       "averageHousePrice": "Median of 701 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2 (ranked against the other areas)",
+      "averageRent": "Scaled so the Manchester areas average the ONS borough rent of £1386 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 14 primary schools within 2 km and 6 secondary schools within 3 km, average score 3.23 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 0 min (door to door 6 min)"
     }
   },
   {
     "area": "Chorlton",
     "borough": "Manchester",
-    "averageRent": 1350,
+    "averageRent": 1630,
     "averageHousePrice": 410000,
     "nightlife": 3,
     "cafes": 5,
@@ -511,7 +559,7 @@
     "train": false,
     "cycling": 5,
     "driving": 3,
-    "commuteCityMinutes": 20,
+    "commuteCityMinutes": 19,
     "apartments": 2,
     "terraces": 5,
     "semis": 4,
@@ -523,13 +571,16 @@
     "lng": -2.26907,
     "dataSources": {
       "averageHousePrice": "Median of 439 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4 (ranked against the other areas)",
+      "averageRent": "Scaled so the Manchester areas average the ONS borough rent of £1386 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 12 primary schools within 2 km and 7 secondary schools within 3 km, average score 3.41 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 19 min (door to door 27 min)"
     }
   },
   {
     "area": "Didsbury",
     "borough": "Manchester",
-    "averageRent": 1500,
+    "averageRent": 1810,
     "averageHousePrice": 361000,
     "nightlife": 3,
     "cafes": 4,
@@ -542,7 +593,7 @@
     "train": false,
     "cycling": 4,
     "driving": 3,
-    "commuteCityMinutes": 25,
+    "commuteCityMinutes": 24,
     "apartments": 3,
     "terraces": 3,
     "semis": 5,
@@ -554,26 +605,29 @@
     "lng": -2.23039,
     "dataSources": {
       "averageHousePrice": "Median of 468 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 5.4 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 5.4 (ranked against the other areas)",
+      "averageRent": "Scaled so the Manchester areas average the ONS borough rent of £1386 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 11 primary schools within 2 km and 6 secondary schools within 3 km, average score 3.49 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 24 min (door to door 37 min)"
     }
   },
   {
     "area": "Withington",
     "borough": "Manchester",
-    "averageRent": 1150,
+    "averageRent": 1390,
     "averageHousePrice": 310000,
     "nightlife": 3,
     "cafes": 3,
     "greenSpace": 2,
     "culture": 2,
     "quietness": 3,
-    "schools": 3,
+    "schools": 5,
     "safety": 3,
     "tram": false,
     "train": false,
     "cycling": 4,
     "driving": 3,
-    "commuteCityMinutes": 20,
+    "commuteCityMinutes": 31,
     "apartments": 3,
     "terraces": 4,
     "semis": 3,
@@ -585,26 +639,29 @@
     "lng": -2.22867,
     "dataSources": {
       "averageHousePrice": "Median of 493 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.6 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.6 (ranked against the other areas)",
+      "averageRent": "Scaled so the Manchester areas average the ONS borough rent of £1386 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 13 primary schools within 2 km and 11 secondary schools within 3 km, average score 3.63 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 31 min (door to door 36 min)"
     }
   },
   {
     "area": "Fallowfield",
     "borough": "Manchester",
-    "averageRent": 1000,
+    "averageRent": 1210,
     "averageHousePrice": 265000,
     "nightlife": 4,
     "cafes": 3,
     "greenSpace": 2,
     "culture": 2,
     "quietness": 1,
-    "schools": 2,
+    "schools": 4,
     "safety": 3,
     "tram": false,
     "train": false,
     "cycling": 4,
     "driving": 2,
-    "commuteCityMinutes": 18,
+    "commuteCityMinutes": 23,
     "apartments": 3,
     "terraces": 5,
     "semis": 2,
@@ -616,26 +673,29 @@
     "lng": -2.22675,
     "dataSources": {
       "averageHousePrice": "Median of 283 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.3 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.3 (ranked against the other areas)",
+      "averageRent": "Scaled so the Manchester areas average the ONS borough rent of £1386 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 16 primary schools within 2 km and 12 secondary schools within 3 km, average score 3.46 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 23 min (door to door 36 min)"
     }
   },
   {
     "area": "Astley",
     "borough": "Wigan",
-    "averageRent": 1100,
+    "averageRent": 830,
     "averageHousePrice": 260000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 4,
     "culture": 1,
     "quietness": 4,
-    "schools": 3,
+    "schools": 4,
     "safety": 4,
     "tram": false,
     "train": false,
     "cycling": 2,
     "driving": 4,
-    "commuteCityMinutes": 30,
+    "commuteCityMinutes": 72,
     "apartments": 1,
     "terraces": 2,
     "semis": 4,
@@ -647,20 +707,23 @@
     "lng": -2.45908,
     "dataSources": {
       "averageHousePrice": "Median of 155 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 5.6 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 5.6 (ranked against the other areas)",
+      "averageRent": "Scaled so the Wigan areas average the ONS borough rent of £754 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 7 primary schools within 2 km and 2 secondary schools within 3 km, average score 3.34 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 72 min (door to door 87 min)"
     }
   },
   {
     "area": "Newton Heath",
     "borough": "Manchester",
-    "averageRent": 950,
+    "averageRent": 1150,
     "averageHousePrice": 190000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 1,
     "culture": 1,
     "quietness": 2,
-    "schools": 2,
+    "schools": 3,
     "safety": 2,
     "tram": true,
     "train": true,
@@ -678,26 +741,29 @@
     "lng": -2.18677,
     "dataSources": {
       "averageHousePrice": "Median of 154 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 1.5 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 1.5 (ranked against the other areas)",
+      "averageRent": "Scaled so the Manchester areas average the ONS borough rent of £1386 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 14 primary schools within 2 km and 7 secondary schools within 3 km, average score 3.2 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 18 min, door to door 25 min"
     }
   },
   {
     "area": "Harpurhey",
     "borough": "Manchester",
-    "averageRent": 900,
+    "averageRent": 1090,
     "averageHousePrice": 200000,
     "nightlife": 1,
     "cafes": 1,
     "greenSpace": 1,
     "culture": 1,
     "quietness": 2,
-    "schools": 2,
+    "schools": 3,
     "safety": 2,
     "tram": false,
     "train": false,
     "cycling": 2,
     "driving": 3,
-    "commuteCityMinutes": 15,
+    "commuteCityMinutes": 19,
     "apartments": 2,
     "terraces": 4,
     "semis": 2,
@@ -709,26 +775,29 @@
     "lng": -2.21049,
     "dataSources": {
       "averageHousePrice": "Median of 146 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 1.3 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 1.3 (ranked against the other areas)",
+      "averageRent": "Scaled so the Manchester areas average the ONS borough rent of £1386 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 15 primary schools within 2 km and 9 secondary schools within 3 km, average score 3.23 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 19 min (door to door 25 min)"
     }
   },
   {
     "area": "Moston",
     "borough": "Manchester",
-    "averageRent": 950,
+    "averageRent": 1150,
     "averageHousePrice": 214000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 1,
     "culture": 1,
     "quietness": 2,
-    "schools": 2,
+    "schools": 3,
     "safety": 2,
     "tram": false,
     "train": false,
     "cycling": 2,
     "driving": 3,
-    "commuteCityMinutes": 15,
+    "commuteCityMinutes": 27,
     "apartments": 2,
     "terraces": 4,
     "semis": 2,
@@ -740,22 +809,25 @@
     "lng": -2.18633,
     "dataSources": {
       "averageHousePrice": "Median of 200 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 1.5 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 1.5 (ranked against the other areas)",
+      "averageRent": "Scaled so the Manchester areas average the ONS borough rent of £1386 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 20 primary schools within 2 km and 5 secondary schools within 3 km, average score 3.09 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 27 min (door to door 37 min)"
     }
   },
   {
     "area": "Levenshulme",
     "borough": "Manchester",
-    "averageRent": 1150,
+    "averageRent": 1390,
     "averageHousePrice": 256000,
     "nightlife": 3,
     "cafes": 3,
     "greenSpace": 1,
     "culture": 2,
     "quietness": 3,
-    "schools": 3,
+    "schools": 4,
     "safety": 3,
-    "tram": true,
+    "tram": false,
     "train": true,
     "cycling": 4,
     "driving": 3,
@@ -771,20 +843,23 @@
     "lng": -2.18503,
     "dataSources": {
       "averageHousePrice": "Median of 378 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.8 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.8 (ranked against the other areas)",
+      "averageRent": "Scaled so the Manchester areas average the ONS borough rent of £1386 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 19 primary schools within 2 km and 10 secondary schools within 3 km, average score 3.44 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 28 min, door to door 37 min"
     }
   },
   {
     "area": "Burnage",
     "borough": "Manchester",
-    "averageRent": 1100,
+    "averageRent": 1330,
     "averageHousePrice": 320000,
     "nightlife": 2,
     "cafes": 2,
     "greenSpace": 1,
     "culture": 1,
     "quietness": 3,
-    "schools": 3,
+    "schools": 4,
     "safety": 3,
     "tram": false,
     "train": true,
@@ -802,20 +877,23 @@
     "lng": -2.20368,
     "dataSources": {
       "averageHousePrice": "Median of 357 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.3 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.3 (ranked against the other areas)",
+      "averageRent": "Scaled so the Manchester areas average the ONS borough rent of £1386 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 18 primary schools within 2 km and 6 secondary schools within 3 km, average score 3.47 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 38 min, door to door 49 min"
     }
   },
   {
     "area": "Gorton",
     "borough": "Manchester",
-    "averageRent": 950,
+    "averageRent": 1150,
     "averageHousePrice": 198000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 1,
     "culture": 1,
     "quietness": 2,
-    "schools": 2,
+    "schools": 4,
     "safety": 2,
     "tram": true,
     "train": true,
@@ -833,26 +911,29 @@
     "lng": -2.18186,
     "dataSources": {
       "averageHousePrice": "Median of 153 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 1.5 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 1.5 (ranked against the other areas)",
+      "averageRent": "Scaled so the Manchester areas average the ONS borough rent of £1386 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 19 primary schools within 2 km and 10 secondary schools within 3 km, average score 3.47 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 22 min, door to door 29 min"
     }
   },
   {
     "area": "Benchill",
     "borough": "Manchester",
-    "averageRent": 900,
+    "averageRent": 1090,
     "averageHousePrice": 245000,
     "nightlife": 1,
     "cafes": 1,
     "greenSpace": 1,
     "culture": 1,
     "quietness": 2,
-    "schools": 2,
+    "schools": 3,
     "safety": 3,
     "tram": false,
     "train": false,
     "cycling": 2,
     "driving": 3,
-    "commuteCityMinutes": 20,
+    "commuteCityMinutes": 44,
     "apartments": 1,
     "terraces": 4,
     "semis": 2,
@@ -864,26 +945,29 @@
     "lng": -2.26584,
     "dataSources": {
       "averageHousePrice": "Median of 220 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.5 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.5 (ranked against the other areas)",
+      "averageRent": "Scaled so the Manchester areas average the ONS borough rent of £1386 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 13 primary schools within 2 km and 5 secondary schools within 3 km, average score 2.82 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 44 min (door to door 57 min)"
     }
   },
   {
     "area": "Wythenshawe",
     "borough": "Manchester",
-    "averageRent": 1000,
+    "averageRent": 1210,
     "averageHousePrice": 240000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 2,
     "culture": 1,
     "quietness": 3,
-    "schools": 3,
+    "schools": 2,
     "safety": 3,
     "tram": true,
     "train": false,
     "cycling": 3,
     "driving": 4,
-    "commuteCityMinutes": 25,
+    "commuteCityMinutes": 38,
     "apartments": 1,
     "terraces": 4,
     "semis": 3,
@@ -895,13 +979,16 @@
     "lng": -2.27129,
     "dataSources": {
       "averageHousePrice": "Median of 216 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.2 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.2 (ranked against the other areas)",
+      "averageRent": "Scaled so the Manchester areas average the ONS borough rent of £1386 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 10 primary schools within 2 km and 4 secondary schools within 3 km, average score 2.65 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 38 min (door to door 57 min)"
     }
   },
   {
     "area": "Oldham",
     "borough": "Oldham",
-    "averageRent": 900,
+    "averageRent": 840,
     "averageHousePrice": 155000,
     "nightlife": 1,
     "cafes": 1,
@@ -914,7 +1001,7 @@
     "train": false,
     "cycling": 2,
     "driving": 4,
-    "commuteCityMinutes": 30,
+    "commuteCityMinutes": 34,
     "apartments": 1,
     "terraces": 4,
     "semis": 3,
@@ -926,26 +1013,29 @@
     "lng": -2.11596,
     "dataSources": {
       "averageHousePrice": "Median of 107 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.2 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.2 (ranked against the other areas)",
+      "averageRent": "Scaled so the Oldham areas average the ONS borough rent of £954 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 19 primary schools within 2 km and 9 secondary schools within 3 km, average score 3.12 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 34 min (door to door 42 min)"
     }
   },
   {
     "area": "Saddleworth",
     "borough": "Oldham",
-    "averageRent": 1100,
+    "averageRent": 1030,
     "averageHousePrice": 330000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 5,
     "culture": 2,
     "quietness": 5,
-    "schools": 4,
+    "schools": 2,
     "safety": 4,
     "tram": false,
     "train": false,
     "cycling": 2,
     "driving": 4,
-    "commuteCityMinutes": 40,
+    "commuteCityMinutes": 66,
     "apartments": 1,
     "terraces": 2,
     "semis": 3,
@@ -957,13 +1047,16 @@
     "lng": -2.00532,
     "dataSources": {
       "averageHousePrice": "Median of 97 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 5.9 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 5.9 (ranked against the other areas)",
+      "averageRent": "Scaled so the Oldham areas average the ONS borough rent of £954 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 4 primary schools within 2 km and 1 secondary schools within 3 km, average score 2.63 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 66 min (door to door 73 min)"
     }
   },
   {
     "area": "Failsworth",
     "borough": "Oldham",
-    "averageRent": 950,
+    "averageRent": 890,
     "averageHousePrice": 220000,
     "nightlife": 1,
     "cafes": 2,
@@ -976,7 +1069,7 @@
     "train": false,
     "cycling": 2,
     "driving": 4,
-    "commuteCityMinutes": 20,
+    "commuteCityMinutes": 21,
     "apartments": 1,
     "terraces": 4,
     "semis": 3,
@@ -988,13 +1081,16 @@
     "lng": -2.16303,
     "dataSources": {
       "averageHousePrice": "Median of 323 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.9 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.9 (ranked against the other areas)",
+      "averageRent": "Scaled so the Oldham areas average the ONS borough rent of £954 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 17 primary schools within 2 km and 6 secondary schools within 3 km, average score 3.31 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 21 min (door to door 27 min)"
     }
   },
   {
     "area": "Royton",
     "borough": "Oldham",
-    "averageRent": 1000,
+    "averageRent": 940,
     "averageHousePrice": 230000,
     "nightlife": 1,
     "cafes": 2,
@@ -1007,7 +1103,7 @@
     "train": false,
     "cycling": 2,
     "driving": 4,
-    "commuteCityMinutes": 25,
+    "commuteCityMinutes": 54,
     "apartments": 1,
     "terraces": 4,
     "semis": 3,
@@ -1019,13 +1115,16 @@
     "lng": -2.12173,
     "dataSources": {
       "averageHousePrice": "Median of 281 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.8 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.8 (ranked against the other areas)",
+      "averageRent": "Scaled so the Oldham areas average the ONS borough rent of £954 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 11 primary schools within 2 km and 5 secondary schools within 3 km, average score 3.3 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 54 min (door to door 61 min)"
     }
   },
   {
     "area": "Chadderton",
     "borough": "Oldham",
-    "averageRent": 1000,
+    "averageRent": 940,
     "averageHousePrice": 198000,
     "nightlife": 1,
     "cafes": 2,
@@ -1038,7 +1137,7 @@
     "train": false,
     "cycling": 2,
     "driving": 4,
-    "commuteCityMinutes": 20,
+    "commuteCityMinutes": 34,
     "apartments": 1,
     "terraces": 4,
     "semis": 3,
@@ -1050,13 +1149,16 @@
     "lng": -2.13835,
     "dataSources": {
       "averageHousePrice": "Median of 241 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.7 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.7 (ranked against the other areas)",
+      "averageRent": "Scaled so the Oldham areas average the ONS borough rent of £954 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 16 primary schools within 2 km and 8 secondary schools within 3 km, average score 3.23 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 34 min (door to door 42 min)"
     }
   },
   {
     "area": "Lees",
     "borough": "Oldham",
-    "averageRent": 1000,
+    "averageRent": 940,
     "averageHousePrice": 185000,
     "nightlife": 1,
     "cafes": 2,
@@ -1069,7 +1171,7 @@
     "train": false,
     "cycling": 2,
     "driving": 4,
-    "commuteCityMinutes": 25,
+    "commuteCityMinutes": 50,
     "apartments": 1,
     "terraces": 3,
     "semis": 3,
@@ -1081,26 +1183,29 @@
     "lng": -2.07248,
     "dataSources": {
       "averageHousePrice": "Median of 302 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.6 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.6 (ranked against the other areas)",
+      "averageRent": "Scaled so the Oldham areas average the ONS borough rent of £954 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 15 primary schools within 2 km and 3 secondary schools within 3 km, average score 3.18 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 50 min (door to door 55 min)"
     }
   },
   {
     "area": "Delph",
     "borough": "Oldham",
-    "averageRent": 1100,
+    "averageRent": 1030,
     "averageHousePrice": 280000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 5,
     "culture": 1,
     "quietness": 4,
-    "schools": 4,
+    "schools": 1,
     "safety": 4,
     "tram": false,
     "train": false,
     "cycling": 2,
     "driving": 4,
-    "commuteCityMinutes": 35,
+    "commuteCityMinutes": 68,
     "apartments": 1,
     "terraces": 2,
     "semis": 3,
@@ -1112,20 +1217,23 @@
     "lng": -2.02358,
     "dataSources": {
       "averageHousePrice": "Median of 36 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.1 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.1 (ranked against the other areas)",
+      "averageRent": "Scaled so the Oldham areas average the ONS borough rent of £954 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 5 primary schools within 3 km and 1 secondary schools within 3 km, average score 2.61 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 68 min (door to door 78 min)"
     }
   },
   {
     "area": "Greenfield",
     "borough": "Oldham",
-    "averageRent": 1100,
+    "averageRent": 1030,
     "averageHousePrice": 315000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 5,
     "culture": 1,
     "quietness": 4,
-    "schools": 4,
+    "schools": 3,
     "safety": 4,
     "tram": false,
     "train": true,
@@ -1143,13 +1251,16 @@
     "lng": -2.00509,
     "dataSources": {
       "averageHousePrice": "Median of 77 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.2 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.2 (ranked against the other areas)",
+      "averageRent": "Scaled so the Oldham areas average the ONS borough rent of £954 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 6 primary schools within 3 km and 1 secondary schools within 3 km, average score 3.25 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 74 min, door to door 88 min"
     }
   },
   {
     "area": "Rochdale",
     "borough": "Rochdale",
-    "averageRent": 900,
+    "averageRent": 780,
     "averageHousePrice": 146000,
     "nightlife": 2,
     "cafes": 2,
@@ -1174,20 +1285,23 @@
     "lng": -2.15671,
     "dataSources": {
       "averageHousePrice": "Median of 147 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 1.8 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 1.8 (ranked against the other areas)",
+      "averageRent": "Scaled so the Rochdale areas average the ONS borough rent of £863 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 20 primary schools within 2 km and 3 secondary schools within 3 km, average score 3.18 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 59 min, door to door 72 min"
     }
   },
   {
     "area": "Littleborough",
     "borough": "Rochdale",
-    "averageRent": 1100,
+    "averageRent": 950,
     "averageHousePrice": 225000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 5,
     "culture": 1,
     "quietness": 4,
-    "schools": 4,
+    "schools": 3,
     "safety": 4,
     "tram": false,
     "train": true,
@@ -1205,26 +1319,29 @@
     "lng": -2.09638,
     "dataSources": {
       "averageHousePrice": "Median of 146 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 5.1 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 5.1 (ranked against the other areas)",
+      "averageRent": "Scaled so the Rochdale areas average the ONS borough rent of £863 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 6 primary schools within 2 km and 1 secondary schools within 3 km, average score 3.22 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 92 min, door to door 103 min"
     }
   },
   {
     "area": "Milnrow",
     "borough": "Rochdale",
-    "averageRent": 1050,
+    "averageRent": 910,
     "averageHousePrice": 225000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 4,
     "culture": 1,
     "quietness": 4,
-    "schools": 4,
+    "schools": 3,
     "safety": 3,
     "tram": true,
     "train": false,
     "cycling": 3,
     "driving": 4,
-    "commuteCityMinutes": 25,
+    "commuteCityMinutes": 49,
     "apartments": 1,
     "terraces": 2,
     "semis": 4,
@@ -1236,13 +1353,16 @@
     "lng": -2.11294,
     "dataSources": {
       "averageHousePrice": "Median of 184 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.9 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.9 (ranked against the other areas)",
+      "averageRent": "Scaled so the Rochdale areas average the ONS borough rent of £863 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 8 primary schools within 2 km and 2 secondary schools within 3 km, average score 2.96 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 49 min (door to door 57 min)"
     }
   },
   {
     "area": "Wardle",
     "borough": "Rochdale",
-    "averageRent": 1050,
+    "averageRent": 910,
     "averageHousePrice": 217000,
     "nightlife": 1,
     "cafes": 2,
@@ -1255,7 +1375,7 @@
     "train": false,
     "cycling": 3,
     "driving": 4,
-    "commuteCityMinutes": 30,
+    "commuteCityMinutes": 95,
     "apartments": 1,
     "terraces": 2,
     "semis": 4,
@@ -1267,13 +1387,16 @@
     "lng": -2.1333,
     "dataSources": {
       "averageHousePrice": "Median of 98 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.5 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.5 (ranked against the other areas)",
+      "averageRent": "Scaled so the Rochdale areas average the ONS borough rent of £863 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 3 primary schools within 2 km and 1 secondary schools within 3 km, average score 3.39 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 95 min (door to door 109 min)"
     }
   },
   {
     "area": "Whitworth",
     "borough": "Rochdale",
-    "averageRent": 1000,
+    "averageRent": 860,
     "averageHousePrice": 195000,
     "nightlife": 1,
     "cafes": 2,
@@ -1286,7 +1409,7 @@
     "train": false,
     "cycling": 2,
     "driving": 4,
-    "commuteCityMinutes": 35,
+    "commuteCityMinutes": 96,
     "apartments": 1,
     "terraces": 2,
     "semis": 3,
@@ -1298,26 +1421,29 @@
     "lng": -2.17453,
     "dataSources": {
       "averageHousePrice": "Median of 77 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.9 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.9 (ranked against the other areas)",
+      "averageRent": "Scaled so the Rochdale areas average the ONS borough rent of £863 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 4 primary schools within 3 km and 1 secondary schools within 3 km, average score 3.25 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 96 min (door to door 102 min)"
     }
   },
   {
     "area": "Heywood",
     "borough": "Rochdale",
-    "averageRent": 950,
+    "averageRent": 820,
     "averageHousePrice": 190000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 3,
     "culture": 1,
     "quietness": 3,
-    "schools": 3,
+    "schools": 4,
     "safety": 3,
     "tram": false,
     "train": false,
     "cycling": 2,
     "driving": 4,
-    "commuteCityMinutes": 25,
+    "commuteCityMinutes": 64,
     "apartments": 1,
     "terraces": 4,
     "semis": 3,
@@ -1329,13 +1455,16 @@
     "lng": -2.22064,
     "dataSources": {
       "averageHousePrice": "Median of 261 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.6 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.6 (ranked against the other areas)",
+      "averageRent": "Scaled so the Rochdale areas average the ONS borough rent of £863 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 7 primary schools within 2 km and 3 secondary schools within 3 km, average score 3.39 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 64 min (door to door 72 min)"
     }
   },
   {
     "area": "Middleton",
     "borough": "Rochdale",
-    "averageRent": 950,
+    "averageRent": 820,
     "averageHousePrice": 206000,
     "nightlife": 2,
     "cafes": 2,
@@ -1348,7 +1477,7 @@
     "train": false,
     "cycling": 2,
     "driving": 4,
-    "commuteCityMinutes": 25,
+    "commuteCityMinutes": 37,
     "apartments": 1,
     "terraces": 4,
     "semis": 3,
@@ -1360,13 +1489,16 @@
     "lng": -2.19733,
     "dataSources": {
       "averageHousePrice": "Median of 288 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.9 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.9 (ranked against the other areas)",
+      "averageRent": "Scaled so the Rochdale areas average the ONS borough rent of £863 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 14 primary schools within 2 km and 8 secondary schools within 3 km, average score 3.32 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 37 min (door to door 45 min)"
     }
   },
   {
     "area": "Salford Quays",
     "borough": "Salford",
-    "averageRent": 1400,
+    "averageRent": 1430,
     "averageHousePrice": 193000,
     "nightlife": 3,
     "cafes": 3,
@@ -1379,7 +1511,7 @@
     "train": false,
     "cycling": 4,
     "driving": 3,
-    "commuteCityMinutes": 12,
+    "commuteCityMinutes": 18,
     "apartments": 5,
     "terraces": 1,
     "semis": 1,
@@ -1391,26 +1523,29 @@
     "lng": -2.30176,
     "dataSources": {
       "averageHousePrice": "Median of 226 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.4 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.4 (ranked against the other areas)",
+      "averageRent": "Scaled so the Salford areas average the ONS borough rent of £1177 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 7 primary schools within 2 km and 8 secondary schools within 3 km, average score 2.7 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 18 min (door to door 30 min)"
     }
   },
   {
     "area": "Monton",
     "borough": "Salford",
-    "averageRent": 1200,
+    "averageRent": 1220,
     "averageHousePrice": 272000,
     "nightlife": 2,
     "cafes": 4,
     "greenSpace": 4,
     "culture": 2,
     "quietness": 4,
-    "schools": 4,
+    "schools": 3,
     "safety": 3,
     "tram": false,
     "train": false,
     "cycling": 3,
     "driving": 4,
-    "commuteCityMinutes": 20,
+    "commuteCityMinutes": 47,
     "apartments": 1,
     "terraces": 4,
     "semis": 4,
@@ -1422,13 +1557,16 @@
     "lng": -2.35585,
     "dataSources": {
       "averageHousePrice": "Median of 372 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.2 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.2 (ranked against the other areas)",
+      "averageRent": "Scaled so the Salford areas average the ONS borough rent of £1177 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 13 primary schools within 2 km and 6 secondary schools within 3 km, average score 3.31 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 47 min (door to door 54 min)"
     }
   },
   {
     "area": "Worsley",
     "borough": "Salford",
-    "averageRent": 1250,
+    "averageRent": 1270,
     "averageHousePrice": 341000,
     "nightlife": 1,
     "cafes": 2,
@@ -1441,7 +1579,7 @@
     "train": false,
     "cycling": 3,
     "driving": 5,
-    "commuteCityMinutes": 25,
+    "commuteCityMinutes": 37,
     "apartments": 1,
     "terraces": 2,
     "semis": 4,
@@ -1453,13 +1591,16 @@
     "lng": -2.38664,
     "dataSources": {
       "averageHousePrice": "Median of 126 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.4 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.4 (ranked against the other areas)",
+      "averageRent": "Scaled so the Salford areas average the ONS borough rent of £1177 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 6 primary schools within 2 km and 6 secondary schools within 3 km, average score 3.34 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 37 min (door to door 55 min)"
     }
   },
   {
     "area": "Eccles",
     "borough": "Salford",
-    "averageRent": 1000,
+    "averageRent": 1020,
     "averageHousePrice": 245000,
     "nightlife": 2,
     "cafes": 2,
@@ -1484,13 +1625,16 @@
     "lng": -2.33804,
     "dataSources": {
       "averageHousePrice": "Median of 272 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.8 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.8 (ranked against the other areas)",
+      "averageRent": "Scaled so the Salford areas average the ONS borough rent of £1177 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 11 primary schools within 2 km and 7 secondary schools within 3 km, average score 3.21 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 32 min, door to door 38 min"
     }
   },
   {
     "area": "Boothstown",
     "borough": "Salford",
-    "averageRent": 1200,
+    "averageRent": 1220,
     "averageHousePrice": 325000,
     "nightlife": 1,
     "cafes": 3,
@@ -1503,7 +1647,7 @@
     "train": false,
     "cycling": 3,
     "driving": 4,
-    "commuteCityMinutes": 25,
+    "commuteCityMinutes": 45,
     "apartments": 1,
     "terraces": 2,
     "semis": 4,
@@ -1515,20 +1659,23 @@
     "lng": -2.41106,
     "dataSources": {
       "averageHousePrice": "Median of 177 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 5.5 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 5.5 (ranked against the other areas)",
+      "averageRent": "Scaled so the Salford areas average the ONS borough rent of £1177 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 7 primary schools within 2 km and 3 secondary schools within 3 km, average score 3.33 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 45 min (door to door 58 min)"
     }
   },
   {
     "area": "Walkden",
     "borough": "Salford",
-    "averageRent": 1050,
+    "averageRent": 1070,
     "averageHousePrice": 245000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 3,
     "culture": 1,
     "quietness": 3,
-    "schools": 3,
+    "schools": 4,
     "safety": 3,
     "tram": false,
     "train": true,
@@ -1546,13 +1693,16 @@
     "lng": -2.39871,
     "dataSources": {
       "averageHousePrice": "Median of 282 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.3 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.3 (ranked against the other areas)",
+      "averageRent": "Scaled so the Salford areas average the ONS borough rent of £1177 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 10 primary schools within 2 km and 6 secondary schools within 3 km, average score 3.38 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 52 min, door to door 57 min"
     }
   },
   {
     "area": "Swinton",
     "borough": "Salford",
-    "averageRent": 1100,
+    "averageRent": 1120,
     "averageHousePrice": 238000,
     "nightlife": 2,
     "cafes": 2,
@@ -1577,13 +1727,16 @@
     "lng": -2.34031,
     "dataSources": {
       "averageHousePrice": "Median of 340 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.5 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.5 (ranked against the other areas)",
+      "averageRent": "Scaled so the Salford areas average the ONS borough rent of £1177 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 12 primary schools within 2 km and 6 secondary schools within 3 km, average score 3.3 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 36 min, door to door 43 min"
     }
   },
   {
     "area": "Pendlebury",
     "borough": "Salford",
-    "averageRent": 1050,
+    "averageRent": 1070,
     "averageHousePrice": 220000,
     "nightlife": 1,
     "cafes": 2,
@@ -1596,7 +1749,7 @@
     "train": false,
     "cycling": 2,
     "driving": 4,
-    "commuteCityMinutes": 20,
+    "commuteCityMinutes": 40,
     "apartments": 1,
     "terraces": 3,
     "semis": 3,
@@ -1608,20 +1761,23 @@
     "lng": -2.32342,
     "dataSources": {
       "averageHousePrice": "Median of 259 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.2 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.2 (ranked against the other areas)",
+      "averageRent": "Scaled so the Salford areas average the ONS borough rent of £1177 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 15 primary schools within 2 km and 6 secondary schools within 3 km, average score 3.11 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 40 min (door to door 48 min)"
     }
   },
   {
     "area": "Heaton Moor",
     "borough": "Stockport",
-    "averageRent": 1300,
+    "averageRent": 1180,
     "averageHousePrice": 342000,
     "nightlife": 3,
     "cafes": 4,
     "greenSpace": 3,
     "culture": 2,
     "quietness": 4,
-    "schools": 4,
+    "schools": 3,
     "safety": 4,
     "tram": false,
     "train": true,
@@ -1639,20 +1795,23 @@
     "lng": -2.18428,
     "dataSources": {
       "averageHousePrice": "Median of 416 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.8 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.8 (ranked against the other areas)",
+      "averageRent": "Scaled so the Stockport areas average the ONS borough rent of £1130 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 15 primary schools within 2 km and 8 secondary schools within 3 km, average score 3.29 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 38 min, door to door 50 min"
     }
   },
   {
     "area": "Bramhall",
     "borough": "Stockport",
-    "averageRent": 1400,
+    "averageRent": 1270,
     "averageHousePrice": 555000,
     "nightlife": 2,
     "cafes": 3,
     "greenSpace": 4,
     "culture": 2,
     "quietness": 5,
-    "schools": 5,
+    "schools": 4,
     "safety": 5,
     "tram": false,
     "train": true,
@@ -1670,26 +1829,29 @@
     "lng": -2.16228,
     "dataSources": {
       "averageHousePrice": "Median of 219 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 8.9 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 8.9 (ranked against the other areas)",
+      "averageRent": "Scaled so the Stockport areas average the ONS borough rent of £1130 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 11 primary schools within 2 km and 4 secondary schools within 3 km, average score 3.58 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 73 min, door to door 82 min"
     }
   },
   {
     "area": "Cheadle",
     "borough": "Stockport",
-    "averageRent": 1250,
+    "averageRent": 1130,
     "averageHousePrice": 319000,
     "nightlife": 2,
     "cafes": 3,
     "greenSpace": 4,
     "culture": 2,
     "quietness": 4,
-    "schools": 4,
+    "schools": 3,
     "safety": 4,
     "tram": false,
     "train": false,
     "cycling": 3,
     "driving": 4,
-    "commuteCityMinutes": 20,
+    "commuteCityMinutes": 56,
     "apartments": 1,
     "terraces": 3,
     "semis": 4,
@@ -1701,20 +1863,23 @@
     "lng": -2.20039,
     "dataSources": {
       "averageHousePrice": "Median of 315 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 5.1 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 5.1 (ranked against the other areas)",
+      "averageRent": "Scaled so the Stockport areas average the ONS borough rent of £1130 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 10 primary schools within 2 km and 5 secondary schools within 3 km, average score 3.26 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 56 min (door to door 71 min)"
     }
   },
   {
     "area": "Marple",
     "borough": "Stockport",
-    "averageRent": 1150,
+    "averageRent": 1040,
     "averageHousePrice": 365000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 5,
     "culture": 1,
     "quietness": 5,
-    "schools": 4,
+    "schools": 3,
     "safety": 4,
     "tram": false,
     "train": true,
@@ -1732,20 +1897,23 @@
     "lng": -2.06338,
     "dataSources": {
       "averageHousePrice": "Median of 219 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.6 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.6 (ranked against the other areas)",
+      "averageRent": "Scaled so the Stockport areas average the ONS borough rent of £1130 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 5 primary schools within 2 km and 1 secondary schools within 3 km, average score 3.25 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 81 min, door to door 96 min"
     }
   },
   {
     "area": "Stockport",
     "borough": "Stockport",
-    "averageRent": 1150,
+    "averageRent": 1040,
     "averageHousePrice": 227000,
     "nightlife": 2,
     "cafes": 3,
     "greenSpace": 3,
     "culture": 2,
     "quietness": 3,
-    "schools": 4,
+    "schools": 3,
     "safety": 3,
     "tram": false,
     "train": true,
@@ -1763,20 +1931,23 @@
     "lng": -2.15896,
     "dataSources": {
       "averageHousePrice": "Median of 371 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.7 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.7 (ranked against the other areas)",
+      "averageRent": "Scaled so the Stockport areas average the ONS borough rent of £1130 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 19 primary schools within 2 km and 4 secondary schools within 3 km, average score 2.95 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 41 min, door to door 48 min"
     }
   },
   {
     "area": "Broadbottom",
     "borough": "Tameside",
-    "averageRent": 1050,
+    "averageRent": 980,
     "averageHousePrice": 205000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 4,
     "culture": 1,
     "quietness": 4,
-    "schools": 3,
+    "schools": 1,
     "safety": 3,
     "tram": false,
     "train": true,
@@ -1794,26 +1965,29 @@
     "lng": -2.01103,
     "dataSources": {
       "averageHousePrice": "Median of 43 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.3 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.3 (ranked against the other areas)",
+      "averageRent": "Scaled so the Tameside areas average the ONS borough rent of £937 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 5 primary schools within 2 km and 1 secondary schools within 3 km, average score 2.63 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 84 min, door to door 95 min"
     }
   },
   {
     "area": "Hattersley",
     "borough": "Tameside",
-    "averageRent": 950,
+    "averageRent": 890,
     "averageHousePrice": 213000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 3,
     "culture": 1,
     "quietness": 3,
-    "schools": 3,
+    "schools": 2,
     "safety": 3,
     "tram": false,
     "train": false,
     "cycling": 2,
     "driving": 4,
-    "commuteCityMinutes": 25,
+    "commuteCityMinutes": 69,
     "apartments": 1,
     "terraces": 4,
     "semis": 3,
@@ -1825,13 +1999,16 @@
     "lng": -2.02812,
     "dataSources": {
       "averageHousePrice": "Median of 119 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.2 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.2 (ranked against the other areas)",
+      "averageRent": "Scaled so the Tameside areas average the ONS borough rent of £937 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 6 primary schools within 2 km and 2 secondary schools within 3 km, average score 2.63 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 69 min (door to door 76 min)"
     }
   },
   {
     "area": "Guide Bridge",
     "borough": "Tameside",
-    "averageRent": 1000,
+    "averageRent": 940,
     "averageHousePrice": 200000,
     "nightlife": 1,
     "cafes": 2,
@@ -1856,13 +2033,16 @@
     "lng": -2.11248,
     "dataSources": {
       "averageHousePrice": "Median of 151 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3 (ranked against the other areas)",
+      "averageRent": "Scaled so the Tameside areas average the ONS borough rent of £937 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 10 primary schools within 2 km and 9 secondary schools within 3 km, average score 2.97 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 43 min, door to door 52 min"
     }
   },
   {
     "area": "Ashton-under-Lyne",
     "borough": "Tameside",
-    "averageRent": 950,
+    "averageRent": 890,
     "averageHousePrice": 184000,
     "nightlife": 2,
     "cafes": 2,
@@ -1887,13 +2067,16 @@
     "lng": -2.0938,
     "dataSources": {
       "averageHousePrice": "Median of 249 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.1 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.1 (ranked against the other areas)",
+      "averageRent": "Scaled so the Tameside areas average the ONS borough rent of £937 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 15 primary schools within 2 km and 6 secondary schools within 3 km, average score 2.99 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 33 min, door to door 53 min"
     }
   },
   {
     "area": "Stalybridge",
     "borough": "Tameside",
-    "averageRent": 1000,
+    "averageRent": 940,
     "averageHousePrice": 200000,
     "nightlife": 2,
     "cafes": 2,
@@ -1918,20 +2101,23 @@
     "lng": -2.05649,
     "dataSources": {
       "averageHousePrice": "Median of 259 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.5 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.5 (ranked against the other areas)",
+      "averageRent": "Scaled so the Tameside areas average the ONS borough rent of £937 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 13 primary schools within 2 km and 4 secondary schools within 3 km, average score 2.85 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 60 min, door to door 68 min"
     }
   },
   {
     "area": "Hyde",
     "borough": "Tameside",
-    "averageRent": 950,
+    "averageRent": 890,
     "averageHousePrice": 210000,
     "nightlife": 2,
     "cafes": 2,
     "greenSpace": 3,
     "culture": 1,
     "quietness": 3,
-    "schools": 3,
+    "schools": 2,
     "safety": 3,
     "tram": false,
     "train": true,
@@ -1949,26 +2135,29 @@
     "lng": -2.07981,
     "dataSources": {
       "averageHousePrice": "Median of 345 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.1 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.1 (ranked against the other areas)",
+      "averageRent": "Scaled so the Tameside areas average the ONS borough rent of £937 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 12 primary schools within 2 km and 6 secondary schools within 3 km, average score 2.65 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 54 min, door to door 62 min"
     }
   },
   {
     "area": "Dukinfield",
     "borough": "Tameside",
-    "averageRent": 950,
+    "averageRent": 890,
     "averageHousePrice": 205000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 3,
     "culture": 1,
     "quietness": 3,
-    "schools": 3,
+    "schools": 2,
     "safety": 3,
     "tram": false,
     "train": false,
     "cycling": 2,
     "driving": 4,
-    "commuteCityMinutes": 25,
+    "commuteCityMinutes": 56,
     "apartments": 1,
     "terraces": 4,
     "semis": 3,
@@ -1980,13 +2169,16 @@
     "lng": -2.08193,
     "dataSources": {
       "averageHousePrice": "Median of 248 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.6 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.6 (ranked against the other areas)",
+      "averageRent": "Scaled so the Tameside areas average the ONS borough rent of £937 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 13 primary schools within 2 km and 5 secondary schools within 3 km, average score 2.68 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 56 min (door to door 62 min)"
     }
   },
   {
     "area": "Droylsden",
     "borough": "Tameside",
-    "averageRent": 1050,
+    "averageRent": 980,
     "averageHousePrice": 235000,
     "nightlife": 2,
     "cafes": 2,
@@ -1999,7 +2191,7 @@
     "train": false,
     "cycling": 3,
     "driving": 4,
-    "commuteCityMinutes": 20,
+    "commuteCityMinutes": 32,
     "apartments": 1,
     "terraces": 3,
     "semis": 3,
@@ -2011,13 +2203,16 @@
     "lng": -2.14474,
     "dataSources": {
       "averageHousePrice": "Median of 282 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.1 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.1 (ranked against the other areas)",
+      "averageRent": "Scaled so the Tameside areas average the ONS borough rent of £937 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 14 primary schools within 2 km and 7 secondary schools within 3 km, average score 3.26 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 32 min (door to door 38 min)"
     }
   },
   {
     "area": "Mossley",
     "borough": "Tameside",
-    "averageRent": 1050,
+    "averageRent": 980,
     "averageHousePrice": 197000,
     "nightlife": 1,
     "cafes": 2,
@@ -2042,13 +2237,16 @@
     "lng": -2.04625,
     "dataSources": {
       "averageHousePrice": "Median of 151 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.8 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.8 (ranked against the other areas)",
+      "averageRent": "Scaled so the Tameside areas average the ONS borough rent of £937 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 5 primary schools within 2 km and 3 secondary schools within 3 km, average score 3.14 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 65 min, door to door 70 min"
     }
   },
   {
     "area": "Audenshaw",
     "borough": "Tameside",
-    "averageRent": 1050,
+    "averageRent": 980,
     "averageHousePrice": 219000,
     "nightlife": 1,
     "cafes": 2,
@@ -2061,7 +2259,7 @@
     "train": false,
     "cycling": 2,
     "driving": 4,
-    "commuteCityMinutes": 20,
+    "commuteCityMinutes": 34,
     "apartments": 1,
     "terraces": 3,
     "semis": 3,
@@ -2073,13 +2271,16 @@
     "lng": -2.12449,
     "dataSources": {
       "averageHousePrice": "Median of 196 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.2 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.2 (ranked against the other areas)",
+      "averageRent": "Scaled so the Tameside areas average the ONS borough rent of £937 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 11 primary schools within 2 km and 7 secondary schools within 3 km, average score 3.26 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 34 min (door to door 51 min)"
     }
   },
   {
     "area": "Altrincham",
     "borough": "Trafford",
-    "averageRent": 1500,
+    "averageRent": 1630,
     "averageHousePrice": 465000,
     "nightlife": 3,
     "cafes": 4,
@@ -2104,13 +2305,16 @@
     "lng": -2.35146,
     "dataSources": {
       "averageHousePrice": "Median of 437 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.9 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.9 (ranked against the other areas)",
+      "averageRent": "Scaled so the Trafford areas average the ONS borough rent of £1378 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 9 primary schools within 2 km and 7 secondary schools within 3 km, average score 3.77 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 30 min (door to door 40 min)"
     }
   },
   {
     "area": "Sale",
     "borough": "Trafford",
-    "averageRent": 1300,
+    "averageRent": 1410,
     "averageHousePrice": 380000,
     "nightlife": 2,
     "cafes": 3,
@@ -2123,7 +2327,7 @@
     "train": false,
     "cycling": 4,
     "driving": 4,
-    "commuteCityMinutes": 25,
+    "commuteCityMinutes": 21,
     "apartments": 2,
     "terraces": 3,
     "semis": 4,
@@ -2135,13 +2339,16 @@
     "lng": -2.32282,
     "dataSources": {
       "averageHousePrice": "Median of 427 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.6 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.6 (ranked against the other areas)",
+      "averageRent": "Scaled so the Trafford areas average the ONS borough rent of £1378 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 17 primary schools within 2 km and 4 secondary schools within 3 km, average score 3.52 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 21 min (door to door 33 min)"
     }
   },
   {
     "area": "Stretford",
     "borough": "Trafford",
-    "averageRent": 1150,
+    "averageRent": 1250,
     "averageHousePrice": 294000,
     "nightlife": 2,
     "cafes": 3,
@@ -2154,7 +2361,7 @@
     "train": false,
     "cycling": 4,
     "driving": 3,
-    "commuteCityMinutes": 15,
+    "commuteCityMinutes": 18,
     "apartments": 2,
     "terraces": 4,
     "semis": 3,
@@ -2166,13 +2373,16 @@
     "lng": -2.30742,
     "dataSources": {
       "averageHousePrice": "Median of 270 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.7 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.7 (ranked against the other areas)",
+      "averageRent": "Scaled so the Trafford areas average the ONS borough rent of £1378 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 13 primary schools within 2 km and 4 secondary schools within 3 km, average score 3.03 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 18 min (door to door 25 min)"
     }
   },
   {
     "area": "Urmston",
     "borough": "Trafford",
-    "averageRent": 1200,
+    "averageRent": 1310,
     "averageHousePrice": 355000,
     "nightlife": 2,
     "cafes": 3,
@@ -2197,13 +2407,16 @@
     "lng": -2.35776,
     "dataSources": {
       "averageHousePrice": "Median of 273 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.1 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.1 (ranked against the other areas)",
+      "averageRent": "Scaled so the Trafford areas average the ONS borough rent of £1378 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 11 primary schools within 2 km and 7 secondary schools within 3 km, average score 3.36 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 41 min, door to door 47 min"
     }
   },
   {
     "area": "Timperley",
     "borough": "Trafford",
-    "averageRent": 1300,
+    "averageRent": 1410,
     "averageHousePrice": 436000,
     "nightlife": 2,
     "cafes": 3,
@@ -2228,13 +2441,16 @@
     "lng": -2.32463,
     "dataSources": {
       "averageHousePrice": "Median of 339 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.3 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.3 (ranked against the other areas)",
+      "averageRent": "Scaled so the Trafford areas average the ONS borough rent of £1378 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 11 primary schools within 2 km and 11 secondary schools within 3 km, average score 3.62 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 47 min, door to door 53 min"
     }
   },
   {
     "area": "Hale",
     "borough": "Trafford",
-    "averageRent": 1500,
+    "averageRent": 1630,
     "averageHousePrice": 567000,
     "nightlife": 3,
     "cafes": 4,
@@ -2259,13 +2475,16 @@
     "lng": -2.34018,
     "dataSources": {
       "averageHousePrice": "Median of 343 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 7.1 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 7.1 (ranked against the other areas)",
+      "averageRent": "Scaled so the Trafford areas average the ONS borough rent of £1378 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 9 primary schools within 2 km and 7 secondary schools within 3 km, average score 3.79 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 35 min, door to door 48 min"
     }
   },
   {
     "area": "Hale Barns",
     "borough": "Trafford",
-    "averageRent": 1500,
+    "averageRent": 1630,
     "averageHousePrice": 854000,
     "nightlife": 1,
     "cafes": 3,
@@ -2278,7 +2497,7 @@
     "train": false,
     "cycling": 3,
     "driving": 4,
-    "commuteCityMinutes": 30,
+    "commuteCityMinutes": 57,
     "apartments": 1,
     "terraces": 1,
     "semis": 3,
@@ -2290,13 +2509,16 @@
     "lng": -2.31394,
     "dataSources": {
       "averageHousePrice": "Median of 80 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 7.3 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 7.3 (ranked against the other areas)",
+      "averageRent": "Scaled so the Trafford areas average the ONS borough rent of £1378 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 6 primary schools within 3 km and 5 secondary schools within 3 km, average score 3.69 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 57 min (door to door 70 min)"
     }
   },
   {
     "area": "Partington",
     "borough": "Trafford",
-    "averageRent": 950,
+    "averageRent": 1030,
     "averageHousePrice": 245000,
     "nightlife": 1,
     "cafes": 1,
@@ -2309,7 +2531,7 @@
     "train": false,
     "cycling": 2,
     "driving": 4,
-    "commuteCityMinutes": 30,
+    "commuteCityMinutes": 56,
     "apartments": 1,
     "terraces": 4,
     "semis": 2,
@@ -2321,13 +2543,16 @@
     "lng": -2.42769,
     "dataSources": {
       "averageHousePrice": "Median of 148 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.6 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.6 (ranked against the other areas)",
+      "averageRent": "Scaled so the Trafford areas average the ONS borough rent of £1378 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 4 primary schools within 2 km and 2 secondary schools within 3 km, average score 2.71 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 56 min (door to door 64 min)"
     }
   },
   {
     "area": "Carrington",
     "borough": "Trafford",
-    "averageRent": 1000,
+    "averageRent": 1090,
     "averageHousePrice": 349000,
     "nightlife": 1,
     "cafes": 1,
@@ -2340,7 +2565,7 @@
     "train": false,
     "cycling": 2,
     "driving": 4,
-    "commuteCityMinutes": 30,
+    "commuteCityMinutes": 47,
     "apartments": 1,
     "terraces": 3,
     "semis": 3,
@@ -2352,13 +2577,16 @@
     "lng": -2.38537,
     "dataSources": {
       "averageHousePrice": "Median of 52 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.2 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.2 (ranked against the other areas)",
+      "averageRent": "Scaled so the Trafford areas average the ONS borough rent of £1378 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 4 primary schools within 2 km and 3 secondary schools within 3 km, average score 3.25 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 47 min (door to door 58 min)"
     }
   },
   {
     "area": "Wigan",
     "borough": "Wigan",
-    "averageRent": 950,
+    "averageRent": 710,
     "averageHousePrice": 160000,
     "nightlife": 2,
     "cafes": 2,
@@ -2383,13 +2611,16 @@
     "lng": -2.62969,
     "dataSources": {
       "averageHousePrice": "Median of 262 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.9 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.9 (ranked against the other areas)",
+      "averageRent": "Scaled so the Wigan areas average the ONS borough rent of £754 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 13 primary schools within 2 km and 4 secondary schools within 3 km, average score 3.15 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 114 min, door to door 119 min"
     }
   },
   {
     "area": "Standish",
     "borough": "Wigan",
-    "averageRent": 1100,
+    "averageRent": 830,
     "averageHousePrice": 250000,
     "nightlife": 1,
     "cafes": 2,
@@ -2402,7 +2633,7 @@
     "train": false,
     "cycling": 2,
     "driving": 4,
-    "commuteCityMinutes": 35,
+    "commuteCityMinutes": 137,
     "apartments": 1,
     "terraces": 2,
     "semis": 4,
@@ -2414,26 +2645,29 @@
     "lng": -2.66408,
     "dataSources": {
       "averageHousePrice": "Median of 179 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.6 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.6 (ranked against the other areas)",
+      "averageRent": "Scaled so the Wigan areas average the ONS borough rent of £754 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 4 primary schools within 2 km and 2 secondary schools within 3 km, average score 3.6 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 137 min (door to door 144 min)"
     }
   },
   {
     "area": "Shevington",
     "borough": "Wigan",
-    "averageRent": 1050,
+    "averageRent": 790,
     "averageHousePrice": 242000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 4,
     "culture": 1,
     "quietness": 4,
-    "schools": 4,
+    "schools": 3,
     "safety": 5,
     "tram": false,
     "train": false,
     "cycling": 2,
     "driving": 4,
-    "commuteCityMinutes": 40,
+    "commuteCityMinutes": 147,
     "apartments": 1,
     "terraces": 2,
     "semis": 4,
@@ -2445,13 +2679,16 @@
     "lng": -2.69254,
     "dataSources": {
       "averageHousePrice": "Median of 101 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 8 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 8 (ranked against the other areas)",
+      "averageRent": "Scaled so the Wigan areas average the ONS borough rent of £754 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 3 primary schools within 2 km and 2 secondary schools within 3 km, average score 3.06 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 147 min (door to door 156 min)"
     }
   },
   {
     "area": "Hindley",
     "borough": "Wigan",
-    "averageRent": 900,
+    "averageRent": 680,
     "averageHousePrice": 171000,
     "nightlife": 2,
     "cafes": 2,
@@ -2476,13 +2713,16 @@
     "lng": -2.58111,
     "dataSources": {
       "averageHousePrice": "Median of 163 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.4 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.4 (ranked against the other areas)",
+      "averageRent": "Scaled so the Wigan areas average the ONS borough rent of £754 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 9 primary schools within 2 km and 2 secondary schools within 3 km, average score 2.98 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 102 min, door to door 106 min"
     }
   },
   {
     "area": "Atherton",
     "borough": "Wigan",
-    "averageRent": 900,
+    "averageRent": 680,
     "averageHousePrice": 185000,
     "nightlife": 2,
     "cafes": 2,
@@ -2507,13 +2747,16 @@
     "lng": -2.48723,
     "dataSources": {
       "averageHousePrice": "Median of 270 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.1 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.1 (ranked against the other areas)",
+      "averageRent": "Scaled so the Wigan areas average the ONS borough rent of £754 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 8 primary schools within 2 km and 2 secondary schools within 3 km, average score 3.24 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "Train estimate (not recalculated); bus/tram on board 71 min, door to door 84 min"
     }
   },
   {
     "area": "Leigh",
     "borough": "Wigan",
-    "averageRent": 950,
+    "averageRent": 710,
     "averageHousePrice": 160000,
     "nightlife": 2,
     "cafes": 2,
@@ -2526,7 +2769,7 @@
     "train": false,
     "cycling": 2,
     "driving": 4,
-    "commuteCityMinutes": 35,
+    "commuteCityMinutes": 65,
     "apartments": 1,
     "terraces": 4,
     "semis": 3,
@@ -2538,26 +2781,29 @@
     "lng": -2.51883,
     "dataSources": {
       "averageHousePrice": "Median of 295 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.9 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.9 (ranked against the other areas)",
+      "averageRent": "Scaled so the Wigan areas average the ONS borough rent of £754 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 11 primary schools within 2 km and 2 secondary schools within 3 km, average score 3.19 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 65 min (door to door 71 min)"
     }
   },
   {
     "area": "Golborne",
     "borough": "Wigan",
-    "averageRent": 1000,
+    "averageRent": 750,
     "averageHousePrice": 229000,
     "nightlife": 2,
     "cafes": 2,
     "greenSpace": 3,
     "culture": 1,
     "quietness": 3,
-    "schools": 3,
+    "schools": 4,
     "safety": 4,
     "tram": false,
     "train": false,
     "cycling": 2,
     "driving": 4,
-    "commuteCityMinutes": 30,
+    "commuteCityMinutes": 103,
     "apartments": 1,
     "terraces": 3,
     "semis": 3,
@@ -2569,13 +2815,16 @@
     "lng": -2.59769,
     "dataSources": {
       "averageHousePrice": "Median of 181 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.7 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.7 (ranked against the other areas)",
+      "averageRent": "Scaled so the Wigan areas average the ONS borough rent of £754 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 5 primary schools within 2 km and 4 secondary schools within 3 km, average score 3.33 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 103 min (door to door 111 min)"
     }
   },
   {
     "area": "Lowton",
     "borough": "Wigan",
-    "averageRent": 1100,
+    "averageRent": 830,
     "averageHousePrice": 250000,
     "nightlife": 1,
     "cafes": 2,
@@ -2588,7 +2837,7 @@
     "train": false,
     "cycling": 2,
     "driving": 4,
-    "commuteCityMinutes": 35,
+    "commuteCityMinutes": 90,
     "apartments": 1,
     "terraces": 2,
     "semis": 4,
@@ -2600,13 +2849,16 @@
     "lng": -2.5759,
     "dataSources": {
       "averageHousePrice": "Median of 228 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 5.3 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 5.3 (ranked against the other areas)",
+      "averageRent": "Scaled so the Wigan areas average the ONS borough rent of £754 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 7 primary schools within 2 km and 2 secondary schools within 3 km, average score 3.62 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 90 min (door to door 106 min)"
     }
   },
   {
     "area": "Ashton-in-Makerfield",
     "borough": "Wigan",
-    "averageRent": 1000,
+    "averageRent": 750,
     "averageHousePrice": 200000,
     "nightlife": 2,
     "cafes": 2,
@@ -2619,7 +2871,7 @@
     "train": false,
     "cycling": 2,
     "driving": 4,
-    "commuteCityMinutes": 35,
+    "commuteCityMinutes": 113,
     "apartments": 1,
     "terraces": 3,
     "semis": 3,
@@ -2631,26 +2883,29 @@
     "lng": -2.63851,
     "dataSources": {
       "averageHousePrice": "Median of 212 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6 (ranked against the other areas)",
+      "averageRent": "Scaled so the Wigan areas average the ONS borough rent of £754 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 6 primary schools within 2 km and 4 secondary schools within 3 km, average score 3.32 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 113 min (door to door 121 min)"
     }
   },
   {
     "area": "Tyldesley",
     "borough": "Wigan",
-    "averageRent": 1000,
+    "averageRent": 750,
     "averageHousePrice": 215000,
     "nightlife": 2,
     "cafes": 2,
     "greenSpace": 3,
     "culture": 1,
     "quietness": 3,
-    "schools": 3,
+    "schools": 4,
     "safety": 4,
     "tram": false,
     "train": false,
     "cycling": 2,
     "driving": 4,
-    "commuteCityMinutes": 30,
+    "commuteCityMinutes": 56,
     "apartments": 1,
     "terraces": 3,
     "semis": 3,
@@ -2662,7 +2917,10 @@
     "lng": -2.46725,
     "dataSources": {
       "averageHousePrice": "Median of 221 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
-      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.6 (ranked against the other areas)"
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.6 (ranked against the other areas)",
+      "averageRent": "Scaled so the Wigan areas average the ONS borough rent of £754 (2026-10); differences between areas are estimates",
+      "schools": "Ofsted grades of 10 primary schools within 2 km and 3 secondary schools within 3 km, average score 3.34 of 5 (ranked against the other areas)",
+      "commuteCityMinutes": "TfGM timetable, weekday 07:30-08:30, average time on board bus/tram 56 min (door to door 63 min)"
     }
   }
 ]
