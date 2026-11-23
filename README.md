@@ -15,7 +15,11 @@ To create the production build, run `npm run build`. The output goes to the `dis
 
 ## Where things live
 
-- `src/App.jsx`: the app, including the preference form, scoring and results.
+- `src/App.jsx`: the app, including the preference form, scoring, filters and results.
+- `src/explain.js`: the plain-English "Why this match?" reasons for each area.
+- `src/ResultParts.jsx`: the "Why this match?" panel, the Compare button and the comparison table.
+- `src/urlState.js`: keeps the settings, filters and compared areas in the web address so results can be shared.
+- `src/AreaMap.jsx`: the results map (Leaflet with OpenStreetMap tiles). It only downloads when someone opens the map.
 - `src/styles.css`: all styling.
 - `src/areas.json`: the area dataset that the app uses. Edit this file to change area data.
 - `index.html`: the home page. It includes a short fallback text that search engines can read.

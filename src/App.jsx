@@ -1,6 +1,13 @@
-import React, { useMemo, useState } from "react";
+import React, { Suspense, lazy, useEffect, useMemo, useState } from "react";
 import areas from "./areas.json";
 import "./styles.css";
+import { readSettings, writeSettings } from "./urlState.js";
+import { WhyThisMatch, CompareButton, CompareView } from "./ResultParts.jsx";
+
+// The map (and the Leaflet library) only downloads when someone opens it.
+const AreaMap = lazy(() => import("./AreaMap.jsx"));
+
+const BOROUGHS = [...new Set(areas.map((a) => a.borough))].sort();
 
 function money(value) {
   return new Intl.NumberFormat("en-GB", {
@@ -190,24 +197,38 @@ export default function App() {
 
   const DEFAULT_VISIBLE = 10;
 
-  const [lifeStage, setLifeStage] = useState("young-professional");
-  const [budgetType, setBudgetType] = useState("rent");
-  const [monthlyBudget, setMonthlyBudget] = useState(1300);
-  const [buyBudget, setBuyBudget] = useState(325000);
-  const [commutePreference, setCommutePreference] = useState("city-centre");
+  // Starting values come from the web address when present (shared links).
+  const [initial] = useState(readSettings);
 
-  const [nightlifePriority, setNightlifePriority] = useState(3);
-  const [greenPriority, setGreenPriority] = useState(3);
-  const [valuePriority, setValuePriority] = useState(4);
-  const [schoolPriority, setSchoolPriority] = useState(2);
-  const [safetyPriority, setSafetyPriority] = useState(3);
-  const [cyclingPriority, setCyclingPriority] = useState(3);
+  const [lifeStage, setLifeStage] = useState(initial.lifeStage);
+  const [budgetType, setBudgetType] = useState(initial.budgetType);
+  const [monthlyBudget, setMonthlyBudget] = useState(initial.monthlyBudget);
+  const [buyBudget, setBuyBudget] = useState(initial.buyBudget);
+  const [commutePreference, setCommutePreference] = useState(initial.commutePreference);
 
-  const [needTram, setNeedTram] = useState(false);
-  const [needTrain, setNeedTrain] = useState(false);
+  const [nightlifePriority, setNightlifePriority] = useState(initial.nightlife);
+  const [greenPriority, setGreenPriority] = useState(initial.green);
+  const [valuePriority, setValuePriority] = useState(initial.value);
+  const [schoolPriority, setSchoolPriority] = useState(initial.schools);
+  const [safetyPriority, setSafetyPriority] = useState(initial.safety);
+  const [cyclingPriority, setCyclingPriority] = useState(initial.cycling);
+
+  const [needTram, setNeedTram] = useState(initial.needTram);
+  const [needTrain, setNeedTrain] = useState(initial.needTrain);
 
   const [showAdvanced, setShowAdvanced] = useState(false);
   const [visibleCount, setVisibleCount] = useState(DEFAULT_VISIBLE);
+
+  // Page filters (hide areas; they don't change scores)
+  const [borough, setBorough] = useState(initial.borough);
+  const [withinBudget, setWithinBudget] = useState(initial.withinBudget);
+  const [tramOnly, setTramOnly] = useState(initial.tramOnly);
+  const [trainOnly, setTrainOnly] = useState(initial.trainOnly);
+
+  const [compare, setCompare] = useState(initial.compare);
+  const [showCompare, setShowCompare] = useState(initial.compare.length >= 2);
+  const [showMap, setShowMap] = useState(false);
+  const [linkCopied, setLinkCopied] = useState(false);
 
   const results = useMemo(() => {
     const scored = areas.map((area) => {
@@ -279,8 +300,79 @@ export default function App() {
     needTrain,
   ]);
 
-  const top3 = results.slice(0, 3);
-  const visibleResults = results.slice(3, 3 + visibleCount);
+  const settings = {
+    lifeStage,
+    budgetType,
+    monthlyBudget,
+    buyBudget,
+    commutePreference,
+    nightlife: nightlifePriority,
+    green: greenPriority,
+    value: valuePriority,
+    schools: schoolPriority,
+    safety: safetyPriority,
+    cycling: cyclingPriority,
+    needTram,
+    needTrain,
+  };
+
+  // Keep the web address in step with the settings, so it can be shared.
+  useEffect(() => {
+    writeSettings({ ...settings, borough, withinBudget, tramOnly, trainOnly, compare });
+  });
+
+  const budgetLimit = getBudgetLimit(budgetType, monthlyBudget, buyBudget);
+  const filtered = useMemo(
+    () =>
+      results.filter(
+        (area) =>
+          (!borough || area.borough === borough) &&
+          (!withinBudget || getBudgetValue(area, budgetType) <= budgetLimit) &&
+          (!tramOnly || area.tram) &&
+          (!trainOnly || area.train)
+      ),
+    [results, borough, withinBudget, budgetType, budgetLimit, tramOnly, trainOnly]
+  );
+  const hiddenCount = results.length - filtered.length;
+  const filtersOn = Boolean(borough) || withinBudget || tramOnly || trainOnly;
+
+  const top3 = filtered.slice(0, 3);
+  const visibleResults = filtered.slice(3, 3 + visibleCount);
+
+  const compareAreas = compare.map((name) => results.find((r) => r.area === name)).filter(Boolean);
+
+  function toggleCompare(name) {
+    setCompare((list) => (list.includes(name) ? list.filter((n) => n !== name) : list.length >= 3 ? list : [...list, name]));
+  }
+
+  function clearFilters() {
+    setBorough("");
+    setWithinBudget(false);
+    setTramOnly(false);
+    setTrainOnly(false);
+  }
+
+  async function copyLink() {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      setLinkCopied(true);
+      setTimeout(() => setLinkCopied(false), 2500);
+    } catch {
+      window.prompt("Copy this link:", window.location.href);
+    }
+  }
+
+  const filterToggle = (label, on, set) => (
+    <button
+      type="button"
+      className={on ? "btn btn-primary transport-toggle is-selected" : "btn btn-secondary transport-toggle"}
+      aria-pressed={on}
+      onClick={() => set(!on)}
+    >
+      <span>{label}</span>
+      {on ? <span className="transport-tick">✓</span> : null}
+    </button>
+  );
 
   return (
     <div className="app-shell">
@@ -472,183 +564,243 @@ export default function App() {
           )}
         </div>
 
-        <div className="hero-cards">
-          <h2>Your best matches</h2>
-          <p className="muted">These areas most closely match your preferences.</p>
-          {top3.map((area, idx) => (
-            <div key={area.area} className="panel">
-              <div className="row-between small-gap">
-                <span className="pill">
-                  {idx === 0 ? "Best match" : `Top match #${idx + 1}`}
-                </span>
-                <strong>{area.match}%</strong>
-              </div>
-
-              <h2>{area.area}</h2>
-              <p className="muted">{area.borough}</p>
-
-              <p className="fit-label">{scoreBand(area.match)}</p>
-
-              <p className="muted compact">
-                    Rent {money(area.averageRent)} pcm · Buy{" "}
-                    {money(area.averageHousePrice)} · Commute{" "}
-                    {area.commuteCityMinutes} mins
-                  </p>
-
-              <div className="tag-row">
-                <span className="tag">Nightlife {area.nightlife}/5</span>
-                    <span className="tag">Green {area.greenSpace}/5</span>
-                    <span className="tag">Value {area.value}/5</span>
-                    <span className="tag">Cycling {area.cycling}/5</span>
-                    <span className="tag">Schools {area.schools}/5</span>
-                    <span className="tag">Safety {area.safety}/5</span>
-                    {area.tram ? <span className="tag">Tram</span> : null}
-                    {area.train ? <span className="tag">Train</span> : null}
-              </div>
-
-              <div className="tag-row">
-                <span className="tag">
-                  Affordability {area.breakdown.affordability}
-                </span>
-                <span className="tag">Lifestyle {area.breakdown.lifestyle}</span>
-                <span className="tag">Commute {area.breakdown.commute}</span>
-              </div>
-
-              <div className="property-links">
-                {area.RentURL && (
-                  <a
-                    href={area.RentURL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="property-btn hero-btn"
-                  >
-                    View rentals
-                  </a>
-                )}
-
-                {area.BuyURL && (
-                  <a
-                    href={area.BuyURL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="property-btn property-btn-secondary hero-btn"
-                  >
-                    View for sale
-                  </a>
-                )}
-              </div>
-
-            </div>
-          ))}
-        </div>
-        <div><h2>The rest of your matches</h2>
-          <p className="muted">These are the next best areas for you.</p>
-        </div>
-        <div className="panel">
+        <div className="panel refine-panel">
           <div className="row-between wrap-gap">
-            <div>
-
-              <p className="muted">
-                Showing {top3.length + visibleResults.length} of {results.length} areas
-              </p>
+            <h2 style={{ margin: 0 }}>Refine your results</h2>
+            <div className="button-row">
+              <button type="button" className={showMap ? "btn btn-primary" : "btn btn-secondary"} aria-pressed={showMap} onClick={() => setShowMap(!showMap)}>
+                {showMap ? "Hide map" : "Show map"}
+              </button>
+              <button type="button" className="btn btn-secondary" onClick={copyLink}>
+                {linkCopied ? "Link copied" : "Copy link to these results"}
+              </button>
             </div>
           </div>
 
-          <div className="results-list">
-            {visibleResults.map((area, idx) => (
-              <div key={area.area} className="result-card">
-                <div className="result-rank">{idx + 4}</div>
+          <div className="refine-row">
+            <div className="field-group">
+              <label htmlFor="borough-filter">Borough</label>
+              <select id="borough-filter" value={borough} onChange={(e) => setBorough(e.target.value)}>
+                <option value="">All boroughs</option>
+                {BOROUGHS.map((b) => (
+                  <option key={b} value={b}>
+                    {b}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div className="field-group">
+              <label>Only show areas</label>
+              <div className="button-row transport-toggle-row">
+                {filterToggle("Within my budget", withinBudget, setWithinBudget)}
+                {filterToggle("With a tram stop", tramOnly, setTramOnly)}
+                {filterToggle("With a train station", trainOnly, setTrainOnly)}
+              </div>
+            </div>
+          </div>
 
-                <div className="result-main">
-                  <div className="result-title-row">
-                    <h3>{area.area}</h3>
-                    <span className="tag outline">{area.borough}</span>
-                    <span className="tag dark">{scoreBand(area.match)}</span>
+          {filtersOn && (
+            <p className="muted compact" style={{ marginTop: "12px" }}>
+              {hiddenCount} of {results.length} areas hidden by these filters.{" "}
+              <button type="button" className="link-btn" onClick={clearFilters}>
+                Clear filters
+              </button>
+            </p>
+          )}
+
+          {showMap && (
+            <div style={{ marginTop: "16px" }}>
+              <Suspense fallback={<p className="muted">Loading map…</p>}>
+                <AreaMap areas={filtered} budgetType={budgetType} money={money} />
+              </Suspense>
+            </div>
+          )}
+        </div>
+
+        {showCompare && compareAreas.length > 0 && (
+          <CompareView
+            areas={compareAreas}
+            settings={settings}
+            money={money}
+            onRemove={toggleCompare}
+            onClose={() => setShowCompare(false)}
+          />
+        )}
+
+        {filtered.length === 0 ? (
+          <div className="empty-state">
+            <div>
+              <p>No areas match these filters.</p>
+              <button type="button" className="btn btn-primary" onClick={clearFilters}>
+                Clear filters
+              </button>
+            </div>
+          </div>
+        ) : (
+          <>
+            <div className="hero-cards">
+              <h2>Your best matches</h2>
+              <p className="muted">These areas most closely match your preferences.</p>
+              {top3.map((area, idx) => (
+                <div key={area.area} className="panel">
+                  <div className="row-between small-gap">
+                    <span className="pill">{idx === 0 ? "Best match" : `Top match #${idx + 1}`}</span>
+                    <strong>{area.match}%</strong>
                   </div>
+
+                  <h2>{area.area}</h2>
+                  <p className="muted">{area.borough}</p>
+
+                  <p className="fit-label">{scoreBand(area.match)}</p>
 
                   <p className="muted compact">
-                    Rent {money(area.averageRent)} pcm · Buy{" "}
-                    {money(area.averageHousePrice)} · Commute{" "}
+                    Rent {money(area.averageRent)} pcm · Buy {money(area.averageHousePrice)} · Commute{" "}
                     {area.commuteCityMinutes} mins
                   </p>
 
-                  <div className="tag-row">
-                    <span className="tag">Nightlife {area.nightlife}/5</span>
-                    <span className="tag">Green {area.greenSpace}/5</span>
-                    <span className="tag">Value {area.value}/5</span>
-                    <span className="tag">Cycling {area.cycling}/5</span>
-                    <span className="tag">Schools {area.schools}/5</span>
-                    <span className="tag">Safety {area.safety}/5</span>
-                    {area.tram ? <span className="tag">Tram</span> : null}
-                    {area.train ? <span className="tag">Train</span> : null}
+                  <AreaTags area={area} />
+
+                  <WhyThisMatch area={area} settings={settings} />
+
+                  <div className="property-links">
+                    <PropertyLinks area={area} hero />
+                    <CompareButton name={area.area} compare={compare} onToggle={toggleCompare} />
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {filtered.length > 3 && (
+              <>
+                <div>
+                  <h2>The rest of your matches</h2>
+                  <p className="muted">These are the next best areas for you.</p>
+                </div>
+                <div className="panel">
+                  <div className="row-between wrap-gap">
+                    <p className="muted">
+                      Showing {top3.length + visibleResults.length} of {filtered.length} areas
+                    </p>
                   </div>
 
-                  <div className="tag-row">
-  <span className="tag">
-    Affordability {area.breakdown.affordability}
-  </span>
-  <span className="tag">Lifestyle {area.breakdown.lifestyle}</span>
-  <span className="tag">Commute {area.breakdown.commute}</span>
- 
-</div>
+                  <div className="results-list">
+                    {visibleResults.map((area, idx) => (
+                      <div key={area.area} className="result-card">
+                        <div className="result-rank">{idx + 4}</div>
 
-<div className="property-links">
-  {area.RentURL && (
-    <a
-      href={area.RentURL}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="property-btn"
-    >
-      View rentals
-    </a>
-  )}
+                        <div className="result-main">
+                          <div className="result-title-row">
+                            <h3>{area.area}</h3>
+                            <span className="tag outline">{area.borough}</span>
+                            <span className="tag dark">{scoreBand(area.match)}</span>
+                          </div>
 
-  {area.BuyURL && (
-    <a
-      href={area.BuyURL}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="property-btn property-btn-secondary"
-    >
-      View for sale
-    </a>
-  )}
-</div>
+                          <p className="muted compact">
+                            Rent {money(area.averageRent)} pcm · Buy {money(area.averageHousePrice)} · Commute{" "}
+                            {area.commuteCityMinutes} mins
+                          </p>
 
+                          <AreaTags area={area} />
+
+                          <WhyThisMatch area={area} settings={settings} />
+
+                          <div className="property-links">
+                            <PropertyLinks area={area} />
+                            <CompareButton name={area.area} compare={compare} onToggle={toggleCompare} />
+                          </div>
+                        </div>
+
+                        <div className="result-score">
+                          <strong>{area.match}%</strong>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div style={{ marginTop: "20px", display: "flex", gap: "10px" }}>
+                    {3 + visibleCount < filtered.length && (
+                      <button type="button" className="btn btn-primary" onClick={() => setVisibleCount((prev) => prev + 10)}>
+                        Show more areas
+                      </button>
+                    )}
+
+                    {visibleCount > DEFAULT_VISIBLE && (
+                      <button type="button" className="btn btn-secondary" onClick={() => setVisibleCount(DEFAULT_VISIBLE)}>
+                        Show fewer areas
+                      </button>
+                    )}
+                  </div>
                 </div>
+              </>
+            )}
+          </>
+        )}
 
-                <div className="result-score">
-                  <strong>{area.match}%</strong>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div style={{ marginTop: "20px", display: "flex", gap: "10px" }}>
-            {visibleCount < results.length && (
+        {compare.length > 0 && (
+          <div className="compare-bar" role="region" aria-label="Areas to compare">
+            <span>
+              <strong>Compare ({compare.length}/3):</strong> {compare.join(", ")}
+            </span>
+            <div className="button-row">
               <button
                 type="button"
                 className="btn btn-primary"
-                onClick={() => setVisibleCount((prev) => prev + 10)}
+                disabled={compare.length < 2}
+                onClick={() => {
+                  setShowCompare(true);
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
               >
-              Show more areas
+                View comparison
               </button>
-            )}
-
-            {visibleCount > DEFAULT_VISIBLE && (
-              <button
-                type="button"
-                className="btn btn-secondary"
-                onClick={() => setVisibleCount(DEFAULT_VISIBLE)}
-              >
-              Show fewer areas
+              <button type="button" className="btn btn-secondary" onClick={() => setCompare([])}>
+                Clear
               </button>
-            )}
+            </div>
           </div>
-
-        </div>
+        )}
       </div>
     </div>
+  );
+}
+
+function AreaTags({ area }) {
+  return (
+    <>
+      <div className="tag-row">
+        <span className="tag">Nightlife {area.nightlife}/5</span>
+        <span className="tag">Green {area.greenSpace}/5</span>
+        <span className="tag">Value {area.value}/5</span>
+        <span className="tag">Cycling {area.cycling}/5</span>
+        <span className="tag">Schools {area.schools}/5</span>
+        <span className="tag">Safety {area.safety}/5</span>
+        {area.tram ? <span className="tag">Tram</span> : null}
+        {area.train ? <span className="tag">Train</span> : null}
+      </div>
+
+      <div className="tag-row">
+        <span className="tag">Affordability {area.breakdown.affordability}</span>
+        <span className="tag">Lifestyle {area.breakdown.lifestyle}</span>
+        <span className="tag">Commute {area.breakdown.commute}</span>
+      </div>
+    </>
+  );
+}
+
+function PropertyLinks({ area, hero = false }) {
+  const extra = hero ? " hero-btn" : "";
+  return (
+    <>
+      {area.RentURL && (
+        <a href={area.RentURL} target="_blank" rel="noopener noreferrer" className={`property-btn${extra}`}>
+          View rentals
+        </a>
+      )}
+      {area.BuyURL && (
+        <a href={area.BuyURL} target="_blank" rel="noopener noreferrer" className={`property-btn property-btn-secondary${extra}`}>
+          View for sale
+        </a>
+      )}
+    </>
   );
 }

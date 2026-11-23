@@ -704,3 +704,222 @@ hr,
     width: auto;
   }
 }
+
+/* ---- Refine panel: filters, map and share link ---- */
+
+.refine-panel {
+  margin-bottom: 24px;
+}
+
+.refine-row {
+  display: grid;
+  grid-template-columns: minmax(200px, 260px) 1fr;
+  gap: 16px;
+  margin-top: 16px;
+  align-items: end;
+}
+
+.link-btn {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--primary-strong);
+  font: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* ---- "Why this match?" ---- */
+
+.why-match {
+  margin-top: 12px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: rgba(248, 250, 252, 0.9);
+  padding: 10px 14px;
+}
+
+.why-match summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--primary-strong);
+}
+
+.why-match ul,
+.compare-why {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.why-match li {
+  display: flex;
+  gap: 4px;
+}
+
+.why-good span,
+.why-watch span {
+  flex: 0 0 1.2em;
+  font-weight: 800;
+}
+
+.why-good span {
+  color: #047857;
+}
+
+.why-watch span {
+  color: #b45309;
+}
+
+.compare-why .why-good {
+  color: #065f46;
+}
+
+.compare-why .why-watch {
+  color: #92400e;
+}
+
+/* ---- Compare ---- */
+
+.btn.compare-btn {
+  min-height: 42px;
+  padding: 0 14px;
+  font-size: 13px;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--text);
+  border: 1px solid var(--border-strong);
+}
+
+.btn.compare-btn.is-selected {
+  background: var(--primary-soft);
+  color: var(--primary-strong);
+  border-color: rgba(37, 99, 235, 0.35);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.compare-bar {
+  position: sticky;
+  bottom: 12px;
+  z-index: 20;
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
+  background: rgba(15, 23, 42, 0.94);
+  color: #ffffff;
+  box-shadow: var(--shadow-lg);
+}
+
+.compare-bar .button-row {
+  width: auto;
+}
+
+.compare-view {
+  margin-bottom: 24px;
+}
+
+.compare-scroll {
+  overflow-x: auto;
+  margin-top: 16px;
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 520px;
+  font-size: 14px;
+}
+
+.compare-table th,
+.compare-table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border-strong);
+}
+
+.compare-table thead th {
+  font-size: 16px;
+}
+
+.compare-table tbody th {
+  color: var(--text-soft);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.compare-remove {
+  margin-left: 8px;
+  border: 0;
+  background: none;
+  color: var(--text-faint);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ---- Map ---- */
+
+.area-map {
+  height: 460px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-strong);
+  overflow: hidden;
+}
+
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.map-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.map-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.2);
+}
+
+@media (max-width: 720px) {
+  .refine-row {
+    grid-template-columns: 1fr;
+  }
+
+  .area-map {
+    height: 360px;
+  }
+
+  .compare-bar .button-row {
+    width: 100%;
+  }
+}
