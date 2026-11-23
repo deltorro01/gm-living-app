@@ -4,3 +4,7 @@ dist
 .DS_Store
 .env
 .env.local
+# data script working files
+scripts/data/out/postcodes-cache.json
+scripts/data/out/areas.candidate.json
+scripts/data/out/comparison.md

@@ -1,0 +1,693 @@
+[
+  {
+    "area": "Bolton",
+    "borough": "Bolton",
+    "lat": 53.57771,
+    "lng": -2.43104,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Horwich",
+    "borough": "Bolton",
+    "lat": 53.59969,
+    "lng": -2.54591,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Kearsley",
+    "borough": "Bolton",
+    "lat": 53.53955,
+    "lng": -2.3749,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Westhoughton",
+    "borough": "Bolton",
+    "lat": 53.54891,
+    "lng": -2.52274,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Farnworth",
+    "borough": "Bolton",
+    "lat": 53.5505,
+    "lng": -2.39579,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Little Lever",
+    "borough": "Bolton",
+    "lat": 53.56123,
+    "lng": -2.36896,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Blackrod",
+    "borough": "Bolton",
+    "lat": 53.59532,
+    "lng": -2.58768,
+    "matchType": "Village",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Prestwich",
+    "borough": "Bury",
+    "lat": 53.53361,
+    "lng": -2.28586,
+    "matchType": "Other Settlement",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Whitefield",
+    "borough": "Bury",
+    "lat": 53.54787,
+    "lng": -2.29352,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Ramsbottom",
+    "borough": "Bury",
+    "lat": 53.64877,
+    "lng": -2.31849,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Radcliffe",
+    "borough": "Bury",
+    "lat": 53.5611,
+    "lng": -2.32767,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Tottington",
+    "borough": "Bury",
+    "lat": 53.61214,
+    "lng": -2.34026,
+    "matchType": "Suburban Area",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Ainsworth",
+    "borough": "Bury",
+    "lat": 53.58799,
+    "lng": -2.35791,
+    "matchType": "Village",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Bury",
+    "borough": "Bury",
+    "lat": 53.59269,
+    "lng": -2.29877,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Ancoats",
+    "borough": "Manchester",
+    "lat": 53.48116,
+    "lng": -2.22787,
+    "matchType": "Suburban Area",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Northern Quarter",
+    "borough": "Manchester",
+    "lat": 53.4835,
+    "lng": -2.2353,
+    "matchType": "manual",
+    "note": "Stevenson Square, set by hand"
+  },
+  {
+    "area": "Chorlton",
+    "borough": "Manchester",
+    "lat": 53.43792,
+    "lng": -2.26907,
+    "matchType": "Suburban Area",
+    "candidatesInBorough": 1,
+    "note": "searched \"Chorlton-cum-Hardy\" in Manchester"
+  },
+  {
+    "area": "Didsbury",
+    "borough": "Manchester",
+    "lat": 53.41748,
+    "lng": -2.23039,
+    "matchType": "Suburban Area",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Withington",
+    "borough": "Manchester",
+    "lat": 53.43153,
+    "lng": -2.22867,
+    "matchType": "Suburban Area",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Fallowfield",
+    "borough": "Manchester",
+    "lat": 53.44343,
+    "lng": -2.22675,
+    "matchType": "Suburban Area",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Astley",
+    "borough": "Wigan",
+    "lat": 53.50003,
+    "lng": -2.45908,
+    "matchType": "Village",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Newton Heath",
+    "borough": "Manchester",
+    "lat": 53.49639,
+    "lng": -2.18677,
+    "matchType": "Suburban Area",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Harpurhey",
+    "borough": "Manchester",
+    "lat": 53.50967,
+    "lng": -2.21049,
+    "matchType": "Suburban Area",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Moston",
+    "borough": "Manchester",
+    "lat": 53.51367,
+    "lng": -2.18633,
+    "matchType": "Suburban Area",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Levenshulme",
+    "borough": "Manchester",
+    "lat": 53.44194,
+    "lng": -2.18503,
+    "matchType": "Suburban Area",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Burnage",
+    "borough": "Manchester",
+    "lat": 53.42621,
+    "lng": -2.20368,
+    "matchType": "Suburban Area",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Gorton",
+    "borough": "Manchester",
+    "lat": 53.46245,
+    "lng": -2.18186,
+    "matchType": "Suburban Area",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Benchill",
+    "borough": "Manchester",
+    "lat": 53.3891,
+    "lng": -2.26584,
+    "matchType": "Suburban Area",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Wythenshawe",
+    "borough": "Manchester",
+    "lat": 53.38954,
+    "lng": -2.27129,
+    "matchType": "Other Settlement",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Oldham",
+    "borough": "Oldham",
+    "lat": 53.54216,
+    "lng": -2.11596,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Saddleworth",
+    "borough": "Oldham",
+    "lat": 53.54861,
+    "lng": -2.00532,
+    "matchType": "Village",
+    "candidatesInBorough": 1,
+    "note": "searched \"Uppermill\" in Oldham"
+  },
+  {
+    "area": "Failsworth",
+    "borough": "Oldham",
+    "lat": 53.5086,
+    "lng": -2.16303,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Royton",
+    "borough": "Oldham",
+    "lat": 53.56533,
+    "lng": -2.12173,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Chadderton",
+    "borough": "Oldham",
+    "lat": 53.54442,
+    "lng": -2.13835,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Lees",
+    "borough": "Oldham",
+    "lat": 53.53799,
+    "lng": -2.07248,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Delph",
+    "borough": "Oldham",
+    "lat": 53.56892,
+    "lng": -2.02358,
+    "matchType": "Village",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Greenfield",
+    "borough": "Oldham",
+    "lat": 53.5331,
+    "lng": -2.00509,
+    "matchType": "Suburban Area",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Rochdale",
+    "borough": "Rochdale",
+    "lat": 53.61696,
+    "lng": -2.15671,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Littleborough",
+    "borough": "Rochdale",
+    "lat": 53.64386,
+    "lng": -2.09638,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Milnrow",
+    "borough": "Rochdale",
+    "lat": 53.61111,
+    "lng": -2.11294,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Wardle",
+    "borough": "Rochdale",
+    "lat": 53.64839,
+    "lng": -2.1333,
+    "matchType": "Village",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Whitworth",
+    "borough": "Rochdale",
+    "lat": 53.65981,
+    "lng": -2.17453,
+    "matchType": "Town",
+    "candidatesInBorough": 1,
+    "note": "searched \"Whitworth\" in Rossendale"
+  },
+  {
+    "area": "Heywood",
+    "borough": "Rochdale",
+    "lat": 53.59367,
+    "lng": -2.22064,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Middleton",
+    "borough": "Rochdale",
+    "lat": 53.55047,
+    "lng": -2.19733,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Salford Quays",
+    "borough": "Salford",
+    "lat": 53.47385,
+    "lng": -2.30176,
+    "matchType": "Suburban Area",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Monton",
+    "borough": "Salford",
+    "lat": 53.49195,
+    "lng": -2.35585,
+    "matchType": "Suburban Area",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Worsley",
+    "borough": "Salford",
+    "lat": 53.50484,
+    "lng": -2.38664,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Eccles",
+    "borough": "Salford",
+    "lat": 53.48288,
+    "lng": -2.33804,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Boothstown",
+    "borough": "Salford",
+    "lat": 53.50327,
+    "lng": -2.41106,
+    "matchType": "Suburban Area",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Walkden",
+    "borough": "Salford",
+    "lat": 53.52379,
+    "lng": -2.39871,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Swinton",
+    "borough": "Salford",
+    "lat": 53.51222,
+    "lng": -2.34031,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Pendlebury",
+    "borough": "Salford",
+    "lat": 53.51316,
+    "lng": -2.32342,
+    "matchType": "Other Settlement",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Heaton Moor",
+    "borough": "Stockport",
+    "lat": 53.42273,
+    "lng": -2.18428,
+    "matchType": "Suburban Area",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Bramhall",
+    "borough": "Stockport",
+    "lat": 53.36301,
+    "lng": -2.16228,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Cheadle",
+    "borough": "Stockport",
+    "lat": 53.39202,
+    "lng": -2.20039,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Marple",
+    "borough": "Stockport",
+    "lat": 53.39713,
+    "lng": -2.06338,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Stockport",
+    "borough": "Stockport",
+    "lat": 53.40802,
+    "lng": -2.15896,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Broadbottom",
+    "borough": "Tameside",
+    "lat": 53.44095,
+    "lng": -2.01103,
+    "matchType": "Village",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Hattersley",
+    "borough": "Tameside",
+    "lat": 53.4486,
+    "lng": -2.02812,
+    "matchType": "Village",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Guide Bridge",
+    "borough": "Tameside",
+    "lat": 53.47789,
+    "lng": -2.11248,
+    "matchType": "Suburban Area",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Ashton-under-Lyne",
+    "borough": "Tameside",
+    "lat": 53.49033,
+    "lng": -2.0938,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Stalybridge",
+    "borough": "Tameside",
+    "lat": 53.48386,
+    "lng": -2.05649,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Hyde",
+    "borough": "Tameside",
+    "lat": 53.45131,
+    "lng": -2.07981,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Dukinfield",
+    "borough": "Tameside",
+    "lat": 53.47702,
+    "lng": -2.08193,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Droylsden",
+    "borough": "Tameside",
+    "lat": 53.48078,
+    "lng": -2.14474,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Mossley",
+    "borough": "Tameside",
+    "lat": 53.51818,
+    "lng": -2.04625,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Audenshaw",
+    "borough": "Tameside",
+    "lat": 53.47211,
+    "lng": -2.12449,
+    "matchType": "Other Settlement",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Altrincham",
+    "borough": "Trafford",
+    "lat": 53.38809,
+    "lng": -2.35146,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Sale",
+    "borough": "Trafford",
+    "lat": 53.42522,
+    "lng": -2.32282,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Stretford",
+    "borough": "Trafford",
+    "lat": 53.44609,
+    "lng": -2.30742,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Urmston",
+    "borough": "Trafford",
+    "lat": 53.45762,
+    "lng": -2.35776,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Timperley",
+    "borough": "Trafford",
+    "lat": 53.39432,
+    "lng": -2.32463,
+    "matchType": "Suburban Area",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Hale",
+    "borough": "Trafford",
+    "lat": 53.38,
+    "lng": -2.34018,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Hale Barns",
+    "borough": "Trafford",
+    "lat": 53.36694,
+    "lng": -2.31394,
+    "matchType": "Suburban Area",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Partington",
+    "borough": "Trafford",
+    "lat": 53.419,
+    "lng": -2.42769,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Carrington",
+    "borough": "Trafford",
+    "lat": 53.43352,
+    "lng": -2.38537,
+    "matchType": "Other Settlement",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Wigan",
+    "borough": "Wigan",
+    "lat": 53.54554,
+    "lng": -2.62969,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Standish",
+    "borough": "Wigan",
+    "lat": 53.58649,
+    "lng": -2.66408,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Shevington",
+    "borough": "Wigan",
+    "lat": 53.57281,
+    "lng": -2.69254,
+    "matchType": "Village",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Hindley",
+    "borough": "Wigan",
+    "lat": 53.53382,
+    "lng": -2.58111,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Atherton",
+    "borough": "Wigan",
+    "lat": 53.52551,
+    "lng": -2.48723,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Leigh",
+    "borough": "Wigan",
+    "lat": 53.49735,
+    "lng": -2.51883,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Golborne",
+    "borough": "Wigan",
+    "lat": 53.47533,
+    "lng": -2.59769,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Lowton",
+    "borough": "Wigan",
+    "lat": 53.47812,
+    "lng": -2.5759,
+    "matchType": "Suburban Area",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Ashton-in-Makerfield",
+    "borough": "Wigan",
+    "lat": 53.48858,
+    "lng": -2.63851,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  },
+  {
+    "area": "Tyldesley",
+    "borough": "Wigan",
+    "lat": 53.51399,
+    "lng": -2.46725,
+    "matchType": "Town",
+    "candidatesInBorough": 1
+  }
+]

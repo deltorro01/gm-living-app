@@ -1,0 +1,607 @@
+{
+  "period": "2025-09 to 2026-08",
+  "results": [
+    {
+      "area": "Bolton",
+      "medianPrice": 142000,
+      "sales": 131,
+      "radiusKm": 1.5,
+      "flatShare": 20
+    },
+    {
+      "area": "Horwich",
+      "medianPrice": 210000,
+      "sales": 216,
+      "radiusKm": 1.5,
+      "flatShare": 7
+    },
+    {
+      "area": "Kearsley",
+      "medianPrice": 184000,
+      "sales": 162,
+      "radiusKm": 1.5,
+      "flatShare": 17
+    },
+    {
+      "area": "Westhoughton",
+      "medianPrice": 235000,
+      "sales": 253,
+      "radiusKm": 1.5,
+      "flatShare": 7
+    },
+    {
+      "area": "Farnworth",
+      "medianPrice": 174000,
+      "sales": 211,
+      "radiusKm": 1.5,
+      "flatShare": 8
+    },
+    {
+      "area": "Little Lever",
+      "medianPrice": 215000,
+      "sales": 182,
+      "radiusKm": 1.5,
+      "flatShare": 7
+    },
+    {
+      "area": "Blackrod",
+      "medianPrice": 219000,
+      "sales": 60,
+      "radiusKm": 1.5,
+      "flatShare": 0
+    },
+    {
+      "area": "Prestwich",
+      "medianPrice": 293000,
+      "sales": 326,
+      "radiusKm": 1.5,
+      "flatShare": 12
+    },
+    {
+      "area": "Whitefield",
+      "medianPrice": 280000,
+      "sales": 295,
+      "radiusKm": 1.5,
+      "flatShare": 11
+    },
+    {
+      "area": "Ramsbottom",
+      "medianPrice": 244000,
+      "sales": 140,
+      "radiusKm": 1.5,
+      "flatShare": 11
+    },
+    {
+      "area": "Radcliffe",
+      "medianPrice": 193000,
+      "sales": 227,
+      "radiusKm": 1.5,
+      "flatShare": 9
+    },
+    {
+      "area": "Tottington",
+      "medianPrice": 228000,
+      "sales": 154,
+      "radiusKm": 1.5,
+      "flatShare": 3
+    },
+    {
+      "area": "Ainsworth",
+      "medianPrice": 260000,
+      "sales": 51,
+      "radiusKm": 1.5,
+      "flatShare": 2
+    },
+    {
+      "area": "Bury",
+      "medianPrice": 170000,
+      "sales": 277,
+      "radiusKm": 1.5,
+      "flatShare": 14
+    },
+    {
+      "area": "Ancoats",
+      "medianPrice": 232000,
+      "sales": 564,
+      "radiusKm": 1.5,
+      "flatShare": 90
+    },
+    {
+      "area": "Northern Quarter",
+      "medianPrice": 230000,
+      "sales": 701,
+      "radiusKm": 1.5,
+      "flatShare": 94
+    },
+    {
+      "area": "Chorlton",
+      "medianPrice": 410000,
+      "sales": 439,
+      "radiusKm": 1.5,
+      "flatShare": 22
+    },
+    {
+      "area": "Didsbury",
+      "medianPrice": 361000,
+      "sales": 468,
+      "radiusKm": 1.5,
+      "flatShare": 38
+    },
+    {
+      "area": "Withington",
+      "medianPrice": 310000,
+      "sales": 493,
+      "radiusKm": 1.5,
+      "flatShare": 37
+    },
+    {
+      "area": "Fallowfield",
+      "medianPrice": 265000,
+      "sales": 283,
+      "radiusKm": 1.5,
+      "flatShare": 17
+    },
+    {
+      "area": "Astley",
+      "medianPrice": 260000,
+      "sales": 155,
+      "radiusKm": 1.5,
+      "flatShare": 5
+    },
+    {
+      "area": "Newton Heath",
+      "medianPrice": 190000,
+      "sales": 154,
+      "radiusKm": 1.5,
+      "flatShare": 21
+    },
+    {
+      "area": "Harpurhey",
+      "medianPrice": 200000,
+      "sales": 146,
+      "radiusKm": 1.5,
+      "flatShare": 6
+    },
+    {
+      "area": "Moston",
+      "medianPrice": 214000,
+      "sales": 200,
+      "radiusKm": 1.5,
+      "flatShare": 6
+    },
+    {
+      "area": "Levenshulme",
+      "medianPrice": 256000,
+      "sales": 378,
+      "radiusKm": 1.5,
+      "flatShare": 12
+    },
+    {
+      "area": "Burnage",
+      "medianPrice": 320000,
+      "sales": 357,
+      "radiusKm": 1.5,
+      "flatShare": 15
+    },
+    {
+      "area": "Gorton",
+      "medianPrice": 198000,
+      "sales": 153,
+      "radiusKm": 1.5,
+      "flatShare": 6
+    },
+    {
+      "area": "Benchill",
+      "medianPrice": 245000,
+      "sales": 220,
+      "radiusKm": 1.5,
+      "flatShare": 20
+    },
+    {
+      "area": "Wythenshawe",
+      "medianPrice": 240000,
+      "sales": 216,
+      "radiusKm": 1.5,
+      "flatShare": 21
+    },
+    {
+      "area": "Oldham",
+      "medianPrice": 155000,
+      "sales": 107,
+      "radiusKm": 1.5,
+      "flatShare": 6
+    },
+    {
+      "area": "Saddleworth",
+      "medianPrice": 330000,
+      "sales": 97,
+      "radiusKm": 1.5,
+      "flatShare": 23
+    },
+    {
+      "area": "Failsworth",
+      "medianPrice": 220000,
+      "sales": 323,
+      "radiusKm": 1.5,
+      "flatShare": 2
+    },
+    {
+      "area": "Royton",
+      "medianPrice": 230000,
+      "sales": 281,
+      "radiusKm": 1.5,
+      "flatShare": 4
+    },
+    {
+      "area": "Chadderton",
+      "medianPrice": 198000,
+      "sales": 241,
+      "radiusKm": 1.5,
+      "flatShare": 3
+    },
+    {
+      "area": "Lees",
+      "medianPrice": 185000,
+      "sales": 302,
+      "radiusKm": 1.5,
+      "flatShare": 1
+    },
+    {
+      "area": "Delph",
+      "medianPrice": 280000,
+      "sales": 36,
+      "radiusKm": 1.5,
+      "flatShare": 0
+    },
+    {
+      "area": "Greenfield",
+      "medianPrice": 315000,
+      "sales": 77,
+      "radiusKm": 1.5,
+      "flatShare": 18
+    },
+    {
+      "area": "Rochdale",
+      "medianPrice": 146000,
+      "sales": 147,
+      "radiusKm": 1.5,
+      "flatShare": 6
+    },
+    {
+      "area": "Littleborough",
+      "medianPrice": 225000,
+      "sales": 146,
+      "radiusKm": 1.5,
+      "flatShare": 8
+    },
+    {
+      "area": "Milnrow",
+      "medianPrice": 225000,
+      "sales": 184,
+      "radiusKm": 1.5,
+      "flatShare": 4
+    },
+    {
+      "area": "Wardle",
+      "medianPrice": 217000,
+      "sales": 98,
+      "radiusKm": 1.5,
+      "flatShare": 8
+    },
+    {
+      "area": "Whitworth",
+      "medianPrice": 195000,
+      "sales": 77,
+      "radiusKm": 1.5,
+      "flatShare": 3
+    },
+    {
+      "area": "Heywood",
+      "medianPrice": 190000,
+      "sales": 261,
+      "radiusKm": 1.5,
+      "flatShare": 5
+    },
+    {
+      "area": "Middleton",
+      "medianPrice": 206000,
+      "sales": 288,
+      "radiusKm": 1.5,
+      "flatShare": 10
+    },
+    {
+      "area": "Salford Quays",
+      "medianPrice": 193000,
+      "sales": 226,
+      "radiusKm": 1.5,
+      "flatShare": 67
+    },
+    {
+      "area": "Monton",
+      "medianPrice": 272000,
+      "sales": 372,
+      "radiusKm": 1.5,
+      "flatShare": 17
+    },
+    {
+      "area": "Worsley",
+      "medianPrice": 341000,
+      "sales": 126,
+      "radiusKm": 1.5,
+      "flatShare": 13
+    },
+    {
+      "area": "Eccles",
+      "medianPrice": 245000,
+      "sales": 272,
+      "radiusKm": 1.5,
+      "flatShare": 29
+    },
+    {
+      "area": "Boothstown",
+      "medianPrice": 325000,
+      "sales": 177,
+      "radiusKm": 1.5,
+      "flatShare": 2
+    },
+    {
+      "area": "Walkden",
+      "medianPrice": 245000,
+      "sales": 282,
+      "radiusKm": 1.5,
+      "flatShare": 6
+    },
+    {
+      "area": "Swinton",
+      "medianPrice": 238000,
+      "sales": 340,
+      "radiusKm": 1.5,
+      "flatShare": 5
+    },
+    {
+      "area": "Pendlebury",
+      "medianPrice": 220000,
+      "sales": 259,
+      "radiusKm": 1.5,
+      "flatShare": 12
+    },
+    {
+      "area": "Heaton Moor",
+      "medianPrice": 342000,
+      "sales": 416,
+      "radiusKm": 1.5,
+      "flatShare": 20
+    },
+    {
+      "area": "Bramhall",
+      "medianPrice": 555000,
+      "sales": 219,
+      "radiusKm": 1.5,
+      "flatShare": 9
+    },
+    {
+      "area": "Cheadle",
+      "medianPrice": 319000,
+      "sales": 315,
+      "radiusKm": 1.5,
+      "flatShare": 10
+    },
+    {
+      "area": "Marple",
+      "medianPrice": 365000,
+      "sales": 219,
+      "radiusKm": 1.5,
+      "flatShare": 11
+    },
+    {
+      "area": "Stockport",
+      "medianPrice": 227000,
+      "sales": 371,
+      "radiusKm": 1.5,
+      "flatShare": 9
+    },
+    {
+      "area": "Broadbottom",
+      "medianPrice": 205000,
+      "sales": 43,
+      "radiusKm": 1.5,
+      "flatShare": 2
+    },
+    {
+      "area": "Hattersley",
+      "medianPrice": 213000,
+      "sales": 119,
+      "radiusKm": 1.5,
+      "flatShare": 9
+    },
+    {
+      "area": "Guide Bridge",
+      "medianPrice": 200000,
+      "sales": 151,
+      "radiusKm": 1.5,
+      "flatShare": 6
+    },
+    {
+      "area": "Ashton-under-Lyne",
+      "medianPrice": 184000,
+      "sales": 249,
+      "radiusKm": 1.5,
+      "flatShare": 6
+    },
+    {
+      "area": "Stalybridge",
+      "medianPrice": 200000,
+      "sales": 259,
+      "radiusKm": 1.5,
+      "flatShare": 8
+    },
+    {
+      "area": "Hyde",
+      "medianPrice": 210000,
+      "sales": 345,
+      "radiusKm": 1.5,
+      "flatShare": 9
+    },
+    {
+      "area": "Dukinfield",
+      "medianPrice": 205000,
+      "sales": 248,
+      "radiusKm": 1.5,
+      "flatShare": 4
+    },
+    {
+      "area": "Droylsden",
+      "medianPrice": 235000,
+      "sales": 282,
+      "radiusKm": 1.5,
+      "flatShare": 6
+    },
+    {
+      "area": "Mossley",
+      "medianPrice": 197000,
+      "sales": 151,
+      "radiusKm": 1.5,
+      "flatShare": 6
+    },
+    {
+      "area": "Audenshaw",
+      "medianPrice": 219000,
+      "sales": 196,
+      "radiusKm": 1.5,
+      "flatShare": 9
+    },
+    {
+      "area": "Altrincham",
+      "medianPrice": 465000,
+      "sales": 437,
+      "radiusKm": 1.5,
+      "flatShare": 27
+    },
+    {
+      "area": "Sale",
+      "medianPrice": 380000,
+      "sales": 427,
+      "radiusKm": 1.5,
+      "flatShare": 28
+    },
+    {
+      "area": "Stretford",
+      "medianPrice": 294000,
+      "sales": 270,
+      "radiusKm": 1.5,
+      "flatShare": 19
+    },
+    {
+      "area": "Urmston",
+      "medianPrice": 355000,
+      "sales": 273,
+      "radiusKm": 1.5,
+      "flatShare": 10
+    },
+    {
+      "area": "Timperley",
+      "medianPrice": 436000,
+      "sales": 339,
+      "radiusKm": 1.5,
+      "flatShare": 13
+    },
+    {
+      "area": "Hale",
+      "medianPrice": 567000,
+      "sales": 343,
+      "radiusKm": 1.5,
+      "flatShare": 23
+    },
+    {
+      "area": "Hale Barns",
+      "medianPrice": 854000,
+      "sales": 80,
+      "radiusKm": 1.5,
+      "flatShare": 1
+    },
+    {
+      "area": "Partington",
+      "medianPrice": 245000,
+      "sales": 148,
+      "radiusKm": 1.5,
+      "flatShare": 5
+    },
+    {
+      "area": "Carrington",
+      "medianPrice": 349000,
+      "sales": 52,
+      "radiusKm": 1.5,
+      "flatShare": 8
+    },
+    {
+      "area": "Wigan",
+      "medianPrice": 160000,
+      "sales": 262,
+      "radiusKm": 1.5,
+      "flatShare": 6
+    },
+    {
+      "area": "Standish",
+      "medianPrice": 250000,
+      "sales": 179,
+      "radiusKm": 1.5,
+      "flatShare": 9
+    },
+    {
+      "area": "Shevington",
+      "medianPrice": 242000,
+      "sales": 101,
+      "radiusKm": 1.5,
+      "flatShare": 0
+    },
+    {
+      "area": "Hindley",
+      "medianPrice": 171000,
+      "sales": 163,
+      "radiusKm": 1.5,
+      "flatShare": 4
+    },
+    {
+      "area": "Atherton",
+      "medianPrice": 185000,
+      "sales": 270,
+      "radiusKm": 1.5,
+      "flatShare": 7
+    },
+    {
+      "area": "Leigh",
+      "medianPrice": 160000,
+      "sales": 295,
+      "radiusKm": 1.5,
+      "flatShare": 10
+    },
+    {
+      "area": "Golborne",
+      "medianPrice": 229000,
+      "sales": 181,
+      "radiusKm": 1.5,
+      "flatShare": 4
+    },
+    {
+      "area": "Lowton",
+      "medianPrice": 250000,
+      "sales": 228,
+      "radiusKm": 1.5,
+      "flatShare": 5
+    },
+    {
+      "area": "Ashton-in-Makerfield",
+      "medianPrice": 200000,
+      "sales": 212,
+      "radiusKm": 1.5,
+      "flatShare": 1
+    },
+    {
+      "area": "Tyldesley",
+      "medianPrice": 215000,
+      "sales": 221,
+      "radiusKm": 1.5,
+      "flatShare": 5
+    }
+  ]
+}

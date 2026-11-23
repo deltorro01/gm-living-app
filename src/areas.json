@@ -3,7 +3,7 @@
     "area": "Bolton",
     "borough": "Bolton",
     "averageRent": 950,
-    "averageHousePrice": 220000,
+    "averageHousePrice": 142000,
     "nightlife": 2,
     "cafes": 2,
     "greenSpace": 4,
@@ -22,20 +22,26 @@
     "detached": 2,
     "value": 5,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E182&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Bolton.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E182&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Bolton.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E182&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Bolton.html",
+    "lat": 53.57771,
+    "lng": -2.43104,
+    "dataSources": {
+      "averageHousePrice": "Median of 131 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.1 (ranked against the other areas)"
+    }
   },
   {
     "area": "Horwich",
     "borough": "Bolton",
     "averageRent": 1000,
-    "averageHousePrice": 260000,
+    "averageHousePrice": 210000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 4,
     "culture": 1,
     "quietness": 4,
     "schools": 3,
-    "safety": 4,
+    "safety": 3,
     "tram": false,
     "train": true,
     "cycling": 3,
@@ -47,13 +53,19 @@
     "detached": 2,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E13150&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Horwich.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E13150&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Horwich.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E13150&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Horwich.html",
+    "lat": 53.59969,
+    "lng": -2.54591,
+    "dataSources": {
+      "averageHousePrice": "Median of 216 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.7 (ranked against the other areas)"
+    }
   },
   {
     "area": "Kearsley",
     "borough": "Bolton",
     "averageRent": 950,
-    "averageHousePrice": 220000,
+    "averageHousePrice": 184000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 3,
@@ -72,20 +84,26 @@
     "detached": 1,
     "value": 5,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E13686&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Kearsley.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E13686&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Kearsley.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E13686&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Kearsley.html",
+    "lat": 53.53955,
+    "lng": -2.3749,
+    "dataSources": {
+      "averageHousePrice": "Median of 162 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.3 (ranked against the other areas)"
+    }
   },
   {
     "area": "Westhoughton",
     "borough": "Bolton",
     "averageRent": 1000,
-    "averageHousePrice": 250000,
+    "averageHousePrice": 235000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 3,
     "culture": 1,
     "quietness": 3,
     "schools": 3,
-    "safety": 3,
+    "safety": 4,
     "tram": false,
     "train": true,
     "cycling": 2,
@@ -97,13 +115,19 @@
     "detached": 2,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E26473&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Westhoughton.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E26473&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Westhoughton.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E26473&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Westhoughton.html",
+    "lat": 53.54891,
+    "lng": -2.52274,
+    "dataSources": {
+      "averageHousePrice": "Median of 253 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 5.6 (ranked against the other areas)"
+    }
   },
   {
     "area": "Farnworth",
     "borough": "Bolton",
     "averageRent": 900,
-    "averageHousePrice": 210000,
+    "averageHousePrice": 174000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 3,
@@ -122,20 +146,26 @@
     "detached": 1,
     "value": 5,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E9765&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Farnworth.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E9765&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Farnworth.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E9765&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Farnworth.html",
+    "lat": 53.5505,
+    "lng": -2.39579,
+    "dataSources": {
+      "averageHousePrice": "Median of 211 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 1.9 (ranked against the other areas)"
+    }
   },
   {
     "area": "Little Lever",
     "borough": "Bolton",
     "averageRent": 950,
-    "averageHousePrice": 220000,
+    "averageHousePrice": 215000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 3,
     "culture": 1,
     "quietness": 3,
     "schools": 3,
-    "safety": 3,
+    "safety": 4,
     "tram": false,
     "train": false,
     "cycling": 2,
@@ -147,13 +177,19 @@
     "detached": 1,
     "value": 5,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E15279&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Little-Lever.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E15279&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Little-Lever.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E15279&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Little-Lever.html",
+    "lat": 53.56123,
+    "lng": -2.36896,
+    "dataSources": {
+      "averageHousePrice": "Median of 182 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.6 (ranked against the other areas)"
+    }
   },
   {
     "area": "Blackrod",
     "borough": "Bolton",
     "averageRent": 1050,
-    "averageHousePrice": 260000,
+    "averageHousePrice": 219000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 4,
@@ -172,13 +208,19 @@
     "detached": 2,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E3754&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Blackrod.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E3754&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Blackrod.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E3754&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Blackrod.html",
+    "lat": 53.59532,
+    "lng": -2.58768,
+    "dataSources": {
+      "averageHousePrice": "Median of 60 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6 (ranked against the other areas)"
+    }
   },
   {
     "area": "Prestwich",
     "borough": "Bury",
     "averageRent": 1200,
-    "averageHousePrice": 325000,
+    "averageHousePrice": 293000,
     "nightlife": 2,
     "cafes": 3,
     "greenSpace": 3,
@@ -197,13 +239,19 @@
     "detached": 2,
     "value": 3,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E20282&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Prestwich.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E20282&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Prestwich.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E20282&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Prestwich.html",
+    "lat": 53.53361,
+    "lng": -2.28586,
+    "dataSources": {
+      "averageHousePrice": "Median of 326 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.5 (ranked against the other areas)"
+    }
   },
   {
     "area": "Whitefield",
     "borough": "Bury",
     "averageRent": 1150,
-    "averageHousePrice": 310000,
+    "averageHousePrice": 280000,
     "nightlife": 2,
     "cafes": 2,
     "greenSpace": 4,
@@ -222,13 +270,19 @@
     "detached": 2,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E26735&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Whitefield.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E26735&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Whitefield.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E26735&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Whitefield.html",
+    "lat": 53.54787,
+    "lng": -2.29352,
+    "dataSources": {
+      "averageHousePrice": "Median of 295 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.5 (ranked against the other areas)"
+    }
   },
   {
     "area": "Ramsbottom",
     "borough": "Bury",
     "averageRent": 1100,
-    "averageHousePrice": 295000,
+    "averageHousePrice": 244000,
     "nightlife": 2,
     "cafes": 3,
     "greenSpace": 5,
@@ -247,13 +301,19 @@
     "detached": 3,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E20528&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Ramsbottom.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E20528&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Ramsbottom.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E20528&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Ramsbottom.html",
+    "lat": 53.64877,
+    "lng": -2.31849,
+    "dataSources": {
+      "averageHousePrice": "Median of 140 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.1 (ranked against the other areas)"
+    }
   },
   {
     "area": "Radcliffe",
     "borough": "Bury",
     "averageRent": 1000,
-    "averageHousePrice": 240000,
+    "averageHousePrice": 193000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 3,
@@ -272,13 +332,19 @@
     "detached": 1,
     "value": 5,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E20463&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Radcliffe.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E20463&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Radcliffe.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E20463&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Radcliffe.html",
+    "lat": 53.5611,
+    "lng": -2.32767,
+    "dataSources": {
+      "averageHousePrice": "Median of 227 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.1 (ranked against the other areas)"
+    }
   },
   {
     "area": "Tottington",
     "borough": "Bury",
     "averageRent": 1050,
-    "averageHousePrice": 270000,
+    "averageHousePrice": 228000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 4,
@@ -297,13 +363,19 @@
     "detached": 2,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E24761&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Tottington.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E24761&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Tottington.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E24761&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Tottington.html",
+    "lat": 53.61214,
+    "lng": -2.34026,
+    "dataSources": {
+      "averageHousePrice": "Median of 154 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.5 (ranked against the other areas)"
+    }
   },
   {
     "area": "Ainsworth",
     "borough": "Bury",
     "averageRent": 1050,
-    "averageHousePrice": 280000,
+    "averageHousePrice": 260000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 4,
@@ -322,13 +394,19 @@
     "detached": 2,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E1747&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Ainsworth.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E1747&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Ainsworth.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E1747&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Ainsworth.html",
+    "lat": 53.58799,
+    "lng": -2.35791,
+    "dataSources": {
+      "averageHousePrice": "Median of 51 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 5.1 (ranked against the other areas)"
+    }
   },
   {
     "area": "Bury",
     "borough": "Bury",
     "averageRent": 1050,
-    "averageHousePrice": 260000,
+    "averageHousePrice": 170000,
     "nightlife": 2,
     "cafes": 3,
     "greenSpace": 3,
@@ -347,20 +425,26 @@
     "detached": 1,
     "value": 5,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E257&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Bury.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E257&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Bury.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E257&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Bury.html",
+    "lat": 53.59269,
+    "lng": -2.29877,
+    "dataSources": {
+      "averageHousePrice": "Median of 277 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.5 (ranked against the other areas)"
+    }
   },
   {
     "area": "Ancoats",
     "borough": "Manchester",
     "averageRent": 1600,
-    "averageHousePrice": 350000,
+    "averageHousePrice": 232000,
     "nightlife": 5,
     "cafes": 5,
     "greenSpace": 1,
     "culture": 5,
     "quietness": 1,
     "schools": 1,
-    "safety": 3,
+    "safety": 2,
     "tram": true,
     "train": true,
     "cycling": 4,
@@ -372,13 +456,19 @@
     "detached": 0,
     "value": 3,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E78669&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Ancoats.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E78669&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Ancoats.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E78669&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Ancoats.html",
+    "lat": 53.48116,
+    "lng": -2.22787,
+    "dataSources": {
+      "averageHousePrice": "Median of 564 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 1.8 (ranked against the other areas)"
+    }
   },
   {
     "area": "Northern Quarter",
     "borough": "Manchester",
     "averageRent": 1550,
-    "averageHousePrice": 340000,
+    "averageHousePrice": 230000,
     "nightlife": 5,
     "cafes": 5,
     "greenSpace": 1,
@@ -397,13 +487,19 @@
     "detached": 0,
     "value": 3,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E93811&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Northern-Quarter.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E93811&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Northern-Quarter.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E93811&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Northern-Quarter.html",
+    "lat": 53.4835,
+    "lng": -2.2353,
+    "dataSources": {
+      "averageHousePrice": "Median of 701 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2 (ranked against the other areas)"
+    }
   },
   {
     "area": "Chorlton",
     "borough": "Manchester",
     "averageRent": 1350,
-    "averageHousePrice": 375000,
+    "averageHousePrice": 410000,
     "nightlife": 3,
     "cafes": 5,
     "greenSpace": 2,
@@ -422,13 +518,19 @@
     "detached": 1,
     "value": 3,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E6323&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Chorlton-Cum-Hardy.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E6323&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Chorlton-Cum-Hardy.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E6323&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Chorlton-Cum-Hardy.html",
+    "lat": 53.43792,
+    "lng": -2.26907,
+    "dataSources": {
+      "averageHousePrice": "Median of 439 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4 (ranked against the other areas)"
+    }
   },
   {
     "area": "Didsbury",
     "borough": "Manchester",
     "averageRent": 1500,
-    "averageHousePrice": 425000,
+    "averageHousePrice": 361000,
     "nightlife": 3,
     "cafes": 4,
     "greenSpace": 2,
@@ -447,7 +549,13 @@
     "detached": 3,
     "value": 2,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E8171&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Didsbury.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E8171&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Didsbury.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E8171&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Didsbury.html",
+    "lat": 53.41748,
+    "lng": -2.23039,
+    "dataSources": {
+      "averageHousePrice": "Median of 468 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 5.4 (ranked against the other areas)"
+    }
   },
   {
     "area": "Withington",
@@ -472,20 +580,26 @@
     "detached": 1,
     "value": 3,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E27207&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Withington.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E27207&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Withington.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E27207&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Withington.html",
+    "lat": 53.43153,
+    "lng": -2.22867,
+    "dataSources": {
+      "averageHousePrice": "Median of 493 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.6 (ranked against the other areas)"
+    }
   },
   {
     "area": "Fallowfield",
     "borough": "Manchester",
     "averageRent": 1000,
-    "averageHousePrice": 270000,
+    "averageHousePrice": 265000,
     "nightlife": 4,
     "cafes": 3,
     "greenSpace": 2,
     "culture": 2,
     "quietness": 1,
     "schools": 2,
-    "safety": 2,
+    "safety": 3,
     "tram": false,
     "train": false,
     "cycling": 4,
@@ -497,13 +611,19 @@
     "detached": 1,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E9701&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Fallowfield.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E9701&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Fallowfield.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E9701&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Fallowfield.html",
+    "lat": 53.44343,
+    "lng": -2.22675,
+    "dataSources": {
+      "averageHousePrice": "Median of 283 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.3 (ranked against the other areas)"
+    }
   },
   {
     "area": "Astley",
-    "borough": "Manchester",
+    "borough": "Wigan",
     "averageRent": 1100,
-    "averageHousePrice": 290000,
+    "averageHousePrice": 260000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 4,
@@ -522,13 +642,19 @@
     "detached": 2,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E89637&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Astley.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E89637&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Astley.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E89637&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Astley.html",
+    "lat": 53.50003,
+    "lng": -2.45908,
+    "dataSources": {
+      "averageHousePrice": "Median of 155 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 5.6 (ranked against the other areas)"
+    }
   },
   {
     "area": "Newton Heath",
     "borough": "Manchester",
     "averageRent": 950,
-    "averageHousePrice": 210000,
+    "averageHousePrice": 190000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 1,
@@ -547,7 +673,13 @@
     "detached": 1,
     "value": 5,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E18316&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Newton-Heath.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E18316&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Newton-Heath.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E18316&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Newton-Heath.html",
+    "lat": 53.49639,
+    "lng": -2.18677,
+    "dataSources": {
+      "averageHousePrice": "Median of 154 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 1.5 (ranked against the other areas)"
+    }
   },
   {
     "area": "Harpurhey",
@@ -572,13 +704,19 @@
     "detached": 1,
     "value": 5,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E11948&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Harpurhey.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E11948&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Harpurhey.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E11948&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Harpurhey.html",
+    "lat": 53.50967,
+    "lng": -2.21049,
+    "dataSources": {
+      "averageHousePrice": "Median of 146 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 1.3 (ranked against the other areas)"
+    }
   },
   {
     "area": "Moston",
     "borough": "Manchester",
     "averageRent": 950,
-    "averageHousePrice": 210000,
+    "averageHousePrice": 214000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 1,
@@ -597,13 +735,19 @@
     "detached": 1,
     "value": 5,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E17641&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Moston.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E17641&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Moston.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E17641&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Moston.html",
+    "lat": 53.51367,
+    "lng": -2.18633,
+    "dataSources": {
+      "averageHousePrice": "Median of 200 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 1.5 (ranked against the other areas)"
+    }
   },
   {
     "area": "Levenshulme",
     "borough": "Manchester",
     "averageRent": 1150,
-    "averageHousePrice": 300000,
+    "averageHousePrice": 256000,
     "nightlife": 3,
     "cafes": 3,
     "greenSpace": 1,
@@ -622,13 +766,19 @@
     "detached": 1,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E14958&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Levenshulme.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E14958&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Levenshulme.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E14958&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Levenshulme.html",
+    "lat": 53.44194,
+    "lng": -2.18503,
+    "dataSources": {
+      "averageHousePrice": "Median of 378 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.8 (ranked against the other areas)"
+    }
   },
   {
     "area": "Burnage",
     "borough": "Manchester",
     "averageRent": 1100,
-    "averageHousePrice": 290000,
+    "averageHousePrice": 320000,
     "nightlife": 2,
     "cafes": 2,
     "greenSpace": 1,
@@ -647,13 +797,19 @@
     "detached": 1,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E5124&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Burnage.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E5124&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Burnage.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E5124&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Burnage.html",
+    "lat": 53.42621,
+    "lng": -2.20368,
+    "dataSources": {
+      "averageHousePrice": "Median of 357 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.3 (ranked against the other areas)"
+    }
   },
   {
     "area": "Gorton",
     "borough": "Manchester",
     "averageRent": 950,
-    "averageHousePrice": 210000,
+    "averageHousePrice": 198000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 1,
@@ -672,20 +828,26 @@
     "detached": 1,
     "value": 5,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E11006&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Gorton.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E11006&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Gorton.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E11006&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Gorton.html",
+    "lat": 53.46245,
+    "lng": -2.18186,
+    "dataSources": {
+      "averageHousePrice": "Median of 153 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 1.5 (ranked against the other areas)"
+    }
   },
   {
     "area": "Benchill",
     "borough": "Manchester",
     "averageRent": 900,
-    "averageHousePrice": 200000,
+    "averageHousePrice": 245000,
     "nightlife": 1,
     "cafes": 1,
     "greenSpace": 1,
     "culture": 1,
     "quietness": 2,
     "schools": 2,
-    "safety": 2,
+    "safety": 3,
     "tram": false,
     "train": false,
     "cycling": 2,
@@ -697,13 +859,19 @@
     "detached": 1,
     "value": 5,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E3290&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Benchill.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E3290&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Benchill.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E3290&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Benchill.html",
+    "lat": 53.3891,
+    "lng": -2.26584,
+    "dataSources": {
+      "averageHousePrice": "Median of 220 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.5 (ranked against the other areas)"
+    }
   },
   {
     "area": "Wythenshawe",
     "borough": "Manchester",
     "averageRent": 1000,
-    "averageHousePrice": 230000,
+    "averageHousePrice": 240000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 2,
@@ -722,13 +890,19 @@
     "detached": 1,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E27637&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Wythenshawe.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E27637&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Wythenshawe.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E27637&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Wythenshawe.html",
+    "lat": 53.38954,
+    "lng": -2.27129,
+    "dataSources": {
+      "averageHousePrice": "Median of 216 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.2 (ranked against the other areas)"
+    }
   },
   {
     "area": "Oldham",
     "borough": "Oldham",
     "averageRent": 900,
-    "averageHousePrice": 210000,
+    "averageHousePrice": 155000,
     "nightlife": 1,
     "cafes": 1,
     "greenSpace": 4,
@@ -747,13 +921,19 @@
     "detached": 1,
     "value": 5,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E1025&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Oldham.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E1025&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Oldham.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E1025&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Oldham.html",
+    "lat": 53.54216,
+    "lng": -2.11596,
+    "dataSources": {
+      "averageHousePrice": "Median of 107 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.2 (ranked against the other areas)"
+    }
   },
   {
     "area": "Saddleworth",
     "borough": "Oldham",
     "averageRent": 1100,
-    "averageHousePrice": 360000,
+    "averageHousePrice": 330000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 5,
@@ -772,7 +952,13 @@
     "detached": 4,
     "value": 3,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E78977&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Saddleworth.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E78977&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Saddleworth.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E78977&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Saddleworth.html",
+    "lat": 53.54861,
+    "lng": -2.00532,
+    "dataSources": {
+      "averageHousePrice": "Median of 97 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 5.9 (ranked against the other areas)"
+    }
   },
   {
     "area": "Failsworth",
@@ -797,13 +983,19 @@
     "detached": 1,
     "value": 5,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E9664&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Failsworth.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E9664&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Failsworth.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E9664&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Failsworth.html",
+    "lat": 53.5086,
+    "lng": -2.16303,
+    "dataSources": {
+      "averageHousePrice": "Median of 323 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.9 (ranked against the other areas)"
+    }
   },
   {
     "area": "Royton",
     "borough": "Oldham",
     "averageRent": 1000,
-    "averageHousePrice": 240000,
+    "averageHousePrice": 230000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 3,
@@ -822,13 +1014,19 @@
     "detached": 1,
     "value": 5,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E21231&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Royton-21231.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E21231&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Royton-21231.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E21231&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Royton-21231.html",
+    "lat": 53.56533,
+    "lng": -2.12173,
+    "dataSources": {
+      "averageHousePrice": "Median of 281 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.8 (ranked against the other areas)"
+    }
   },
   {
     "area": "Chadderton",
     "borough": "Oldham",
     "averageRent": 1000,
-    "averageHousePrice": 240000,
+    "averageHousePrice": 198000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 3,
@@ -847,20 +1045,26 @@
     "detached": 1,
     "value": 5,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E5934&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Chadderton.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E5934&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Chadderton.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E5934&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Chadderton.html",
+    "lat": 53.54442,
+    "lng": -2.13835,
+    "dataSources": {
+      "averageHousePrice": "Median of 241 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.7 (ranked against the other areas)"
+    }
   },
   {
     "area": "Lees",
     "borough": "Oldham",
     "averageRent": 1000,
-    "averageHousePrice": 250000,
+    "averageHousePrice": 185000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 4,
     "culture": 1,
     "quietness": 4,
     "schools": 3,
-    "safety": 4,
+    "safety": 3,
     "tram": false,
     "train": false,
     "cycling": 2,
@@ -872,13 +1076,19 @@
     "detached": 2,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E14843&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Lees.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E14843&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Lees.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E14843&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Lees.html",
+    "lat": 53.53799,
+    "lng": -2.07248,
+    "dataSources": {
+      "averageHousePrice": "Median of 302 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.6 (ranked against the other areas)"
+    }
   },
   {
     "area": "Delph",
     "borough": "Oldham",
     "averageRent": 1100,
-    "averageHousePrice": 300000,
+    "averageHousePrice": 280000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 5,
@@ -897,13 +1107,19 @@
     "detached": 3,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E8036&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Delph.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E8036&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Delph.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E8036&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Delph.html",
+    "lat": 53.56892,
+    "lng": -2.02358,
+    "dataSources": {
+      "averageHousePrice": "Median of 36 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.1 (ranked against the other areas)"
+    }
   },
   {
     "area": "Greenfield",
     "borough": "Oldham",
     "averageRent": 1100,
-    "averageHousePrice": 310000,
+    "averageHousePrice": 315000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 5,
@@ -922,20 +1138,26 @@
     "detached": 3,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E11342&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Greenfield-11342.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E11342&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Greenfield-11342.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E11342&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Greenfield-11342.html",
+    "lat": 53.5331,
+    "lng": -2.00509,
+    "dataSources": {
+      "averageHousePrice": "Median of 77 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.2 (ranked against the other areas)"
+    }
   },
   {
     "area": "Rochdale",
     "borough": "Rochdale",
     "averageRent": 900,
-    "averageHousePrice": 200000,
+    "averageHousePrice": 146000,
     "nightlife": 2,
     "cafes": 2,
     "greenSpace": 3,
     "culture": 2,
     "quietness": 3,
     "schools": 3,
-    "safety": 3,
+    "safety": 2,
     "tram": true,
     "train": true,
     "cycling": 2,
@@ -947,13 +1169,19 @@
     "detached": 1,
     "value": 5,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E1134&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Rochdale.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E1134&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Rochdale.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E1134&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Rochdale.html",
+    "lat": 53.61696,
+    "lng": -2.15671,
+    "dataSources": {
+      "averageHousePrice": "Median of 147 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 1.8 (ranked against the other areas)"
+    }
   },
   {
     "area": "Littleborough",
     "borough": "Rochdale",
     "averageRent": 1100,
-    "averageHousePrice": 290000,
+    "averageHousePrice": 225000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 5,
@@ -972,20 +1200,26 @@
     "detached": 3,
     "value": 3,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E811&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Littleborough.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E811&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Littleborough.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E811&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Littleborough.html",
+    "lat": 53.64386,
+    "lng": -2.09638,
+    "dataSources": {
+      "averageHousePrice": "Median of 146 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 5.1 (ranked against the other areas)"
+    }
   },
   {
     "area": "Milnrow",
     "borough": "Rochdale",
     "averageRent": 1050,
-    "averageHousePrice": 260000,
+    "averageHousePrice": 225000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 4,
     "culture": 1,
     "quietness": 4,
     "schools": 4,
-    "safety": 4,
+    "safety": 3,
     "tram": true,
     "train": false,
     "cycling": 3,
@@ -997,20 +1231,26 @@
     "detached": 2,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E17299&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Milnrow.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E17299&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Milnrow.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E17299&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Milnrow.html",
+    "lat": 53.61111,
+    "lng": -2.11294,
+    "dataSources": {
+      "averageHousePrice": "Median of 184 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.9 (ranked against the other areas)"
+    }
   },
   {
     "area": "Wardle",
     "borough": "Rochdale",
     "averageRent": 1050,
-    "averageHousePrice": 270000,
+    "averageHousePrice": 217000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 5,
     "culture": 1,
     "quietness": 4,
     "schools": 4,
-    "safety": 4,
+    "safety": 3,
     "tram": false,
     "train": false,
     "cycling": 3,
@@ -1022,20 +1262,26 @@
     "detached": 3,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E25829&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Wardle.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E25829&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Wardle.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E25829&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Wardle.html",
+    "lat": 53.64839,
+    "lng": -2.1333,
+    "dataSources": {
+      "averageHousePrice": "Median of 98 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.5 (ranked against the other areas)"
+    }
   },
   {
     "area": "Whitworth",
     "borough": "Rochdale",
     "averageRent": 1000,
-    "averageHousePrice": 240000,
+    "averageHousePrice": 195000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 5,
     "culture": 1,
     "quietness": 4,
     "schools": 3,
-    "safety": 4,
+    "safety": 3,
     "tram": false,
     "train": false,
     "cycling": 2,
@@ -1047,13 +1293,19 @@
     "detached": 2,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E26848&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Whitworth.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E26848&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Whitworth.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E26848&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Whitworth.html",
+    "lat": 53.65981,
+    "lng": -2.17453,
+    "dataSources": {
+      "averageHousePrice": "Median of 77 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.9 (ranked against the other areas)"
+    }
   },
   {
     "area": "Heywood",
     "borough": "Rochdale",
     "averageRent": 950,
-    "averageHousePrice": 210000,
+    "averageHousePrice": 190000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 3,
@@ -1072,13 +1324,19 @@
     "detached": 1,
     "value": 5,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E635&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Heywood.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E635&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Heywood.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E635&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Heywood.html",
+    "lat": 53.59367,
+    "lng": -2.22064,
+    "dataSources": {
+      "averageHousePrice": "Median of 261 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.6 (ranked against the other areas)"
+    }
   },
   {
     "area": "Middleton",
     "borough": "Rochdale",
     "averageRent": 950,
-    "averageHousePrice": 220000,
+    "averageHousePrice": 206000,
     "nightlife": 2,
     "cafes": 2,
     "greenSpace": 3,
@@ -1097,13 +1355,19 @@
     "detached": 1,
     "value": 5,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E17187&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Middleton.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E17187&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Middleton.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E17187&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Middleton.html",
+    "lat": 53.55047,
+    "lng": -2.19733,
+    "dataSources": {
+      "averageHousePrice": "Median of 288 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.9 (ranked against the other areas)"
+    }
   },
   {
     "area": "Salford Quays",
     "borough": "Salford",
     "averageRent": 1400,
-    "averageHousePrice": 300000,
+    "averageHousePrice": 193000,
     "nightlife": 3,
     "cafes": 3,
     "greenSpace": 2,
@@ -1122,20 +1386,26 @@
     "detached": 0,
     "value": 3,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E79205&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Salford-Quays.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E79205&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Salford-Quays.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E79205&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Salford-Quays.html",
+    "lat": 53.47385,
+    "lng": -2.30176,
+    "dataSources": {
+      "averageHousePrice": "Median of 226 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.4 (ranked against the other areas)"
+    }
   },
   {
     "area": "Monton",
     "borough": "Salford",
     "averageRent": 1200,
-    "averageHousePrice": 330000,
+    "averageHousePrice": 272000,
     "nightlife": 2,
     "cafes": 4,
     "greenSpace": 4,
     "culture": 2,
     "quietness": 4,
     "schools": 4,
-    "safety": 4,
+    "safety": 3,
     "tram": false,
     "train": false,
     "cycling": 3,
@@ -1147,13 +1417,19 @@
     "detached": 2,
     "value": 3,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E66193&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Monton.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E66193&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Monton.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E66193&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Monton.html",
+    "lat": 53.49195,
+    "lng": -2.35585,
+    "dataSources": {
+      "averageHousePrice": "Median of 372 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.2 (ranked against the other areas)"
+    }
   },
   {
     "area": "Worsley",
     "borough": "Salford",
     "averageRent": 1250,
-    "averageHousePrice": 390000,
+    "averageHousePrice": 341000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 4,
@@ -1172,13 +1448,19 @@
     "detached": 4,
     "value": 2,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E27507&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Worsley.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E27507&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Worsley.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E27507&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Worsley.html",
+    "lat": 53.50484,
+    "lng": -2.38664,
+    "dataSources": {
+      "averageHousePrice": "Median of 126 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.4 (ranked against the other areas)"
+    }
   },
   {
     "area": "Eccles",
     "borough": "Salford",
     "averageRent": 1000,
-    "averageHousePrice": 250000,
+    "averageHousePrice": 245000,
     "nightlife": 2,
     "cafes": 2,
     "greenSpace": 3,
@@ -1197,13 +1479,19 @@
     "detached": 1,
     "value": 5,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E9180&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Eccles.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E9180&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Eccles.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E9180&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Eccles.html",
+    "lat": 53.48288,
+    "lng": -2.33804,
+    "dataSources": {
+      "averageHousePrice": "Median of 272 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.8 (ranked against the other areas)"
+    }
   },
   {
     "area": "Boothstown",
     "borough": "Salford",
     "averageRent": 1200,
-    "averageHousePrice": 330000,
+    "averageHousePrice": 325000,
     "nightlife": 1,
     "cafes": 3,
     "greenSpace": 4,
@@ -1222,13 +1510,19 @@
     "detached": 2,
     "value": 3,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E89344&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Boothstown.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E89344&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Boothstown.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E89344&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Boothstown.html",
+    "lat": 53.50327,
+    "lng": -2.41106,
+    "dataSources": {
+      "averageHousePrice": "Median of 177 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 5.5 (ranked against the other areas)"
+    }
   },
   {
     "area": "Walkden",
     "borough": "Salford",
     "averageRent": 1050,
-    "averageHousePrice": 260000,
+    "averageHousePrice": 245000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 3,
@@ -1247,13 +1541,19 @@
     "detached": 1,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E66276&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Walkden.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E66276&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Walkden.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E66276&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Walkden.html",
+    "lat": 53.52379,
+    "lng": -2.39871,
+    "dataSources": {
+      "averageHousePrice": "Median of 282 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.3 (ranked against the other areas)"
+    }
   },
   {
     "area": "Swinton",
     "borough": "Salford",
     "averageRent": 1100,
-    "averageHousePrice": 270000,
+    "averageHousePrice": 238000,
     "nightlife": 2,
     "cafes": 2,
     "greenSpace": 3,
@@ -1272,13 +1572,19 @@
     "detached": 1,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E23879&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Swinton-23879.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E23879&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Swinton-23879.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E23879&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Swinton-23879.html",
+    "lat": 53.51222,
+    "lng": -2.34031,
+    "dataSources": {
+      "averageHousePrice": "Median of 340 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.5 (ranked against the other areas)"
+    }
   },
   {
     "area": "Pendlebury",
     "borough": "Salford",
     "averageRent": 1050,
-    "averageHousePrice": 260000,
+    "averageHousePrice": 220000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 3,
@@ -1297,13 +1603,19 @@
     "detached": 1,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E66255&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Pendlebury.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E66255&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Pendlebury.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E66255&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Pendlebury.html",
+    "lat": 53.51316,
+    "lng": -2.32342,
+    "dataSources": {
+      "averageHousePrice": "Median of 259 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.2 (ranked against the other areas)"
+    }
   },
   {
     "area": "Heaton Moor",
     "borough": "Stockport",
     "averageRent": 1300,
-    "averageHousePrice": 380000,
+    "averageHousePrice": 342000,
     "nightlife": 3,
     "cafes": 4,
     "greenSpace": 3,
@@ -1322,20 +1634,26 @@
     "detached": 2,
     "value": 3,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E72156&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Heaton-Moor.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E72156&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Heaton-Moor.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E72156&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Heaton-Moor.html",
+    "lat": 53.42273,
+    "lng": -2.18428,
+    "dataSources": {
+      "averageHousePrice": "Median of 416 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.8 (ranked against the other areas)"
+    }
   },
   {
     "area": "Bramhall",
     "borough": "Stockport",
     "averageRent": 1400,
-    "averageHousePrice": 450000,
+    "averageHousePrice": 555000,
     "nightlife": 2,
     "cafes": 3,
     "greenSpace": 4,
     "culture": 2,
     "quietness": 5,
     "schools": 5,
-    "safety": 4,
+    "safety": 5,
     "tram": false,
     "train": true,
     "cycling": 3,
@@ -1347,13 +1665,19 @@
     "detached": 4,
     "value": 2,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E4351&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Bramhall.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E4351&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Bramhall.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E4351&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Bramhall.html",
+    "lat": 53.36301,
+    "lng": -2.16228,
+    "dataSources": {
+      "averageHousePrice": "Median of 219 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 8.9 (ranked against the other areas)"
+    }
   },
   {
     "area": "Cheadle",
     "borough": "Stockport",
     "averageRent": 1250,
-    "averageHousePrice": 360000,
+    "averageHousePrice": 319000,
     "nightlife": 2,
     "cafes": 3,
     "greenSpace": 4,
@@ -1372,13 +1696,19 @@
     "detached": 3,
     "value": 2,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E305&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Cheadle.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E305&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Cheadle.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E305&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Cheadle.html",
+    "lat": 53.39202,
+    "lng": -2.20039,
+    "dataSources": {
+      "averageHousePrice": "Median of 315 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 5.1 (ranked against the other areas)"
+    }
   },
   {
     "area": "Marple",
     "borough": "Stockport",
     "averageRent": 1150,
-    "averageHousePrice": 340000,
+    "averageHousePrice": 365000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 5,
@@ -1397,13 +1727,19 @@
     "detached": 3,
     "value": 3,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E16783&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Marple.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E16783&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Marple.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E16783&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Marple.html",
+    "lat": 53.39713,
+    "lng": -2.06338,
+    "dataSources": {
+      "averageHousePrice": "Median of 219 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.6 (ranked against the other areas)"
+    }
   },
   {
     "area": "Stockport",
     "borough": "Stockport",
     "averageRent": 1150,
-    "averageHousePrice": 280000,
+    "averageHousePrice": 227000,
     "nightlife": 2,
     "cafes": 3,
     "greenSpace": 3,
@@ -1422,20 +1758,26 @@
     "detached": 1,
     "value": 5,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E1268&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Stockport.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E1268&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Stockport.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E1268&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Stockport.html",
+    "lat": 53.40802,
+    "lng": -2.15896,
+    "dataSources": {
+      "averageHousePrice": "Median of 371 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.7 (ranked against the other areas)"
+    }
   },
   {
     "area": "Broadbottom",
     "borough": "Tameside",
     "averageRent": 1050,
-    "averageHousePrice": 270000,
+    "averageHousePrice": 205000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 4,
     "culture": 1,
     "quietness": 4,
     "schools": 3,
-    "safety": 4,
+    "safety": 3,
     "tram": false,
     "train": true,
     "cycling": 3,
@@ -1447,13 +1789,19 @@
     "detached": 2,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E4668&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Broadbottom.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E4668&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Broadbottom.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E4668&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Broadbottom.html",
+    "lat": 53.44095,
+    "lng": -2.01103,
+    "dataSources": {
+      "averageHousePrice": "Median of 43 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.3 (ranked against the other areas)"
+    }
   },
   {
     "area": "Hattersley",
     "borough": "Tameside",
     "averageRent": 950,
-    "averageHousePrice": 220000,
+    "averageHousePrice": 213000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 3,
@@ -1472,13 +1820,19 @@
     "detached": 1,
     "value": 5,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=STATION%5E4337&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Hattersley-Station.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=STATION%5E4337&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Hattersley-Station.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=STATION%5E4337&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Hattersley-Station.html",
+    "lat": 53.4486,
+    "lng": -2.02812,
+    "dataSources": {
+      "averageHousePrice": "Median of 119 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.2 (ranked against the other areas)"
+    }
   },
   {
     "area": "Guide Bridge",
     "borough": "Tameside",
     "averageRent": 1000,
-    "averageHousePrice": 240000,
+    "averageHousePrice": 200000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 3,
@@ -1497,13 +1851,19 @@
     "detached": 1,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E66184&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Guide-Bridge-66184.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E66184&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Guide-Bridge-66184.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E66184&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Guide-Bridge-66184.html",
+    "lat": 53.47789,
+    "lng": -2.11248,
+    "dataSources": {
+      "averageHousePrice": "Median of 151 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3 (ranked against the other areas)"
+    }
   },
   {
     "area": "Ashton-under-Lyne",
     "borough": "Tameside",
     "averageRent": 950,
-    "averageHousePrice": 220000,
+    "averageHousePrice": 184000,
     "nightlife": 2,
     "cafes": 2,
     "greenSpace": 3,
@@ -1522,13 +1882,19 @@
     "detached": 1,
     "value": 5,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E61&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Ashton-Under-Lyne.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E61&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Ashton-Under-Lyne.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E61&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Ashton-Under-Lyne.html",
+    "lat": 53.49033,
+    "lng": -2.0938,
+    "dataSources": {
+      "averageHousePrice": "Median of 249 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.1 (ranked against the other areas)"
+    }
   },
   {
     "area": "Stalybridge",
     "borough": "Tameside",
     "averageRent": 1000,
-    "averageHousePrice": 240000,
+    "averageHousePrice": 200000,
     "nightlife": 2,
     "cafes": 2,
     "greenSpace": 4,
@@ -1547,13 +1913,19 @@
     "detached": 2,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E1257&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Stalybridge.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E1257&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Stalybridge.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E1257&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Stalybridge.html",
+    "lat": 53.48386,
+    "lng": -2.05649,
+    "dataSources": {
+      "averageHousePrice": "Median of 259 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.5 (ranked against the other areas)"
+    }
   },
   {
     "area": "Hyde",
     "borough": "Tameside",
     "averageRent": 950,
-    "averageHousePrice": 220000,
+    "averageHousePrice": 210000,
     "nightlife": 2,
     "cafes": 2,
     "greenSpace": 3,
@@ -1572,13 +1944,19 @@
     "detached": 1,
     "value": 5,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E66185&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Hyde-66185.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E66185&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Hyde-66185.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E66185&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Hyde-66185.html",
+    "lat": 53.45131,
+    "lng": -2.07981,
+    "dataSources": {
+      "averageHousePrice": "Median of 345 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.1 (ranked against the other areas)"
+    }
   },
   {
     "area": "Dukinfield",
     "borough": "Tameside",
     "averageRent": 950,
-    "averageHousePrice": 220000,
+    "averageHousePrice": 205000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 3,
@@ -1597,13 +1975,19 @@
     "detached": 1,
     "value": 5,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E444&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Dukinfield.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E444&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Dukinfield.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E444&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Dukinfield.html",
+    "lat": 53.47702,
+    "lng": -2.08193,
+    "dataSources": {
+      "averageHousePrice": "Median of 248 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.6 (ranked against the other areas)"
+    }
   },
   {
     "area": "Droylsden",
     "borough": "Tameside",
     "averageRent": 1050,
-    "averageHousePrice": 260000,
+    "averageHousePrice": 235000,
     "nightlife": 2,
     "cafes": 2,
     "greenSpace": 3,
@@ -1622,13 +2006,19 @@
     "detached": 1,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E8481&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Droylsden.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E8481&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Droylsden.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E8481&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Droylsden.html",
+    "lat": 53.48078,
+    "lng": -2.14474,
+    "dataSources": {
+      "averageHousePrice": "Median of 282 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.1 (ranked against the other areas)"
+    }
   },
   {
     "area": "Mossley",
     "borough": "Tameside",
     "averageRent": 1050,
-    "averageHousePrice": 270000,
+    "averageHousePrice": 197000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 5,
@@ -1647,13 +2037,19 @@
     "detached": 2,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E17633&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Mossley.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E17633&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Mossley.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E17633&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Mossley.html",
+    "lat": 53.51818,
+    "lng": -2.04625,
+    "dataSources": {
+      "averageHousePrice": "Median of 151 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.8 (ranked against the other areas)"
+    }
   },
   {
     "area": "Audenshaw",
     "borough": "Tameside",
     "averageRent": 1050,
-    "averageHousePrice": 260000,
+    "averageHousePrice": 219000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 3,
@@ -1672,13 +2068,19 @@
     "detached": 2,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E2504&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Audenshaw.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E2504&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Audenshaw.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E2504&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Audenshaw.html",
+    "lat": 53.47211,
+    "lng": -2.12449,
+    "dataSources": {
+      "averageHousePrice": "Median of 196 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.2 (ranked against the other areas)"
+    }
   },
   {
     "area": "Altrincham",
     "borough": "Trafford",
     "averageRent": 1500,
-    "averageHousePrice": 475000,
+    "averageHousePrice": 465000,
     "nightlife": 3,
     "cafes": 4,
     "greenSpace": 4,
@@ -1697,13 +2099,19 @@
     "detached": 4,
     "value": 2,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E33&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Altrincham.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E33&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Altrincham.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E33&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Altrincham.html",
+    "lat": 53.38809,
+    "lng": -2.35146,
+    "dataSources": {
+      "averageHousePrice": "Median of 437 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.9 (ranked against the other areas)"
+    }
   },
   {
     "area": "Sale",
     "borough": "Trafford",
     "averageRent": 1300,
-    "averageHousePrice": 360000,
+    "averageHousePrice": 380000,
     "nightlife": 2,
     "cafes": 3,
     "greenSpace": 3,
@@ -1722,20 +2130,26 @@
     "detached": 3,
     "value": 3,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E1163&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Sale.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E1163&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Sale.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E1163&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Sale.html",
+    "lat": 53.42522,
+    "lng": -2.32282,
+    "dataSources": {
+      "averageHousePrice": "Median of 427 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.6 (ranked against the other areas)"
+    }
   },
   {
     "area": "Stretford",
     "borough": "Trafford",
     "averageRent": 1150,
-    "averageHousePrice": 320000,
+    "averageHousePrice": 294000,
     "nightlife": 2,
     "cafes": 3,
     "greenSpace": 2,
     "culture": 2,
     "quietness": 3,
     "schools": 3,
-    "safety": 3,
+    "safety": 4,
     "tram": true,
     "train": false,
     "cycling": 4,
@@ -1747,13 +2161,19 @@
     "detached": 1,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E23588&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Stretford.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E23588&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Stretford.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E23588&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Stretford.html",
+    "lat": 53.44609,
+    "lng": -2.30742,
+    "dataSources": {
+      "averageHousePrice": "Median of 270 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.7 (ranked against the other areas)"
+    }
   },
   {
     "area": "Urmston",
     "borough": "Trafford",
     "averageRent": 1200,
-    "averageHousePrice": 350000,
+    "averageHousePrice": 355000,
     "nightlife": 2,
     "cafes": 3,
     "greenSpace": 3,
@@ -1772,13 +2192,19 @@
     "detached": 3,
     "value": 3,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E25570&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Urmston.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E25570&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Urmston.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E25570&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Urmston.html",
+    "lat": 53.45762,
+    "lng": -2.35776,
+    "dataSources": {
+      "averageHousePrice": "Median of 273 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.1 (ranked against the other areas)"
+    }
   },
   {
     "area": "Timperley",
     "borough": "Trafford",
     "averageRent": 1300,
-    "averageHousePrice": 360000,
+    "averageHousePrice": 436000,
     "nightlife": 2,
     "cafes": 3,
     "greenSpace": 3,
@@ -1797,20 +2223,26 @@
     "detached": 2,
     "value": 3,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E24567&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Timperley.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E24567&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Timperley.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E24567&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Timperley.html",
+    "lat": 53.39432,
+    "lng": -2.32463,
+    "dataSources": {
+      "averageHousePrice": "Median of 339 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.3 (ranked against the other areas)"
+    }
   },
   {
     "area": "Hale",
     "borough": "Trafford",
     "averageRent": 1500,
-    "averageHousePrice": 650000,
+    "averageHousePrice": 567000,
     "nightlife": 3,
     "cafes": 4,
     "greenSpace": 4,
     "culture": 3,
     "quietness": 4,
     "schools": 5,
-    "safety": 5,
+    "safety": 4,
     "tram": true,
     "train": true,
     "cycling": 3,
@@ -1822,20 +2254,26 @@
     "detached": 4,
     "value": 1,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E11649&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Hale.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E11649&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Hale.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E11649&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Hale.html",
+    "lat": 53.38,
+    "lng": -2.34018,
+    "dataSources": {
+      "averageHousePrice": "Median of 343 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 7.1 (ranked against the other areas)"
+    }
   },
   {
     "area": "Hale Barns",
     "borough": "Trafford",
     "averageRent": 1500,
-    "averageHousePrice": 700000,
+    "averageHousePrice": 854000,
     "nightlife": 1,
     "cafes": 3,
     "greenSpace": 4,
     "culture": 2,
     "quietness": 5,
     "schools": 5,
-    "safety": 5,
+    "safety": 4,
     "tram": false,
     "train": false,
     "cycling": 3,
@@ -1847,13 +2285,19 @@
     "detached": 5,
     "value": 1,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E92468&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Hale-Barns.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E92468&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Hale-Barns.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E92468&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Hale-Barns.html",
+    "lat": 53.36694,
+    "lng": -2.31394,
+    "dataSources": {
+      "averageHousePrice": "Median of 80 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 7.3 (ranked against the other areas)"
+    }
   },
   {
     "area": "Partington",
     "borough": "Trafford",
     "averageRent": 950,
-    "averageHousePrice": 220000,
+    "averageHousePrice": 245000,
     "nightlife": 1,
     "cafes": 1,
     "greenSpace": 3,
@@ -1872,20 +2316,26 @@
     "detached": 1,
     "value": 3,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E19387&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Partington.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E19387&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Partington.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E19387&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Partington.html",
+    "lat": 53.419,
+    "lng": -2.42769,
+    "dataSources": {
+      "averageHousePrice": "Median of 148 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.6 (ranked against the other areas)"
+    }
   },
   {
     "area": "Carrington",
     "borough": "Trafford",
     "averageRent": 1000,
-    "averageHousePrice": 250000,
+    "averageHousePrice": 349000,
     "nightlife": 1,
     "cafes": 1,
     "greenSpace": 3,
     "culture": 1,
     "quietness": 3,
     "schools": 3,
-    "safety": 3,
+    "safety": 4,
     "tram": false,
     "train": false,
     "cycling": 2,
@@ -1897,13 +2347,19 @@
     "detached": 1,
     "value": 3,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E5689&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=undefined",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E5689&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=undefined"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E5689&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=undefined",
+    "lat": 53.43352,
+    "lng": -2.38537,
+    "dataSources": {
+      "averageHousePrice": "Median of 52 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.2 (ranked against the other areas)"
+    }
   },
   {
     "area": "Wigan",
     "borough": "Wigan",
     "averageRent": 950,
-    "averageHousePrice": 210000,
+    "averageHousePrice": 160000,
     "nightlife": 2,
     "cafes": 2,
     "greenSpace": 3,
@@ -1922,13 +2378,19 @@
     "detached": 2,
     "value": 5,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E1452&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Wigan.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E1452&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Wigan.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E1452&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Wigan.html",
+    "lat": 53.54554,
+    "lng": -2.62969,
+    "dataSources": {
+      "averageHousePrice": "Median of 262 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.9 (ranked against the other areas)"
+    }
   },
   {
     "area": "Standish",
     "borough": "Wigan",
     "averageRent": 1100,
-    "averageHousePrice": 300000,
+    "averageHousePrice": 250000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 4,
@@ -1947,20 +2409,26 @@
     "detached": 3,
     "value": 3,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E23072&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Standish.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E23072&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Standish.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E23072&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Standish.html",
+    "lat": 53.58649,
+    "lng": -2.66408,
+    "dataSources": {
+      "averageHousePrice": "Median of 179 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6.6 (ranked against the other areas)"
+    }
   },
   {
     "area": "Shevington",
     "borough": "Wigan",
     "averageRent": 1050,
-    "averageHousePrice": 275000,
+    "averageHousePrice": 242000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 4,
     "culture": 1,
     "quietness": 4,
     "schools": 4,
-    "safety": 4,
+    "safety": 5,
     "tram": false,
     "train": false,
     "cycling": 2,
@@ -1972,13 +2440,19 @@
     "detached": 3,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E21990&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Shevington.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E21990&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Shevington.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E21990&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Shevington.html",
+    "lat": 53.57281,
+    "lng": -2.69254,
+    "dataSources": {
+      "averageHousePrice": "Median of 101 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 8 (ranked against the other areas)"
+    }
   },
   {
     "area": "Hindley",
     "borough": "Wigan",
     "averageRent": 900,
-    "averageHousePrice": 200000,
+    "averageHousePrice": 171000,
     "nightlife": 2,
     "cafes": 2,
     "greenSpace": 3,
@@ -1997,13 +2471,19 @@
     "detached": 1,
     "value": 5,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E12781&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Hindley.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E12781&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Hindley.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E12781&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Hindley.html",
+    "lat": 53.53382,
+    "lng": -2.58111,
+    "dataSources": {
+      "averageHousePrice": "Median of 163 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.4 (ranked against the other areas)"
+    }
   },
   {
     "area": "Atherton",
     "borough": "Wigan",
     "averageRent": 900,
-    "averageHousePrice": 205000,
+    "averageHousePrice": 185000,
     "nightlife": 2,
     "cafes": 2,
     "greenSpace": 3,
@@ -2022,13 +2502,19 @@
     "detached": 1,
     "value": 5,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E2461&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Atherton.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E2461&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Atherton.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E2461&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Atherton.html",
+    "lat": 53.52551,
+    "lng": -2.48723,
+    "dataSources": {
+      "averageHousePrice": "Median of 270 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 3.1 (ranked against the other areas)"
+    }
   },
   {
     "area": "Leigh",
     "borough": "Wigan",
     "averageRent": 950,
-    "averageHousePrice": 210000,
+    "averageHousePrice": 160000,
     "nightlife": 2,
     "cafes": 2,
     "greenSpace": 3,
@@ -2047,20 +2533,26 @@
     "detached": 1,
     "value": 5,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E790&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Leigh.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E790&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Leigh.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E790&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Leigh.html",
+    "lat": 53.49735,
+    "lng": -2.51883,
+    "dataSources": {
+      "averageHousePrice": "Median of 295 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 2.9 (ranked against the other areas)"
+    }
   },
   {
     "area": "Golborne",
     "borough": "Wigan",
     "averageRent": 1000,
-    "averageHousePrice": 230000,
+    "averageHousePrice": 229000,
     "nightlife": 2,
     "cafes": 2,
     "greenSpace": 3,
     "culture": 1,
     "quietness": 3,
     "schools": 3,
-    "safety": 3,
+    "safety": 4,
     "tram": false,
     "train": false,
     "cycling": 2,
@@ -2072,13 +2564,19 @@
     "detached": 2,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E10905&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Golborne.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E10905&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Golborne.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E10905&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Golborne.html",
+    "lat": 53.47533,
+    "lng": -2.59769,
+    "dataSources": {
+      "averageHousePrice": "Median of 181 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.7 (ranked against the other areas)"
+    }
   },
   {
     "area": "Lowton",
     "borough": "Wigan",
     "averageRent": 1100,
-    "averageHousePrice": 280000,
+    "averageHousePrice": 250000,
     "nightlife": 1,
     "cafes": 2,
     "greenSpace": 4,
@@ -2097,20 +2595,26 @@
     "detached": 3,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E16359&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Lowton.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E16359&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Lowton.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E16359&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Lowton.html",
+    "lat": 53.47812,
+    "lng": -2.5759,
+    "dataSources": {
+      "averageHousePrice": "Median of 228 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 5.3 (ranked against the other areas)"
+    }
   },
   {
     "area": "Ashton-in-Makerfield",
     "borough": "Wigan",
     "averageRent": 1000,
-    "averageHousePrice": 230000,
+    "averageHousePrice": 200000,
     "nightlife": 2,
     "cafes": 2,
     "greenSpace": 3,
     "culture": 1,
     "quietness": 3,
     "schools": 3,
-    "safety": 3,
+    "safety": 4,
     "tram": false,
     "train": false,
     "cycling": 2,
@@ -2122,20 +2626,26 @@
     "detached": 2,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E2347&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Ashton-In-Makerfield.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E2347&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Ashton-In-Makerfield.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E2347&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Ashton-In-Makerfield.html",
+    "lat": 53.48858,
+    "lng": -2.63851,
+    "dataSources": {
+      "averageHousePrice": "Median of 212 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 6 (ranked against the other areas)"
+    }
   },
   {
     "area": "Tyldesley",
     "borough": "Wigan",
     "averageRent": 1000,
-    "averageHousePrice": 240000,
+    "averageHousePrice": 215000,
     "nightlife": 2,
     "cafes": 2,
     "greenSpace": 3,
     "culture": 1,
     "quietness": 3,
     "schools": 3,
-    "safety": 3,
+    "safety": 4,
     "tram": false,
     "train": false,
     "cycling": 2,
@@ -2147,6 +2657,12 @@
     "detached": 2,
     "value": 4,
     "BuyURL": "https://www.rightmove.co.uk/property-for-sale/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E25267&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Tyldesley.html",
-    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E25267&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Tyldesley.html"
+    "RentURL": "https://www.rightmove.co.uk/property-to-rent/find.html?useLocationIdentifier=true&locationIdentifier=REGION%5E25267&_includeSSTC=on&index=0&sortType=2&channel=BUY&transactionType=BUY&displayLocationIdentifier=Tyldesley.html",
+    "lat": 53.51399,
+    "lng": -2.46725,
+    "dataSources": {
+      "averageHousePrice": "Median of 221 HM Land Registry sales within 1.5 km, 2025-09 to 2026-08",
+      "safety": "English Indices of Deprivation 2025 crime domain, average national decile 4.6 (ranked against the other areas)"
+    }
   }
 ]
