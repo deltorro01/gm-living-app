@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://whereshouldiliveinthe.uk/sitemap.xml
+Sitemap: https://www.whereshouldiliveinthe.uk/sitemap.xml

@@ -543,7 +543,7 @@ export default function App() {
             <div>
 
               <p className="muted">
-                Showing {visibleResults.length} of {results.length} areas
+                Showing {top3.length + visibleResults.length} of {results.length} areas
               </p>
             </div>
           </div>
@@ -551,7 +551,7 @@ export default function App() {
           <div className="results-list">
             {visibleResults.map((area, idx) => (
               <div key={area.area} className="result-card">
-                <div className="result-rank">{idx + 1}</div>
+                <div className="result-rank">{idx + 4}</div>
 
                 <div className="result-main">
                   <div className="result-title-row">
