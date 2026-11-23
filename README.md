@@ -18,6 +18,7 @@ To create the production build, run `npm run build`. The output goes to the `dis
 - `src/App.jsx`: the app, including the preference form, scoring, filters and results.
 - `src/explain.js`: the plain-English "Why this match?" reasons for each area.
 - `src/ResultParts.jsx`: the "Why this match?" panel, the Compare button and the comparison table.
+- `src/bands.js`: the fit labels (Excellent, Strong, Good, Worth a look) and their score thresholds and map colours.
 - `src/urlState.js`: keeps the settings, filters and compared areas in the web address so results can be shared.
 - `src/AreaMap.jsx`: the results map (Leaflet with OpenStreetMap tiles). It only downloads when someone opens the map.
 - `src/styles.css`: all styling.

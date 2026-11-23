@@ -20,7 +20,7 @@ The final score is a weighted total of these parts:
 | Schools | 6% |
 | Cycling | 4% |
 
-The weights add up to 100%. A tram or train requirement can then add or subtract points (see "Non-negotiable requirements" below).
+The weights add up to 100%.
 
 ## Lifestyle sliders: how a rating is matched
 
@@ -68,17 +68,30 @@ The life-stage score combines the other parts using different weights for each s
 - **First-time buyer:** affordability 28%, value 24%, safety 20%, commute 14%, cafés 7%, green space 7%.
 - **Downsizer:** quietness 28%, safety 24%, green space 20%, affordability 12%, commute 8%, schools 8%.
 
-## Non-negotiable requirements
+## Must-haves (filters)
 
-- **Tram access needed:** +5 if the area has tram access, −10 if it doesn't.
-- **Train access needed:** +5 if the area has train access, −10 if it doesn't.
+The "Must-haves" in the "Refine your results" panel hide areas instead of changing scores:
 
-These are the only non-negotiables currently implemented.
+- **Within my budget:** hides areas that cost more than the budget.
+- **With a tram stop / With a train station:** hides areas without one.
+- **Borough:** shows one borough only.
+
+Filters never change an area's score, so an area's match is the same whether or not a filter is on.
+
+## Fit labels
+
+Each score gets a label, used on the result cards and as the map colour (`src/bands.js`):
+
+| Score | Label |
+|---|---|
+| 92 to 100 | Excellent fit |
+| 82 to 92 | Strong fit |
+| 65 to 81 | Good fit |
+| Below 65 | Worth a look |
 
 ## Known limitations
 
 - The weights, life-stage mixes and commute bands are fixed in the code and have not been validated against real data.
-- Only tram and train are treated as non-negotiable requirements.
 - The Hybrid and Work from home commute options use raw ratings rather than the sliders.
 
 Any change to these rules will change existing rankings, so it should be agreed and tested before it is made.
@@ -86,3 +99,4 @@ Any change to these rules will change existing rankings, so it should be agreed 
 ## Change history
 
 - **November 2026:** green space, value for money, schools, safety and cycling changed from "closest match" to "meets or beats". Affordability changed so that any area within budget scores 100; previously areas at 75% of budget or less scored 78 and those at 75% to 90% scored 90. The weights did not change.
+- **November 2026:** the tram and train "must-have" buttons, which added 5 points to areas with access and took 10 from those without, were merged into the tram and train filters, which hide areas without access. Among the areas shown, the order is the same as before, except where the old bonus pushed several areas to 100 and they tied. The fit-label thresholds were raised from 85 / 72 / 58 to 92 / 82 / 65, so the labels appear about as often as before the scoring change: across a range of typical settings the best match is "Excellent" about 60% of the time (66% before), and about half of all results are "Strong" or better (52% before).

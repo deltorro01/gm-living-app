@@ -15,8 +15,6 @@ export const DEFAULTS = {
   schools: 2,
   safety: 3,
   cycling: 3,
-  needTram: false,
-  needTrain: false,
   borough: "",
   withinBudget: false,
   tramOnly: false,
@@ -37,8 +35,6 @@ const FIELDS = {
   schools: ["schools", "int", [1, 5]],
   safety: ["safety", "int", [1, 5]],
   cycling: ["cycling", "int", [1, 5]],
-  needTram: ["needtram", "bool"],
-  needTrain: ["needtrain", "bool"],
   borough: ["borough", "text"],
   withinBudget: ["inbudget", "bool"],
   tramOnly: ["tramstop", "bool"],
@@ -62,12 +58,18 @@ export function readSettings() {
     if (type === "text") settings[name] = raw.slice(0, 60);
     if (type === "list") settings[name] = raw.split("|").filter(Boolean).slice(0, 3);
   }
+  // Older links used separate "must-have" settings; they now switch on the filters.
+  if (params.get(LEGACY.needtram) === "1") settings.tramOnly = true;
+  if (params.get(LEGACY.needtrain) === "1") settings.trainOnly = true;
   return settings;
 }
+
+const LEGACY = { needtram: "needtram", needtrain: "needtrain" };
 
 export function writeSettings(settings) {
   if (typeof window === "undefined") return;
   const params = new URLSearchParams(window.location.search);
+  for (const key of Object.values(LEGACY)) params.delete(key);
   for (const [name, [key, type]] of Object.entries(FIELDS)) {
     const value = settings[name];
     const isDefault = type === "list" ? value.length === 0 : value === DEFAULTS[name];

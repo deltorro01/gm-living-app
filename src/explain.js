@@ -53,10 +53,6 @@ export function explainMatch(area, settings) {
     else if (mins > 40) watch.push(`Long trip to the city centre (about ${mins} mins)`);
   }
 
-  // Must-have transport
-  if (settings.needTram) (area.tram ? good : watch).push(area.tram ? "Has a tram stop" : "No tram stop");
-  if (settings.needTrain) (area.train ? good : watch).push(area.train ? "Has a train station" : "No train station");
-
   // Sliders: shortfalls first (they cost points), then clear strengths
   for (const s of AT_LEAST) {
     const wanted = settings[s.key];

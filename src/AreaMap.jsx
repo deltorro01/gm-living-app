@@ -5,15 +5,9 @@
 import { useEffect, useRef } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import { FIT_BANDS as BANDS, fitBand } from "./bands.js";
 
-export const BANDS = [
-  { min: 85, label: "Excellent fit", color: "#059669" },
-  { min: 72, label: "Strong fit", color: "#2563eb" },
-  { min: 58, label: "Good fit", color: "#d97706" },
-  { min: 0, label: "Worth a look", color: "#94a3b8" },
-];
-
-const colorFor = (score) => BANDS.find((b) => score >= b.min).color;
+const colorFor = (score) => fitBand(score).color;
 
 function escapeHtml(text) {
   return String(text).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);

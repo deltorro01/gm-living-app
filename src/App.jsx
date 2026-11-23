@@ -3,6 +3,7 @@ import areas from "./areas.json";
 import "./styles.css";
 import { readSettings, writeSettings } from "./urlState.js";
 import { WhyThisMatch, CompareButton, CompareView } from "./ResultParts.jsx";
+import { fitBand } from "./bands.js";
 
 // The map (and the Leaflet library) only downloads when someone opens it.
 const AreaMap = lazy(() => import("./AreaMap.jsx"));
@@ -26,10 +27,7 @@ function to100(value) {
 }
 
 function scoreBand(score) {
-  if (score >= 85) return "Excellent fit";
-  if (score >= 72) return "Strong fit";
-  if (score >= 58) return "Good fit";
-  return "Worth a look";
+  return fitBand(score).label;
 }
 
 function SliderField({ label, value, min, max, step = 1, onChange, format }) {
@@ -176,23 +174,6 @@ function getLifeStageScore(area, lifeStage, scores) {
   return 50;
 }
 
-function getRequirementAdjustment(area, needTram, needTrain) {
-  let bonus = 0;
-  let penalty = 0;
-
-  if (needTram) {
-    if (area.tram) bonus += 5;
-    else penalty += 10;
-  }
-
-  if (needTrain) {
-    if (area.train) bonus += 5;
-    else penalty += 10;
-  }
-
-  return { net: bonus - penalty };
-}
-
 export default function App() {
 
   const DEFAULT_VISIBLE = 10;
@@ -212,9 +193,6 @@ export default function App() {
   const [schoolPriority, setSchoolPriority] = useState(initial.schools);
   const [safetyPriority, setSafetyPriority] = useState(initial.safety);
   const [cyclingPriority, setCyclingPriority] = useState(initial.cycling);
-
-  const [needTram, setNeedTram] = useState(initial.needTram);
-  const [needTrain, setNeedTrain] = useState(initial.needTrain);
 
   const [showAdvanced, setShowAdvanced] = useState(false);
   const [visibleCount, setVisibleCount] = useState(DEFAULT_VISIBLE);
@@ -249,11 +227,6 @@ export default function App() {
       };
 
       const lifeStageScore = getLifeStageScore(area, lifeStage, scores);
-      const requirementAdjustment = getRequirementAdjustment(
-        area,
-        needTram,
-        needTrain
-      );
 
       const finalScore = clamp(
   scores.affordability * 0.18 +
@@ -264,8 +237,7 @@ export default function App() {
     scores.value * 0.07 +
     scores.schools * 0.06 +
     scores.cycling * 0.04 +
-    scores.safety * 0.08 +
-    requirementAdjustment.net
+    scores.safety * 0.08
 );
 
       return {
@@ -275,7 +247,6 @@ export default function App() {
           affordability: Math.round(scores.affordability),
           lifestyle: Math.round(lifeStageScore),
           commute: Math.round(scores.commute),
-          requirements: requirementAdjustment.net,
         },
       };
     });
@@ -296,8 +267,6 @@ export default function App() {
     cyclingPriority,
     safetyPriority,
     lifeStage,
-    needTram,
-    needTrain,
   ]);
 
   const settings = {
@@ -312,8 +281,6 @@ export default function App() {
     schools: schoolPriority,
     safety: safetyPriority,
     cycling: cyclingPriority,
-    needTram,
-    needTrain,
   };
 
   // Keep the web address in step with the settings, so it can be shared.
@@ -386,7 +353,7 @@ export default function App() {
             </h1>
 
               <p className="muted" style={{ marginTop: 0 }}>
-                Adjust the core filters, then open more filters when needed.
+                Set the basics, then open more preferences when needed.
             </p>
             </div>
           </div>
@@ -478,7 +445,7 @@ export default function App() {
               className={showAdvanced ? "btn btn-primary more-filters-btn" : "btn btn-secondary more-filters-btn"}
               onClick={() => setShowAdvanced(!showAdvanced)}
             >
-            {showAdvanced ? "Hide more filters" : "More filters"}
+            {showAdvanced ? "Hide more preferences" : "More preferences"}
             </button>
           </div>
 
@@ -536,30 +503,6 @@ export default function App() {
                 onChange={setCyclingPriority}
               />
 
-              <div className="field-group">
-  <label>Must-have transport</label>
-  <div className="button-row transport-toggle-row">
-    <button
-      type="button"
-      className={needTram ? "btn btn-primary transport-toggle is-selected" : "btn btn-secondary transport-toggle"}
-      onClick={() => setNeedTram(!needTram)}
-      aria-pressed={needTram}
-    >
-      <span>Tram</span>
-      {needTram ? <span className="transport-tick">✓</span> : null}
-    </button>
-
-    <button
-      type="button"
-      className={needTrain ? "btn btn-primary transport-toggle is-selected" : "btn btn-secondary transport-toggle"}
-      onClick={() => setNeedTrain(!needTrain)}
-      aria-pressed={needTrain}
-    >
-      <span>Train</span>
-      {needTrain ? <span className="transport-tick">✓</span> : null}
-    </button>
-  </div>
-</div>
             </div>
           )}
         </div>
@@ -590,7 +533,7 @@ export default function App() {
               </select>
             </div>
             <div className="field-group">
-              <label>Only show areas</label>
+              <label>Must-haves: only show areas</label>
               <div className="button-row transport-toggle-row">
                 {filterToggle("Within my budget", withinBudget, setWithinBudget)}
                 {filterToggle("With a tram stop", tramOnly, setTramOnly)}
