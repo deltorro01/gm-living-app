@@ -1,6 +1,6 @@
 # How the match score works
 
-This document describes how each area's match score is calculated in `src/App.jsx`. It reflects the current behaviour, which is deliberately kept as it is. The scoring is a known area for future improvement (see the end of this document).
+This document describes how each area's match score is calculated in `src/App.jsx`. Any change to these rules changes the rankings, so it should be agreed and tested before it is made (see "Change history" at the end).
 
 ## Overview
 
@@ -24,12 +24,18 @@ The weights add up to 100%. A tram or train requirement can then add or subtract
 
 ## Lifestyle sliders: how a rating is matched
 
-Each lifestyle slider (1 to 5) is compared with the area's rating for that category (1 to 5):
+Each lifestyle slider (1 to 5) is compared with the area's rating for that category (1 to 5). There are two rules.
 
-- **Match = 100 − (22 × difference)**, limited to the range 0 to 100.
-- An exact match scores 100. A difference of 1 scores 78, 2 scores 56, 3 scores 34, and 4 or more scores 12 or less.
+**Meets or beats** (green space, value for money, schools, safety, cycling): the slider is treated as "at least this good".
 
-This means the score rewards areas whose rating is **close to** the slider setting, not areas with the highest rating. For example, if green space is set to 3, an area rated 5 scores lower than an area rated 3. This applies to nightlife, green space, value, schools, cycling and safety.
+- An area rated at or above the slider scores 100.
+- Each point below the slider loses 22: **Match = 100 − (22 × shortfall)**, limited to 0 to 100. One point short scores 78, two 56, three 34, four 12.
+- For example, with green space set to 3, areas rated 3, 4 and 5 all score 100, and an area rated 2 scores 78.
+
+**Closest match** (nightlife only): the slider is treated as "about this much".
+
+- **Match = 100 − (22 × difference)**, limited to 0 to 100, where the difference can be above or below the slider.
+- This keeps a low nightlife setting meaningful: someone who sets it to 1 prefers quieter areas, and an area rated 5 for nightlife scores 12.
 
 ## Affordability
 
@@ -37,9 +43,7 @@ The area's average cost is divided by the user's budget:
 
 | Cost as a share of budget | Score |
 |---|---|
-| 75% or less | 78 |
-| 75% to 90% | 90 |
-| 90% to 100% | 100 |
+| 100% or less (within budget) | 100 |
 | 100% to 110% | 78 |
 | 110% to 120% | 55 |
 | 120% to 135% | 30 |
@@ -73,8 +77,12 @@ These are the only non-negotiables currently implemented.
 
 ## Known limitations
 
-- The preference matching rewards closeness to the slider, as described above. A highly rated area can rank below an average one for a user who sets a lower slider value.
 - The weights, life-stage mixes and commute bands are fixed in the code and have not been validated against real data.
 - Only tram and train are treated as non-negotiable requirements.
+- The Hybrid and Work from home commute options use raw ratings rather than the sliders.
 
 Any change to these rules will change existing rankings, so it should be agreed and tested before it is made.
+
+## Change history
+
+- **November 2026:** green space, value for money, schools, safety and cycling changed from "closest match" to "meets or beats". Affordability changed so that any area within budget scores 100; previously areas at 75% of budget or less scored 78 and those at 75% to 90% scored 90. The weights did not change.

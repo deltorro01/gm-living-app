@@ -60,8 +60,6 @@ function getAffordabilityScore(area, budgetType, monthlyBudget, buyBudget) {
 
   const ratio = cost / budget;
 
-  if (ratio <= 0.75) return 78;
-  if (ratio <= 0.9) return 90;
   if (ratio <= 1.0) return 100;
   if (ratio <= 1.1) return 78;
   if (ratio <= 1.2) return 55;
@@ -69,9 +67,17 @@ function getAffordabilityScore(area, budgetType, monthlyBudget, buyBudget) {
   return 8;
 }
 
+// Closest match: best when the area's rating equals the slider (used for nightlife,
+// where a low setting can mean "somewhere quiet").
 function getPreferenceMatch(areaValue, desiredValue) {
   const diff = Math.abs(areaValue - desiredValue);
   return clamp(100 - diff * 22);
+}
+
+// Meets or beats: full marks when the area's rating is at or above the slider.
+function getAtLeastMatch(areaValue, desiredValue) {
+  const shortfall = Math.max(0, desiredValue - areaValue);
+  return clamp(100 - shortfall * 22);
 }
 
 function getCommuteScore(area, commutePreference) {
@@ -213,11 +219,11 @@ export default function App() {
           buyBudget
         ),
         nightlife: getPreferenceMatch(area.nightlife, nightlifePriority),
-        green: getPreferenceMatch(area.greenSpace, greenPriority),
-        value: getPreferenceMatch(area.value, valuePriority),
-        schools: getPreferenceMatch(area.schools, schoolPriority),
-        cycling: getPreferenceMatch(area.cycling, cyclingPriority),
-        safety: getPreferenceMatch(area.safety, safetyPriority),
+        green: getAtLeastMatch(area.greenSpace, greenPriority),
+        value: getAtLeastMatch(area.value, valuePriority),
+        schools: getAtLeastMatch(area.schools, schoolPriority),
+        cycling: getAtLeastMatch(area.cycling, cyclingPriority),
+        safety: getAtLeastMatch(area.safety, safetyPriority),
         commute: getCommuteScore(area, commutePreference),
       };
 
