@@ -2,6 +2,7 @@
 // the compare button and the side-by-side comparison table.
 
 import { explainMatch } from "./explain.js";
+import { areaPath } from "./slug.js";
 
 export function WhyThisMatch({ area, settings }) {
   const { good, watch } = explainMatch(area, settings);
@@ -75,7 +76,7 @@ export function CompareView({ areas, settings, money, onRemove, onClose }) {
               </th>
               {areas.map((a) => (
                 <th key={a.area} scope="col">
-                  {a.area}
+                  <a href={areaPath(a.area)}>{a.area}</a>
                   <button type="button" className="compare-remove" onClick={() => onRemove(a.area)} aria-label={`Remove ${a.area}`}>
                     ×
                   </button>

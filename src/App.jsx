@@ -4,6 +4,7 @@ import "./styles.css";
 import { readSettings, writeSettings } from "./urlState.js";
 import { WhyThisMatch, CompareButton, CompareView } from "./ResultParts.jsx";
 import { fitBand } from "./bands.js";
+import { areaPath } from "./slug.js";
 
 // The map (and the Leaflet library) only downloads when someone opens it.
 const AreaMap = lazy(() => import("./AreaMap.jsx"));
@@ -744,6 +745,9 @@ function PropertyLinks({ area, hero = false }) {
           View for sale
         </a>
       )}
+      <a href={areaPath(area.area)} className="btn compare-btn area-guide-link">
+        Area guide
+      </a>
     </>
   );
 }

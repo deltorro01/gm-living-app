@@ -28,7 +28,9 @@ To create the production build, run `npm run build`. The output goes to the `dis
 - `vercel.json`: routing for the Manchester page.
 - `public/`: files served as they are, such as the favicon, robots file, sitemap and the Manchester share image.
 - `SCORING.md`: how the match score is calculated.
-- `scripts/prerender.mjs`: runs after `vite build` and writes the app's HTML into the built pages so search engines can read it.
+- `src/AreaPage.jsx`: the guide page for each area (for example `/manchester/ancoats`). These are plain pages built at build time and load no JavaScript.
+- `src/slug.js`: turns area names into page addresses (`Hale Barns` becomes `/manchester/hale-barns`).
+- `scripts/prerender.mjs`: runs after `vite build`. It writes the app's HTML into the home and Manchester pages so search engines can read it, links the area names on the Manchester page, writes the 86 area guide pages to `dist/manchester/<area>/index.html`, and writes `dist/sitemap.xml`. The sitemap is generated, so there is no `public/sitemap.xml` to edit.
 - `scripts/data/`: scripts that calculate figures from official data (see "Data sources" below).
 
 ## Data sources
