@@ -87,7 +87,7 @@ function linkAreaNames(fallback, ssr) {
   return { out, linked };
 }
 
-function areaPageHtml(template, ssr, area, bodyHtml) {
+function areaPageHtml(template, ssr, area, bodyHtml, photo) {
   const url = `${ssr.SITE_URL}${ssr.areaPath(area.area)}`;
   const title = `Living in ${area.area}, Greater Manchester: Rent, House Prices, Commute and Safety`;
   const description = ssr.areaDescription(area);
@@ -109,6 +109,15 @@ function areaPageHtml(template, ssr, area, bodyHtml) {
   html = replaceOnce(html, /<meta\s+property="og:title"\s+content="[^"]*"\s*\/>/, `<meta property="og:title" content="${escapeHtml(title)}" />`, "og:title");
   html = replaceOnce(html, /<meta\s+property="og:description"\s+content="[^"]*"\s*\/>/, `<meta property="og:description" content="${escapeHtml(description)}" />`, "og:description");
   html = replaceOnce(html, /<meta\s+property="og:url"\s+content="[^"]*"\s*\/>/, `<meta property="og:url" content="${url}" />`, "og:url");
+  if (photo) {
+    // Share image: this area's own photo instead of the general Manchester one.
+    html = replaceOnce(
+      html,
+      /<meta\s+property="og:image"\s+content="[^"]*"\s*\/>/,
+      `<meta property="og:image" content="${ssr.SITE_URL}${photo.src}" />\n<meta property="og:image:alt" content="${escapeHtml(photo.alt)}" />`,
+      "og:image"
+    );
+  }
   // Static page: drop the app's JavaScript, keep its stylesheet.
   html = replaceOnce(html, /\s*<script type="module"[^>]*><\/script>/, "", "app script");
   html = html.replace(/\s*<link rel="modulepreload"[^>]*>/g, "");
@@ -162,10 +171,11 @@ try {
 
   // 2. Area guide pages
   for (const area of ssr.areas) {
-    const body = renderToStaticMarkup(React.createElement(ssr.AreaPage, { area, areas: ssr.areas }));
+    const photo = ssr.areaPhotos[area.area];
+    const body = renderToStaticMarkup(React.createElement(ssr.AreaPage, { area, areas: ssr.areas, photo }));
     const dir = resolve(dist, "manchester", ssr.areaSlug(area.area));
     await mkdir(dir, { recursive: true });
-    await writeFile(resolve(dir, "index.html"), areaPageHtml(manchesterHtml, ssr, area, body));
+    await writeFile(resolve(dir, "index.html"), areaPageHtml(manchesterHtml, ssr, area, body, photo));
   }
   console.log(`wrote ${ssr.areas.length} area pages to dist/manchester/<area>/index.html`);
 

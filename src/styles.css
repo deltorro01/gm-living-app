@@ -932,6 +932,30 @@ hr,
   align-items: center;
 }
 
+.area-photo {
+  margin: -6px -6px 20px;
+}
+
+.area-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  background: #e2e8f0;
+}
+
+.area-photo figcaption {
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--text-faint);
+}
+
+.area-photo figcaption a {
+  color: inherit;
+}
+
 .breadcrumb {
   margin-bottom: 16px;
   font-size: 14px;

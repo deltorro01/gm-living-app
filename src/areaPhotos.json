@@ -1,0 +1,852 @@
+{
+  "Bolton": {
+    "src": "/images/areas/bolton.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "David Dixon",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Bolton_Town_Hall,_Victoria_Square_(geograph_7172391).jpg",
+    "alt": "Bolton’s imposing town hall stands in Victoria Square (once the site of the town's market)"
+  },
+  "Horwich": {
+    "src": "/images/areas/horwich.jpg",
+    "width": 960,
+    "height": 640,
+    "author": "David Dixon",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Brownlow_Road,_Horwich_-_geograph.org.uk_-_6198972.jpg",
+    "alt": "Brownlow Road, Horwich"
+  },
+  "Kearsley": {
+    "src": "/images/areas/kearsley.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "David Dixon",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Manchester_Road,_Kearsley_-_geograph.org.uk_-_1765588.jpg",
+    "alt": "Manchester Road, Kearsley"
+  },
+  "Westhoughton": {
+    "src": "/images/areas/westhoughton.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "David Dixon",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Market_Street,_Westhoughton_-_geograph.org.uk_-_2042157.jpg",
+    "alt": "Market Street, Westhoughton"
+  },
+  "Farnworth": {
+    "src": "/images/areas/farnworth.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "David Ingham from Bury, Greater Manchester, England",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Farnworth_Town_Hall.jpg",
+    "alt": "The former Farnworth Town Hall on Market Street, Farnworth, Greater Manchester, England"
+  },
+  "Little Lever": {
+    "src": "/images/areas/little-lever.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Gene Hunt",
+    "licence": "CC BY 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Market_Street,_Little_Lever_-_panoramio.jpg",
+    "alt": "Market Street, Little Lever"
+  },
+  "Blackrod": {
+    "src": "/images/areas/blackrod.jpg",
+    "width": 960,
+    "height": 701,
+    "author": "David Dixon",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:The_Parish_Church_of_Saint_Katharine_Blackrod_-_geograph.org.uk_-_2350688.jpg",
+    "alt": "The Parish Church of Saint Katharine Blackrod"
+  },
+  "Prestwich": {
+    "src": "/images/areas/prestwich.jpg",
+    "width": 960,
+    "height": 678,
+    "author": "Gerald England",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Bury_New_Road_-_geograph.org.uk_-_5646982.jpg",
+    "alt": "Prestwich: Bury New Road"
+  },
+  "Whitefield": {
+    "src": "/images/areas/whitefield.jpg",
+    "width": 960,
+    "height": 645,
+    "author": "Bill Boaden",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Morrisons_in_Whitefield_-_geograph.org.uk_-_2523679.jpg",
+    "alt": "Morrisons in Whitefield"
+  },
+  "Ramsbottom": {
+    "src": "/images/areas/ramsbottom.jpg",
+    "width": 960,
+    "height": 640,
+    "author": "David Dixon",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ramsbottom_Market_Place,_The_Tilted_Vase_-_geograph.org.uk_-_6988783.jpg",
+    "alt": "Ramsbottom Market Place, The Tilted Vase"
+  },
+  "Radcliffe": {
+    "src": "/images/areas/radcliffe.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Bill Boaden",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Church_of_St_Thomas_%5E_St_John_-_geograph.org.uk_-_7093340.jpg",
+    "alt": "Radcliffe: Church of St Thomas &amp; St John"
+  },
+  "Tottington": {
+    "src": "/images/areas/tottington.jpg",
+    "width": 960,
+    "height": 640,
+    "author": "jolmartyn",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Market_Street_Tottington_-_panoramio.jpg",
+    "alt": "Market Street Tottington"
+  },
+  "Ainsworth": {
+    "src": "/images/areas/ainsworth.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "David Dixon",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:The_Presbyterian_(Unitarian)_Church,_Knowsley_Road_-_geograph.org.uk_-_1707302.jpg",
+    "alt": "The Presbyterian (Unitarian) Church, Knowsley Road The Grade II listed Church in Knowsley Road is one of the oldest b…"
+  },
+  "Bury": {
+    "src": "/images/areas/bury.jpg",
+    "width": 960,
+    "height": 718,
+    "author": "Tricia Neal",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Gallipoli_Gardens,_Bury_-_geograph.org.uk_-_3842119.jpg",
+    "alt": "Gallipoli Gardens, Bury"
+  },
+  "Ancoats": {
+    "src": "/images/areas/ancoats.jpg",
+    "width": 960,
+    "height": 1038,
+    "author": "Peter McDermott",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pigeon_Street_-_geograph.org.uk_-_7841886.jpg",
+    "alt": "Ancoats: Pigeon Street"
+  },
+  "Northern Quarter": {
+    "src": "/images/areas/northern-quarter.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "David Dixon",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Street_Art_on_the_Tib_Street_Substation_-_geograph.org.uk_-_6530766.jpg",
+    "alt": "Northern Quarter: Street Art on the Tib Street Substation"
+  },
+  "Chorlton": {
+    "src": "/images/areas/chorlton.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Phil Champion",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Chorlton_Green_-_geograph.org.uk_-_266976.jpg",
+    "alt": "Chorlton Green Looking north from the southern tip of the green towards the black and white front of the Horse &amp;…"
+  },
+  "Didsbury": {
+    "src": "/images/areas/didsbury.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Coradia1000",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Didsbury_clock_tower.jpg",
+    "alt": "Photo of the Clock Tower in Didsbury Village, Manchester, prior to the 2009 renovation"
+  },
+  "Withington": {
+    "src": "/images/areas/withington.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Ian S",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:The_Red_Lion_on_Wilmslow_Road_-_geograph.org.uk_-_2587334.jpg",
+    "alt": "Withington: The Red Lion on Wilmslow Road"
+  },
+  "Fallowfield": {
+    "src": "/images/areas/fallowfield.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Gene Hunt",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Wilmslow_Road,_Fallowfield.jpg",
+    "alt": "Wilmslow Road in Fallowfield, Manchester, England"
+  },
+  "Astley": {
+    "src": "/images/areas/astley.jpg",
+    "width": 960,
+    "height": 640,
+    "author": "Bill Boaden",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Lark_Hill_-_geograph.org.uk_-_5951167.jpg",
+    "alt": "Astley: Lark Hill"
+  },
+  "Newton Heath": {
+    "src": "/images/areas/newton-heath.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Richard Vince",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Halliday_Road,_Newton_Heath_-_geograph.org.uk_-_8194387.jpg",
+    "alt": "Halliday Road, Newton Heath"
+  },
+  "Harpurhey": {
+    "src": "/images/areas/harpurhey.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Gene Hunt",
+    "licence": "CC BY 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Church_Lane,_Harpurhey_-_panoramio.jpg",
+    "alt": "Church Lane, Harpurhey"
+  },
+  "Moston": {
+    "src": "/images/areas/moston.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "David Dixon",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:St_Dunstan%27s_Church,_Moston.jpg",
+    "alt": "Photograph of St Dunstan's Church, Moston, Manchester, England"
+  },
+  "Levenshulme": {
+    "src": "/images/areas/levenshulme.jpg",
+    "width": 960,
+    "height": 721,
+    "author": "Gerald England",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Traffic_calming_in_Levenshulme_-_geograph.org.uk_-_7028233.jpg",
+    "alt": "Traffic calming in Levenshulme"
+  },
+  "Burnage": {
+    "src": "/images/areas/burnage.jpg",
+    "width": 960,
+    "height": 640,
+    "author": "Stephen McKay",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Errwood_Road,_Burnage_-_geograph.org.uk_-_7951615.jpg",
+    "alt": "Errwood Road, Burnage"
+  },
+  "Gorton": {
+    "src": "/images/areas/gorton.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Mikey",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Gorton_Monastery,_Gorton.jpg",
+    "alt": "St Francis' Roman Catholic church, Gorton, Manchester, England, seen from the southwest"
+  },
+  "Benchill": {
+    "src": "/images/areas/benchill.jpg",
+    "width": 960,
+    "height": 640,
+    "author": "Alan Murray-Rust",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Tram_on_Hollyhedge_Road_-_geograph.org.uk_-_4719951.jpg",
+    "alt": "Benchill: Tram on Hollyhedge Road"
+  },
+  "Wythenshawe": {
+    "src": "/images/areas/wythenshawe.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Rept0n1x",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Wythenshawe_Civic_Centre_(2).jpg",
+    "alt": "Wythenshawe Civic Centre, Manchester, England"
+  },
+  "Oldham": {
+    "src": "/images/areas/oldham.jpg",
+    "width": 960,
+    "height": 540,
+    "author": "G-13114",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Oldham_town_centre_closeup_from_Hartshead_Pike.jpg",
+    "alt": "Closeup of Oldham town centre from Hartshead Pike"
+  },
+  "Saddleworth": {
+    "src": "/images/areas/saddleworth.jpg",
+    "width": 960,
+    "height": 483,
+    "author": "Peter McDermott",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:The_Commercial_-_geograph.org.uk_-_5448133.jpg",
+    "alt": "Saddleworth: The Commercial"
+  },
+  "Failsworth": {
+    "src": "/images/areas/failsworth.jpg",
+    "width": 960,
+    "height": 960,
+    "author": "Gerald England",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:The_Brown_Cow_-_geograph.org.uk_-_6859901.jpg",
+    "alt": "Failsworth: The Brown Cow"
+  },
+  "Royton": {
+    "src": "/images/areas/royton.jpg",
+    "width": 960,
+    "height": 807,
+    "author": "Gerald England",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Rochdale_Road,_Royton_-_geograph.org.uk_-_7220737.jpg",
+    "alt": "Rochdale Road, Royton"
+  },
+  "Chadderton": {
+    "src": "/images/areas/chadderton.jpg",
+    "width": 960,
+    "height": 781,
+    "author": "Jeremy Sutcliffe from UK",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Chadderton_Town_Hall_(front).jpg",
+    "alt": "Chadderton Town Hall, at Chadderton, Greater Manchester, England"
+  },
+  "Lees": {
+    "src": "/images/areas/lees.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "JoeyFishBoy",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Leeschristmastree.jpg",
+    "alt": "Christmas Tree in Lees"
+  },
+  "Delph": {
+    "src": "/images/areas/delph.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "David Dixon",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:High_Street,_Delph_-_geograph.org.uk_-_2257456.jpg",
+    "alt": "High Street, Delph"
+  },
+  "Rochdale": {
+    "src": "/images/areas/rochdale.jpg",
+    "width": 960,
+    "height": 640,
+    "author": "Entropyjazz",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Town_Hall_14.jpg",
+    "alt": "Rochdale town hall 2024"
+  },
+  "Littleborough": {
+    "src": "/images/areas/littleborough.jpg",
+    "width": 960,
+    "height": 642,
+    "author": "DS Pugh",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Church_Street_and_Hare_Hill_Road_-_geograph.org.uk_-_8382701.jpg",
+    "alt": "Littleborough: Church Street and Hare Hill Road"
+  },
+  "Milnrow": {
+    "src": "/images/areas/milnrow.jpg",
+    "width": 960,
+    "height": 738,
+    "author": "Andrewlee1967",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Milnrow.jpg",
+    "alt": "Milnrow in Borough of Rochdale and County of Greater Manchester, England"
+  },
+  "Wardle": {
+    "src": "/images/areas/wardle.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "David Dixon",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ramsden_Road_-_geograph.org.uk_-_1703921.jpg",
+    "alt": "Wardle: Ramsden Road"
+  },
+  "Whitworth": {
+    "src": "/images/areas/whitworth.jpg",
+    "width": 960,
+    "height": 642,
+    "author": "Bill Boaden",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Market_Street_Whitworth_-_geograph.org.uk_-_2471578.jpg",
+    "alt": "Market Street Whitworth"
+  },
+  "Heywood": {
+    "src": "/images/areas/heywood.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "David Dixon",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Queen_Anne_-_geograph.org.uk_-_1976958.jpg",
+    "alt": "Heywood: Queen Anne"
+  },
+  "Middleton": {
+    "src": "/images/areas/middleton.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "David Dixon",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Assheton_Arms_Hotel_-_geograph.org.uk_-_2124048.jpg",
+    "alt": "Middleton: Assheton Arms Hotel"
+  },
+  "Salford Quays": {
+    "src": "/images/areas/salford-quays.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Pit-yacker",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Salford_Quays_from_south_bank_of_MSC,_2008.jpg",
+    "alt": "Salford Quays"
+  },
+  "Monton": {
+    "src": "/images/areas/monton.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "David Dixon",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:The_Green_at_Monton_-_geograph.org.uk_-_2301197.jpg",
+    "alt": "The Green at Monton"
+  },
+  "Worsley": {
+    "src": "/images/areas/worsley.jpg",
+    "width": 960,
+    "height": 633,
+    "author": "Parrot of Doom",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Worsley_packet_house_closeup_large_image.jpg",
+    "alt": "Worsley Packet House, overlooking the Bridgewater Canal in Worsley, Greater Manchester"
+  },
+  "Eccles": {
+    "src": "/images/areas/eccles.jpg",
+    "width": 960,
+    "height": 702,
+    "author": "Stephen Richards",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:112-116_Church_Street,_Eccles_-_geograph.org.uk_-_7874857.jpg",
+    "alt": "112-116 Church Street, Eccles"
+  },
+  "Boothstown": {
+    "src": "/images/areas/boothstown.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Raymond Knapman",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ellenbrook_Road_joins_Leigh_Road_at_Boothstown_-_geograph.org.uk_-_4108122.jpg",
+    "alt": "Ellenbrook Road joins Leigh Road at Boothstown"
+  },
+  "Walkden": {
+    "src": "/images/areas/walkden.jpg",
+    "width": 960,
+    "height": 436,
+    "author": "Peter McDermott",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Walkden_-_geograph.org.uk_-_6190024.jpg",
+    "alt": "Walkden"
+  },
+  "Swinton": {
+    "src": "/images/areas/swinton.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "David Dixon",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:St_Peter%27s_Church_and_lych_gate,_Swinton_-_geograph.org.uk_-_1685846.jpg",
+    "alt": "St Peter's Church and lych gate, Swinton, near to Swinton, Salford, Great Britain"
+  },
+  "Pendlebury": {
+    "src": "/images/areas/pendlebury.jpg",
+    "width": 960,
+    "height": 540,
+    "author": "Kevin Waterhouse",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Old_Station_House_-_geograph.org.uk_-_7544666.jpg",
+    "alt": "Pendlebury: Old Station House"
+  },
+  "Heaton Moor": {
+    "src": "/images/areas/heaton-moor.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Richard Vince",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Heaton_Moor_Road,_Heaton_Moor_-_geograph.org.uk_-_6812059.jpg",
+    "alt": "Heaton Moor Road, Heaton Moor"
+  },
+  "Bramhall": {
+    "src": "/images/areas/bramhall.jpg",
+    "width": 960,
+    "height": 722,
+    "author": "David Dixon",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Bramhall_United_Reformed_Church_-_geograph.org.uk_-_2571324.jpg",
+    "alt": "Bramhall United Reformed Church"
+  },
+  "Cheadle": {
+    "src": "/images/areas/cheadle.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "M J Richardson",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Cheadle_from_the_air_-_geograph.org.uk_-_3140813.jpg",
+    "alt": "Cheadle from the air"
+  },
+  "Marple": {
+    "src": "/images/areas/marple.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Dave.Dunford",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Manor_House,_Marple_02.jpg",
+    "alt": "Manor House: Grade II listed house in Marple, Stockport, UK"
+  },
+  "Stockport": {
+    "src": "/images/areas/stockport.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Cnbrb",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:St_Mary%E2%80%98s_Church,_Stockport_00_07_35_865000.jpeg",
+    "alt": "St Mary‘s Church, Stockport"
+  },
+  "Broadbottom": {
+    "src": "/images/areas/broadbottom.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Rept0n1x",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Magdalene_Centre,_Broadbottom_(2).jpg",
+    "alt": "The Magdalene Centre, Broadbottom, Greater Manchester"
+  },
+  "Hattersley": {
+    "src": "/images/areas/hattersley.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "WythenshaweMike",
+    "licence": "CC BY 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Fields_Farm_Road,_Hattersley_-_Tuesday_9th_October_2007_-_panoramio.jpg",
+    "alt": "Fields Farm Road, Hattersley - Tuesday 9th October 2007"
+  },
+  "Guide Bridge": {
+    "src": "/images/areas/guide-bridge.jpg",
+    "width": 960,
+    "height": 646,
+    "author": "Gerald England",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Corner_of_Birch_Street_and_Stockport_Road_-_geograph.org.uk_-_4641695.jpg",
+    "alt": "Guide Bridge: Corner of Birch Street and Stockport Road"
+  },
+  "Ashton-under-Lyne": {
+    "src": "/images/areas/ashton-under-lyne.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Kevin Waterhouse",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:The_Old_Fire_Station_-_geograph.org.uk_-_7434538.jpg",
+    "alt": "Ashton-under-Lyne: The Old Fire Station"
+  },
+  "Stalybridge": {
+    "src": "/images/areas/stalybridge.jpg",
+    "width": 960,
+    "height": 638,
+    "author": "Ian S",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Turf_Zone_%22StamfordGreek%22_-_geograph.org.uk_-_7348976.jpg",
+    "alt": "Stalybridge: Turf Zone \"StamfordGreek\""
+  },
+  "Hyde": {
+    "src": "/images/areas/hyde.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "David Dixon",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Hyde_Outdoor_Market_-_geograph.org.uk_-_2698313.jpg",
+    "alt": "Hyde Outdoor Market"
+  },
+  "Dukinfield": {
+    "src": "/images/areas/dukinfield.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "John Topping",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Terrace_row,_Foundry_Street_%E2%80%93_Dukinfield_-_geograph.org.uk_-_3263421.jpg",
+    "alt": "Terrace row, Foundry Street – Dukinfield"
+  },
+  "Droylsden": {
+    "src": "/images/areas/droylsden.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Mike Faherty",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Droylsden,_Kings_Head_-_geograph.org.uk_-_3996834.jpg",
+    "alt": "Droylsden, Kings Head"
+  },
+  "Mossley": {
+    "src": "/images/areas/mossley.jpg",
+    "width": 960,
+    "height": 640,
+    "author": "Peter Turner",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Stamford,_Argyll_and_Market_Streets%27_junction,_Top_Mossley_-_geograph.org.uk_-_2978866.jpg",
+    "alt": "Stamford, Argyll and Market Streets' junction, Top Mossley"
+  },
+  "Audenshaw": {
+    "src": "/images/areas/audenshaw.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "John Topping",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Railway_Bridge_DJ01-2,_Audenshaw_-_geograph.org.uk_-_3194653.jpg",
+    "alt": "Railway Bridge DJ01/2, Audenshaw"
+  },
+  "Altrincham": {
+    "src": "/images/areas/altrincham.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Doomdorm64",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Altrincham_Town_Square_-_2024.jpg",
+    "alt": "Altrincham's high street"
+  },
+  "Sale": {
+    "src": "/images/areas/sale.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Richard Vince",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:School_Road,_Sale_-_geograph.org.uk_-_3806770.jpg",
+    "alt": "School Road, Sale"
+  },
+  "Stretford": {
+    "src": "/images/areas/stretford.jpg",
+    "width": 960,
+    "height": 655,
+    "author": "Ian Greig",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:%22For_sale_or_long_lease%22_-_geograph.org.uk_-_4067669.jpg",
+    "alt": "Stretford: \"For sale or long lease\""
+  },
+  "Urmston": {
+    "src": "/images/areas/urmston.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Anthony Shaw",
+    "licence": "Public domain",
+    "licenceUrl": null,
+    "page": "https://commons.wikimedia.org/wiki/File:Nags_Head_Roundabout,_Urmston.jpg",
+    "alt": "Urmston: Taken on the day of Queen Elizabeth II funeral...so very quiet"
+  },
+  "Timperley": {
+    "src": "/images/areas/timperley.jpg",
+    "width": 960,
+    "height": 690,
+    "author": "Phil and Juliette Platt",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:The_centre_of_Timperley_-_geograph.org.uk_-_5516757.jpg",
+    "alt": "The centre of Timperley"
+  },
+  "Hale": {
+    "src": "/images/areas/hale.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Richard Sutcliffe",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Rivington_Road_-_geograph.org.uk_-_4535562.jpg",
+    "alt": "Hale: Rivington Road"
+  },
+  "Hale Barns": {
+    "src": "/images/areas/hale-barns.jpg",
+    "width": 960,
+    "height": 660,
+    "author": "Anthony O'Neil",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Village_pub,_Hale_Barns_(geograph_4117025).jpg",
+    "alt": "Village pub, Hale Barns"
+  },
+  "Partington": {
+    "src": "/images/areas/partington.jpg",
+    "width": 960,
+    "height": 640,
+    "author": "Parrot of Doom",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:St_marys_church_partington_greater_manchester.jpg",
+    "alt": "St Mary's Church in Partington, Greater Manchester"
+  },
+  "Carrington": {
+    "src": "/images/areas/carrington.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Ian S",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Flixton_Road_at_Manchester_Road_-_geograph.org.uk_-_3196062.jpg",
+    "alt": "Carrington: Flixton Road at Manchester Road"
+  },
+  "Wigan": {
+    "src": "/images/areas/wigan.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Phil Platt",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Sculpture_in_The_Wiend_-_geograph.org.uk_-_3739884.jpg",
+    "alt": "Wigan: Sculpture in The Wiend"
+  },
+  "Standish": {
+    "src": "/images/areas/standish.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Gary Rogers",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Junction_of_the_B5239_and_the_A49_in_Standish_-_geograph.org.uk_-_4868516.jpg",
+    "alt": "Junction of the B5239 and the A49 in Standish"
+  },
+  "Shevington": {
+    "src": "/images/areas/shevington.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "David Dixon",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Plough_and_Harrow_-_geograph.org.uk_-_2636984.jpg",
+    "alt": "Shevington: Plough and Harrow"
+  },
+  "Hindley": {
+    "src": "/images/areas/hindley.jpg",
+    "width": 960,
+    "height": 719,
+    "author": "Raymond Knapman",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:The_crossroads_at_Hindley_town_centre_-_geograph.org.uk_-_2443686.jpg",
+    "alt": "The crossroads at Hindley town centre"
+  },
+  "Atherton": {
+    "src": "/images/areas/atherton.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "David Dixon",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Atherton_Town_Hall_-_geograph.org.uk_-_2578327.jpg",
+    "alt": "Atherton Town Hall"
+  },
+  "Leigh": {
+    "src": "/images/areas/leigh.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Mikey from Wythenshawe, Manchester, UK",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Market_Street_Leigh.jpg",
+    "alt": "Leigh is a town in Greater Manchester, it's about 11 miles away from Manchester City Centre and 6 miles away from Wig…"
+  },
+  "Golborne": {
+    "src": "/images/areas/golborne.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Kevin Waterhouse",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Heath_Street_-_geograph.org.uk_-_7936722.jpg",
+    "alt": "Golborne: Heath Street"
+  },
+  "Lowton": {
+    "src": "/images/areas/lowton.jpg",
+    "width": 960,
+    "height": 623,
+    "author": "Peter McDermott",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:-2021-06-05_Saint_Mary%E2%80%99s_Parish_Church,_Lowton_Common,_Greater_Manchester.jpg",
+    "alt": "The east facing elevation of Saint Mary's parish church, Newton Road, Lowton Common, Greater Manchester"
+  },
+  "Ashton-in-Makerfield": {
+    "src": "/images/areas/ashton-in-makerfield.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Alan Murray-Rust",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Carnegie_Library_and_Lecture_Hall,_Ashton-in-Makerfield_-_geograph.org.uk_-_7517565.jpg",
+    "alt": "Carnegie Library and Lecture Hall, Ashton-in-Makerfield"
+  },
+  "Tyldesley": {
+    "src": "/images/areas/tyldesley.jpg",
+    "width": 960,
+    "height": 640,
+    "author": "Bill Boaden",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Elliott_Street_-_geograph.org.uk_-_6515403.jpg",
+    "alt": "Tyldesley: Elliott Street"
+  }
+}

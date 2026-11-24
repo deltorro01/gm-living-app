@@ -4,3 +4,4 @@ export { default as App } from "./App.jsx";
 export { default as AreaPage, areaDescription } from "./AreaPage.jsx";
 export { areaSlug, areaPath, SITE_URL } from "./slug.js";
 export { default as areas } from "./areas.json";
+export { default as areaPhotos } from "./areaPhotos.json";

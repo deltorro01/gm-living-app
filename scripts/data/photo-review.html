@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Area photo review</title>
+    <!--
+      Review page for scripts/data/fetch-photos.mjs results. Not part of the site.
+      Run: npx vite scripts/data --port 4180   then open http://localhost:4180/photo-review.html
+      Choices are kept in this browser (localStorage) and can be saved with
+      "Download choices" as photo-choices.json for scripts/data/apply-photos.mjs.
+    -->
+    <style>
+      :root { --bg: #f3f7fc; --card: #fff; --text: #0f172a; --soft: #475569; --line: #d8e0ea; --blue: #2563eb; --green: #059669; }
+      * { box-sizing: border-box; }
+      body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); }
+      header { position: sticky; top: 0; z-index: 5; background: #0f172a; color: #fff; padding: 12px 16px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; }
+      header h1 { font-size: 18px; margin: 0; }
+      header .counts { font-size: 14px; opacity: 0.9; }
+      header button { font: inherit; font-size: 14px; padding: 8px 12px; border-radius: 8px; border: 0; cursor: pointer; }
+      .primary { background: var(--blue); color: #fff; }
+      .secondary { background: #e2e8f0; color: #0f172a; }
+      main { max-width: 1200px; margin: 0 auto; padding: 16px; }
+      .intro { color: var(--soft); max-width: 75ch; }
+      .area { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; margin: 14px 0; }
+      .area h2 { margin: 0 0 4px; font-size: 18px; }
+      .area .borough { color: var(--soft); font-size: 14px; }
+      .area.done { border-color: var(--green); }
+      .options { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; margin-top: 10px; }
+      label.option { display: grid; gap: 6px; border: 2px solid var(--line); border-radius: 10px; padding: 8px; cursor: pointer; font-size: 12px; color: var(--soft); background: #fff; }
+      label.option:has(input:checked) { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15); }
+      label.option img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 6px; background: #e2e8f0; }
+      label.option .row { display: flex; gap: 6px; align-items: center; color: var(--text); font-size: 13px; font-weight: 600; }
+      label.none { display: flex; align-items: center; justify-content: center; min-height: 120px; font-size: 14px; }
+      .empty { color: var(--soft); font-style: italic; }
+      a { color: var(--blue); }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Area photo review</h1>
+      <span class="counts" id="counts"></span>
+      <span>
+        <button class="secondary" id="first-for-rest" type="button">Use first photo for undecided areas</button>
+        <button class="primary" id="download" type="button">Download choices</button>
+      </span>
+    </header>
+    <main>
+      <p class="intro">
+        For each area, pick the photo that best shows what it's like to live there (a street, high street, park or
+        landmark), or choose <strong>No photo</strong>. Avoid maps, coats of arms, close-ups and interiors. Your choices
+        save automatically in this browser. Each photo's licence and photographer are recorded so it can be credited.
+      </p>
+      <div id="list"></div>
+    </main>
+    <script type="module">
+      const KEY = "area-photo-choices";
+      const data = await (await fetch("./out/photo-candidates.json", { cache: "no-store" })).json();
+      let choices = {};
+      try {
+        choices = JSON.parse(localStorage.getItem(KEY) || "{}");
+      } catch {}
+      window.photoChoices = () => choices;
+
+      const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+      const list = document.getElementById("list");
+
+      function save() {
+        try {
+          localStorage.setItem(KEY, JSON.stringify(choices));
+        } catch {}
+        const decided = data.filter((a) => a.area in choices);
+        const withPhoto = decided.filter((a) => choices[a.area]);
+        document.getElementById("counts").textContent =
+          `${decided.length} of ${data.length} decided · ${withPhoto.length} with a photo · ${decided.length - withPhoto.length} without`;
+        for (const el of list.querySelectorAll(".area")) el.classList.toggle("done", el.dataset.area in choices);
+      }
+
+      for (const a of data) {
+        const name = `pick-${a.area}`;
+        const opts = a.candidates
+          .map(
+            (c) => `
+          <label class="option">
+            <img src="${esc(c.thumb.replace(/\/\d+px-/, "/330px-"))}" alt="" loading="lazy" />
+            <span class="row"><input type="radio" name="${esc(name)}" value="${esc(c.file)}" ${choices[a.area] === c.file ? "checked" : ""} /> ${esc(c.why)}</span>
+            <span>${esc(c.description || c.file.replace(/^File:/, ""))}</span>
+            <span>${esc(c.author)} · ${esc(c.licence)} · <a href="${esc(c.page)}" target="_blank" rel="noopener">source</a></span>
+          </label>`
+          )
+          .join("");
+        const el = document.createElement("section");
+        el.className = "area";
+        el.dataset.area = a.area;
+        el.innerHTML = `
+          <h2>${esc(a.area)}</h2><div class="borough">${esc(a.borough)}</div>
+          ${a.candidates.length ? "" : '<p class="empty">No freely licensed photos found nearby.</p>'}
+          <div class="options">${opts}
+            <label class="option none"><span class="row"><input type="radio" name="${esc(name)}" value="" ${choices[a.area] === null ? "checked" : ""} /> No photo</span></label>
+          </div>`;
+        el.addEventListener("change", (e) => {
+          choices[a.area] = e.target.value || null;
+          save();
+        });
+        list.append(el);
+      }
+
+      document.getElementById("first-for-rest").onclick = () => {
+        for (const a of data) {
+          if (a.area in choices) continue;
+          choices[a.area] = a.candidates[0]?.file ?? null;
+          const input = list.querySelector(`.area[data-area="${CSS.escape(a.area)}"] input[value="${CSS.escape(choices[a.area] ?? "")}"]`);
+          if (input) input.checked = true;
+        }
+        save();
+      };
+
+      document.getElementById("download").onclick = () => {
+        const blob = new Blob([JSON.stringify(choices, null, 2)], { type: "application/json" });
+        const link = Object.assign(document.createElement("a"), { href: URL.createObjectURL(blob), download: "photo-choices.json" });
+        link.click();
+      };
+
+      save();
+    </script>
+  </body>
+</html>

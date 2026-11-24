@@ -132,7 +132,26 @@ export function areaDescription(area) {
   );
 }
 
-export default function AreaPage({ area, areas }) {
+function PhotoCredit({ photo }) {
+  return (
+    <figcaption>
+      Photo: {photo.author},{" "}
+      {photo.licenceUrl ? (
+        <a href={photo.licenceUrl} target="_blank" rel="noopener noreferrer license">
+          {photo.licence}
+        </a>
+      ) : (
+        photo.licence
+      )}
+      , via{" "}
+      <a href={photo.page} target="_blank" rel="noopener noreferrer">
+        Wikimedia Commons
+      </a>
+    </figcaption>
+  );
+}
+
+export default function AreaPage({ area, areas, photo }) {
   const nearby = areas
     .filter((a) => a.area !== area.area)
     .map((a) => ({ ...a, km: distanceKm(area, a) }))
@@ -150,6 +169,12 @@ export default function AreaPage({ area, areas }) {
         </nav>
 
         <div className="panel" style={{ marginBottom: "24px" }}>
+          {photo && (
+            <figure className="area-photo">
+              <img src={photo.src} width={photo.width} height={photo.height} alt={photo.alt} fetchpriority="high" />
+              <PhotoCredit photo={photo} />
+            </figure>
+          )}
           <div className="eyebrow">Area guide · {area.borough}</div>
           <h1>Living in {area.area}</h1>
           <p className="intro-text">
