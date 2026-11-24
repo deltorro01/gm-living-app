@@ -11,6 +11,10 @@ export default function SiteFooter() {
       </span>
       <nav aria-label="Footer">
         <a href="/privacy">Privacy</a>
+        {/* Handled by public/consent.js, which reopens the cookie banner. */}
+        <button type="button" className="footer-link-btn" data-cookie-settings="">
+          Cookie settings
+        </button>
         <a href={`mailto:${CONTACT_EMAIL}`}>Contact us</a>
       </nav>
     </footer>

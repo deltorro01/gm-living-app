@@ -24,8 +24,8 @@ export default function PrivacyPage() {
           <h2>In short</h2>
           <p>
             You don't need an account to use this site, and we don't ask for your name, email or any other personal
-            details. We use Google Analytics to see how many people visit and which pages they use, so we can improve the
-            site.
+            details. If you agree, we use Google Analytics to see how many people visit and which pages they use, so we
+            can improve the site. If you don't agree, it isn't used.
           </p>
 
           <h2>Who we are</h2>
@@ -41,16 +41,20 @@ export default function PrivacyPage() {
             are (to town or city level), what kind of device and browser they use, and how they found the site. Google
             Analytics uses cookies to tell visits apart. These are called <code>_ga</code> and <code>_ga_…</code> and
             last up to two years. Google Analytics does not store your IP address. We only look at overall figures, not
-            individual visitors, and we use this because we have a legitimate interest in knowing which parts of the site
-            are useful.
+            individual visitors.
+          </p>
+          <p>
+            <strong>We only use Google Analytics if you choose "Accept"</strong> on the cookie message. If you choose
+            "Reject", or make no choice, it isn't loaded and no analytics cookies are set. We rely on your consent for
+            this, and you can change your mind at any time with the "Cookie settings" link at the bottom of every page.
+            If you withdraw consent, we delete the Google Analytics cookies from your browser.
           </p>
           <p>
             Google processes this information for us. You can read{" "}
             <a href="https://policies.google.com/privacy" {...ext}>
               Google's privacy policy
             </a>
-            . To stop Google Analytics recording your visits on any site, you can block cookies in your browser or install
-            the{" "}
+            . To stop Google Analytics on every site you visit, you can also block cookies in your browser or install the{" "}
             <a href="https://tools.google.com/dlpage/gaoptout" {...ext}>
               Google Analytics opt-out browser add-on
             </a>
@@ -60,8 +64,9 @@ export default function PrivacyPage() {
           <h3>Your search settings</h3>
           <p>
             When you change settings such as your budget or life stage, they are added to the web address so you can
-            bookmark or share your results. This happens in your browser. We don't keep a record of your choices, and
-            the site doesn't use any other cookies.
+            bookmark or share your results. This happens in your browser. We don't keep a record of your choices. Your
+            answer to the cookie message is saved in your browser's own storage (not a cookie) so we don't ask again on
+            every page. The site doesn't use any other cookies.
           </p>
 
           <h3>The map</h3>
