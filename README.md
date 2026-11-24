@@ -26,7 +26,7 @@ To create the production build, run `npm run build`. The output goes to the `dis
 - `index.html`: the home page. It includes a short fallback text that search engines can read.
 - `manchester.html`: the Manchester page served at `/manchester`, with the same fallback text.
 - `vercel.json`: routing for the Manchester page.
-- `public/`: files served as they are, such as the favicon, robots file, sitemap and the Manchester share image.
+- `public/`: files served as they are, such as the favicon, robots file and the Manchester share image.
 - `SCORING.md`: how the match score is calculated.
 - `src/AreaPage.jsx`: the guide page for each area (for example `/manchester/ancoats`). These are plain pages built at build time and load no JavaScript.
 - `src/slug.js`: turns area names into page addresses (`Hale Barns` becomes `/manchester/hale-barns`).
