@@ -31,13 +31,91 @@ const RATINGS = [
   ["cycling", "Cycling", false],
 ];
 
-const SOURCE_LABELS = {
-  averageRent: "Rent",
-  averageHousePrice: "House price",
-  commuteCityMinutes: "Commute",
-  safety: "Safety",
-  schools: "Schools",
-};
+const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const monthName = (yyyyMm) => `${MONTHS[Number(yyyyMm.slice(5, 7)) - 1]} ${yyyyMm.slice(0, 4)}`;
+
+// "45 minutes", "1 hour 36 minutes", "2 hours"
+function duration(minutes) {
+  const m = Number(minutes);
+  if (m < 60) return `${m} minutes`;
+  const h = Math.floor(m / 60);
+  const rest = m % 60;
+  return `${h} ${h === 1 ? "hour" : "hours"}${rest ? ` ${rest} minutes` : ""}`;
+}
+
+// Distances in the data are in km; visitors in the UK think in miles.
+function miles(km) {
+  const m = Math.round((Number(km) / 1.609) * 2) / 2;
+  return m <= 1 ? "about a mile" : `about ${m} miles`;
+}
+
+// Plain-English notes on where each figure comes from, built from the
+// technical notes in the area's dataSources (see scripts/data/apply.mjs).
+// Returns [heading, sentence] pairs; a note that doesn't match is left out.
+export function plainSources(area) {
+  const ds = area.dataSources ?? {};
+  const out = [];
+
+  const rent = ds.averageRent?.match(/rent of £(\d+) \((\d{4}-\d{2})\)/);
+  if (rent) {
+    out.push([
+      "Rent",
+      `The official average private rent across ${area.borough} was ${money(Number(rent[1]))} a month in ${monthName(rent[2])} (Office for National Statistics). We adjust this up or down for each area in the borough using our own estimates, so treat the figure for ${area.area} as a guide rather than an exact price.`,
+    ]);
+  }
+
+  const price = ds.averageHousePrice?.match(/Median of (\d+) HM Land Registry sales within ([\d.]+) km, (\d{4}-\d{2}) to (\d{4}-\d{2})/);
+  if (price) {
+    out.push([
+      "House price",
+      `This is the middle price of the ${price[1]} homes sold within ${miles(price[2])} of ${area.area} between ${monthName(price[3])} and ${monthName(price[4])}, from HM Land Registry records. Half sold for more and half for less. It covers all types of home, so areas with lots of flats can look cheaper than areas with mostly houses.`,
+    ]);
+  }
+
+  const train = ds.commuteCityMinutes?.match(/^Train estimate.*door to door (\d+) min/);
+  const bus = ds.commuteCityMinutes?.match(/^TfGM timetable.*on board bus\/tram (\d+) min \(door to door (\d+) min\)/);
+  if (train) {
+    out.push([
+      "Commute",
+      `This is our estimate of the train journey to Manchester city centre, not counting the trip to the station. By bus or tram, a weekday morning trip to Piccadilly Gardens takes about ${duration(train[1])} door to door, including walking and waiting (Transport for Greater Manchester timetables).`,
+    ]);
+  } else if (bus) {
+    out.push([
+      "Commute",
+      `This is the typical time spent on buses or trams to reach Piccadilly Gardens on a weekday morning between 7:30 and 8:30, worked out from Transport for Greater Manchester timetables. Allow about ${duration(bus[2])} door to door, including walking to the stop and waiting.`,
+    ]);
+  }
+
+  const crime = ds.safety?.match(/average national decile ([\d.]+)/);
+  if (crime) {
+    const decile = Number(crime[1]);
+    const national =
+      decile <= 3
+        ? "more crime than most of England"
+        : decile < 7
+          ? "crime levels around the middle for England"
+          : "less crime than most of England";
+    out.push([
+      "Safety",
+      `Based on crime recorded by the police in the neighbourhoods around ${area.area}, measured per person, from the government's English Indices of Deprivation 2025. Overall these neighbourhoods have ${national}. The 1 to 5 rating compares ${area.area} with the other areas on this site, so a 5 means among the safest of them.`,
+    ]);
+  }
+
+  const schools = ds.schools?.match(/of (\d+) primary schools within (\d+) km and (\d+) secondary schools within (\d+) km/);
+  if (schools) {
+    const [, primary, primaryKm, secondary, secondaryKm] = schools;
+    out.push([
+      "Schools",
+      `Based on the latest Ofsted inspection results for ${primary} primary schools within ${miles(primaryKm)} and ${secondary} secondary ${Number(secondary) === 1 ? "school" : "schools"} within ${miles(secondaryKm)}, with bigger schools counting for more. Catchment areas vary, so check the individual schools you are interested in.`,
+    ]);
+  }
+
+  out.push([
+    "Other ratings",
+    "Green space, value for money, nightlife, cafés, culture, quietness and cycling are our own estimates, not official figures.",
+  ]);
+  return out;
+}
 
 export function commuteSentence(area) {
   const trainEstimate = (area.dataSources?.commuteCityMinutes ?? "").startsWith("Train");
@@ -143,15 +221,20 @@ export default function AreaPage({ area, areas }) {
 
         <div className="panel" style={{ marginBottom: "24px" }}>
           <h2>Where these figures come from</h2>
-          <ul className="source-list">
-            {Object.entries(SOURCE_LABELS)
-              .filter(([field]) => area.dataSources?.[field])
-              .map(([field, label]) => (
-                <li key={field}>
-                  <strong>{label}:</strong> {area.dataSources[field]}
-                </li>
-              ))}
-          </ul>
+          <dl className="source-list">
+            {plainSources(area).map(([label, text]) => (
+              <div key={label} className="source-item">
+                <dt>{label}</dt>
+                <dd>{text}</dd>
+              </div>
+            ))}
+          </dl>
+          <p className="muted compact source-credit">
+            Contains HM Land Registry data © Crown copyright and database right 2026. Contains OS data © Crown copyright
+            and database right 2026. Contains public sector information from the Office for National Statistics, Ofsted
+            and the Ministry of Housing, Communities and Local Government, licensed under the Open Government Licence
+            v3.0. Timetable data from Transport for Greater Manchester.
+          </p>
         </div>
 
         <div className="panel" style={{ marginBottom: "24px" }}>
