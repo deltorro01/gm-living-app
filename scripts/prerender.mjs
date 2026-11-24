@@ -88,17 +88,33 @@ function linkAreaNames(fallback, ssr) {
 }
 
 function areaPageHtml(template, ssr, area, bodyHtml, photo) {
-  const url = `${ssr.SITE_URL}${ssr.areaPath(area.area)}`;
-  const title = `Living in ${area.area}, Greater Manchester: Rent, House Prices, Commute and Safety`;
-  const description = ssr.areaDescription(area);
+  const path = ssr.areaPath(area.area);
+  return staticPageHtml(template, ssr, bodyHtml, {
+    path,
+    title: `Living in ${area.area}, Greater Manchester: Rent, House Prices, Commute and Safety`,
+    description: ssr.areaDescription(area),
+    crumbs: [
+      ["Home", "/"],
+      ["Manchester areas", "/manchester"],
+      [area.area, path],
+    ],
+    photo,
+  });
+}
+
+// A plain page (no app JavaScript) built from the Manchester page's <head>,
+// with its own title, description, canonical link, share tags and breadcrumb.
+function staticPageHtml(template, ssr, bodyHtml, { path, title, description, crumbs, photo }) {
+  const url = `${ssr.SITE_URL}${path}`;
   const breadcrumb = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: `${ssr.SITE_URL}/` },
-      { "@type": "ListItem", position: 2, name: "Manchester areas", item: `${ssr.SITE_URL}/manchester` },
-      { "@type": "ListItem", position: 3, name: area.area, item: url },
-    ],
+    itemListElement: crumbs.map(([name, href], i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name,
+      item: `${ssr.SITE_URL}${href}`,
+    })),
   };
 
   let html = template;
@@ -123,7 +139,7 @@ function areaPageHtml(template, ssr, area, bodyHtml, photo) {
   html = html.replace(/\s*<link rel="modulepreload"[^>]*>/g, "");
   html = html.replace("</head>", `  <script type="application/ld+json">${JSON.stringify(breadcrumb)}</script>\n  </head>`);
 
-  const { start, end } = rootSpan(html, "area page template");
+  const { start, end } = rootSpan(html, "page template");
   return html.slice(0, start) + ROOT_OPEN + bodyHtml + html.slice(end);
 }
 
@@ -144,6 +160,15 @@ function sitemap(ssr, today) {
 
 try {
   const ssr = await loadSsrModule();
+
+  // The contact email in src/site.js must be real before the site goes live.
+  if (ssr.CONTACT_IS_PLACEHOLDER) {
+    if (process.env.VERCEL_ENV === "production") {
+      throw new Error("src/site.js still has the placeholder contact email. Add the real address before publishing.");
+    }
+    console.warn("WARNING: src/site.js has the placeholder contact email (fine for testing, blocked on the live site).");
+  }
+
   const React = await import("react");
   const { renderToString, renderToStaticMarkup } = await import("react-dom/server");
 
@@ -179,7 +204,24 @@ try {
   }
   console.log(`wrote ${ssr.areas.length} area pages to dist/manchester/<area>/index.html`);
 
-  // 3. Sitemap
+  // 3. Privacy notice
+  const privacyBody = renderToStaticMarkup(React.createElement(ssr.PrivacyPage));
+  await mkdir(resolve(dist, "privacy"), { recursive: true });
+  await writeFile(
+    resolve(dist, "privacy", "index.html"),
+    staticPageHtml(manchesterHtml, ssr, privacyBody, {
+      path: "/privacy",
+      title: "Privacy notice | Where Should I Live?",
+      description: "How Where Should I Live uses information: what Google Analytics records, cookies, the map, hosting and your rights.",
+      crumbs: [
+        ["Home", "/"],
+        ["Privacy", "/privacy"],
+      ],
+    })
+  );
+  console.log("wrote dist/privacy/index.html");
+
+  // 4. Sitemap
   const today = new Date().toISOString().slice(0, 10);
   await writeFile(resolve(dist, "sitemap.xml"), sitemap(ssr, today));
   console.log(`wrote dist/sitemap.xml (${ssr.areas.length + 2} pages)`);

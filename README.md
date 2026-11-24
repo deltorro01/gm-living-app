@@ -30,6 +30,9 @@ To create the production build, run `npm run build`. The output goes to the `dis
 - `SCORING.md`: how the match score is calculated.
 - `src/AreaPage.jsx`: the guide page for each area (for example `/manchester/ancoats`). These are plain pages built at build time and load no JavaScript.
 - `src/areaPhotos.json` and `public/images/areas/`: the photo shown on each area guide, with its photographer and licence for the credit line. The photos are from Wikimedia Commons under Creative Commons or public domain licences, so the credit must stay with each photo.
+- `src/site.js`: site name, copyright year and the contact email used by the footer and privacy notice. While the contact email is the `@example.com` placeholder, builds on the live (production) site stop with an error.
+- `src/SiteFooter.jsx`: the footer on every page (copyright, Privacy and Contact links).
+- `src/PrivacyPage.jsx`: the privacy notice at `/privacy`. Update it if the site starts using another service that handles visitors' information.
 - `src/slug.js`: turns area names into page addresses (`Hale Barns` becomes `/manchester/hale-barns`).
 - `scripts/prerender.mjs`: runs after `vite build`. It writes the app's HTML into the home and Manchester pages so search engines can read it, links the area names on the Manchester page, writes the 86 area guide pages to `dist/manchester/<area>/index.html`, and writes `dist/sitemap.xml`. The sitemap is generated, so there is no `public/sitemap.xml` to edit.
 - `scripts/data/`: scripts that calculate figures from official data (see "Data sources" below).

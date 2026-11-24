@@ -3,6 +3,7 @@
 // JavaScript in the browser.
 
 import { areaPath } from "./slug.js";
+import SiteFooter from "./SiteFooter.jsx";
 
 function money(value) {
   return new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP", maximumFractionDigits: 0 }).format(value);
@@ -291,6 +292,8 @@ export default function AreaPage({ area, areas, photo }) {
             </a>
           </p>
         </div>
+
+        <SiteFooter />
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ import { readSettings, writeSettings } from "./urlState.js";
 import { WhyThisMatch, CompareButton, CompareView } from "./ResultParts.jsx";
 import { fitBand } from "./bands.js";
 import { areaPath } from "./slug.js";
+import SiteFooter from "./SiteFooter.jsx";
 
 // The map (and the Leaflet library) only downloads when someone opens it.
 const AreaMap = lazy(() => import("./AreaMap.jsx"));
@@ -703,6 +704,8 @@ export default function App() {
             </div>
           </div>
         )}
+
+        <SiteFooter />
       </div>
     </div>
   );
