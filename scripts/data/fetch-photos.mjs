@@ -23,7 +23,7 @@ const THUMB_WIDTH = 1280; // a standard Wikimedia thumbnail width
 // Wikimedia asks automated tools to identify themselves with a website address.
 const HEADERS = { "User-Agent": "WhereShouldILiveAreaGuides/1.0 (https://www.whereshouldiliveinthe.uk/) Node.js" };
 
-const areas = JSON.parse(await readFile(new URL("../../src/areas.json", import.meta.url), "utf8"));
+const areas = JSON.parse(await readFile(new URL("../../src/data/manchester/areas.json", import.meta.url), "utf8"));
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function getJson(url) {

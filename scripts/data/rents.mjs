@@ -2,7 +2,7 @@
 //
 // ONS Price Index of Private Rents (PIPR) gives an average monthly private
 // rent for each local authority, but nothing smaller. So:
-//   - each borough's average of the area rents in src/areas.json is scaled to
+//   - each borough's average of the area rents in src/data/manchester/areas.json is scaled to
 //     match the latest ONS borough average ("Rental price", all property sizes);
 //   - the differences between areas inside a borough are kept as they are
 //     (they are still estimates);
@@ -20,7 +20,7 @@ import { join } from "node:path";
 const dir = process.argv[2];
 if (!dir) throw new Error("Pass the folder holding the unzipped PIPR spreadsheet");
 
-const areas = JSON.parse(await readFile(new URL("../../src/areas.json", import.meta.url), "utf8"));
+const areas = JSON.parse(await readFile(new URL("../../src/data/manchester/areas.json", import.meta.url), "utf8"));
 const boroughs = [...new Set(areas.map((a) => a.borough))];
 
 // --- minimal .xlsx reading: shared strings + the data sheet ("Table 1") ---

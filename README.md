@@ -22,14 +22,15 @@ To create the production build, run `npm run build`. The output goes to the `dis
 - `src/urlState.js`: keeps the settings, filters and compared areas in the web address so results can be shared.
 - `src/AreaMap.jsx`: the results map (Leaflet with OpenStreetMap tiles). It only downloads when someone opens the map.
 - `src/styles.css`: all styling.
-- `src/areas.json`: the area dataset that the app uses. Edit this file to change area data.
+- `src/cities.js`: settings for each city (name, region, web address, city-centre point, transport operator, map centre). Adding a city starts here.
+- `src/data/<city>/areas.json`: each city's area dataset, for example `src/data/manchester/areas.json`. Edit this to change area data.
 - `index.html`: the home page. It includes a short fallback text that search engines can read.
 - `manchester.html`: the Manchester page served at `/manchester`, with the same fallback text.
 - `vercel.json`: routing for the Manchester page, and the security headers sent with every page. The Content-Security-Policy lists the only outside places the site may load from (Google Analytics and OpenStreetMap map tiles). If you add another outside service, such as a font, video or new analytics tool, add it there too or the browser will block it.
 - `public/`: files served as they are, such as the favicon, robots file and the Manchester share image.
 - `SCORING.md`: how the match score is calculated.
 - `src/AreaPage.jsx`: the guide page for each area (for example `/manchester/ancoats`). These are plain pages built at build time and load no JavaScript.
-- `src/areaPhotos.json` and `public/images/areas/`: the photo shown on each area guide, with its photographer and licence for the credit line. The photos are from Wikimedia Commons under Creative Commons or public domain licences, so the credit must stay with each photo.
+- `src/data/<city>/areaPhotos.json` and `public/images/areas/`: the photo shown on each area guide, with its photographer and licence for the credit line. The photos are from Wikimedia Commons under Creative Commons or public domain licences, so the credit must stay with each photo.
 - `src/site.js`: site name, copyright year and the contact email used by the footer and privacy notice. While the contact email is the `@example.com` placeholder, builds on the live (production) site stop with an error.
 - `src/SiteFooter.jsx`: the footer on every page (copyright, Privacy, Cookie settings and Contact links).
 - `public/consent.js`: the cookie banner. Google Analytics only loads after a visitor clicks "Accept"; "Reject" is just as easy, the choice is remembered in the browser, and "Cookie settings" in the footer reopens the banner. The Google Analytics ID lives here, not in the HTML pages.
@@ -59,7 +60,7 @@ To refresh the figures, download these into one folder outside the project: the 
 4. `node scripts/data/rents.mjs <unzipped rents spreadsheet folder>`
 5. `node scripts/data/schools.mjs <Ofsted CSV>`
 6. `node scripts/data/commute.mjs <unzipped GTFS folder>`
-7. `node scripts/data/apply.mjs` to preview, then `node scripts/data/apply.mjs --write` to update `src/areas.json`.
+7. `node scripts/data/apply.mjs` to preview, then `node scripts/data/apply.mjs --write` to update `src/data/manchester/areas.json`.
 
 Whitworth is in Rossendale (Lancashire), just outside Greater Manchester, but is kept under Rochdale in the dataset because that is its post town.
 
@@ -78,6 +79,6 @@ Each area guide shows one photo chosen by hand from Wikimedia Commons. To change
 
 1. `node scripts/data/fetch-photos.mjs` finds up to four freely licensed photos per area and saves them to `scripts/data/out/photo-candidates.json`.
 2. `npx vite scripts/data --port 4173`, then open `http://localhost:4173/photo-review.html` to pick one photo (or none) per area. Use "Download choices" and save the file as `scripts/data/out/photo-choices.json`.
-3. `node scripts/data/apply-photos.mjs` downloads the chosen photos (960 pixels wide) to `public/images/areas/` and writes the credits to `src/areaPhotos.json`. It goes slowly and can be run again to resume if Wikimedia is busy.
+3. `node scripts/data/apply-photos.mjs` downloads the chosen photos (960 pixels wide) to `public/images/areas/` and writes the credits to `src/data/manchester/areaPhotos.json`. It goes slowly and can be run again to resume if Wikimedia is busy.
 
 The scripts identify themselves to Wikimedia with the site's address, as Wikimedia asks of automated tools.

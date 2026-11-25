@@ -75,34 +75,34 @@ function replaceOnce(html, pattern, replacement, what) {
 }
 
 // Turn "<h2>Borough</h2> <p>Area, Area, Area.</p>" lists into links.
-function linkAreaNames(fallback, ssr) {
-  const known = new Set(ssr.areas.map((a) => a.area));
+function linkAreaNames(fallback, ssr, city, areas) {
+  const known = new Set(areas.map((a) => a.area));
   let linked = 0;
   const out = fallback.replace(/(<h2>[^<]+<\/h2>\s*<p>)([^<]+)(<\/p>)/g, (whole, open, list, close) => {
     const names = list.replace(/\.\s*$/, "").split(/,\s*/);
     if (!names.every((n) => known.has(n))) return whole; // not an area list: leave as it is
     linked += names.length;
-    return open + names.map((n) => `<a href="${ssr.areaPath(n)}">${escapeHtml(n)}</a>`).join(", ") + "." + close;
+    return open + names.map((n) => `<a href="${ssr.areaPath(n, city)}">${escapeHtml(n)}</a>`).join(", ") + "." + close;
   });
   return { out, linked };
 }
 
-function areaPageHtml(template, ssr, area, bodyHtml, photo) {
-  const path = ssr.areaPath(area.area);
+function areaPageHtml(template, ssr, city, area, bodyHtml, photo) {
+  const path = ssr.areaPath(area.area, city);
   return staticPageHtml(template, ssr, bodyHtml, {
     path,
-    title: `Living in ${area.area}, Greater Manchester: Rent, House Prices, Commute and Safety`,
-    description: ssr.areaDescription(area),
+    title: `Living in ${area.area}, ${city.region}: Rent, House Prices, Commute and Safety`,
+    description: ssr.areaDescription(area, city),
     crumbs: [
       ["Home", "/"],
-      ["Manchester areas", "/manchester"],
+      [`${city.name} areas`, city.path],
       [area.area, path],
     ],
     photo,
   });
 }
 
-// A plain page (no app JavaScript) built from the Manchester page's <head>,
+// A plain page (no app JavaScript) built from a city finder page's <head>,
 // with its own title, description, canonical link, share tags and breadcrumb.
 function staticPageHtml(template, ssr, bodyHtml, { path, title, description, crumbs, photo }) {
   const url = `${ssr.SITE_URL}${path}`;
@@ -144,11 +144,11 @@ function staticPageHtml(template, ssr, bodyHtml, { path, title, description, cru
 }
 
 function sitemap(ssr, today) {
-  const urls = [
-    { loc: `${ssr.SITE_URL}/`, priority: "1.0" },
-    { loc: `${ssr.SITE_URL}/manchester`, priority: "0.9" },
-    ...ssr.areas.map((a) => ({ loc: `${ssr.SITE_URL}${ssr.areaPath(a.area)}`, priority: "0.7" })),
-  ];
+  const urls = [{ loc: `${ssr.SITE_URL}/`, priority: "1.0" }];
+  for (const city of Object.values(ssr.CITIES)) {
+    urls.push({ loc: `${ssr.SITE_URL}${city.path}`, priority: "0.9" });
+    for (const a of ssr.cityData[city.id].areas) urls.push({ loc: `${ssr.SITE_URL}${ssr.areaPath(a.area, city)}`, priority: "0.7" });
+  }
   return (
     '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
     urls
@@ -171,45 +171,59 @@ try {
 
   const React = await import("react");
   const { renderToString, renderToStaticMarkup } = await import("react-dom/server");
+  const cities = Object.values(ssr.CITIES);
+  const homeCity = cities[0]; // the home page shows this city's finder for now
 
+  // Read every city's finder page before changing anything (also the template
+  // for its area guides).
+  const templates = {};
+  for (const city of cities) templates[city.id] = await readFile(resolve(dist, city.pageFile), "utf8");
+
+  // 1. Home page
   const indexFile = resolve(dist, "index.html");
-  const manchesterFile = resolve(dist, "manchester.html");
   const indexHtml = await readFile(indexFile, "utf8");
-  const manchesterHtml = await readFile(manchesterFile, "utf8"); // also the area page template
-
-  // 1. Home and Manchester pages
-  const appHtml = renderToString(React.createElement(ssr.App));
-  await writeFile(indexFile, injectIntoPage(indexHtml, appHtml, "dist/index.html"));
+  const homeApp = renderToString(React.createElement(ssr.App, { city: homeCity, areas: ssr.cityData[homeCity.id].areas }));
+  await writeFile(indexFile, injectIntoPage(indexHtml, homeApp, "dist/index.html"));
   console.log("prerendered dist/index.html");
 
-  let linkedCount = 0;
-  const linkedManchester = injectIntoPage(manchesterHtml, appHtml, "dist/manchester.html", (fallback) => {
-    const { out, linked } = linkAreaNames(fallback, ssr);
-    linkedCount = linked;
-    return out;
-  });
-  if (linkedCount !== ssr.areas.length) {
-    throw new Error(`dist/manchester.html: linked ${linkedCount} area names, expected ${ssr.areas.length}`);
-  }
-  await writeFile(manchesterFile, linkedManchester);
-  console.log(`prerendered dist/manchester.html (${linkedCount} area names linked)`);
+  let pageCount = 1;
+  for (const city of cities) {
+    const { areas, photos } = ssr.cityData[city.id];
+    const template = templates[city.id];
+    const file = `dist/${city.pageFile}`;
 
-  // 2. Area guide pages
-  for (const area of ssr.areas) {
-    const photo = ssr.areaPhotos[area.area];
-    const body = renderToStaticMarkup(React.createElement(ssr.AreaPage, { area, areas: ssr.areas, photo }));
-    const dir = resolve(dist, "manchester", ssr.areaSlug(area.area));
-    await mkdir(dir, { recursive: true });
-    await writeFile(resolve(dir, "index.html"), areaPageHtml(manchesterHtml, ssr, area, body, photo));
-  }
-  console.log(`wrote ${ssr.areas.length} area pages to dist/manchester/<area>/index.html`);
+    // 2. The city's finder page
+    const appHtml = renderToString(React.createElement(ssr.App, { city, areas }));
+    let linkedCount = 0;
+    const page = injectIntoPage(template, appHtml, file, (fallback) => {
+      const { out, linked } = linkAreaNames(fallback, ssr, city, areas);
+      linkedCount = linked;
+      return out;
+    });
+    if (linkedCount !== areas.length) {
+      throw new Error(`${file}: linked ${linkedCount} area names, expected ${areas.length}`);
+    }
+    await writeFile(resolve(dist, city.pageFile), page);
+    console.log(`prerendered ${file} (${linkedCount} area names linked)`);
 
-  // 3. Privacy notice
+    // 3. The city's area guide pages
+    for (const area of areas) {
+      const photo = photos[area.area];
+      const body = renderToStaticMarkup(React.createElement(ssr.AreaPage, { area, areas, photo, city }));
+      const dir = resolve(dist, city.path.replace(/^\//, ""), ssr.areaSlug(area.area));
+      await mkdir(dir, { recursive: true });
+      await writeFile(resolve(dir, "index.html"), areaPageHtml(template, ssr, city, area, body, photo));
+    }
+    console.log(`wrote ${areas.length} area pages to dist${city.path}/<area>/index.html`);
+    pageCount += 1 + areas.length;
+  }
+
+  // 4. Privacy notice
   const privacyBody = renderToStaticMarkup(React.createElement(ssr.PrivacyPage));
   await mkdir(resolve(dist, "privacy"), { recursive: true });
   await writeFile(
     resolve(dist, "privacy", "index.html"),
-    staticPageHtml(manchesterHtml, ssr, privacyBody, {
+    staticPageHtml(templates[homeCity.id], ssr, privacyBody, {
       path: "/privacy",
       title: "Privacy notice | Where Should I Live?",
       description: "How Where Should I Live uses information: what Google Analytics records, cookies, the map, hosting and your rights.",
@@ -221,10 +235,10 @@ try {
   );
   console.log("wrote dist/privacy/index.html");
 
-  // 4. Sitemap
+  // 5. Sitemap
   const today = new Date().toISOString().slice(0, 10);
   await writeFile(resolve(dist, "sitemap.xml"), sitemap(ssr, today));
-  console.log(`wrote dist/sitemap.xml (${ssr.areas.length + 2} pages)`);
+  console.log(`wrote dist/sitemap.xml (${pageCount} pages)`);
 } finally {
   await rm(tempDir, { recursive: true, force: true });
 }

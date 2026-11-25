@@ -6,7 +6,7 @@
 //   - downloads each chosen photo (960 pixels wide, or smaller originals as
 //     they are) from Wikimedia to public/images/areas/<area-slug>.jpg (served
 //     at /images/areas/...), slowly, and can resume if Wikimedia is busy;
-//   - writes src/areaPhotos.json with the photographer, licence and source
+//   - writes src/data/manchester/areaPhotos.json with the photographer, licence and source
 //     page for each photo, used for the credit line on the area pages.
 // Areas with no choice (or null) get no photo.
 //
@@ -96,5 +96,5 @@ for (const { area, candidates: list } of candidates) {
   console.log(`saved ${slug}.jpg`);
 }
 
-await writeFile(new URL("../../src/areaPhotos.json", import.meta.url), JSON.stringify(photos, null, 2) + "\n");
-console.log(`photos for ${Object.keys(photos).length} areas; written src/areaPhotos.json`);
+await writeFile(new URL("../../src/data/manchester/areaPhotos.json", import.meta.url), JSON.stringify(photos, null, 2) + "\n");
+console.log(`photos for ${Object.keys(photos).length} areas; written src/data/manchester/areaPhotos.json`);

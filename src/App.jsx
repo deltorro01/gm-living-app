@@ -1,5 +1,4 @@
 import { Suspense, lazy, useEffect, useMemo, useState } from "react";
-import areas from "./areas.json";
 import "./styles.css";
 import { readSettings, writeSettings } from "./urlState.js";
 import { WhyThisMatch, CompareButton, CompareView } from "./ResultParts.jsx";
@@ -9,10 +8,6 @@ import SiteFooter from "./SiteFooter.jsx";
 
 // The map (and the Leaflet library) only downloads when someone opens it.
 const AreaMap = lazy(() => import("./AreaMap.jsx"));
-
-const BOROUGHS = [...new Set(areas.map((a) => a.borough))].sort();
-const AREA_NAMES = new Set(areas.map((a) => a.area));
-const compareCountFromLink = (names) => new Set(names.filter((name) => AREA_NAMES.has(name))).size;
 
 function money(value) {
   return new Intl.NumberFormat("en-GB", {
@@ -180,7 +175,12 @@ function getLifeStageScore(area, lifeStage, scores) {
   return 50;
 }
 
-export default function App() {
+// `city` is an entry from src/cities.js and `areas` is that city's area data.
+export default function App({ city, areas }) {
+  const BOROUGHS = useMemo(() => [...new Set(areas.map((a) => a.borough))].sort(), [areas]);
+  const AREA_NAMES = useMemo(() => new Set(areas.map((a) => a.area)), [areas]);
+  const compareCountFromLink = (names) => new Set(names.filter((name) => AREA_NAMES.has(name))).size;
+
 
   const DEFAULT_VISIBLE = 10;
 
@@ -274,6 +274,7 @@ export default function App() {
     cyclingPriority,
     safetyPriority,
     lifeStage,
+    areas,
   ]);
 
   const settings = {
@@ -352,7 +353,7 @@ export default function App() {
     <div className="app-shell">
       <div className="page-wrap">
         <div className="panel section-gap">
-          <div className="eyebrow">Where Should I Live In Greater Manchester</div>
+          <div className="eyebrow">{`Where Should I Live In ${city.region}`}</div>
           <h1 className="page-title">Find places that fit how you want to live</h1>
           <p className="muted page-intro">Set the basics, then open more preferences when needed.</p>
 
@@ -418,7 +419,7 @@ export default function App() {
                 value={commutePreference}
                 onChange={(e) => setCommutePreference(e.target.value)}
               >
-                <option value="city-centre">Manchester city centre</option>
+                <option value="city-centre">{city.centreLabel}</option>
                 <option value="balanced">Hybrid</option>
                 <option value="space">Work from home</option>
               </select>
@@ -500,7 +501,7 @@ export default function App() {
           {showMap && (
             <div className="map-wrap">
               <Suspense fallback={<p className="muted">Loading map…</p>}>
-                <AreaMap areas={filtered} budgetType={budgetType} money={money} />
+                <AreaMap areas={filtered} budgetType={budgetType} money={money} center={city.mapCenter} />
               </Suspense>
             </div>
           )}
@@ -508,6 +509,7 @@ export default function App() {
 
         {showCompare && compareAreas.length > 0 && (
           <CompareView
+            city={city}
             areas={compareAreas}
             settings={settings}
             money={money}
@@ -547,7 +549,7 @@ export default function App() {
                   <WhyThisMatch area={area} settings={settings} />
 
                   <div className="property-links">
-                    <PropertyLinks area={area} hero />
+                    <PropertyLinks area={area} city={city} hero />
                     <CompareButton name={area.area} compare={compare} onToggle={toggleCompare} />
                   </div>
                 </div>
@@ -584,7 +586,7 @@ export default function App() {
                           <WhyThisMatch area={area} settings={settings} />
 
                           <div className="property-links">
-                            <PropertyLinks area={area} />
+                            <PropertyLinks area={area} city={city} />
                             <CompareButton name={area.area} compare={compare} onToggle={toggleCompare} />
                           </div>
                         </div>
@@ -705,7 +707,7 @@ function AreaDetails({ area, budgetType }) {
   );
 }
 
-function PropertyLinks({ area, hero = false }) {
+function PropertyLinks({ area, city, hero = false }) {
   const extra = hero ? " hero-btn" : "";
   return (
     <>
@@ -719,7 +721,7 @@ function PropertyLinks({ area, hero = false }) {
           View for sale
         </a>
       )}
-      <a href={areaPath(area.area)} className="btn compare-btn area-guide-link">
+      <a href={areaPath(area.area, city)} className="btn compare-btn area-guide-link">
         Area guide
       </a>
     </>

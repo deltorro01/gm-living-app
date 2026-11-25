@@ -20,7 +20,7 @@
 //
 // Usage:
 //   node scripts/data/apply.mjs            preview only: writes scripts/data/out/areas.candidate.json
-//   node scripts/data/apply.mjs --write    also overwrites src/areas.json
+//   node scripts/data/apply.mjs --write    also overwrites src/data/manchester/areas.json
 // Optional: --skip=rents,schools,commute,greenspace  leaves those fields unchanged.
 
 import { readFile, writeFile } from "node:fs/promises";
@@ -36,7 +36,7 @@ const optional = async (p) => {
     return null;
   }
 };
-const areasFile = new URL("../../src/areas.json", import.meta.url);
+const areasFile = new URL("../../src/data/manchester/areas.json", import.meta.url);
 const areas = JSON.parse(await readFile(areasFile, "utf8"));
 
 const byArea = (list) => Object.fromEntries(list.map((x) => [x.area, x]));
@@ -114,4 +114,4 @@ const text = JSON.stringify(updated, null, 2).replace(/\n/g, "\r\n");
 await writeFile(new URL("./out/areas.candidate.json", import.meta.url), text);
 if (write) await writeFile(areasFile, text);
 const used = ["prices", "safety", rent && "rents", school && "schools", commute && "commute", green && "greenspace"].filter(Boolean);
-console.log(`applied: ${used.join(", ")}${write ? " (written to src/areas.json)" : " (preview only)"}`);
+console.log(`applied: ${used.join(", ")}${write ? " (written to src/data/manchester/areas.json)" : " (preview only)"}`);

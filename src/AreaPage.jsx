@@ -1,4 +1,4 @@
-// Guide page for one area, e.g. /manchester/ancoats.
+// Guide page for one area, e.g. /manchester/ancoats (or the same for another city).
 // Rendered to static HTML at build time by scripts/prerender.mjs; it needs no
 // JavaScript in the browser.
 
@@ -53,7 +53,7 @@ function miles(km) {
 // Plain-English notes on where each figure comes from, built from the
 // technical notes in the area's dataSources (see scripts/data/apply.mjs).
 // Returns [heading, sentence] pairs; a note that doesn't match is left out.
-export function plainSources(area) {
+export function plainSources(area, city) {
   const ds = area.dataSources ?? {};
   const out = [];
 
@@ -78,12 +78,12 @@ export function plainSources(area) {
   if (train) {
     out.push([
       "Commute",
-      `This is our estimate of the train journey to Manchester city centre, not counting the trip to the station. By bus or tram, a weekday morning trip to Piccadilly Gardens takes about ${duration(train[1])} door to door, including walking and waiting (Transport for Greater Manchester timetables).`,
+      `This is our estimate of the train journey to ${city.centreLabel}, not counting the trip to the station. By ${city.transitModes}, a weekday morning trip to ${city.centrePoint} takes about ${duration(train[1])} door to door, including walking and waiting (${city.transitOperator} timetables).`,
     ]);
   } else if (bus) {
     out.push([
       "Commute",
-      `This is the typical time spent on buses or trams to reach Piccadilly Gardens on a weekday morning between 7:30 and 8:30, worked out from Transport for Greater Manchester timetables. Allow about ${duration(bus[2])} door to door, including walking to the stop and waiting.`,
+      `This is the typical time spent on ${city.transitModesPlural} to reach ${city.centrePoint} on a weekday morning between 7:30 and 8:30, worked out from ${city.transitOperator} timetables. Allow about ${duration(bus[2])} door to door, including walking to the stop and waiting.`,
     ]);
   }
 
@@ -118,17 +118,17 @@ export function plainSources(area) {
   return out;
 }
 
-export function commuteSentence(area) {
+export function commuteSentence(area, city) {
   const trainEstimate = (area.dataSources?.commuteCityMinutes ?? "").startsWith("Train");
   return trainEstimate
-    ? `about ${area.commuteCityMinutes} minutes from Manchester city centre by train`
-    : `about ${area.commuteCityMinutes} minutes from Manchester city centre by bus or tram`;
+    ? `about ${area.commuteCityMinutes} minutes from ${city.centreLabel} by train`
+    : `about ${area.commuteCityMinutes} minutes from ${city.centreLabel} by ${city.transitModes}`;
 }
 
-export function areaDescription(area) {
+export function areaDescription(area, city) {
   return (
     `Living in ${area.area} (${area.borough}): typical rent ${money(area.averageRent)} a month, ` +
-    `homes selling for about ${money(area.averageHousePrice)}, ${commuteSentence(area)}. ` +
+    `homes selling for about ${money(area.averageHousePrice)}, ${commuteSentence(area, city)}. ` +
     `Compare safety, schools, green space and more.`
   );
 }
@@ -152,20 +152,20 @@ function PhotoCredit({ photo }) {
   );
 }
 
-export default function AreaPage({ area, areas, photo }) {
+export default function AreaPage({ area, areas, photo, city }) {
   const nearby = areas
     .filter((a) => a.area !== area.area)
     .map((a) => ({ ...a, km: distanceKm(area, a) }))
     .sort((a, b) => a.km - b.km)
     .slice(0, 6);
   const sameBorough = areas.filter((a) => a.borough === area.borough && a.area !== area.area);
-  const finderLink = `/manchester?borough=${encodeURIComponent(area.borough)}`;
+  const finderLink = `${city.path}?borough=${encodeURIComponent(area.borough)}`;
 
   return (
     <div className="app-shell">
       <div className="page-wrap area-page">
         <nav className="breadcrumb" aria-label="Breadcrumb">
-          <a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/manchester">Manchester areas</a>{" "}
+          <a href="/">Home</a> <span aria-hidden="true">›</span> <a href={city.path}>{`${city.name} areas`}</a>{" "}
           <span aria-hidden="true">›</span> <span aria-current="page">{area.area}</span>
         </nav>
 
@@ -179,7 +179,7 @@ export default function AreaPage({ area, areas, photo }) {
           <div className="eyebrow">Area guide · {area.borough}</div>
           <h1>Living in {area.area}</h1>
           <p className="intro-text">
-            {area.area} is in {area.borough}, {commuteSentence(area)}. Typical rent is {money(area.averageRent)} a month,
+            {area.area} is in {area.borough}, {commuteSentence(area, city)}. Typical rent is {money(area.averageRent)} a month,
             and homes sold for a median of {money(area.averageHousePrice)} over the last year.
           </p>
 
@@ -225,7 +225,7 @@ export default function AreaPage({ area, areas, photo }) {
 
         <div className="panel section-gap">
           <h2>How {area.area} rates</h2>
-          <p className="muted">Ratings from 1 to 5 compare the 86 areas in Greater Manchester covered by this site.</p>
+          <p className="muted">{`Ratings from 1 to 5 compare the ${areas.length} areas in ${city.region} covered by this site.`}</p>
           <ul className="rating-list">
             {RATINGS.map(([field, label, official]) => (
               <li key={field}>
@@ -248,7 +248,7 @@ export default function AreaPage({ area, areas, photo }) {
         <div className="panel section-gap">
           <h2>Where these figures come from</h2>
           <dl className="source-list">
-            {plainSources(area).map(([label, text]) => (
+            {plainSources(area, city).map(([label, text]) => (
               <div key={label} className="source-item">
                 <dt>{label}</dt>
                 <dd>{text}</dd>
@@ -259,7 +259,7 @@ export default function AreaPage({ area, areas, photo }) {
             Contains HM Land Registry data © Crown copyright and database right 2026. Contains OS data © Crown copyright
             and database right 2026. Contains public sector information from the Office for National Statistics, Ofsted
             and the Ministry of Housing, Communities and Local Government, licensed under the Open Government Licence
-            v3.0. Timetable data from Transport for Greater Manchester.
+            v3.0. Timetable data from {city.transitOperator}.
           </p>
         </div>
 
@@ -268,7 +268,7 @@ export default function AreaPage({ area, areas, photo }) {
           <ul className="area-link-list">
             {nearby.map((a) => (
               <li key={a.area}>
-                <a href={areaPath(a.area)}>{a.area}</a> <span className="muted">({a.borough}, {a.km.toFixed(1)} km)</span>
+                <a href={areaPath(a.area, city)}>{a.area}</a> <span className="muted">({a.borough}, {a.km.toFixed(1)} km)</span>
               </li>
             ))}
           </ul>
@@ -279,7 +279,7 @@ export default function AreaPage({ area, areas, photo }) {
               <ul className="area-link-list">
                 {sameBorough.map((a) => (
                   <li key={a.area}>
-                    <a href={areaPath(a.area)}>{a.area}</a>
+                    <a href={areaPath(a.area, city)}>{a.area}</a>
                   </li>
                 ))}
               </ul>
@@ -287,8 +287,8 @@ export default function AreaPage({ area, areas, photo }) {
           )}
 
           <p className="spaced-top">
-            <a href="/manchester" className="btn btn-secondary">
-              Compare all 86 areas
+            <a href={city.path} className="btn btn-secondary">
+              {`Compare all ${areas.length} areas`}
             </a>
           </p>
         </div>

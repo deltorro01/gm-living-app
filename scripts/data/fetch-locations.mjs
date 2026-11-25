@@ -1,4 +1,4 @@
-// Find a map point (latitude/longitude) for each area in src/areas.json,
+// Find a map point (latitude/longitude) for each area in src/data/manchester/areas.json,
 // using the free postcodes.io "places" search (Ordnance Survey Open Names).
 //
 // Only matches inside the area's own borough are accepted. Results are written
@@ -8,7 +8,7 @@
 
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 
-const areas = JSON.parse(await readFile(new URL("../../src/areas.json", import.meta.url)));
+const areas = JSON.parse(await readFile(new URL("../../src/data/manchester/areas.json", import.meta.url)));
 
 // Where the area name is not the OS place name: search for this name instead,
 // and accept it in this borough (OS sometimes files a place under a neighbouring

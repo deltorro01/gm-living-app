@@ -13,13 +13,13 @@ function escapeHtml(text) {
   return String(text).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 }
 
-export default function AreaMap({ areas, budgetType, money, onSelect }) {
+export default function AreaMap({ areas, budgetType, money, onSelect, center = [53.48, -2.24] }) {
   const box = useRef(null);
   const map = useRef(null);
   const layer = useRef(null);
 
   useEffect(() => {
-    map.current = L.map(box.current, { scrollWheelZoom: false }).setView([53.48, -2.24], 10);
+    map.current = L.map(box.current, { scrollWheelZoom: false }).setView(center, 10);
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 18,
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',

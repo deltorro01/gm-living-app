@@ -42,7 +42,7 @@ export function CompareButton({ name, compare, onToggle }) {
   );
 }
 
-export function CompareView({ areas, settings, money, onRemove, onClose }) {
+export function CompareView({ city, areas, settings, money, onRemove, onClose }) {
   const rows = [
     ["Match", (a) => `${a.match}%`],
     ["Borough", (a) => a.borough],
@@ -76,7 +76,7 @@ export function CompareView({ areas, settings, money, onRemove, onClose }) {
               </th>
               {areas.map((a) => (
                 <th key={a.area} scope="col">
-                  <a href={areaPath(a.area)}>{a.area}</a>
+                  <a href={areaPath(a.area, city)}>{a.area}</a>
                   <button type="button" className="compare-remove" onClick={() => onRemove(a.area)} aria-label={`Remove ${a.area}`}>
                     ×
                   </button>
