@@ -22,7 +22,8 @@
 // (Run the other scripts first; this one only combines their results.)
 
 import { readFile, writeFile, mkdir } from "node:fs/promises";
-import { CITY, AREAS_FILE, readOut } from "./city.mjs";
+import { CITY, AREAS_FILE, SETTINGS_FOR_CITY, readOut } from "./city.mjs";
+import { distanceKm } from "./geo.mjs";
 
 if (CITY === "manchester") throw new Error("Manchester's dataset is maintained with apply.mjs, not built from scratch");
 
@@ -87,6 +88,23 @@ const R = {
   detached: ratings("detached", (n) => price[n].typeShare.detached),
 };
 
+// Rightmove search links by postcode district (e.g. L7): the district most
+// common among known postcodes within 600 m of the area's centre, unless set by
+// hand in city.mjs. Place names alone can open the wrong town (Kensington → London).
+const postcodes = Object.entries(JSON.parse(await readFile(new URL("out/postcodes-cache.json", import.meta.url), "utf8"))).filter(
+  ([, v]) => v?.lat
+);
+function outcode(l) {
+  const fixed = SETTINGS_FOR_CITY.rightmoveOutcodes?.[l.area];
+  if (fixed) return fixed;
+  const count = {};
+  for (const [pc, v] of postcodes) if (distanceKm(l, v) < 0.6) count[pc.split(" ")[0]] = (count[pc.split(" ")[0]] ?? 0) + 1;
+  const best = Object.entries(count).sort((a, b) => b[1] - a[1])[0];
+  if (!best) throw new Error(`No postcodes near ${l.area}; set its district in city.mjs rightmoveOutcodes`);
+  return best[0];
+}
+const rightmove = (kind, l) => `https://www.rightmove.co.uk/property-${kind}/${outcode(l)}.html`;
+
 const areas = locations.map((l) => {
   const n = l.area;
   const p = price[n];
@@ -114,8 +132,8 @@ const areas = locations.map((l) => {
     semis: R.semis[n],
     detached: R.detached[n],
     value: R.value[n],
-    BuyURL: "",
-    RentURL: "",
+    BuyURL: rightmove("for-sale", l),
+    RentURL: rightmove("to-rent", l),
     lat: l.lat,
     lng: l.lng,
     dataSources: {

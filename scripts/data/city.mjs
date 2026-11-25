@@ -37,6 +37,10 @@ const SETTINGS = {
     travelDate: "20261215",
     // Wikipedia article titles use the county, e.g. "Allerton, Merseyside"; Halton is in Cheshire.
     wikiCounties: ["Merseyside", "Cheshire"],
+    // Rightmove links search the area's main postcode district, worked out from
+    // nearby postcodes; these are set by hand where the area's centre point sits
+    // near a boundary and the nearest district isn't the one the area is known by.
+    rightmoveOutcodes: { "Georgian Quarter": "L8", Kensington: "L7", Allerton: "L18", Aigburth: "L17", Bebington: "CH63", Crosby: "L23" },
   },
 };
 
