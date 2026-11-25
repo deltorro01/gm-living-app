@@ -1325,3 +1325,42 @@ hr,
   gap: 8px;
   margin-top: 10px;
 }
+/* Home page: one card per city */
+.home-page {
+  max-width: 1100px;
+}
+
+.city-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.city-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.city-card .area-photo {
+  margin-bottom: 8px;
+}
+
+.city-card .area-photo img {
+  aspect-ratio: 16 / 10;
+  max-height: none;
+}
+
+.city-card h2 {
+  font-size: 1.5rem;
+}
+
+.city-card p {
+  margin: 0;
+}
+
+.city-card-btn {
+  align-self: flex-start;
+  margin-top: auto;
+  text-decoration: none;
+}

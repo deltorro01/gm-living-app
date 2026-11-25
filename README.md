@@ -24,7 +24,7 @@ To create the production build, run `npm run build`. The output goes to the `dis
 - `src/styles.css`: all styling.
 - `src/cities.js`: settings for each city (name, region, web address, city-centre point, transport operator, map centre). Adding a city starts here.
 - `src/data/<city>/areas.json`: each city's area dataset, for example `src/data/manchester/areas.json`. Edit this to change area data.
-- `index.html`: the home page. It includes a short fallback text that search engines can read.
+- `index.html` and `src/HomePage.jsx`: the home page, where visitors choose a city. It is built as a plain page with no app JavaScript. Each city card's photo and credit are set in `src/cities.js` (`homePhoto`). `public/home-redirect.js` sends old shared links such as `/?rent=1200` on to `/manchester`, because the home page used to be the Manchester finder. The page title and description mention the total number of areas, so update `index.html` if areas are added.
 - `manchester.html` and `liverpool.html`: the city pages served at `/manchester` and `/liverpool`, with the same fallback text.
 - `vercel.json`: routing for the city pages, and the security headers sent with every page. The Content-Security-Policy lists the only outside places the site may load from (Google Analytics and OpenStreetMap map tiles). If you add another outside service, such as a font, video or new analytics tool, add it there too or the browser will block it.
 - `public/`: files served as they are, such as the favicon, robots file and the city share images (`images/manchester.jpg`, `images/liverpool.jpg`).

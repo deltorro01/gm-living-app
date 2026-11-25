@@ -356,7 +356,9 @@ export default function App({ city, areas }) {
         <div className="panel section-gap">
           <div className="eyebrow">{`Where Should I Live In ${city.regionInSentence ?? city.region}`}</div>
           <h1 className="page-title">Find places that fit how you want to live</h1>
-          <p className="muted page-intro">Set the basics, then open more preferences when needed.</p>
+          <p className="muted page-intro">
+            Set the basics, then open more preferences when needed. <a href="/">Change city</a>
+          </p>
 
           <div className="sticky-top-filters field-grid">
             <div className="field-group">

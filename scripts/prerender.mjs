@@ -4,21 +4,21 @@
 // Runs after `vite build` (see the "build" script in package.json):
 //   1. Builds a Node-friendly copy of the app (src/ssr-entry.jsx) into a
 //      temporary folder.
-//   2. Renders <App /> with react-dom/server, using its default settings, and
-//      writes it into <div id="root"> in dist/index.html and
-//      dist/manchester.html, keeping each page's fallback text after it. On the
-//      Manchester page, area names in the fallback list become links to their
-//      guide pages.
-//   3. Writes a static guide page for every area to
-//      dist/manchester/<area>/index.html (served at /manchester/<area>), using
-//      the Manchester page's <head> with its own title, description, canonical
-//      link and share tags. These pages load no JavaScript.
-//   4. Writes dist/sitemap.xml listing the home page, /manchester and every
-//      area page.
+//   2. Writes the home page (dist/index.html) as the city chooser
+//      (src/HomePage.jsx), a plain page with no app JavaScript.
+//   3. For each city in src/cities.js: renders <App /> with its default
+//      settings into <div id="root"> of the city's finder page (e.g.
+//      dist/manchester.html), keeping the fallback text after it and turning
+//      the area names in it into links; then writes a static guide page for
+//      every area to dist/<city>/<area>/index.html, using the finder page's
+//      <head> with its own title, description, canonical link and share tags.
+//      These pages load no JavaScript.
+//   4. Writes the privacy notice and dist/sitemap.xml (home page, each city
+//      page and every area page).
 //   5. Deletes the temporary folder.
 //
-// src/main.jsx is unchanged: when JavaScript loads on the home and Manchester
-// pages, React replaces everything inside #root with the live app.
+// On the finder pages, src/main.jsx replaces everything inside #root with the
+// live app when JavaScript loads.
 
 import { build } from "vite";
 import { readFile, writeFile, rm, mkdir } from "node:fs/promises";
@@ -172,19 +172,28 @@ try {
   const React = await import("react");
   const { renderToString, renderToStaticMarkup } = await import("react-dom/server");
   const cities = Object.values(ssr.CITIES);
-  const homeCity = cities[0]; // the home page shows this city's finder for now
+  const homeCity = cities[0]; // its page's <head> is the template for the privacy notice
 
   // Read every city's finder page before changing anything (also the template
   // for its area guides).
   const templates = {};
   for (const city of cities) templates[city.id] = await readFile(resolve(dist, city.pageFile), "utf8");
 
-  // 1. Home page
+  // 1. Home page: the city chooser, a plain page with no app JavaScript. It
+  // keeps index.html's own title and share tags. home-redirect.js sends old
+  // shared links (/?rent=... from when the home page was the Manchester
+  // finder) on to /manchester with the same settings.
   const indexFile = resolve(dist, "index.html");
-  const indexHtml = await readFile(indexFile, "utf8");
-  const homeApp = renderToString(React.createElement(ssr.App, { city: homeCity, areas: ssr.cityData[homeCity.id].areas }));
-  await writeFile(indexFile, injectIntoPage(indexHtml, homeApp, "dist/index.html"));
-  console.log("prerendered dist/index.html");
+  let indexHtml = await readFile(indexFile, "utf8");
+  const homeBody = renderToStaticMarkup(
+    React.createElement(ssr.HomePage, { cities: cities.map((city) => ({ city, areas: ssr.cityData[city.id].areas })) })
+  );
+  indexHtml = replaceOnce(indexHtml, /\s*<script type="module"[^>]*><\/script>/, "", "app script");
+  indexHtml = indexHtml.replace(/\s*<link rel="modulepreload"[^>]*>/g, "");
+  indexHtml = indexHtml.replace("<head>", '<head>\n    <script src="/home-redirect.js"></script>');
+  const { start: homeStart, end: homeEnd } = rootSpan(indexHtml, "dist/index.html");
+  await writeFile(indexFile, indexHtml.slice(0, homeStart) + ROOT_OPEN + homeBody + indexHtml.slice(homeEnd));
+  console.log("wrote dist/index.html (city chooser)");
 
   let pageCount = 1;
   for (const city of cities) {

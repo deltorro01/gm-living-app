@@ -9,6 +9,7 @@ export { default as App } from "./App.jsx";
 export { default as AreaPage, areaDescription } from "./AreaPage.jsx";
 export { areaSlug, areaPath, SITE_URL } from "./slug.js";
 export { default as PrivacyPage } from "./PrivacyPage.jsx";
+export { default as HomePage } from "./HomePage.jsx";
 export { CONTACT_IS_PLACEHOLDER } from "./site.js";
 export { CITIES } from "./cities.js";
 

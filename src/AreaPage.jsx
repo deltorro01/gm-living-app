@@ -157,7 +157,7 @@ export function areaDescription(area, city) {
   );
 }
 
-function PhotoCredit({ photo }) {
+export function PhotoCredit({ photo }) {
   return (
     <figcaption>
       Photo: {photo.author},{" "}

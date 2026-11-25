@@ -3,19 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Where Should I Live?</title>
+    <title>Where Should I Live? Compare Areas in Greater Manchester and the Liverpool City Region</title>
     <meta
       name="description"
-      content="Find the right place to live in Greater Manchester. Compare 86 areas by budget, commute, schools, green space, safety and lifestyle, ranked against your priorities."
+      content="Find the right place to live. Compare 141 areas in Greater Manchester and the Liverpool City Region by budget, commute, schools, green space, safety and lifestyle, ranked against your priorities."
     />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://www.whereshouldiliveinthe.uk/" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Where Should I Live? Compare Greater Manchester Areas" />
+    <meta property="og:title" content="Where Should I Live? Compare Areas in Greater Manchester and the Liverpool City Region" />
     <meta
       property="og:description"
-      content="Find the right place to live in Greater Manchester based on your budget, commute, schools, green space, safety and lifestyle."
+      content="Find the right place to live based on your budget, commute, schools, green space, safety and lifestyle."
     />
     <meta property="og:url" content="https://www.whereshouldiliveinthe.uk/" />
     <meta property="og:site_name" content="Where Should I Live In The UK" />
@@ -30,10 +30,18 @@
 
   </head>
   <body>
+    <!--
+      Home page: the city chooser. At build time scripts/prerender.mjs replaces
+      the contents of #root with src/HomePage.jsx and removes the app script
+      below, so the live page loads no app JavaScript. The script is here only
+      so the stylesheet is built and linked.
+    -->
     <div id="root">
       <main>
         <h1>Where should I live?</h1>
-        <p>Find the right place to live in Greater Manchester. Compare 86 areas by budget, commute, schools, green space, safety and lifestyle. Start with <a href="/manchester">Where should I live in Manchester?</a></p>
+        <p>Find the right place to live. Compare areas by budget, commute, schools, green space, safety and lifestyle.</p>
+        <p><a href="/manchester">Where should I live in Greater Manchester?</a></p>
+        <p><a href="/liverpool">Where should I live in the Liverpool City Region?</a></p>
       </main>
     </div>
     <script type="module" src="/src/main.jsx"></script>
