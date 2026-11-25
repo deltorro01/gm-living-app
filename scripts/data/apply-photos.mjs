@@ -47,10 +47,18 @@ function sizedUrl(c) {
 }
 
 // Short description for screen readers, from the photo's own caption.
+// Captions that are really notes from the uploader, not a description of the photo.
+const NOT_A_CAPTION = /uploaded with|lizenz|licen[cs]e|@|https?:\/\//i;
+const ENTITIES = { amp: "&", quot: '"', apos: "'", lt: "<", gt: ">", nbsp: " " };
+
 function altText(area, description = "") {
-  const text = description.replace(/\s+/g, " ").trim();
-  if (!text) return `A view of ${area}`;
+  const text = description
+    .replace(/&(amp|quot|apos|lt|gt|nbsp);|&#(\d+);/g, (_, name, code) => (name ? ENTITIES[name] : String.fromCharCode(code)))
+    .replace(/\b(w|en):(?=\S)/g, "") // Wikipedia link codes such as "w:Speke Hall"
+    .replace(/\s+/g, " ")
+    .trim();
   let sentence = text.split(/(?<=[.!?])\s/)[0].replace(/\.$/, "");
+  if (!sentence || NOT_A_CAPTION.test(sentence.slice(0, 120))) return `A view of ${area}`;
   // Captions like "Pigeon Street" mean little on their own, so say where it is.
   if (!sentence.toLowerCase().includes(area.toLowerCase())) sentence = `${area}: ${sentence}`;
   return sentence.length <= 120 ? sentence : `${sentence.slice(0, 117).trim()}…`;
@@ -100,4 +108,4 @@ for (const { area, candidates: list } of candidates) {
 }
 
 await writeFile(PHOTOS_FILE, JSON.stringify(photos, null, 2) + "\n");
-console.log(`photos for ${Object.keys(photos).length} areas; written src/data/manchester/areaPhotos.json`);
+console.log(`photos for ${Object.keys(photos).length} areas; written areaPhotos.json for ${CITY}`);

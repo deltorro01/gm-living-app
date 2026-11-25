@@ -1,1 +1,542 @@
-{}
+{
+  "Liverpool City Centre": {
+    "src": "/images/areas/liverpool/liverpool-city-centre.jpg",
+    "width": 960,
+    "height": 540,
+    "author": "John Bradley",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Liverpool_2_July_2016,_Pro_Corbyn_Rally_(15).jpg",
+    "alt": "A view of Liverpool City Centre"
+  },
+  "Baltic Triangle": {
+    "src": "/images/areas/liverpool/baltic-triangle.jpg",
+    "width": 960,
+    "height": 632,
+    "author": "Rodhullandemu",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Roofscape_south_from_54_St_James_Street.jpg",
+    "alt": "Baltic Triangle: View south from 54 St James Street, across Cain's Bewery, with flour mills on Mill Street and St Gab…"
+  },
+  "Georgian Quarter": {
+    "src": "/images/areas/liverpool/georgian-quarter.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Reading Tom from Reading, UK",
+    "licence": "CC BY 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Falkner_Street_(3282088236).jpg",
+    "alt": "Georgian Quarter: Falkner Street, Liverpool"
+  },
+  "Toxteth": {
+    "src": "/images/areas/liverpool/toxteth.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Rept0n1x",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Benkid77_Toxteth_sign_060809.JPG",
+    "alt": "Toxteth sign on Croxteth Road near Sefton Park, Liverpool, England"
+  },
+  "Aigburth": {
+    "src": "/images/areas/liverpool/aigburth.jpg",
+    "width": 960,
+    "height": 639,
+    "author": "Ian S",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Aigburth_Hall_Avenue,_Liverpool_-_geograph.org.uk_-_6194482.jpg",
+    "alt": "Aigburth Hall Avenue, Liverpool"
+  },
+  "Mossley Hill": {
+    "src": "/images/areas/liverpool/mossley-hill.jpg",
+    "width": 960,
+    "height": 639,
+    "author": "Ian S",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Rose_Lane,_Mossley_Hill,_Liverpool_-_geograph.org.uk_-_6191863.jpg",
+    "alt": "Rose Lane, Mossley Hill, Liverpool"
+  },
+  "Allerton": {
+    "src": "/images/areas/liverpool/allerton.jpg",
+    "width": 960,
+    "height": 641,
+    "author": "El Pollock",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:All_Souls_Church,_Mather_Avenue,_Allerton_(geograph_3147376).jpg",
+    "alt": "Allerton: All Souls Church, Mather Avenue, Springwood, Liverpool"
+  },
+  "Woolton": {
+    "src": "/images/areas/liverpool/woolton.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Stephen Richards",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:2-8_Quarry_Street,_Liverpool_-_geograph.org.uk_-_7718194.jpg",
+    "alt": "Woolton: 2-8 Quarry Street, Liverpool"
+  },
+  "Wavertree": {
+    "src": "/images/areas/liverpool/wavertree.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Peter Barr",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Bed_shop,_beauty_shop,_High_Street,_Wavertree_-_geograph.org.uk_-_3214846.jpg",
+    "alt": "Bed shop, beauty shop, High Street, Wavertree"
+  },
+  "Garston": {
+    "src": "/images/areas/liverpool/garston.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Roger Cornfoot",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:The_George,_Garston_-_geograph.org.uk_-_5520245.jpg",
+    "alt": "The George, Garston"
+  },
+  "Speke": {
+    "src": "/images/areas/liverpool/speke.jpg",
+    "width": 960,
+    "height": 643,
+    "author": "Ian Livesey",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Speke_Hall.jpg",
+    "alt": "Speke Hall"
+  },
+  "West Derby": {
+    "src": "/images/areas/liverpool/west-derby.jpg",
+    "width": 960,
+    "height": 735,
+    "author": "Stephen Richards",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Former_dairy,_Croxteth_Park,_Liverpool_-_geograph.org.uk_-_7669999.jpg",
+    "alt": "West Derby: Former dairy, Croxteth Park, Liverpool"
+  },
+  "Old Swan": {
+    "src": "/images/areas/liverpool/old-swan.jpg",
+    "width": 960,
+    "height": 722,
+    "author": "Stephen Richards",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Old_Swan,_Prescot_Road,_Liverpool_-_geograph.org.uk_-_7662901.jpg",
+    "alt": "Old Swan, Prescot Road, Liverpool"
+  },
+  "Kensington": {
+    "src": "/images/areas/liverpool/kensington.jpg",
+    "width": 960,
+    "height": 642,
+    "author": "Stephen McKay",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Esher_Road,_Kensington_-_geograph.org.uk_-_3247304.jpg",
+    "alt": "Esher Road, Kensington"
+  },
+  "Anfield": {
+    "src": "/images/areas/liverpool/anfield.jpg",
+    "width": 960,
+    "height": 719,
+    "author": "Arne Müseler from Salzburg, AT",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:2023_07_31_arne_mueseler_00009-Verbessert-RR_(53106255486).jpg",
+    "alt": "A view of Anfield"
+  },
+  "Walton": {
+    "src": "/images/areas/liverpool/walton.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Rept0n1x",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:County_Road,_Walton,_Liverpool_(1).jpg",
+    "alt": "County Road, Walton, Liverpool, England"
+  },
+  "Fazakerley": {
+    "src": "/images/areas/liverpool/fazakerley.jpg",
+    "width": 960,
+    "height": 698,
+    "author": "Stephen Richards",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Lodge_and_gates,_Higher_Lane,_Liverpool_-_geograph.org.uk_-_7667045.jpg",
+    "alt": "Fazakerley: Lodge and gates, Higher Lane, Liverpool"
+  },
+  "Birkenhead": {
+    "src": "/images/areas/liverpool/birkenhead.jpg",
+    "width": 960,
+    "height": 640,
+    "author": "Bill Boaden",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Hamilton_Square_Gardens_-_geograph.org.uk_-_6397893.jpg",
+    "alt": "Birkenhead: Hamilton Square Gardens"
+  },
+  "Oxton": {
+    "src": "/images/areas/liverpool/oxton.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "JThomas",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Houses_on_Gerald_Road,_Birkenhead_-_geograph.org.uk_-_6166741.jpg",
+    "alt": "Oxton: Houses on Gerald Road, Birkenhead"
+  },
+  "Prenton": {
+    "src": "/images/areas/liverpool/prenton.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "JThomas",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Prenton_Lane,_Prenton_-_geograph.org.uk_-_6186728.jpg",
+    "alt": "Prenton Lane, Prenton"
+  },
+  "Rock Ferry": {
+    "src": "/images/areas/liverpool/rock-ferry.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Richard Vince",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Corinthian_Street,_Rock_Ferry_-_geograph.org.uk_-_8400831.jpg",
+    "alt": "Corinthian Street, Rock Ferry"
+  },
+  "Bebington": {
+    "src": "/images/areas/liverpool/bebington.jpg",
+    "width": 960,
+    "height": 640,
+    "author": "Milestone Society",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Old_Central_Cross_(geograph_6098979).jpg",
+    "alt": "Bebington: Old Central Cross"
+  },
+  "Bromborough": {
+    "src": "/images/areas/liverpool/bromborough.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "David Dixon",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:The_Bromborough_-_geograph.org.uk_-_2294383.jpg",
+    "alt": "The Bromborough"
+  },
+  "Eastham": {
+    "src": "/images/areas/liverpool/eastham.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Rept0n1x",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Eastham_Village,_Wirral_-_DSC03440.JPG",
+    "alt": "Memorial garden in Eastham Village, Wirral, Merseyside, England"
+  },
+  "Wallasey": {
+    "src": "/images/areas/liverpool/wallasey.jpg",
+    "width": 960,
+    "height": 641,
+    "author": "Rodhullandemu",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:28th_Wallasey_Scout_Huts.jpg",
+    "alt": "Scout huts on St George's Road, Wallasey Village"
+  },
+  "New Brighton": {
+    "src": "/images/areas/liverpool/new-brighton.jpg",
+    "width": 960,
+    "height": 617,
+    "author": "Rodhullandemu",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Rowson_Street,_New_Brighton.jpg",
+    "alt": "New Brighton: View along the upper section of Rowson Street towards Rake Lane"
+  },
+  "Moreton": {
+    "src": "/images/areas/liverpool/moreton.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Rept0n1x",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Moreton,_Merseyside_-_DSC04433.JPG",
+    "alt": "Moreton Cross roundabout at the junction of the A551 and A553 roads, Wirral, Merseyside, England"
+  },
+  "Upton": {
+    "src": "/images/areas/liverpool/upton.jpg",
+    "width": 960,
+    "height": 641,
+    "author": "El Pollock",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Shops,_Ford_Road,_Upton_Village_(geograph_2989845).jpg",
+    "alt": "Shops, Ford Road, Upton Village"
+  },
+  "Greasby": {
+    "src": "/images/areas/liverpool/greasby.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "J Scott",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Greasby_Village_-_geograph.org.uk_-_2489319.jpg",
+    "alt": "Greasby Village"
+  },
+  "Hoylake": {
+    "src": "/images/areas/liverpool/hoylake.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Richard Vince",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Melrose_Avenue,_Hoylake_-_geograph.org.uk_-_8400068.jpg",
+    "alt": "Melrose Avenue, Hoylake"
+  },
+  "West Kirby": {
+    "src": "/images/areas/liverpool/west-kirby.jpg",
+    "width": 960,
+    "height": 716,
+    "author": "Rodhullandemu",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Barclays_Bank,_West_Kirby_1.jpg",
+    "alt": "Barclays Bank, West Kirby"
+  },
+  "Heswall": {
+    "src": "/images/areas/liverpool/heswall.jpg",
+    "width": 960,
+    "height": 638,
+    "author": "Stephen McKay",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Telegraph_Road,_Heswall_-_geograph.org.uk_-_5730516.jpg",
+    "alt": "Telegraph Road, Heswall"
+  },
+  "Bootle": {
+    "src": "/images/areas/liverpool/bootle.jpg",
+    "width": 960,
+    "height": 524,
+    "author": "Rodhullandemu",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Stanley_Road,_Bootle_from_Marsh_Lane.jpg",
+    "alt": "Bootle: View north from the top deck of a bus stopped at Marsh Lane"
+  },
+  "Litherland": {
+    "src": "/images/areas/liverpool/litherland.jpg",
+    "width": 960,
+    "height": 638,
+    "author": "Mike Pennington",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Hatton_Hill_Road,_Litherland_-_geograph.org.uk_-_4705505.jpg",
+    "alt": "Hatton Hill Road, Litherland"
+  },
+  "Waterloo": {
+    "src": "/images/areas/liverpool/waterloo.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Rept0n1x",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Crosby_Town_Hall,_Waterloo,_Merseyside.jpg",
+    "alt": "Crosby Town Hall (aka Waterloo Town Hall), Great George's Road, Waterloo, Merseyside, England"
+  },
+  "Crosby": {
+    "src": "/images/areas/liverpool/crosby.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Norman Caesar",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:The_Liver_Hotel_-_geograph.org.uk_-_4080393.jpg",
+    "alt": "Crosby: The Liver Hotel"
+  },
+  "Maghull": {
+    "src": "/images/areas/liverpool/maghull.jpg",
+    "width": 960,
+    "height": 639,
+    "author": "Ian S",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Leeds_%5E_Liverpool_Canal_-_geograph.org.uk_-_6184216.jpg",
+    "alt": "Maghull: Leeds & Liverpool Canal"
+  },
+  "Formby": {
+    "src": "/images/areas/liverpool/formby.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Rept0n1x",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Formby_town_centre_(1).JPG",
+    "alt": "Formby town centre, Merseyside, England"
+  },
+  "Ainsdale": {
+    "src": "/images/areas/liverpool/ainsdale.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Stephen Craven",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Dolce_Vita,_Station_Road,_Ainsdale_-_geograph.org.uk_-_8168380.jpg",
+    "alt": "Dolce Vita, Station Road, Ainsdale"
+  },
+  "Birkdale": {
+    "src": "/images/areas/liverpool/birkdale.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Small-town hero",
+    "licence": "Public domain",
+    "licenceUrl": null,
+    "page": "https://commons.wikimedia.org/wiki/File:Birkdale_village_centre.JPG",
+    "alt": "The village centre of Birkdale, Merseyside, England"
+  },
+  "Southport": {
+    "src": "/images/areas/liverpool/southport.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Steve Daniels",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:The_Town_Hall_on_Lord_Street_-_geograph.org.uk_-_5953693.jpg",
+    "alt": "Southport: The Town Hall on Lord Street"
+  },
+  "Huyton": {
+    "src": "/images/areas/liverpool/huyton.jpg",
+    "width": 960,
+    "height": 639,
+    "author": "Ian Greig",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Knowsley_Borough_Council_Offices_-_geograph.org.uk_-_3732920.jpg",
+    "alt": "Huyton: Knowsley Borough Council Offices"
+  },
+  "Prescot": {
+    "src": "/images/areas/liverpool/prescot.jpg",
+    "width": 960,
+    "height": 557,
+    "author": "Rodhullandemu",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Eccleston_Street,_Prescot_1.jpg",
+    "alt": "Looking along Prescot's main shopping street from Market Place"
+  },
+  "Whiston": {
+    "src": "/images/areas/liverpool/whiston.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Sue Adair",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Dragon_Drive_-_geograph.org.uk_-_3087173.jpg",
+    "alt": "Whiston: Dragon Drive"
+  },
+  "Halewood": {
+    "src": "/images/areas/liverpool/halewood.jpg",
+    "width": 960,
+    "height": 680,
+    "author": "Rodhullandemu",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:St_Nicholas_church,_Halewood_1.jpg",
+    "alt": "Grade II listed church, 1839, in Halewood, Knowsley, Merseyside"
+  },
+  "Kirkby": {
+    "src": "/images/areas/liverpool/kirkby.jpg",
+    "width": 960,
+    "height": 494,
+    "author": "Anthony Parkes",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:The_Kirkby_Centre_-_geograph.org.uk_-_5634505.jpg",
+    "alt": "The Kirkby Centre"
+  },
+  "St Helens": {
+    "src": "/images/areas/liverpool/st-helens.jpg",
+    "width": 960,
+    "height": 741,
+    "author": "Anthony Parkes",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:The_Lamb_Public_House_-_St_Helens_-_geograph.org.uk_-_5425783.jpg",
+    "alt": "The Lamb Public House - St Helens"
+  },
+  "Eccleston": {
+    "src": "/images/areas/liverpool/eccleston.jpg",
+    "width": 960,
+    "height": 960,
+    "author": "24may1819",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Christ_Church,_Eccleston_with_flag_at_half-mast.jpg",
+    "alt": "Christ Church in the village of Eccleston near St Helens, pictured with union flag flying at half-mast following the…"
+  },
+  "Rainhill": {
+    "src": "/images/areas/liverpool/rainhill.jpg",
+    "width": 960,
+    "height": 719,
+    "author": "Pjposullivan",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:St_Bartholomew%27s_Church,_Rainhill.JPG",
+    "alt": "Roman Catholic church of St Bartholomew, Warrington Road, Rainhill Stoops, Merseyside, seen from the northwest"
+  },
+  "Haydock": {
+    "src": "/images/areas/liverpool/haydock.jpg",
+    "width": 960,
+    "height": 638,
+    "author": "David Long",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:New_housing_off_Clipsley_Lane_(A599)_-_geograph.org.uk_-_1740953.jpg",
+    "alt": "Haydock: New housing off Clipsley Lane (A599)"
+  },
+  "Newton-le-Willows": {
+    "src": "/images/areas/liverpool/newton-le-willows.jpg",
+    "width": 960,
+    "height": 640,
+    "author": "Steve Daniels",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:St_John%27s_Street_and_Market_Street_-_geograph.org.uk_-_2729262.jpg",
+    "alt": "Newton-le-Willows: St John's Street and Market Street"
+  },
+  "Billinge": {
+    "src": "/images/areas/liverpool/billinge.jpg",
+    "width": 960,
+    "height": 720,
+    "author": "Gary Rogers",
+    "licence": "CC BY-SA 2.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Main_Street,_Billinge_-_geograph.org.uk_-_3801534.jpg",
+    "alt": "Main Street, Billinge"
+  },
+  "Widnes": {
+    "src": "/images/areas/liverpool/widnes.jpg",
+    "width": 960,
+    "height": 641,
+    "author": "Joe Blundell",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Kingsway_Learning_Centre_Widnes_-_panoramio.jpg",
+    "alt": "Kingsway Learning Centre Widnes"
+  },
+  "Runcorn": {
+    "src": "/images/areas/liverpool/runcorn.jpg",
+    "width": 960,
+    "height": 568,
+    "author": "Dgp4004",
+    "licence": "CC0",
+    "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Silver_Jubilee_Bridge,_Runcorn,_night,_2024.jpg",
+    "alt": "The Silver Jubilee Bridge, a through arch bridge, in Runcorn at night in 2024"
+  }
+}
