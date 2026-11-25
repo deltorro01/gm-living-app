@@ -3,6 +3,7 @@
 
 import { explainMatch } from "./explain.js";
 import { areaPath } from "./slug.js";
+import { commuteShort } from "./commuteText.js";
 
 export function WhyThisMatch({ area, settings }) {
   const { good, watch } = explainMatch(area, settings);
@@ -48,7 +49,7 @@ export function CompareView({ city, areas, settings, money, onRemove, onClose })
     ["Borough", (a) => a.borough],
     ["Rent", (a) => `${money(a.averageRent)} pcm`],
     ["Typical price", (a) => money(a.averageHousePrice)],
-    ["To city centre", (a) => `About ${a.commuteCityMinutes} mins`],
+    ["To city centre", (a) => commuteShort(a.commuteCityMinutes)],
     ["Tram stop", (a) => (a.tram ? "Yes" : "No")],
     ["Train station", (a) => (a.train ? "Yes" : "No")],
     ["Safety", (a) => `${a.safety}/5`],
@@ -57,7 +58,7 @@ export function CompareView({ city, areas, settings, money, onRemove, onClose })
     ["Value for money", (a) => `${a.value}/5`],
     ["Nightlife", (a) => `${a.nightlife}/5`],
     ["Cycling", (a) => `${a.cycling}/5`],
-  ];
+  ].filter(([label]) => label !== "Tram stop" || city?.hasTram !== false);
   return (
     <section className="panel compare-view" aria-label="Area comparison">
       <div className="row-between wrap-gap">

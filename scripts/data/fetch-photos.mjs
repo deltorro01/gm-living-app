@@ -51,7 +51,9 @@ function distanceKm(a, b) {
 // 1. Wikipedia lead photos, 40 titles per request, trying name variants in turn.
 const lead = {};
 let todo = areas;
-const variants = [(a) => `${a.area}, Greater Manchester`, (a) => `${a.area}, ${a.borough}`, (a) => a.area];
+// Wikipedia article titles to try, e.g. "Allerton, Merseyside", then "Allerton, Liverpool", then "Allerton".
+const counties = SETTINGS_FOR_CITY.wikiCounties ?? ["Greater Manchester"];
+const variants = [...counties.map((c) => (a) => `${a.area}, ${c}`), (a) => `${a.area}, ${a.borough}`, (a) => a.area];
 for (const variant of variants) {
   const next = [];
   for (let i = 0; i < todo.length; i += 40) {

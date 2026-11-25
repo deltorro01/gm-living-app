@@ -9,6 +9,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         manchester: resolve(__dirname, 'manchester.html'),
+        liverpool: resolve(__dirname, 'liverpool.html'),
       },
     },
   },

@@ -1,6 +1,8 @@
 // Plain-English reasons behind an area's match score.
 // Reads the same inputs the score uses; it does not change any scores.
 
+import { isInCentre } from "./commuteText.js";
+
 const LIFE_STAGE_NAMES = {
   "young-professional": "a young professional",
   family: "a family",
@@ -49,7 +51,8 @@ export function explainMatch(area, settings) {
   // Commute
   if (settings.commutePreference === "city-centre") {
     const mins = area.commuteCityMinutes;
-    if (mins <= 20) good.push(`Quick to the city centre (about ${mins} mins)`);
+    if (isInCentre(mins)) good.push("In the city centre");
+    else if (mins <= 20) good.push(`Quick to the city centre (about ${mins} mins)`);
     else if (mins > 40) watch.push(`Long trip to the city centre (about ${mins} mins)`);
   }
 

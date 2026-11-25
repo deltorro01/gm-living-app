@@ -2,6 +2,8 @@
 // Not used in the browser.
 import manchesterAreas from "./data/manchester/areas.json";
 import manchesterPhotos from "./data/manchester/areaPhotos.json";
+import liverpoolAreas from "./data/liverpool/areas.json";
+import liverpoolPhotos from "./data/liverpool/areaPhotos.json";
 
 export { default as App } from "./App.jsx";
 export { default as AreaPage, areaDescription } from "./AreaPage.jsx";
@@ -13,4 +15,5 @@ export { CITIES } from "./cities.js";
 // Every city's data, keyed by city id (see src/cities.js).
 export const cityData = {
   manchester: { areas: manchesterAreas, photos: manchesterPhotos },
+  liverpool: { areas: liverpoolAreas, photos: liverpoolPhotos },
 };

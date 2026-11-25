@@ -5,6 +5,7 @@ import { WhyThisMatch, CompareButton, CompareView } from "./ResultParts.jsx";
 import { fitBand } from "./bands.js";
 import { areaPath } from "./slug.js";
 import SiteFooter from "./SiteFooter.jsx";
+import { commuteLabel } from "./commuteText.js";
 
 // The map (and the Leaflet library) only downloads when someone opens it.
 const AreaMap = lazy(() => import("./AreaMap.jsx"));
@@ -353,7 +354,7 @@ export default function App({ city, areas }) {
     <div className="app-shell">
       <div className="page-wrap">
         <div className="panel section-gap">
-          <div className="eyebrow">{`Where Should I Live In ${city.region}`}</div>
+          <div className="eyebrow">{`Where Should I Live In ${city.regionInSentence ?? city.region}`}</div>
           <h1 className="page-title">Find places that fit how you want to live</h1>
           <p className="muted page-intro">Set the basics, then open more preferences when needed.</p>
 
@@ -483,7 +484,7 @@ export default function App({ city, areas }) {
               <label>Must-haves: only show areas</label>
               <div className="button-row transport-toggle-row">
                 {filterToggle("Within my budget", withinBudget, setWithinBudget)}
-                {filterToggle("With a tram stop", tramOnly, setTramOnly)}
+                {city.hasTram !== false && filterToggle("With a tram stop", tramOnly, setTramOnly)}
                 {filterToggle("With a train station", trainOnly, setTrainOnly)}
               </div>
             </div>
@@ -681,7 +682,7 @@ function AreaDetails({ area, budgetType }) {
             <strong>{price}</strong> · Rent {rent}
           </>
         )}{" "}
-        · About {area.commuteCityMinutes} mins to the city centre
+        · {commuteLabel(area.commuteCityMinutes)}
       </p>
 
       <ul className="rating-dots">

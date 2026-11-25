@@ -15,6 +15,22 @@ export const CITIES = {
     transitModes: "bus or tram", // "by bus or tram"
     transitModesPlural: "buses or trams", // "time spent on buses or trams"
     mapCenter: [53.48, -2.24],
+    hasTram: true,
+  },
+  liverpool: {
+    id: "liverpool",
+    name: "Liverpool",
+    region: "Liverpool City Region",
+    regionInSentence: "the Liverpool City Region", // "Where Should I Live In the Liverpool City Region"
+    path: "/liverpool",
+    pageFile: "liverpool.html",
+    centreLabel: "Liverpool city centre",
+    centrePoint: "Church Street",
+    transitOperator: "Bus Open Data Service and Rail Delivery Group",
+    transitModes: "bus, train or ferry",
+    transitModesPlural: "buses, trains or ferries",
+    mapCenter: [53.42, -2.95],
+    hasTram: false, // hides the "With a tram stop" filter
   },
 };
 

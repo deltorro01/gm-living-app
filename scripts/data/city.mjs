@@ -35,6 +35,8 @@ const SETTINGS = {
     // Tuesday 15 Dec 2026: first full week of the December 2026 rail timetable, and a
     // normal bus day (Bus Open Data has very few trips on 1 Dec, a data quirk).
     travelDate: "20261215",
+    // Wikipedia article titles use the county, e.g. "Allerton, Merseyside"; Halton is in Cheshire.
+    wikiCounties: ["Merseyside", "Cheshire"],
   },
 };
 

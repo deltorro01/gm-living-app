@@ -25,7 +25,9 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const read = async (p) => JSON.parse(await readFile(new URL(p, import.meta.url), "utf8"));
 const choices = await readOut("photo-choices.json");
 const candidates = await readOut("photo-candidates.json");
-const outDir = new URL("../../public/images/areas/", import.meta.url);
+// Manchester's photos are in public/images/areas/; other cities have a subfolder.
+const photoPath = CITY === "manchester" ? "/images/areas/" : `/images/areas/${CITY}/`;
+const outDir = new URL(`../../public${photoPath}`, import.meta.url);
 await mkdir(outDir, { recursive: true });
 
 // Which file was saved for each area, so a rerun can skip finished downloads.
@@ -65,7 +67,7 @@ for (const { area, candidates: list } of candidates) {
   }
   const { url, width, height } = sizedUrl(chosen);
   photos[area] = {
-    src: `/images/areas/${slug}.jpg`,
+    src: `${photoPath}${slug}.jpg`,
     width,
     height,
     author: chosen.author,

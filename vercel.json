@@ -4,6 +4,10 @@
     {
       "source": "/manchester",
       "destination": "/manchester.html"
+    },
+    {
+      "source": "/liverpool",
+      "destination": "/liverpool.html"
     }
   ],
   "headers": [

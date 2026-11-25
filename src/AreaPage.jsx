@@ -4,6 +4,7 @@
 
 import { areaPath } from "./slug.js";
 import SiteFooter from "./SiteFooter.jsx";
+import { isInCentre, commuteShort } from "./commuteText.js";
 
 function money(value) {
   return new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP", maximumFractionDigits: 0 }).format(value);
@@ -61,7 +62,10 @@ export function plainSources(area, city) {
   if (rent) {
     out.push([
       "Rent",
-      `The official average private rent across ${area.borough} was ${money(Number(rent[1]))} a month in ${monthName(rent[2])} (Office for National Statistics). We adjust this up or down for each area in the borough using our own estimates, so treat the figure for ${area.area} as a guide rather than an exact price.`,
+      `The official average private rent across ${area.borough} was ${money(Number(rent[1]))} a month in ${monthName(rent[2])} (Office for National Statistics). ` +
+        (ds.averageRent.startsWith("Estimated from local house prices")
+          ? `We adjust this for each area by how its house prices compare with the rest of the borough, like for like, so treat the figure for ${area.area} as a guide rather than an exact price.`
+          : `We adjust this up or down for each area in the borough using our own estimates, so treat the figure for ${area.area} as a guide rather than an exact price.`),
     ]);
   }
 
@@ -74,8 +78,12 @@ export function plainSources(area, city) {
   }
 
   const train = ds.commuteCityMinutes?.match(/^Train estimate.*door to door (\d+) min/);
-  const bus = ds.commuteCityMinutes?.match(/^TfGM timetable.*on board bus\/tram (\d+) min \(door to door (\d+) min\)/);
-  if (train) {
+  // Matches both "on board bus/tram 18 min (door to door 25 min)" (Manchester)
+  // and "on board bus, train or ferry 28 min (door to door 41 min)" (Liverpool).
+  const bus = ds.commuteCityMinutes?.match(/average time on board [^0-9]*(\d+) min \(door to door (\d+) min\)/);
+  if (isInCentre(area.commuteCityMinutes)) {
+    out.push(["Commute", `${area.area} is in ${city.centreLabel} itself, within walking distance of ${city.centrePoint}.`]);
+  } else if (train) {
     out.push([
       "Commute",
       `This is our estimate of the train journey to ${city.centreLabel}, not counting the trip to the station. By ${city.transitModes}, a weekday morning trip to ${city.centrePoint} takes about ${duration(train[1])} door to door, including walking and waiting (${city.transitOperator} timetables).`,
@@ -111,14 +119,30 @@ export function plainSources(area, city) {
     ]);
   }
 
-  out.push([
-    "Other ratings",
-    "Green space, value for money, nightlife, cafés, culture, quietness and cycling are our own estimates, not official figures.",
-  ]);
+  const green = ds.greenSpace?.match(/OpenStreetMap: ([\d.]+)% of land within 1 km is green/);
+  if (green) {
+    out.push([
+      "Green space",
+      `About ${Math.round(Number(green[1]))}% of the land within about half a mile of the centre of ${area.area} is green: parks, playing fields, woods, fields, heath and beaches, from OpenStreetMap. Private gardens aren't counted for any area.`,
+    ]);
+  }
+
+  if (ds.lifestyle) {
+    out.push([
+      "Other ratings",
+      "Nightlife, cafés and culture count the bars, cafés and venues nearby on OpenStreetMap. Quietness, cycling and value for money are worked out from OpenStreetMap, house prices and the other ratings. All ratings compare areas within this city region.",
+    ]);
+  } else {
+    out.push([
+      "Other ratings",
+      "Green space, value for money, nightlife, cafés, culture, quietness and cycling are our own estimates, not official figures.",
+    ]);
+  }
   return out;
 }
 
 export function commuteSentence(area, city) {
+  if (isInCentre(area.commuteCityMinutes)) return `in the heart of ${city.centreLabel}`;
   const trainEstimate = (area.dataSources?.commuteCityMinutes ?? "").startsWith("Train");
   return trainEstimate
     ? `about ${area.commuteCityMinutes} minutes from ${city.centreLabel} by train`
@@ -160,6 +184,8 @@ export default function AreaPage({ area, areas, photo, city }) {
     .slice(0, 6);
   const sameBorough = areas.filter((a) => a.borough === area.borough && a.area !== area.area);
   const finderLink = `${city.path}?borough=${encodeURIComponent(area.borough)}`;
+  // Cities built from data (e.g. Liverpool) have no hand-set ratings to mark.
+  const allFromData = Boolean(area.dataSources?.lifestyle);
 
   return (
     <div className="app-shell">
@@ -194,12 +220,14 @@ export default function AreaPage({ area, areas, photo, city }) {
             </div>
             <div className="fact">
               <span className="fact-label">To the city centre</span>
-              <strong>About {area.commuteCityMinutes} mins</strong>
+              <strong>{commuteShort(area.commuteCityMinutes)}</strong>
             </div>
-            <div className="fact">
-              <span className="fact-label">Tram stop</span>
-              <strong>{area.tram ? "Yes" : "No"}</strong>
-            </div>
+            {city.hasTram !== false && (
+              <div className="fact">
+                <span className="fact-label">Tram stop</span>
+                <strong>{area.tram ? "Yes" : "No"}</strong>
+              </div>
+            )}
             <div className="fact">
               <span className="fact-label">Train station</span>
               <strong>{area.train ? "Yes" : "No"}</strong>
@@ -225,13 +253,13 @@ export default function AreaPage({ area, areas, photo, city }) {
 
         <div className="panel section-gap">
           <h2>How {area.area} rates</h2>
-          <p className="muted">{`Ratings from 1 to 5 compare the ${areas.length} areas in ${city.region} covered by this site.`}</p>
+          <p className="muted">{`Ratings from 1 to 5 compare the ${areas.length} areas in ${city.regionInSentence ?? city.region} covered by this site.`}</p>
           <ul className="rating-list">
             {RATINGS.map(([field, label, official]) => (
               <li key={field}>
                 <span className="rating-name">
                   {label}
-                  {official ? "" : " *"}
+                  {official || allFromData ? "" : " *"}
                 </span>
                 <span className="rating-bar" aria-hidden="true">
                   <span style={{ width: `${(area[field] / 5) * 100}%` }} />
@@ -242,7 +270,11 @@ export default function AreaPage({ area, areas, photo, city }) {
               </li>
             ))}
           </ul>
-          <p className="muted compact">* Estimate. Safety and schools are based on official data.</p>
+          <p className="muted compact">
+            {allFromData
+              ? "All ratings are worked out from official and OpenStreetMap data."
+              : "* Estimate. Safety and schools are based on official data."}
+          </p>
         </div>
 
         <div className="panel section-gap">
@@ -260,6 +292,7 @@ export default function AreaPage({ area, areas, photo, city }) {
             and database right 2026. Contains public sector information from the Office for National Statistics, Ofsted
             and the Ministry of Housing, Communities and Local Government, licensed under the Open Government Licence
             v3.0. Timetable data from {city.transitOperator}.
+            {allFromData && " Map data © OpenStreetMap contributors, available under the Open Database Licence."}
           </p>
         </div>
 

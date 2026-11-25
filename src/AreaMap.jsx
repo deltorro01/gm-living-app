@@ -6,6 +6,7 @@ import { useEffect, useRef } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { FIT_BANDS as BANDS, fitBand } from "./bands.js";
+import { commuteLabel } from "./commuteText.js";
 
 const colorFor = (score) => fitBand(score).color;
 
@@ -56,7 +57,7 @@ export default function AreaMap({ areas, budgetType, money, onSelect, center = [
         .bindTooltip(`${escapeHtml(area.area)} ${area.match}%`)
         .bindPopup(
           `<strong>#${rank} ${escapeHtml(area.area)}</strong> (${escapeHtml(area.borough)})<br>` +
-            `${area.match}% match<br>${escapeHtml(cost)}<br>About ${area.commuteCityMinutes} mins to the city centre`
+            `${area.match}% match<br>${escapeHtml(cost)}<br>${commuteLabel(area.commuteCityMinutes)}`
         );
       if (onSelect) marker.on("click", () => onSelect(area.area));
       marker.addTo(layer.current);
