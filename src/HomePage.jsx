@@ -6,7 +6,6 @@ import { PhotoCredit } from "./AreaPage.jsx";
 
 // cities: [{ city, areas }] in the order to show them.
 export default function HomePage({ cities }) {
-  const total = cities.reduce((n, c) => n + c.areas.length, 0);
   return (
     <div className="app-shell">
       <div className="page-wrap home-page">
@@ -14,7 +13,7 @@ export default function HomePage({ cities }) {
           <div className="eyebrow">Where Should I Live In The UK</div>
           <h1 className="page-title">Find the right place to live</h1>
           <p className="intro-text">
-            Tell us your budget, commute and what matters to you, and we'll rank {total} areas by how well they fit. Rents,
+            Tell us your budget, commute and what matters to you, and we'll rank the areas by how well they fit. Rents,
             house prices, safety, schools and travel times come from official data. Choose a city to start.
           </p>
         </div>
