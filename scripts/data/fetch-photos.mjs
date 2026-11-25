@@ -32,9 +32,11 @@ async function getJson(url) {
     await sleep(PAUSE_MS);
     const res = await fetch(url, { headers: HEADERS });
     const text = await res.text();
-    if (res.ok && text.startsWith("{")) return JSON.parse(text);
+    // Wikimedia sometimes answers "OK" with an error inside (e.g. too busy); retry those too.
+    const json = res.ok && text.startsWith("{") ? JSON.parse(text) : null;
+    if (json && !json.error) return json;
     const wait = 30000 * attempt;
-    console.log(`  busy (${res.status}), waiting ${wait / 1000}s`);
+    console.log(`  busy (${json?.error?.code ?? res.status}), waiting ${wait / 1000}s`);
     await sleep(wait);
   }
   throw new Error(`gave up on ${url}`);
@@ -85,26 +87,33 @@ const nearby = {};
 for (const [i, a] of areas.entries()) {
   const url =
     "https://commons.wikimedia.org/w/api.php?action=query&format=json&list=geosearch&gsnamespace=6" +
-    `&gscoord=${a.lat}|${a.lng}&gsradius=${NEARBY_M}&gslimit=15`;
+    `&gscoord=${a.lat}|${a.lng}&gsradius=${NEARBY_M}&gslimit=50`;
   nearby[a.area] = ((await getJson(url)).query?.geosearch ?? []).map((g) => ({ file: g.title, distM: Math.round(g.dist) }));
   if ((i + 1) % 20 === 0) console.log(`nearby photos checked for ${i + 1} of ${areas.length} areas`);
 }
 
-// 3. Licence, photographer and thumbnail for every file, 40 per request.
+// 3. Licence, photographer and thumbnail for every file, 10 per request
+// (larger batches can come back only partly filled, silently dropping photos).
 const allFiles = [...new Set([...Object.values(lead).map((l) => l.file), ...Object.values(nearby).flat().map((n) => n.file)])];
 const info = {};
-for (let i = 0; i < allFiles.length; i += 40) {
-  const url =
-    "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo" +
-    `&iiprop=url|extmetadata|size|mime&iiurlwidth=${THUMB_WIDTH}&titles=` +
-    encodeURIComponent(allFiles.slice(i, i + 40).join("|"));
-  const q = (await getJson(url)).query ?? {};
-  const from = {};
-  for (const n of q.normalized ?? []) from[n.to] = n.from;
-  for (const p of Object.values(q.pages ?? {})) {
-    const ii = p.imageinfo?.[0];
-    if (ii) info[from[p.title] ?? p.title] = ii;
+// Files that come back without details are asked for again (up to 3 more times).
+let pending = allFiles;
+for (let pass = 1; pass <= 4 && pending.length; pass++) {
+  for (let i = 0; i < pending.length; i += 10) {
+    const url =
+      "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo" +
+      `&iiprop=url|extmetadata|size|mime&iiurlwidth=${THUMB_WIDTH}&titles=` +
+      encodeURIComponent(pending.slice(i, i + 10).join("|"));
+    const q = (await getJson(url)).query ?? {};
+    const from = {};
+    for (const n of q.normalized ?? []) from[n.to] = n.from;
+    for (const p of Object.values(q.pages ?? {})) {
+      const ii = p.imageinfo?.[0];
+      if (ii?.thumburl) info[from[p.title] ?? p.title] = ii;
+    }
   }
+  pending = pending.filter((f) => !info[f]);
+  if (pending.length) console.log(`pass ${pass}: ${pending.length} files still without details`);
 }
 console.log(`licence details fetched for ${Object.keys(info).length} files`);
 
