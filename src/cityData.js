@@ -4,6 +4,7 @@
 
 const LOADERS = {
   manchester: () => import("./data/manchester/areas.json"),
+  liverpool: () => import("./data/liverpool/areas.json"),
 };
 
 export async function loadAreas(cityId) {

@@ -14,6 +14,7 @@
 
 import { readFile, writeFile, mkdir, rm, stat } from "node:fs/promises";
 import { areaSlug } from "../../src/slug.js";
+import { CITY, args, OUT, AREAS_FILE, PHOTOS_FILE, SETTINGS_FOR_CITY, readOut, optionalOut } from "./city.mjs";
 
 const PAUSE_MS = 5000;
 const WIDTH = 960; // a standard Wikimedia thumbnail width; plenty for the page
@@ -22,14 +23,16 @@ const HEADERS = { "User-Agent": "WhereShouldILiveAreaGuides/1.0 (https://www.whe
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const read = async (p) => JSON.parse(await readFile(new URL(p, import.meta.url), "utf8"));
-const choices = await read("./out/photo-choices.json");
-const candidates = await read("./out/photo-candidates.json");
-const outDir = new URL("../../public/images/areas/", import.meta.url);
+const choices = await readOut("photo-choices.json");
+const candidates = await readOut("photo-candidates.json");
+// Manchester's photos are in public/images/areas/; other cities have a subfolder.
+const photoPath = CITY === "manchester" ? "/images/areas/" : `/images/areas/${CITY}/`;
+const outDir = new URL(`../../public${photoPath}`, import.meta.url);
 await mkdir(outDir, { recursive: true });
 
 // Which file was saved for each area, so a rerun can skip finished downloads.
-const LOG = new URL("./out/photo-downloads.json", import.meta.url);
-const downloaded = await read("./out/photo-downloads.json").catch(() => ({}));
+const LOG = new URL("photo-downloads.json", OUT);
+const downloaded = await readOut("photo-downloads.json").catch(() => ({}));
 
 // Address of the photo at WIDTH pixels wide (Wikimedia only serves standard widths).
 // Smaller originals are used as they are.
@@ -44,10 +47,18 @@ function sizedUrl(c) {
 }
 
 // Short description for screen readers, from the photo's own caption.
+// Captions that are really notes from the uploader, not a description of the photo.
+const NOT_A_CAPTION = /uploaded with|lizenz|licen[cs]e|@|https?:\/\//i;
+const ENTITIES = { amp: "&", quot: '"', apos: "'", lt: "<", gt: ">", nbsp: " " };
+
 function altText(area, description = "") {
-  const text = description.replace(/\s+/g, " ").trim();
-  if (!text) return `A view of ${area}`;
+  const text = description
+    .replace(/&(amp|quot|apos|lt|gt|nbsp);|&#(\d+);/g, (_, name, code) => (name ? ENTITIES[name] : String.fromCharCode(code)))
+    .replace(/\b(w|en):(?=\S)/g, "") // Wikipedia link codes such as "w:Speke Hall"
+    .replace(/\s+/g, " ")
+    .trim();
   let sentence = text.split(/(?<=[.!?])\s/)[0].replace(/\.$/, "");
+  if (!sentence || NOT_A_CAPTION.test(sentence.slice(0, 120))) return `A view of ${area}`;
   // Captions like "Pigeon Street" mean little on their own, so say where it is.
   if (!sentence.toLowerCase().includes(area.toLowerCase())) sentence = `${area}: ${sentence}`;
   return sentence.length <= 120 ? sentence : `${sentence.slice(0, 117).trim()}…`;
@@ -64,7 +75,7 @@ for (const { area, candidates: list } of candidates) {
   }
   const { url, width, height } = sizedUrl(chosen);
   photos[area] = {
-    src: `/images/areas/${slug}.jpg`,
+    src: `${photoPath}${slug}.jpg`,
     width,
     height,
     author: chosen.author,
@@ -96,5 +107,5 @@ for (const { area, candidates: list } of candidates) {
   console.log(`saved ${slug}.jpg`);
 }
 
-await writeFile(new URL("../../src/data/manchester/areaPhotos.json", import.meta.url), JSON.stringify(photos, null, 2) + "\n");
-console.log(`photos for ${Object.keys(photos).length} areas; written src/data/manchester/areaPhotos.json`);
+await writeFile(PHOTOS_FILE, JSON.stringify(photos, null, 2) + "\n");
+console.log(`photos for ${Object.keys(photos).length} areas; written areaPhotos.json for ${CITY}`);

@@ -54,8 +54,12 @@
       <div id="list"></div>
     </main>
     <script type="module">
-      const KEY = "area-photo-choices";
-      const data = await (await fetch("./out/photo-candidates.json", { cache: "no-store" })).json();
+      // ?city=liverpool reviews another city's photos (Manchester by default).
+      const city = new URLSearchParams(location.search).get("city") || "manchester";
+      const KEY = city === "manchester" ? "area-photo-choices" : `area-photo-choices-${city}`;
+      const folder = city === "manchester" ? "./out/" : `./out/${city}/`;
+      const data = await (await fetch(folder + "photo-candidates.json", { cache: "no-store" })).json();
+      document.querySelector("header h1").textContent = `Area photo review: ${city[0].toUpperCase()}${city.slice(1)}`;
       let choices = {};
       try {
         choices = JSON.parse(localStorage.getItem(KEY) || "{}");

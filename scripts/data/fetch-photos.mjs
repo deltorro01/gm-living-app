@@ -15,6 +15,7 @@
 // by apply-photos.mjs). Nothing on the site changes.
 
 import { readFile, writeFile } from "node:fs/promises";
+import { CITY, args, OUT, AREAS_FILE, PHOTOS_FILE, SETTINGS_FOR_CITY, readOut, optionalOut } from "./city.mjs";
 
 const MAX_CANDIDATES = 4;
 const NEARBY_M = 1500;
@@ -23,7 +24,7 @@ const THUMB_WIDTH = 1280; // a standard Wikimedia thumbnail width
 // Wikimedia asks automated tools to identify themselves with a website address.
 const HEADERS = { "User-Agent": "WhereShouldILiveAreaGuides/1.0 (https://www.whereshouldiliveinthe.uk/) Node.js" };
 
-const areas = JSON.parse(await readFile(new URL("../../src/data/manchester/areas.json", import.meta.url), "utf8"));
+const areas = JSON.parse(await readFile(AREAS_FILE, "utf8"));
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function getJson(url) {
@@ -31,9 +32,11 @@ async function getJson(url) {
     await sleep(PAUSE_MS);
     const res = await fetch(url, { headers: HEADERS });
     const text = await res.text();
-    if (res.ok && text.startsWith("{")) return JSON.parse(text);
+    // Wikimedia sometimes answers "OK" with an error inside (e.g. too busy); retry those too.
+    const json = res.ok && text.startsWith("{") ? JSON.parse(text) : null;
+    if (json && !json.error) return json;
     const wait = 30000 * attempt;
-    console.log(`  busy (${res.status}), waiting ${wait / 1000}s`);
+    console.log(`  busy (${json?.error?.code ?? res.status}), waiting ${wait / 1000}s`);
     await sleep(wait);
   }
   throw new Error(`gave up on ${url}`);
@@ -50,7 +53,9 @@ function distanceKm(a, b) {
 // 1. Wikipedia lead photos, 40 titles per request, trying name variants in turn.
 const lead = {};
 let todo = areas;
-const variants = [(a) => `${a.area}, Greater Manchester`, (a) => `${a.area}, ${a.borough}`, (a) => a.area];
+// Wikipedia article titles to try, e.g. "Allerton, Merseyside", then "Allerton, Liverpool", then "Allerton".
+const counties = SETTINGS_FOR_CITY.wikiCounties ?? ["Greater Manchester"];
+const variants = [...counties.map((c) => (a) => `${a.area}, ${c}`), (a) => `${a.area}, ${a.borough}`, (a) => a.area];
 for (const variant of variants) {
   const next = [];
   for (let i = 0; i < todo.length; i += 40) {
@@ -82,26 +87,33 @@ const nearby = {};
 for (const [i, a] of areas.entries()) {
   const url =
     "https://commons.wikimedia.org/w/api.php?action=query&format=json&list=geosearch&gsnamespace=6" +
-    `&gscoord=${a.lat}|${a.lng}&gsradius=${NEARBY_M}&gslimit=15`;
+    `&gscoord=${a.lat}|${a.lng}&gsradius=${NEARBY_M}&gslimit=50`;
   nearby[a.area] = ((await getJson(url)).query?.geosearch ?? []).map((g) => ({ file: g.title, distM: Math.round(g.dist) }));
   if ((i + 1) % 20 === 0) console.log(`nearby photos checked for ${i + 1} of ${areas.length} areas`);
 }
 
-// 3. Licence, photographer and thumbnail for every file, 40 per request.
+// 3. Licence, photographer and thumbnail for every file, 10 per request
+// (larger batches can come back only partly filled, silently dropping photos).
 const allFiles = [...new Set([...Object.values(lead).map((l) => l.file), ...Object.values(nearby).flat().map((n) => n.file)])];
 const info = {};
-for (let i = 0; i < allFiles.length; i += 40) {
-  const url =
-    "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo" +
-    `&iiprop=url|extmetadata|size|mime&iiurlwidth=${THUMB_WIDTH}&titles=` +
-    encodeURIComponent(allFiles.slice(i, i + 40).join("|"));
-  const q = (await getJson(url)).query ?? {};
-  const from = {};
-  for (const n of q.normalized ?? []) from[n.to] = n.from;
-  for (const p of Object.values(q.pages ?? {})) {
-    const ii = p.imageinfo?.[0];
-    if (ii) info[from[p.title] ?? p.title] = ii;
+// Files that come back without details are asked for again (up to 3 more times).
+let pending = allFiles;
+for (let pass = 1; pass <= 4 && pending.length; pass++) {
+  for (let i = 0; i < pending.length; i += 10) {
+    const url =
+      "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo" +
+      `&iiprop=url|extmetadata|size|mime&iiurlwidth=${THUMB_WIDTH}&titles=` +
+      encodeURIComponent(pending.slice(i, i + 10).join("|"));
+    const q = (await getJson(url)).query ?? {};
+    const from = {};
+    for (const n of q.normalized ?? []) from[n.to] = n.from;
+    for (const p of Object.values(q.pages ?? {})) {
+      const ii = p.imageinfo?.[0];
+      if (ii?.thumburl) info[from[p.title] ?? p.title] = ii;
+    }
   }
+  pending = pending.filter((f) => !info[f]);
+  if (pending.length) console.log(`pass ${pass}: ${pending.length} files still without details`);
 }
 console.log(`licence details fetched for ${Object.keys(info).length} files`);
 
@@ -144,9 +156,9 @@ const results = areas.map((a) => {
   return { area: a.area, borough: a.borough, candidates: list };
 });
 
-await writeFile(new URL("./out/photo-candidates.json", import.meta.url), JSON.stringify(results, null, 2) + "\n");
+await writeFile(new URL("photo-candidates.json", OUT), JSON.stringify(results, null, 2) + "\n");
 const withAny = results.filter((r) => r.candidates.length).length;
 const withLead = results.filter((r) => r.candidates[0]?.why.startsWith("Wikipedia")).length;
 console.log(`areas with at least one usable photo: ${withAny} of ${areas.length} (Wikipedia lead photo usable: ${withLead})`);
 console.log(`none: ${results.filter((r) => !r.candidates.length).map((r) => r.area).join(", ") || "-"}`);
-console.log("written scripts/data/out/photo-candidates.json");
+console.log(`written photo-candidates.json for ${CITY}`);

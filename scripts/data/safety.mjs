@@ -20,13 +20,14 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { distanceKm } from "./geo.mjs";
+import { CITY, args, OUT, AREAS_FILE, PHOTOS_FILE, SETTINGS_FOR_CITY, readOut, optionalOut } from "./city.mjs";
 
 const RADIUS_KM = 1.5;
 
-const dir = process.argv[2];
+const dir = args[0];
 if (!dir) throw new Error("Pass the folder that holds iod2025-file7.csv");
 
-const locations = JSON.parse(await readFile(new URL("./out/locations.json", import.meta.url)));
+const locations = JSON.parse(await readFile(new URL("locations.json", OUT)));
 const postcodes = JSON.parse(await readFile(new URL("./out/postcodes-cache.json", import.meta.url)));
 
 // Parse File 7 (quoted CSV; some names contain commas).
@@ -82,7 +83,7 @@ const results = locations.map((loc) => {
 });
 
 await writeFile(
-  new URL("./out/safety.json", import.meta.url),
+  new URL("safety.json", OUT),
   JSON.stringify({ source: "English Indices of Deprivation 2025, Crime domain", results }, null, 2) + "\n"
 );
-console.log("written scripts/data/out/safety.json");
+console.log(`written safety.json for ${CITY}`);

@@ -1,0 +1,500 @@
+{
+  "source": "Ofsted state-funded schools inspections and outcomes",
+  "results": [
+    {
+      "area": "Liverpool City Centre",
+      "primarySchools": 8,
+      "primaryKm": 2,
+      "secondarySchools": 6,
+      "secondaryKm": 3,
+      "reportCards": 3,
+      "score": 3.11
+    },
+    {
+      "area": "Baltic Triangle",
+      "primarySchools": 11,
+      "primaryKm": 2,
+      "secondarySchools": 7,
+      "secondaryKm": 3,
+      "reportCards": 6,
+      "score": 3.37
+    },
+    {
+      "area": "Georgian Quarter",
+      "primarySchools": 14,
+      "primaryKm": 2,
+      "secondarySchools": 10,
+      "secondaryKm": 3,
+      "reportCards": 8,
+      "score": 3.2
+    },
+    {
+      "area": "Toxteth",
+      "primarySchools": 11,
+      "primaryKm": 2,
+      "secondarySchools": 7,
+      "secondaryKm": 3,
+      "reportCards": 5,
+      "score": 3.34
+    },
+    {
+      "area": "Aigburth",
+      "primarySchools": 7,
+      "primaryKm": 2,
+      "secondarySchools": 6,
+      "secondaryKm": 3,
+      "reportCards": 4,
+      "score": 3.44
+    },
+    {
+      "area": "Mossley Hill",
+      "primarySchools": 10,
+      "primaryKm": 2,
+      "secondarySchools": 12,
+      "secondaryKm": 3,
+      "reportCards": 6,
+      "score": 3.4
+    },
+    {
+      "area": "Allerton",
+      "primarySchools": 8,
+      "primaryKm": 2,
+      "secondarySchools": 6,
+      "secondaryKm": 3,
+      "reportCards": 2,
+      "score": 3.32
+    },
+    {
+      "area": "Woolton",
+      "primarySchools": 6,
+      "primaryKm": 2,
+      "secondarySchools": 6,
+      "secondaryKm": 3,
+      "reportCards": 1,
+      "score": 3.03
+    },
+    {
+      "area": "Childwall",
+      "primarySchools": 12,
+      "primaryKm": 2,
+      "secondarySchools": 8,
+      "secondaryKm": 3,
+      "reportCards": 3,
+      "score": 2.99
+    },
+    {
+      "area": "Wavertree",
+      "primarySchools": 22,
+      "primaryKm": 2,
+      "secondarySchools": 12,
+      "secondaryKm": 3,
+      "reportCards": 6,
+      "score": 3.2
+    },
+    {
+      "area": "Garston",
+      "primarySchools": 6,
+      "primaryKm": 2,
+      "secondarySchools": 3,
+      "secondaryKm": 3,
+      "reportCards": 2,
+      "score": 3.26
+    },
+    {
+      "area": "Speke",
+      "primarySchools": 4,
+      "primaryKm": 2,
+      "secondarySchools": 2,
+      "secondaryKm": 3,
+      "reportCards": 3,
+      "score": 3.11
+    },
+    {
+      "area": "West Derby",
+      "primarySchools": 13,
+      "primaryKm": 2,
+      "secondarySchools": 7,
+      "secondaryKm": 3,
+      "reportCards": 7,
+      "score": 3.07
+    },
+    {
+      "area": "Old Swan",
+      "primarySchools": 20,
+      "primaryKm": 2,
+      "secondarySchools": 11,
+      "secondaryKm": 3,
+      "reportCards": 7,
+      "score": 3
+    },
+    {
+      "area": "Kensington",
+      "primarySchools": 21,
+      "primaryKm": 2,
+      "secondarySchools": 12,
+      "secondaryKm": 3,
+      "reportCards": 7,
+      "score": 3.09
+    },
+    {
+      "area": "Anfield",
+      "primarySchools": 22,
+      "primaryKm": 2,
+      "secondarySchools": 7,
+      "secondaryKm": 3,
+      "reportCards": 6,
+      "score": 2.96
+    },
+    {
+      "area": "Walton",
+      "primarySchools": 14,
+      "primaryKm": 2,
+      "secondarySchools": 6,
+      "secondaryKm": 3,
+      "reportCards": 7,
+      "score": 2.91
+    },
+    {
+      "area": "Fazakerley",
+      "primarySchools": 12,
+      "primaryKm": 2,
+      "secondarySchools": 6,
+      "secondaryKm": 3,
+      "reportCards": 5,
+      "score": 2.74
+    },
+    {
+      "area": "Birkenhead",
+      "primarySchools": 5,
+      "primaryKm": 2,
+      "secondarySchools": 5,
+      "secondaryKm": 3,
+      "reportCards": 3,
+      "score": 2.89
+    },
+    {
+      "area": "Oxton",
+      "primarySchools": 12,
+      "primaryKm": 2,
+      "secondarySchools": 5,
+      "secondaryKm": 3,
+      "reportCards": 6,
+      "score": 3.22
+    },
+    {
+      "area": "Prenton",
+      "primarySchools": 9,
+      "primaryKm": 2,
+      "secondarySchools": 8,
+      "secondaryKm": 3,
+      "reportCards": 3,
+      "score": 3.32
+    },
+    {
+      "area": "Rock Ferry",
+      "primarySchools": 10,
+      "primaryKm": 2,
+      "secondarySchools": 6,
+      "secondaryKm": 3,
+      "reportCards": 3,
+      "score": 3.33
+    },
+    {
+      "area": "Bebington",
+      "primarySchools": 6,
+      "primaryKm": 2,
+      "secondarySchools": 2,
+      "secondaryKm": 3,
+      "reportCards": 2,
+      "score": 3.32
+    },
+    {
+      "area": "Bromborough",
+      "primarySchools": 6,
+      "primaryKm": 2,
+      "secondarySchools": 3,
+      "secondaryKm": 3,
+      "reportCards": 2,
+      "score": 3.54
+    },
+    {
+      "area": "Eastham",
+      "primarySchools": 6,
+      "primaryKm": 2,
+      "secondarySchools": 1,
+      "secondaryKm": 3,
+      "reportCards": 1,
+      "score": 3.21
+    },
+    {
+      "area": "Wallasey",
+      "primarySchools": 8,
+      "primaryKm": 2,
+      "secondarySchools": 4,
+      "secondaryKm": 3,
+      "reportCards": 2,
+      "score": 2.81
+    },
+    {
+      "area": "New Brighton",
+      "primarySchools": 6,
+      "primaryKm": 2,
+      "secondarySchools": 4,
+      "secondaryKm": 3,
+      "reportCards": 2,
+      "score": 2.8
+    },
+    {
+      "area": "Moreton",
+      "primarySchools": 10,
+      "primaryKm": 2,
+      "secondarySchools": 1,
+      "secondaryKm": 3,
+      "reportCards": 3,
+      "score": 3.72
+    },
+    {
+      "area": "Upton",
+      "primarySchools": 13,
+      "primaryKm": 2,
+      "secondarySchools": 3,
+      "secondaryKm": 3,
+      "reportCards": 4,
+      "score": 3.32
+    },
+    {
+      "area": "Greasby",
+      "primarySchools": 6,
+      "primaryKm": 2,
+      "secondarySchools": 3,
+      "secondaryKm": 3,
+      "reportCards": 3,
+      "score": 3.27
+    },
+    {
+      "area": "Hoylake",
+      "primarySchools": 3,
+      "primaryKm": 2,
+      "secondarySchools": 2,
+      "secondaryKm": 3,
+      "reportCards": 1,
+      "score": 2.98
+    },
+    {
+      "area": "West Kirby",
+      "primarySchools": 4,
+      "primaryKm": 2,
+      "secondarySchools": 2,
+      "secondaryKm": 3,
+      "reportCards": 1,
+      "score": 3.25
+    },
+    {
+      "area": "Heswall",
+      "primarySchools": 6,
+      "primaryKm": 2,
+      "secondarySchools": 1,
+      "secondaryKm": 3,
+      "reportCards": 3,
+      "score": 3.23
+    },
+    {
+      "area": "Bootle",
+      "primarySchools": 16,
+      "primaryKm": 2,
+      "secondarySchools": 6,
+      "secondaryKm": 3,
+      "reportCards": 8,
+      "score": 2.94
+    },
+    {
+      "area": "Litherland",
+      "primarySchools": 14,
+      "primaryKm": 2,
+      "secondarySchools": 5,
+      "secondaryKm": 3,
+      "reportCards": 5,
+      "score": 3.14
+    },
+    {
+      "area": "Waterloo",
+      "primarySchools": 9,
+      "primaryKm": 2,
+      "secondarySchools": 3,
+      "secondaryKm": 3,
+      "reportCards": 0,
+      "score": 2.97
+    },
+    {
+      "area": "Crosby",
+      "primarySchools": 12,
+      "primaryKm": 2,
+      "secondarySchools": 5,
+      "secondaryKm": 3,
+      "reportCards": 1,
+      "score": 3.06
+    },
+    {
+      "area": "Maghull",
+      "primarySchools": 9,
+      "primaryKm": 2,
+      "secondarySchools": 3,
+      "secondaryKm": 3,
+      "reportCards": 3,
+      "score": 2.99
+    },
+    {
+      "area": "Formby",
+      "primarySchools": 7,
+      "primaryKm": 2,
+      "secondarySchools": 2,
+      "secondaryKm": 3,
+      "reportCards": 2,
+      "score": 3.34
+    },
+    {
+      "area": "Ainsdale",
+      "primarySchools": 3,
+      "primaryKm": 2,
+      "secondarySchools": 2,
+      "secondaryKm": 3,
+      "reportCards": 2,
+      "score": 3.36
+    },
+    {
+      "area": "Birkdale",
+      "primarySchools": 5,
+      "primaryKm": 2,
+      "secondarySchools": 4,
+      "secondaryKm": 3,
+      "reportCards": 2,
+      "score": 3.19
+    },
+    {
+      "area": "Southport",
+      "primarySchools": 6,
+      "primaryKm": 2,
+      "secondarySchools": 2,
+      "secondaryKm": 3,
+      "reportCards": 2,
+      "score": 3.1
+    },
+    {
+      "area": "Huyton",
+      "primarySchools": 11,
+      "primaryKm": 2,
+      "secondarySchools": 2,
+      "secondaryKm": 3,
+      "reportCards": 5,
+      "score": 2.98
+    },
+    {
+      "area": "Prescot",
+      "primarySchools": 9,
+      "primaryKm": 2,
+      "secondarySchools": 3,
+      "secondaryKm": 3,
+      "reportCards": 3,
+      "score": 3.03
+    },
+    {
+      "area": "Whiston",
+      "primarySchools": 12,
+      "primaryKm": 2,
+      "secondarySchools": 3,
+      "secondaryKm": 3,
+      "reportCards": 3,
+      "score": 2.98
+    },
+    {
+      "area": "Halewood",
+      "primarySchools": 7,
+      "primaryKm": 2,
+      "secondarySchools": 2,
+      "secondaryKm": 3,
+      "reportCards": 2,
+      "score": 3.07
+    },
+    {
+      "area": "Kirkby",
+      "primarySchools": 11,
+      "primaryKm": 2,
+      "secondarySchools": 3,
+      "secondaryKm": 3,
+      "reportCards": 5,
+      "score": 2.88
+    },
+    {
+      "area": "St Helens",
+      "primarySchools": 9,
+      "primaryKm": 2,
+      "secondarySchools": 4,
+      "secondaryKm": 3,
+      "reportCards": 4,
+      "score": 2.82
+    },
+    {
+      "area": "Eccleston",
+      "primarySchools": 7,
+      "primaryKm": 2,
+      "secondarySchools": 2,
+      "secondaryKm": 3,
+      "reportCards": 3,
+      "score": 2.85
+    },
+    {
+      "area": "Rainhill",
+      "primarySchools": 7,
+      "primaryKm": 2,
+      "secondarySchools": 3,
+      "secondaryKm": 3,
+      "reportCards": 4,
+      "score": 3.28
+    },
+    {
+      "area": "Haydock",
+      "primarySchools": 5,
+      "primaryKm": 2,
+      "secondarySchools": 5,
+      "secondaryKm": 3,
+      "reportCards": 1,
+      "score": 3.48
+    },
+    {
+      "area": "Newton-le-Willows",
+      "primarySchools": 9,
+      "primaryKm": 2,
+      "secondarySchools": 2,
+      "secondaryKm": 3,
+      "reportCards": 1,
+      "score": 2.78
+    },
+    {
+      "area": "Billinge",
+      "primarySchools": 4,
+      "primaryKm": 2,
+      "secondarySchools": 3,
+      "secondaryKm": 4,
+      "reportCards": 1,
+      "score": 3.19
+    },
+    {
+      "area": "Widnes",
+      "primarySchools": 8,
+      "primaryKm": 2,
+      "secondarySchools": 3,
+      "secondaryKm": 3,
+      "reportCards": 1,
+      "score": 3.62
+    },
+    {
+      "area": "Runcorn",
+      "primarySchools": 9,
+      "primaryKm": 2,
+      "secondarySchools": 3,
+      "secondaryKm": 3,
+      "reportCards": 1,
+      "score": 2.98
+    }
+  ]
+}

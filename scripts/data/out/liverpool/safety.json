@@ -1,0 +1,390 @@
+{
+  "source": "English Indices of Deprivation 2025, Crime domain",
+  "results": [
+    {
+      "area": "Liverpool City Centre",
+      "neighbourhoods": 25,
+      "population": 49538,
+      "crimeDecile": 2.7,
+      "crimeScore": 0.862
+    },
+    {
+      "area": "Baltic Triangle",
+      "neighbourhoods": 27,
+      "population": 54057,
+      "crimeDecile": 2.8,
+      "crimeScore": 0.801
+    },
+    {
+      "area": "Georgian Quarter",
+      "neighbourhoods": 35,
+      "population": 75095,
+      "crimeDecile": 2.9,
+      "crimeScore": 0.751
+    },
+    {
+      "area": "Toxteth",
+      "neighbourhoods": 26,
+      "population": 44962,
+      "crimeDecile": 2.7,
+      "crimeScore": 0.738
+    },
+    {
+      "area": "Aigburth",
+      "neighbourhoods": 22,
+      "population": 34727,
+      "crimeDecile": 6.5,
+      "crimeScore": -0.269
+    },
+    {
+      "area": "Mossley Hill",
+      "neighbourhoods": 27,
+      "population": 41530,
+      "crimeDecile": 7.4,
+      "crimeScore": -0.456
+    },
+    {
+      "area": "Allerton",
+      "neighbourhoods": 18,
+      "population": 29270,
+      "crimeDecile": 6.2,
+      "crimeScore": -0.194
+    },
+    {
+      "area": "Woolton",
+      "neighbourhoods": 21,
+      "population": 31668,
+      "crimeDecile": 6.2,
+      "crimeScore": -0.212
+    },
+    {
+      "area": "Childwall",
+      "neighbourhoods": 24,
+      "population": 36599,
+      "crimeDecile": 7.9,
+      "crimeScore": -0.692
+    },
+    {
+      "area": "Wavertree",
+      "neighbourhoods": 33,
+      "population": 56274,
+      "crimeDecile": 4.9,
+      "crimeScore": 0.178
+    },
+    {
+      "area": "Garston",
+      "neighbourhoods": 15,
+      "population": 25550,
+      "crimeDecile": 5.2,
+      "crimeScore": 0.062
+    },
+    {
+      "area": "Speke",
+      "neighbourhoods": 6,
+      "population": 11808,
+      "crimeDecile": 4.9,
+      "crimeScore": 0.19
+    },
+    {
+      "area": "West Derby",
+      "neighbourhoods": 25,
+      "population": 38460,
+      "crimeDecile": 4.5,
+      "crimeScore": 0.235
+    },
+    {
+      "area": "Old Swan",
+      "neighbourhoods": 30,
+      "population": 46226,
+      "crimeDecile": 3.9,
+      "crimeScore": 0.434
+    },
+    {
+      "area": "Kensington",
+      "neighbourhoods": 28,
+      "population": 58227,
+      "crimeDecile": 2.3,
+      "crimeScore": 0.954
+    },
+    {
+      "area": "Anfield",
+      "neighbourhoods": 39,
+      "population": 60944,
+      "crimeDecile": 1.5,
+      "crimeScore": 1.285
+    },
+    {
+      "area": "Walton",
+      "neighbourhoods": 32,
+      "population": 48865,
+      "crimeDecile": 1.7,
+      "crimeScore": 1.192
+    },
+    {
+      "area": "Fazakerley",
+      "neighbourhoods": 22,
+      "population": 32832,
+      "crimeDecile": 3.6,
+      "crimeScore": 0.47
+    },
+    {
+      "area": "Birkenhead",
+      "neighbourhoods": 10,
+      "population": 15210,
+      "crimeDecile": 1.3,
+      "crimeScore": 1.446
+    },
+    {
+      "area": "Oxton",
+      "neighbourhoods": 27,
+      "population": 43618,
+      "crimeDecile": 5.1,
+      "crimeScore": 0.207
+    },
+    {
+      "area": "Prenton",
+      "neighbourhoods": 21,
+      "population": 32310,
+      "crimeDecile": 6,
+      "crimeScore": -0.161
+    },
+    {
+      "area": "Rock Ferry",
+      "neighbourhoods": 25,
+      "population": 39824,
+      "crimeDecile": 3.1,
+      "crimeScore": 0.67
+    },
+    {
+      "area": "Bebington",
+      "neighbourhoods": 13,
+      "population": 21166,
+      "crimeDecile": 7.6,
+      "crimeScore": -0.747
+    },
+    {
+      "area": "Bromborough",
+      "neighbourhoods": 12,
+      "population": 19237,
+      "crimeDecile": 7.7,
+      "crimeScore": -0.805
+    },
+    {
+      "area": "Eastham",
+      "neighbourhoods": 9,
+      "population": 14361,
+      "crimeDecile": 7,
+      "crimeScore": -0.478
+    },
+    {
+      "area": "Wallasey",
+      "neighbourhoods": 21,
+      "population": 31617,
+      "crimeDecile": 6.1,
+      "crimeScore": -0.152
+    },
+    {
+      "area": "New Brighton",
+      "neighbourhoods": 21,
+      "population": 31464,
+      "crimeDecile": 5.1,
+      "crimeScore": 0.127
+    },
+    {
+      "area": "Moreton",
+      "neighbourhoods": 19,
+      "population": 29904,
+      "crimeDecile": 6.4,
+      "crimeScore": -0.225
+    },
+    {
+      "area": "Upton",
+      "neighbourhoods": 22,
+      "population": 33815,
+      "crimeDecile": 6.7,
+      "crimeScore": -0.321
+    },
+    {
+      "area": "Greasby",
+      "neighbourhoods": 11,
+      "population": 15957,
+      "crimeDecile": 8.2,
+      "crimeScore": -0.768
+    },
+    {
+      "area": "Hoylake",
+      "neighbourhoods": 7,
+      "population": 10707,
+      "crimeDecile": 7.6,
+      "crimeScore": -0.644
+    },
+    {
+      "area": "West Kirby",
+      "neighbourhoods": 10,
+      "population": 14867,
+      "crimeDecile": 7.7,
+      "crimeScore": -0.634
+    },
+    {
+      "area": "Heswall",
+      "neighbourhoods": 12,
+      "population": 17633,
+      "crimeDecile": 9.1,
+      "crimeScore": -1.158
+    },
+    {
+      "area": "Bootle",
+      "neighbourhoods": 30,
+      "population": 47190,
+      "crimeDecile": 2.5,
+      "crimeScore": 0.924
+    },
+    {
+      "area": "Litherland",
+      "neighbourhoods": 29,
+      "population": 43259,
+      "crimeDecile": 3.5,
+      "crimeScore": 0.608
+    },
+    {
+      "area": "Waterloo",
+      "neighbourhoods": 23,
+      "population": 34646,
+      "crimeDecile": 5.5,
+      "crimeScore": -0.003
+    },
+    {
+      "area": "Crosby",
+      "neighbourhoods": 23,
+      "population": 35171,
+      "crimeDecile": 5,
+      "crimeScore": 0.139
+    },
+    {
+      "area": "Maghull",
+      "neighbourhoods": 18,
+      "population": 26026,
+      "crimeDecile": 7.9,
+      "crimeScore": -0.604
+    },
+    {
+      "area": "Formby",
+      "neighbourhoods": 17,
+      "population": 23758,
+      "crimeDecile": 7.7,
+      "crimeScore": -0.657
+    },
+    {
+      "area": "Ainsdale",
+      "neighbourhoods": 9,
+      "population": 14953,
+      "crimeDecile": 6.2,
+      "crimeScore": -0.167
+    },
+    {
+      "area": "Birkdale",
+      "neighbourhoods": 18,
+      "population": 28840,
+      "crimeDecile": 6.4,
+      "crimeScore": -0.265
+    },
+    {
+      "area": "Southport",
+      "neighbourhoods": 21,
+      "population": 32499,
+      "crimeDecile": 4.2,
+      "crimeScore": 0.374
+    },
+    {
+      "area": "Huyton",
+      "neighbourhoods": 27,
+      "population": 41059,
+      "crimeDecile": 4.4,
+      "crimeScore": 0.279
+    },
+    {
+      "area": "Prescot",
+      "neighbourhoods": 14,
+      "population": 23087,
+      "crimeDecile": 5,
+      "crimeScore": 0.153
+    },
+    {
+      "area": "Whiston",
+      "neighbourhoods": 20,
+      "population": 30544,
+      "crimeDecile": 4.3,
+      "crimeScore": 0.321
+    },
+    {
+      "area": "Halewood",
+      "neighbourhoods": 17,
+      "population": 25047,
+      "crimeDecile": 6.1,
+      "crimeScore": -0.19
+    },
+    {
+      "area": "Kirkby",
+      "neighbourhoods": 23,
+      "population": 38035,
+      "crimeDecile": 3.4,
+      "crimeScore": 0.55
+    },
+    {
+      "area": "St Helens",
+      "neighbourhoods": 20,
+      "population": 30019,
+      "crimeDecile": 3,
+      "crimeScore": 0.865
+    },
+    {
+      "area": "Eccleston",
+      "neighbourhoods": 17,
+      "population": 24623,
+      "crimeDecile": 5.5,
+      "crimeScore": 0.049
+    },
+    {
+      "area": "Rainhill",
+      "neighbourhoods": 14,
+      "population": 21764,
+      "crimeDecile": 6.5,
+      "crimeScore": -0.286
+    },
+    {
+      "area": "Haydock",
+      "neighbourhoods": 11,
+      "population": 15508,
+      "crimeDecile": 5,
+      "crimeScore": 0.079
+    },
+    {
+      "area": "Newton-le-Willows",
+      "neighbourhoods": 14,
+      "population": 24093,
+      "crimeDecile": 4,
+      "crimeScore": 0.377
+    },
+    {
+      "area": "Billinge",
+      "neighbourhoods": 4,
+      "population": 5911,
+      "crimeDecile": 6.2,
+      "crimeScore": -0.252
+    },
+    {
+      "area": "Widnes",
+      "neighbourhoods": 12,
+      "population": 21043,
+      "crimeDecile": 2.2,
+      "crimeScore": 0.989
+    },
+    {
+      "area": "Runcorn",
+      "neighbourhoods": 14,
+      "population": 22164,
+      "crimeDecile": 3.4,
+      "crimeScore": 0.674
+    }
+  ]
+}

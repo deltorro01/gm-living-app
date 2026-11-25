@@ -1,6 +1,6 @@
-# Where Should I Live? (Greater Manchester)
+# Where Should I Live? (Greater Manchester and Liverpool City Region)
 
-A React web app that helps people find the best Greater Manchester area to live in, based on their life stage, budget, commute and lifestyle priorities. It ranks 86 areas by match score.
+A React web app that helps people find the best area to live in, based on their life stage, budget, commute and lifestyle priorities. It ranks 86 Greater Manchester areas (at `/manchester`) and 55 Liverpool City Region areas (at `/liverpool`) by match score.
 
 ## Running the app locally
 
@@ -24,19 +24,18 @@ To create the production build, run `npm run build`. The output goes to the `dis
 - `src/styles.css`: all styling.
 - `src/cities.js`: settings for each city (name, region, web address, city-centre point, transport operator, map centre). Adding a city starts here.
 - `src/data/<city>/areas.json`: each city's area dataset, for example `src/data/manchester/areas.json`. Edit this to change area data.
-- `index.html`: the home page. It includes a short fallback text that search engines can read.
-- `manchester.html`: the Manchester page served at `/manchester`, with the same fallback text.
-- `vercel.json`: routing for the Manchester page, and the security headers sent with every page. The Content-Security-Policy lists the only outside places the site may load from (Google Analytics and OpenStreetMap map tiles). If you add another outside service, such as a font, video or new analytics tool, add it there too or the browser will block it.
-- `public/`: files served as they are, such as the favicon, robots file and the Manchester share image.
+- `index.html` and `src/HomePage.jsx`: the home page, where visitors choose a city. It is built as a plain page with no app JavaScript. Each city card's photo and credit are set in `src/cities.js` (`homePhoto`). `public/home-redirect.js` sends old shared links such as `/?rent=1200` on to `/manchester`, because the home page used to be the Manchester finder.- `manchester.html` and `liverpool.html`: the city pages served at `/manchester` and `/liverpool`, with the same fallback text.
+- `vercel.json`: routing for the city pages, and the security headers sent with every page. The Content-Security-Policy lists the only outside places the site may load from (Google Analytics and OpenStreetMap map tiles). If you add another outside service, such as a font, video or new analytics tool, add it there too or the browser will block it.
+- `public/`: files served as they are, such as the favicon, robots file and the city share images (`images/manchester.jpg`, `images/liverpool.jpg`).
 - `SCORING.md`: how the match score is calculated.
 - `src/AreaPage.jsx`: the guide page for each area (for example `/manchester/ancoats`). These are plain pages built at build time and load no JavaScript.
-- `src/data/<city>/areaPhotos.json` and `public/images/areas/`: the photo shown on each area guide, with its photographer and licence for the credit line. The photos are from Wikimedia Commons under Creative Commons or public domain licences, so the credit must stay with each photo.
+- `src/data/<city>/areaPhotos.json` and `public/images/areas/` (Manchester) or `public/images/areas/<city>/` (other cities): the photo shown on each area guide, with its photographer and licence for the credit line. The photos are from Wikimedia Commons under Creative Commons or public domain licences, so the credit must stay with each photo.
 - `src/site.js`: site name, copyright year and the contact email used by the footer and privacy notice. While the contact email is the `@example.com` placeholder, builds on the live (production) site stop with an error.
 - `src/SiteFooter.jsx`: the footer on every page (copyright, Privacy, Cookie settings and Contact links).
 - `public/consent.js`: the cookie banner. Google Analytics only loads after a visitor clicks "Accept"; "Reject" is just as easy, the choice is remembered in the browser, and "Cookie settings" in the footer reopens the banner. The Google Analytics ID lives here, not in the HTML pages.
 - `src/PrivacyPage.jsx`: the privacy notice at `/privacy`. Update it if the site starts using another service that handles visitors' information.
 - `src/slug.js`: turns area names into page addresses (`Hale Barns` becomes `/manchester/hale-barns`).
-- `scripts/prerender.mjs`: runs after `vite build`. It writes the app's HTML into the home and Manchester pages so search engines can read it, links the area names on the Manchester page, writes the 86 area guide pages to `dist/manchester/<area>/index.html`, and writes `dist/sitemap.xml`. The sitemap is generated, so there is no `public/sitemap.xml` to edit.
+- `scripts/prerender.mjs`: runs after `vite build`. It writes the app's HTML into the home and city pages so search engines can read it, links the area names on each city page, writes the area guide pages to `dist/<city>/<area>/index.html`, and writes `dist/sitemap.xml`. The sitemap is generated, so there is no `public/sitemap.xml` to edit.
 - `scripts/data/`: scripts that calculate figures from official data (see "Data sources" below).
 
 ## Data sources
@@ -64,6 +63,20 @@ To refresh the figures, download these into one folder outside the project: the 
 
 Whitworth is in Rossendale (Lancashire), just outside Greater Manchester, but is kept under Rochdale in the dataset because that is its post town.
 
+### Liverpool City Region (and other new cities)
+
+The scripts take `--city=liverpool`. Settings for each city (which Land Registry counties to read, the city-centre point, the timetable date, hand-set Rightmove postcode districts) are in `scripts/data/city.mjs`. Manchester's results go to `scripts/data/out/`, other cities' to `scripts/data/out/<city>/`. Liverpool's area list is `scripts/data/liverpool/area-list.json`, and its map points are in `scripts/data/out/liverpool/locations.json` (a few set by hand).
+
+Unlike Manchester, every Liverpool figure is calculated; none are hand-set:
+
+- **House prices, safety, rents, schools:** the same sources as Manchester. Rents start from the ONS borough average, and the differences between areas are estimated from local house prices.
+- **Commute:** buses and ferries from the Bus Open Data Service timetable (GTFS) and trains from the national rail timetable (`timetable_full.zip` from the Rail Data Marketplace, converted by `cif-to-gtfs.mjs`), to Church Street / Liverpool ONE.
+- **Green space, nightlife, cafés, culture, quietness, cycling, driving, train station:** counted from OpenStreetMap by `osm-ratings.mjs`, using the free Geofabrik shapefile extracts for Merseyside and Cheshire. © OpenStreetMap contributors, Open Database Licence.
+- **1 to 5 ratings:** areas are put in order by each measure, then given the same spread of ratings Manchester has, so a rating means roughly the same in both cities.
+- **Rightmove links:** each area's main postcode district (for example L7), because place names alone can open the wrong town.
+
+To refresh: run `house-prices.mjs`, `safety.mjs`, `rents.mjs` and `schools.mjs` as above with `--city=liverpool`, then `cif-to-gtfs.mjs <unzipped rail timetable> <output folder> --city=liverpool`, `commute.mjs <bus GTFS folder> <rail GTFS folder> --city=liverpool`, `osm-ratings.mjs <extract folders> --city=liverpool`, and finally `build-city.mjs --city=liverpool`, which writes `src/data/liverpool/areas.json`.
+
 ## Hosting
 
 The site is hosted on Vercel and deploys automatically when changes are pushed to the `main` branch on GitHub.
@@ -80,5 +93,7 @@ Each area guide shows one photo chosen by hand from Wikimedia Commons. To change
 1. `node scripts/data/fetch-photos.mjs` finds up to four freely licensed photos per area and saves them to `scripts/data/out/photo-candidates.json`.
 2. `npx vite scripts/data --port 4173`, then open `http://localhost:4173/photo-review.html` to pick one photo (or none) per area. Use "Download choices" and save the file as `scripts/data/out/photo-choices.json`.
 3. `node scripts/data/apply-photos.mjs` downloads the chosen photos (960 pixels wide) to `public/images/areas/` and writes the credits to `src/data/manchester/areaPhotos.json`. It goes slowly and can be run again to resume if Wikimedia is busy.
+
+For another city, add `--city=liverpool` to both scripts and open `photo-review.html?city=liverpool`. The review page remembers each city's choices separately.
 
 The scripts identify themselves to Wikimedia with the site's address, as Wikimedia asks of automated tools.

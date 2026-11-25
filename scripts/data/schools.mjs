@@ -26,16 +26,17 @@
 
 import { readFile, writeFile } from "node:fs/promises";
 import { lookupPostcodes, distanceKm } from "./geo.mjs";
+import { CITY, args, OUT, AREAS_FILE, PHOTOS_FILE, SETTINGS_FOR_CITY, readOut, optionalOut } from "./city.mjs";
 
 const PRIMARY_KM = 2;
 const SECONDARY_KM = 3;
 const MIN_PRIMARY = 3; // widen the circle until at least this many
 const MIN_SECONDARY = 1;
 
-const file = process.argv[2];
+const file = args[0];
 if (!file) throw new Error("Pass the path to the Ofsted CSV");
 
-const locations = JSON.parse(await readFile(new URL("./out/locations.json", import.meta.url), "utf8"));
+const locations = JSON.parse(await readFile(new URL("locations.json", OUT), "utf8"));
 
 function parseCsvLine(line) {
   const cells = [];
@@ -149,7 +150,7 @@ const results = locations.map((loc) => {
 });
 
 await writeFile(
-  new URL("./out/schools.json", import.meta.url),
+  new URL("schools.json", OUT),
   JSON.stringify({ source: "Ofsted state-funded schools inspections and outcomes", results }, null, 2) + "\n"
 );
-console.log("written scripts/data/out/schools.json");
+console.log(`written schools.json for ${CITY}`);

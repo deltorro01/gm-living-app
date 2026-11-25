@@ -24,6 +24,7 @@
 // Optional: --skip=rents,schools,commute,greenspace  leaves those fields unchanged.
 
 import { readFile, writeFile } from "node:fs/promises";
+import { CITY, args, OUT, AREAS_FILE, PHOTOS_FILE, SETTINGS_FOR_CITY, readOut, optionalOut } from "./city.mjs";
 
 const write = process.argv.includes("--write");
 const skip = new Set((process.argv.find((a) => a.startsWith("--skip=")) ?? "--skip=").slice(7).split(",").filter(Boolean));
@@ -36,18 +37,18 @@ const optional = async (p) => {
     return null;
   }
 };
-const areasFile = new URL("../../src/data/manchester/areas.json", import.meta.url);
+const areasFile = AREAS_FILE;
 const areas = JSON.parse(await readFile(areasFile, "utf8"));
 
 const byArea = (list) => Object.fromEntries(list.map((x) => [x.area, x]));
-const loc = byArea(await read("./out/locations.json"));
-const prices = await read("./out/house-prices.json");
+const loc = byArea(await readOut("locations.json"));
+const prices = await readOut("house-prices.json");
 const price = byArea(prices.results);
-const crime = byArea((await read("./out/safety.json")).results);
-const rentsFile = skip.has("rents") ? null : await optional("./out/rents.json");
-const schoolsFile = skip.has("schools") ? null : await optional("./out/schools.json");
-const commuteFile = skip.has("commute") ? null : await optional("./out/commute.json");
-const greenFile = skip.has("greenspace") ? null : await optional("./out/greenspace.json");
+const crime = byArea((await readOut("safety.json")).results);
+const rentsFile = skip.has("rents") ? null : await optionalOut("rents.json");
+const schoolsFile = skip.has("schools") ? null : await optionalOut("schools.json");
+const commuteFile = skip.has("commute") ? null : await optionalOut("commute.json");
+const greenFile = skip.has("greenspace") ? null : await optionalOut("greenspace.json");
 const rent = rentsFile && byArea(rentsFile.results);
 const school = schoolsFile && byArea(schoolsFile.results);
 const commute = commuteFile && byArea(commuteFile.results);
@@ -111,7 +112,7 @@ const updated = areas.map((a) => {
 
 // Keep the file's existing style: 2-space JSON, Windows line endings, no final newline.
 const text = JSON.stringify(updated, null, 2).replace(/\n/g, "\r\n");
-await writeFile(new URL("./out/areas.candidate.json", import.meta.url), text);
+await writeFile(new URL("areas.candidate.json", OUT), text);
 if (write) await writeFile(areasFile, text);
 const used = ["prices", "safety", rent && "rents", school && "schools", commute && "commute", green && "greenspace"].filter(Boolean);
 console.log(`applied: ${used.join(", ")}${write ? " (written to src/data/manchester/areas.json)" : " (preview only)"}`);

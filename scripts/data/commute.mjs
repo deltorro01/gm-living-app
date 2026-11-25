@@ -1,5 +1,7 @@
-// Weekday morning public transport time to Manchester city centre, using the
-// TfGM GTFS timetable (buses and Metrolink; trains are not included).
+// Weekday morning public transport time to the city centre (set in city.mjs),
+// from one or more GTFS timetables: for Manchester the TfGM buses and trams;
+// for Liverpool the Bus Open Data buses and ferries plus trains converted
+// from the national rail timetable (cif-to-gtfs.mjs).
 //
 // Method (Connection Scan Algorithm):
 //   - Services running on TRAVEL_DATE (a normal weekday).
@@ -13,7 +15,7 @@
 //
 // Source: Transport for Greater Manchester, GM public transport schedules (GTFS).
 //
-// Usage: node scripts/data/commute.mjs <folder with the unzipped GTFS .txt files>
+// Usage: node scripts/data/commute.mjs <GTFS folder> [<GTFS folder> ...] [--city=liverpool]
 // Writes scripts/data/out/commute.json
 
 import { createReadStream } from "node:fs";
@@ -21,10 +23,12 @@ import { readFile, writeFile } from "node:fs/promises";
 import { createInterface } from "node:readline";
 import { join } from "node:path";
 import { distanceKm } from "./geo.mjs";
+import { CITY, args, OUT, AREAS_FILE, PHOTOS_FILE, SETTINGS_FOR_CITY, readOut, optionalOut } from "./city.mjs";
 
-const TRAVEL_DATE = "20261201"; // Tuesday 1 December 2026
+// A normal weekday (city.mjs can set a different one if a timetable has an odd day).
+const TRAVEL_DATE = SETTINGS_FOR_CITY.travelDate ?? "20261201"; // default: Tuesday 1 December 2026
 const DEPART_TIMES = ["07:30", "07:45", "08:00", "08:15", "08:30"];
-const CITY_CENTRE = { lat: 53.4808, lng: -2.2384, name: "Piccadilly Gardens / Market Street" };
+const CITY_CENTRE = SETTINGS_FOR_CITY.cityCentre;
 const MAX_ACCESS_M = 1200;
 const MAX_TRANSFER_M = 400;
 const MAX_EGRESS_M = 1200;
@@ -33,10 +37,10 @@ const WALK_DETOUR = 1.25;
 const TRANSFER_BUFFER_MIN = 1;
 const WINDOW_END = "11:00";
 
-const dir = process.argv[2];
-if (!dir) throw new Error("Pass the folder holding the GTFS files");
+const dirs = args; // one or more timetable folders, e.g. buses and trains
+if (!dirs.length) throw new Error("Pass the folder(s) holding the GTFS files");
 
-const locations = JSON.parse(await readFile(new URL("./out/locations.json", import.meta.url), "utf8"));
+const locations = JSON.parse(await readFile(new URL("locations.json", OUT), "utf8"));
 
 function parseCsvLine(line) {
   const cells = [];
@@ -58,7 +62,7 @@ function parseCsvLine(line) {
   return cells;
 }
 
-async function* readCsv(name) {
+async function* readCsv(dir, name) {
   let header = null;
   for await (const raw of createInterface({ input: createReadStream(join(dir, name)) })) {
     const line = raw.replace(/^﻿/, "");
@@ -78,67 +82,72 @@ const toSec = (t) => {
 };
 const walkSec = (metres) => ((metres * WALK_DETOUR) / WALK_M_PER_MIN) * 60;
 
-// 1. Services running on the travel date.
+// 1-3. Read every timetable folder (e.g. buses, then trains). IDs are
+// prefixed with the folder's position so the timetables can't clash.
 const weekday = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"][
   new Date(`${TRAVEL_DATE.slice(0, 4)}-${TRAVEL_DATE.slice(4, 6)}-${TRAVEL_DATE.slice(6)}T12:00:00Z`).getUTCDay()
 ];
-const active = new Set();
-for await (const c of readCsv("calendar.txt")) {
-  if (c[weekday] === "1" && c.start_date <= TRAVEL_DATE && c.end_date >= TRAVEL_DATE) active.add(c.service_id);
-}
-for await (const d of readCsv("calendar_dates.txt")) {
-  if (d.date !== TRAVEL_DATE) continue;
-  if (d.exception_type === "1") active.add(d.service_id);
-  if (d.exception_type === "2") active.delete(d.service_id);
-}
-const trips = new Set();
-for await (const t of readCsv("trips.txt")) if (active.has(t.service_id)) trips.add(t.trip_id);
-console.log(`${weekday} ${TRAVEL_DATE}: ${active.size} services, ${trips.size} trips`);
-
-// 2. Stops.
-const stops = [];
-const stopIndex = new Map();
-for await (const s of readCsv("stops.txt")) {
-  if (!s.stop_lat) continue;
-  stopIndex.set(s.stop_id, stops.length);
-  stops.push({ id: s.stop_id, lat: Number(s.stop_lat), lng: Number(s.stop_lon) });
-}
-
-// 3. Connections (one per hop between consecutive stops of a trip).
 const startSec = toSec(DEPART_TIMES[0]);
 const endSec = toSec(WINDOW_END);
+const stops = [];
+const stopIndex = new Map();
 const connections = [];
 const tripNumbers = new Map();
-let prev = null;
-for await (const st of readCsv("stop_times.txt")) {
-  if (!trips.has(st.trip_id)) {
-    prev = null;
-    continue;
+
+for (const [feed, dir] of dirs.entries()) {
+  // Services running on the travel date.
+  const active = new Set();
+  for await (const c of readCsv(dir, "calendar.txt")) {
+    if (c[weekday] === "1" && c.start_date <= TRAVEL_DATE && c.end_date >= TRAVEL_DATE) active.add(c.service_id);
   }
-  const cur = {
-    trip: st.trip_id,
-    stop: stopIndex.get(st.stop_id),
-    arr: toSec(st.arrival_time || st.departure_time),
-    dep: toSec(st.departure_time || st.arrival_time),
-    seq: Number(st.stop_sequence),
-    pickup: st.pickup_type !== "1",
-    dropoff: st.drop_off_type !== "1",
-  };
-  if (prev && prev.trip === cur.trip && prev.seq < cur.seq && prev.stop !== undefined && cur.stop !== undefined) {
-    if (prev.dep >= startSec && prev.dep <= endSec) {
-      if (!tripNumbers.has(cur.trip)) tripNumbers.set(cur.trip, tripNumbers.size);
-      connections.push({
-        from: prev.stop,
-        to: cur.stop,
-        dep: prev.dep,
-        arr: cur.arr,
-        trip: tripNumbers.get(cur.trip),
-        pickup: prev.pickup,
-        dropoff: cur.dropoff,
-      });
+  for await (const d of readCsv(dir, "calendar_dates.txt")) {
+    if (d.date !== TRAVEL_DATE) continue;
+    if (d.exception_type === "1") active.add(d.service_id);
+    if (d.exception_type === "2") active.delete(d.service_id);
+  }
+  const trips = new Set();
+  for await (const t of readCsv(dir, "trips.txt")) if (active.has(t.service_id)) trips.add(t.trip_id);
+  console.log(`${dir}: ${weekday} ${TRAVEL_DATE}: ${active.size} services, ${trips.size} trips`);
+
+  // Stops.
+  for await (const s of readCsv(dir, "stops.txt")) {
+    if (!s.stop_lat) continue;
+    stopIndex.set(`${feed}:${s.stop_id}`, stops.length);
+    stops.push({ id: s.stop_id, lat: Number(s.stop_lat), lng: Number(s.stop_lon) });
+  }
+
+  // Connections (one per hop between consecutive stops of a trip).
+  let prev = null;
+  for await (const st of readCsv(dir, "stop_times.txt")) {
+    if (!trips.has(st.trip_id)) {
+      prev = null;
+      continue;
     }
+    const cur = {
+      trip: `${feed}:${st.trip_id}`,
+      stop: stopIndex.get(`${feed}:${st.stop_id}`),
+      arr: toSec(st.arrival_time || st.departure_time),
+      dep: toSec(st.departure_time || st.arrival_time),
+      seq: Number(st.stop_sequence),
+      pickup: st.pickup_type !== "1",
+      dropoff: st.drop_off_type !== "1",
+    };
+    if (prev && prev.trip === cur.trip && prev.seq < cur.seq && prev.stop !== undefined && cur.stop !== undefined) {
+      if (prev.dep >= startSec && prev.dep <= endSec) {
+        if (!tripNumbers.has(cur.trip)) tripNumbers.set(cur.trip, tripNumbers.size);
+        connections.push({
+          from: prev.stop,
+          to: cur.stop,
+          dep: prev.dep,
+          arr: cur.arr,
+          trip: tripNumbers.get(cur.trip),
+          pickup: prev.pickup,
+          dropoff: cur.dropoff,
+        });
+      }
+    }
+    prev = cur;
   }
-  prev = cur;
 }
 connections.sort((a, b) => a.dep - b.dep || a.arr - b.arr);
 console.log(`connections ${DEPART_TIMES[0]}-${WINDOW_END}: ${connections.length}`);
@@ -240,11 +249,11 @@ const results = locations.map((loc) => {
 });
 
 await writeFile(
-  new URL("./out/commute.json", import.meta.url),
+  new URL("commute.json", OUT),
   JSON.stringify(
     { source: "TfGM GTFS (bus and Metrolink)", travelDate: TRAVEL_DATE, departTimes: DEPART_TIMES, cityCentre: CITY_CENTRE, results },
     null,
     2
   ) + "\n"
 );
-console.log("written scripts/data/out/commute.json");
+console.log(`written commute.json for ${CITY}`);

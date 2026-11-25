@@ -1,0 +1,1088 @@
+{
+  "period": "2025-09 to 2026-08",
+  "boroughTypeMedian": {
+    "Liverpool": {
+      "D": 385000,
+      "S": 240000,
+      "T": 165000,
+      "F": 148000
+    },
+    "Wirral": {
+      "D": 400000,
+      "S": 246000,
+      "T": 167000,
+      "F": 135000
+    },
+    "Sefton": {
+      "D": 380000,
+      "S": 240000,
+      "T": 175000,
+      "F": 135000
+    },
+    "Knowsley": {
+      "D": 315000,
+      "S": 210000,
+      "T": 147000,
+      "F": 100000
+    },
+    "St Helens": {
+      "D": 335000,
+      "S": 210000,
+      "T": 143000,
+      "F": 102000
+    },
+    "Halton": {
+      "D": 347000,
+      "S": 210000,
+      "T": 145000,
+      "F": 100000
+    }
+  },
+  "results": [
+    {
+      "area": "Liverpool City Centre",
+      "medianPrice": 147000,
+      "sales": 266,
+      "radiusKm": 1.5,
+      "flatShare": 97,
+      "typeShare": {
+        "detached": 0,
+        "semi": 1,
+        "terraced": 2,
+        "flat": 97
+      },
+      "typeMedian": {
+        "D": null,
+        "S": null,
+        "T": 296000,
+        "F": 145000
+      }
+    },
+    {
+      "area": "Baltic Triangle",
+      "medianPrice": 158000,
+      "sales": 254,
+      "radiusKm": 1.5,
+      "flatShare": 83,
+      "typeShare": {
+        "detached": 0,
+        "semi": 6,
+        "terraced": 11,
+        "flat": 83
+      },
+      "typeMedian": {
+        "D": null,
+        "S": 250000,
+        "T": 185000,
+        "F": 150000
+      }
+    },
+    {
+      "area": "Georgian Quarter",
+      "medianPrice": 146000,
+      "sales": 237,
+      "radiusKm": 1.5,
+      "flatShare": 76,
+      "typeShare": {
+        "detached": 0,
+        "semi": 8,
+        "terraced": 17,
+        "flat": 76
+      },
+      "typeMedian": {
+        "D": null,
+        "S": 236000,
+        "T": 185000,
+        "F": 134000
+      }
+    },
+    {
+      "area": "Toxteth",
+      "medianPrice": 171000,
+      "sales": 271,
+      "radiusKm": 1.5,
+      "flatShare": 54,
+      "typeShare": {
+        "detached": 1,
+        "semi": 7,
+        "terraced": 37,
+        "flat": 54
+      },
+      "typeMedian": {
+        "D": null,
+        "S": 217000,
+        "T": 172000,
+        "F": 165000
+      }
+    },
+    {
+      "area": "Aigburth",
+      "medianPrice": 316000,
+      "sales": 306,
+      "radiusKm": 1.5,
+      "flatShare": 14,
+      "typeShare": {
+        "detached": 11,
+        "semi": 42,
+        "terraced": 33,
+        "flat": 14
+      },
+      "typeMedian": {
+        "D": 520000,
+        "S": 397000,
+        "T": 260000,
+        "F": 153000
+      }
+    },
+    {
+      "area": "Mossley Hill",
+      "medianPrice": 301000,
+      "sales": 403,
+      "radiusKm": 1.5,
+      "flatShare": 15,
+      "typeShare": {
+        "detached": 6,
+        "semi": 30,
+        "terraced": 49,
+        "flat": 15
+      },
+      "typeMedian": {
+        "D": 620000,
+        "S": 410000,
+        "T": 283000,
+        "F": 186000
+      }
+    },
+    {
+      "area": "Allerton",
+      "medianPrice": 320000,
+      "sales": 214,
+      "radiusKm": 1.5,
+      "flatShare": 12,
+      "typeShare": {
+        "detached": 15,
+        "semi": 49,
+        "terraced": 24,
+        "flat": 12
+      },
+      "typeMedian": {
+        "D": 654000,
+        "S": 363000,
+        "T": 243000,
+        "F": 158000
+      }
+    },
+    {
+      "area": "Woolton",
+      "medianPrice": 295000,
+      "sales": 267,
+      "radiusKm": 1.5,
+      "flatShare": 13,
+      "typeShare": {
+        "detached": 24,
+        "semi": 40,
+        "terraced": 22,
+        "flat": 13
+      },
+      "typeMedian": {
+        "D": 505000,
+        "S": 305000,
+        "T": 228000,
+        "F": 141000
+      }
+    },
+    {
+      "area": "Childwall",
+      "medianPrice": 325000,
+      "sales": 281,
+      "radiusKm": 1.5,
+      "flatShare": 9,
+      "typeShare": {
+        "detached": 24,
+        "semi": 54,
+        "terraced": 13,
+        "flat": 9
+      },
+      "typeMedian": {
+        "D": 479000,
+        "S": 319000,
+        "T": 210000,
+        "F": 185000
+      }
+    },
+    {
+      "area": "Wavertree",
+      "medianPrice": 249000,
+      "sales": 470,
+      "radiusKm": 1.5,
+      "flatShare": 8,
+      "typeShare": {
+        "detached": 3,
+        "semi": 25,
+        "terraced": 64,
+        "flat": 8
+      },
+      "typeMedian": {
+        "D": 330000,
+        "S": 304000,
+        "T": 232000,
+        "F": 146000
+      }
+    },
+    {
+      "area": "Garston",
+      "medianPrice": 230000,
+      "sales": 179,
+      "radiusKm": 1.5,
+      "flatShare": 15,
+      "typeShare": {
+        "detached": 6,
+        "semi": 34,
+        "terraced": 45,
+        "flat": 15
+      },
+      "typeMedian": {
+        "D": 533000,
+        "S": 278000,
+        "T": 215000,
+        "F": 105000
+      }
+    },
+    {
+      "area": "Speke",
+      "medianPrice": 175000,
+      "sales": 93,
+      "radiusKm": 1.5,
+      "flatShare": 8,
+      "typeShare": {
+        "detached": 6,
+        "semi": 38,
+        "terraced": 48,
+        "flat": 8
+      },
+      "typeMedian": {
+        "D": 255000,
+        "S": 205000,
+        "T": 160000,
+        "F": 105000
+      }
+    },
+    {
+      "area": "West Derby",
+      "medianPrice": 195000,
+      "sales": 201,
+      "radiusKm": 1.5,
+      "flatShare": 7,
+      "typeShare": {
+        "detached": 25,
+        "semi": 38,
+        "terraced": 30,
+        "flat": 7
+      },
+      "typeMedian": {
+        "D": 300000,
+        "S": 210000,
+        "T": 157000,
+        "F": 109000
+      }
+    },
+    {
+      "area": "Old Swan",
+      "medianPrice": 180000,
+      "sales": 339,
+      "radiusKm": 1.5,
+      "flatShare": 9,
+      "typeShare": {
+        "detached": 6,
+        "semi": 32,
+        "terraced": 53,
+        "flat": 9
+      },
+      "typeMedian": {
+        "D": 336000,
+        "S": 230000,
+        "T": 165000,
+        "F": 113000
+      }
+    },
+    {
+      "area": "Kensington",
+      "medianPrice": 146000,
+      "sales": 186,
+      "radiusKm": 1.5,
+      "flatShare": 19,
+      "typeShare": {
+        "detached": 3,
+        "semi": 21,
+        "terraced": 58,
+        "flat": 19
+      },
+      "typeMedian": {
+        "D": 300000,
+        "S": 168000,
+        "T": 150000,
+        "F": 91000
+      }
+    },
+    {
+      "area": "Anfield",
+      "medianPrice": 135000,
+      "sales": 249,
+      "radiusKm": 1.5,
+      "flatShare": 5,
+      "typeShare": {
+        "detached": 2,
+        "semi": 22,
+        "terraced": 71,
+        "flat": 5
+      },
+      "typeMedian": {
+        "D": null,
+        "S": 180000,
+        "T": 125000,
+        "F": 72000
+      }
+    },
+    {
+      "area": "Walton",
+      "medianPrice": 125000,
+      "sales": 259,
+      "radiusKm": 1.5,
+      "flatShare": 14,
+      "typeShare": {
+        "detached": 3,
+        "semi": 19,
+        "terraced": 64,
+        "flat": 14
+      },
+      "typeMedian": {
+        "D": 265000,
+        "S": 190000,
+        "T": 125000,
+        "F": 67000
+      }
+    },
+    {
+      "area": "Fazakerley",
+      "medianPrice": 155000,
+      "sales": 159,
+      "radiusKm": 1.5,
+      "flatShare": 3,
+      "typeShare": {
+        "detached": 10,
+        "semi": 36,
+        "terraced": 51,
+        "flat": 3
+      },
+      "typeMedian": {
+        "D": 300000,
+        "S": 176000,
+        "T": 140000,
+        "F": null
+      }
+    },
+    {
+      "area": "Birkenhead",
+      "medianPrice": 110000,
+      "sales": 77,
+      "radiusKm": 1.5,
+      "flatShare": 18,
+      "typeShare": {
+        "detached": 1,
+        "semi": 13,
+        "terraced": 68,
+        "flat": 18
+      },
+      "typeMedian": {
+        "D": null,
+        "S": 175000,
+        "T": 106000,
+        "F": 104000
+      }
+    },
+    {
+      "area": "Oxton",
+      "medianPrice": 219000,
+      "sales": 410,
+      "radiusKm": 1.5,
+      "flatShare": 25,
+      "typeShare": {
+        "detached": 16,
+        "semi": 38,
+        "terraced": 22,
+        "flat": 25
+      },
+      "typeMedian": {
+        "D": 400000,
+        "S": 251000,
+        "T": 174000,
+        "F": 135000
+      }
+    },
+    {
+      "area": "Prenton",
+      "medianPrice": 224000,
+      "sales": 356,
+      "radiusKm": 1.5,
+      "flatShare": 12,
+      "typeShare": {
+        "detached": 16,
+        "semi": 50,
+        "terraced": 22,
+        "flat": 12
+      },
+      "typeMedian": {
+        "D": 435000,
+        "S": 240000,
+        "T": 185000,
+        "F": 143000
+      }
+    },
+    {
+      "area": "Rock Ferry",
+      "medianPrice": 170000,
+      "sales": 289,
+      "radiusKm": 1.5,
+      "flatShare": 6,
+      "typeShare": {
+        "detached": 4,
+        "semi": 45,
+        "terraced": 45,
+        "flat": 6
+      },
+      "typeMedian": {
+        "D": 295000,
+        "S": 215000,
+        "T": 131000,
+        "F": 79000
+      }
+    },
+    {
+      "area": "Bebington",
+      "medianPrice": 243000,
+      "sales": 170,
+      "radiusKm": 1.5,
+      "flatShare": 12,
+      "typeShare": {
+        "detached": 28,
+        "semi": 39,
+        "terraced": 21,
+        "flat": 12
+      },
+      "typeMedian": {
+        "D": 380000,
+        "S": 240000,
+        "T": 190000,
+        "F": 119000
+      }
+    },
+    {
+      "area": "Bromborough",
+      "medianPrice": 240000,
+      "sales": 147,
+      "radiusKm": 1.5,
+      "flatShare": 10,
+      "typeShare": {
+        "detached": 31,
+        "semi": 37,
+        "terraced": 22,
+        "flat": 10
+      },
+      "typeMedian": {
+        "D": 380000,
+        "S": 232000,
+        "T": 190000,
+        "F": 127000
+      }
+    },
+    {
+      "area": "Eastham",
+      "medianPrice": 230000,
+      "sales": 190,
+      "radiusKm": 1.5,
+      "flatShare": 7,
+      "typeShare": {
+        "detached": 17,
+        "semi": 56,
+        "terraced": 19,
+        "flat": 7
+      },
+      "typeMedian": {
+        "D": 345000,
+        "S": 233000,
+        "T": 185000,
+        "F": 118000
+      }
+    },
+    {
+      "area": "Wallasey",
+      "medianPrice": 235000,
+      "sales": 335,
+      "radiusKm": 1.5,
+      "flatShare": 14,
+      "typeShare": {
+        "detached": 11,
+        "semi": 59,
+        "terraced": 16,
+        "flat": 14
+      },
+      "typeMedian": {
+        "D": 368000,
+        "S": 257000,
+        "T": 168000,
+        "F": 116000
+      }
+    },
+    {
+      "area": "New Brighton",
+      "medianPrice": 215000,
+      "sales": 324,
+      "radiusKm": 1.5,
+      "flatShare": 19,
+      "typeShare": {
+        "detached": 7,
+        "semi": 44,
+        "terraced": 29,
+        "flat": 19
+      },
+      "typeMedian": {
+        "D": 460000,
+        "S": 265000,
+        "T": 180000,
+        "F": 130000
+      }
+    },
+    {
+      "area": "Moreton",
+      "medianPrice": 215000,
+      "sales": 343,
+      "radiusKm": 1.5,
+      "flatShare": 3,
+      "typeShare": {
+        "detached": 25,
+        "semi": 52,
+        "terraced": 19,
+        "flat": 3
+      },
+      "typeMedian": {
+        "D": 310000,
+        "S": 215000,
+        "T": 173000,
+        "F": 113000
+      }
+    },
+    {
+      "area": "Upton",
+      "medianPrice": 235000,
+      "sales": 333,
+      "radiusKm": 1.5,
+      "flatShare": 6,
+      "typeShare": {
+        "detached": 18,
+        "semi": 57,
+        "terraced": 19,
+        "flat": 6
+      },
+      "typeMedian": {
+        "D": 345000,
+        "S": 245000,
+        "T": 165000,
+        "F": 139000
+      }
+    },
+    {
+      "area": "Greasby",
+      "medianPrice": 266000,
+      "sales": 183,
+      "radiusKm": 1.5,
+      "flatShare": 7,
+      "typeShare": {
+        "detached": 27,
+        "semi": 63,
+        "terraced": 4,
+        "flat": 7
+      },
+      "typeMedian": {
+        "D": 358000,
+        "S": 253000,
+        "T": 265000,
+        "F": 160000
+      }
+    },
+    {
+      "area": "Hoylake",
+      "medianPrice": 325000,
+      "sales": 140,
+      "radiusKm": 1.5,
+      "flatShare": 28,
+      "typeShare": {
+        "detached": 14,
+        "semi": 34,
+        "terraced": 24,
+        "flat": 28
+      },
+      "typeMedian": {
+        "D": 548000,
+        "S": 409000,
+        "T": 315000,
+        "F": 216000
+      }
+    },
+    {
+      "area": "West Kirby",
+      "medianPrice": 340000,
+      "sales": 170,
+      "radiusKm": 1.5,
+      "flatShare": 28,
+      "typeShare": {
+        "detached": 21,
+        "semi": 29,
+        "terraced": 22,
+        "flat": 28
+      },
+      "typeMedian": {
+        "D": 710000,
+        "S": 378000,
+        "T": 254000,
+        "F": 231000
+      }
+    },
+    {
+      "area": "Heswall",
+      "medianPrice": 440000,
+      "sales": 213,
+      "radiusKm": 1.5,
+      "flatShare": 16,
+      "typeShare": {
+        "detached": 46,
+        "semi": 33,
+        "terraced": 5,
+        "flat": 16
+      },
+      "typeMedian": {
+        "D": 570000,
+        "S": 340000,
+        "T": 279000,
+        "F": 179000
+      }
+    },
+    {
+      "area": "Bootle",
+      "medianPrice": 132000,
+      "sales": 252,
+      "radiusKm": 1.5,
+      "flatShare": 12,
+      "typeShare": {
+        "detached": 3,
+        "semi": 34,
+        "terraced": 51,
+        "flat": 12
+      },
+      "typeMedian": {
+        "D": 260000,
+        "S": 180000,
+        "T": 120000,
+        "F": 65000
+      }
+    },
+    {
+      "area": "Litherland",
+      "medianPrice": 177000,
+      "sales": 320,
+      "radiusKm": 1.5,
+      "flatShare": 10,
+      "typeShare": {
+        "detached": 6,
+        "semi": 45,
+        "terraced": 39,
+        "flat": 10
+      },
+      "typeMedian": {
+        "D": 278000,
+        "S": 200000,
+        "T": 137000,
+        "F": 133000
+      }
+    },
+    {
+      "area": "Waterloo",
+      "medianPrice": 245000,
+      "sales": 295,
+      "radiusKm": 1.5,
+      "flatShare": 22,
+      "typeShare": {
+        "detached": 4,
+        "semi": 37,
+        "terraced": 37,
+        "flat": 22
+      },
+      "typeMedian": {
+        "D": 525000,
+        "S": 280000,
+        "T": 234000,
+        "F": 165000
+      }
+    },
+    {
+      "area": "Crosby",
+      "medianPrice": 235000,
+      "sales": 335,
+      "radiusKm": 1.5,
+      "flatShare": 16,
+      "typeShare": {
+        "detached": 2,
+        "semi": 44,
+        "terraced": 38,
+        "flat": 16
+      },
+      "typeMedian": {
+        "D": 345000,
+        "S": 270000,
+        "T": 225000,
+        "F": 135000
+      }
+    },
+    {
+      "area": "Maghull",
+      "medianPrice": 245000,
+      "sales": 256,
+      "radiusKm": 1.5,
+      "flatShare": 11,
+      "typeShare": {
+        "detached": 13,
+        "semi": 64,
+        "terraced": 12,
+        "flat": 11
+      },
+      "typeMedian": {
+        "D": 327000,
+        "S": 250000,
+        "T": 216000,
+        "F": 129000
+      }
+    },
+    {
+      "area": "Formby",
+      "medianPrice": 315000,
+      "sales": 291,
+      "radiusKm": 1.5,
+      "flatShare": 12,
+      "typeShare": {
+        "detached": 33,
+        "semi": 48,
+        "terraced": 6,
+        "flat": 12
+      },
+      "typeMedian": {
+        "D": 468000,
+        "S": 296000,
+        "T": 249000,
+        "F": 197000
+      }
+    },
+    {
+      "area": "Ainsdale",
+      "medianPrice": 290000,
+      "sales": 159,
+      "radiusKm": 1.5,
+      "flatShare": 9,
+      "typeShare": {
+        "detached": 39,
+        "semi": 46,
+        "terraced": 6,
+        "flat": 9
+      },
+      "typeMedian": {
+        "D": 366000,
+        "S": 240000,
+        "T": 160000,
+        "F": 140000
+      }
+    },
+    {
+      "area": "Birkdale",
+      "medianPrice": 242000,
+      "sales": 299,
+      "radiusKm": 1.5,
+      "flatShare": 29,
+      "typeShare": {
+        "detached": 16,
+        "semi": 45,
+        "terraced": 9,
+        "flat": 29
+      },
+      "typeMedian": {
+        "D": 570000,
+        "S": 239000,
+        "T": 213000,
+        "F": 170000
+      }
+    },
+    {
+      "area": "Southport",
+      "medianPrice": 175000,
+      "sales": 308,
+      "radiusKm": 1.5,
+      "flatShare": 53,
+      "typeShare": {
+        "detached": 7,
+        "semi": 31,
+        "terraced": 8,
+        "flat": 53
+      },
+      "typeMedian": {
+        "D": 400000,
+        "S": 220000,
+        "T": 198000,
+        "F": 130000
+      }
+    },
+    {
+      "area": "Huyton",
+      "medianPrice": 170000,
+      "sales": 241,
+      "radiusKm": 1.5,
+      "flatShare": 11,
+      "typeShare": {
+        "detached": 12,
+        "semi": 36,
+        "terraced": 41,
+        "flat": 11
+      },
+      "typeMedian": {
+        "D": 337000,
+        "S": 220000,
+        "T": 150000,
+        "F": 90000
+      }
+    },
+    {
+      "area": "Prescot",
+      "medianPrice": 220000,
+      "sales": 223,
+      "radiusKm": 1.5,
+      "flatShare": 10,
+      "typeShare": {
+        "detached": 23,
+        "semi": 46,
+        "terraced": 21,
+        "flat": 10
+      },
+      "typeMedian": {
+        "D": 333000,
+        "S": 232000,
+        "T": 140000,
+        "F": 115000
+      }
+    },
+    {
+      "area": "Whiston",
+      "medianPrice": 190000,
+      "sales": 286,
+      "radiusKm": 1.5,
+      "flatShare": 7,
+      "typeShare": {
+        "detached": 20,
+        "semi": 47,
+        "terraced": 27,
+        "flat": 7
+      },
+      "typeMedian": {
+        "D": 324000,
+        "S": 210000,
+        "T": 150000,
+        "F": 102000
+      }
+    },
+    {
+      "area": "Halewood",
+      "medianPrice": 240000,
+      "sales": 213,
+      "radiusKm": 1.5,
+      "flatShare": 4,
+      "typeShare": {
+        "detached": 31,
+        "semi": 44,
+        "terraced": 21,
+        "flat": 4
+      },
+      "typeMedian": {
+        "D": 350000,
+        "S": 230000,
+        "T": 190000,
+        "F": 100000
+      }
+    },
+    {
+      "area": "Kirkby",
+      "medianPrice": 160000,
+      "sales": 196,
+      "radiusKm": 1.5,
+      "flatShare": 2,
+      "typeShare": {
+        "detached": 19,
+        "semi": 42,
+        "terraced": 37,
+        "flat": 2
+      },
+      "typeMedian": {
+        "D": 265000,
+        "S": 179000,
+        "T": 135000,
+        "F": null
+      }
+    },
+    {
+      "area": "St Helens",
+      "medianPrice": 140000,
+      "sales": 213,
+      "radiusKm": 1.5,
+      "flatShare": 5,
+      "typeShare": {
+        "detached": 9,
+        "semi": 24,
+        "terraced": 62,
+        "flat": 5
+      },
+      "typeMedian": {
+        "D": 250000,
+        "S": 175000,
+        "T": 118000,
+        "F": 100000
+      }
+    },
+    {
+      "area": "Eccleston",
+      "medianPrice": 220000,
+      "sales": 204,
+      "radiusKm": 1.5,
+      "flatShare": 7,
+      "typeShare": {
+        "detached": 17,
+        "semi": 48,
+        "terraced": 27,
+        "flat": 7
+      },
+      "typeMedian": {
+        "D": 357000,
+        "S": 245000,
+        "T": 127000,
+        "F": 110000
+      }
+    },
+    {
+      "area": "Rainhill",
+      "medianPrice": 227000,
+      "sales": 148,
+      "radiusKm": 1.5,
+      "flatShare": 5,
+      "typeShare": {
+        "detached": 20,
+        "semi": 50,
+        "terraced": 25,
+        "flat": 5
+      },
+      "typeMedian": {
+        "D": 327000,
+        "S": 236000,
+        "T": 165000,
+        "F": 104000
+      }
+    },
+    {
+      "area": "Haydock",
+      "medianPrice": 173000,
+      "sales": 151,
+      "radiusKm": 1.5,
+      "flatShare": 7,
+      "typeShare": {
+        "detached": 9,
+        "semi": 52,
+        "terraced": 32,
+        "flat": 7
+      },
+      "typeMedian": {
+        "D": 266000,
+        "S": 186000,
+        "T": 134000,
+        "F": 89000
+      }
+    },
+    {
+      "area": "Newton-le-Willows",
+      "medianPrice": 196000,
+      "sales": 216,
+      "radiusKm": 1.5,
+      "flatShare": 3,
+      "typeShare": {
+        "detached": 18,
+        "semi": 40,
+        "terraced": 39,
+        "flat": 3
+      },
+      "typeMedian": {
+        "D": 340000,
+        "S": 200000,
+        "T": 165000,
+        "F": 105000
+      }
+    },
+    {
+      "area": "Billinge",
+      "medianPrice": 245000,
+      "sales": 76,
+      "radiusKm": 1.5,
+      "flatShare": 4,
+      "typeShare": {
+        "detached": 32,
+        "semi": 61,
+        "terraced": 4,
+        "flat": 4
+      },
+      "typeMedian": {
+        "D": 383000,
+        "S": 235000,
+        "T": null,
+        "F": null
+      }
+    },
+    {
+      "area": "Widnes",
+      "medianPrice": 143000,
+      "sales": 139,
+      "radiusKm": 1.5,
+      "flatShare": 7,
+      "typeShare": {
+        "detached": 7,
+        "semi": 34,
+        "terraced": 52,
+        "flat": 7
+      },
+      "typeMedian": {
+        "D": 300000,
+        "S": 180000,
+        "T": 125000,
+        "F": 60000
+      }
+    },
+    {
+      "area": "Runcorn",
+      "medianPrice": 159000,
+      "sales": 168,
+      "radiusKm": 1.5,
+      "flatShare": 13,
+      "typeShare": {
+        "detached": 5,
+        "semi": 39,
+        "terraced": 42,
+        "flat": 13
+      },
+      "typeMedian": {
+        "D": 350000,
+        "S": 193000,
+        "T": 139000,
+        "F": 90000
+      }
+    }
+  ]
+}
