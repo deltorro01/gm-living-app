@@ -32,6 +32,8 @@ const SETTINGS = {
     priceCounties: ["MERSEYSIDE", "HALTON", "GREATER MANCHESTER", "LANCASHIRE", "CHESHIRE WEST AND CHESTER", "WARRINGTON"],
     priceDistricts: [],
     cityCentre: { lat: 53.4048, lng: -2.9847, name: "Church Street / Liverpool ONE" },
+    // Bus Open Data has very few trips on 1 Dec 2026 (a data quirk); 8 Dec is a normal Tuesday.
+    travelDate: "20261208",
   },
 };
 

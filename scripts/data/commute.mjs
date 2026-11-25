@@ -23,7 +23,8 @@ import { join } from "node:path";
 import { distanceKm } from "./geo.mjs";
 import { CITY, args, OUT, AREAS_FILE, PHOTOS_FILE, SETTINGS_FOR_CITY, readOut, optionalOut } from "./city.mjs";
 
-const TRAVEL_DATE = "20261201"; // Tuesday 1 December 2026
+// A normal weekday (city.mjs can set a different one if a timetable has an odd day).
+const TRAVEL_DATE = SETTINGS_FOR_CITY.travelDate ?? "20261201"; // default: Tuesday 1 December 2026
 const DEPART_TIMES = ["07:30", "07:45", "08:00", "08:15", "08:30"];
 const CITY_CENTRE = SETTINGS_FOR_CITY.cityCentre;
 const MAX_ACCESS_M = 1200;
