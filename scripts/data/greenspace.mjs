@@ -20,15 +20,16 @@
 import { DatabaseSync } from "node:sqlite";
 import { readFile, writeFile } from "node:fs/promises";
 import { toBNG } from "./geo.mjs";
+import { CITY, args, OUT, AREAS_FILE, PHOTOS_FILE, SETTINGS_FOR_CITY, readOut, optionalOut } from "./city.mjs";
 
 const RADIUS_M = 1000;
 const SAMPLE_M = 20;
 const PARK_TYPES = new Set(["Public Park Or Garden", "Playing Field", "Play Space"]);
 
-const file = process.argv[2];
+const file = args[0];
 if (!file) throw new Error("Pass the path to opgrsp_gb.gpkg");
 
-const locations = JSON.parse(await readFile(new URL("./out/locations.json", import.meta.url), "utf8"));
+const locations = JSON.parse(await readFile(new URL("locations.json", OUT), "utf8"));
 const db = new DatabaseSync(file, { readOnly: true });
 
 // --- GeoPackage geometry -> list of polygons (each a list of rings of [x, y]) ---
@@ -127,7 +128,7 @@ const results = locations.map((loc) => {
 });
 
 await writeFile(
-  new URL("./out/greenspace.json", import.meta.url),
+  new URL("greenspace.json", OUT),
   JSON.stringify({ source: "OS Open Greenspace", radiusM: RADIUS_M, results }, null, 2) + "\n"
 );
-console.log("written scripts/data/out/greenspace.json");
+console.log(`written greenspace.json for ${CITY}`);

@@ -14,6 +14,7 @@
 
 import { readFile, writeFile, mkdir, rm, stat } from "node:fs/promises";
 import { areaSlug } from "../../src/slug.js";
+import { CITY, args, OUT, AREAS_FILE, PHOTOS_FILE, SETTINGS_FOR_CITY, readOut, optionalOut } from "./city.mjs";
 
 const PAUSE_MS = 5000;
 const WIDTH = 960; // a standard Wikimedia thumbnail width; plenty for the page
@@ -22,14 +23,14 @@ const HEADERS = { "User-Agent": "WhereShouldILiveAreaGuides/1.0 (https://www.whe
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const read = async (p) => JSON.parse(await readFile(new URL(p, import.meta.url), "utf8"));
-const choices = await read("./out/photo-choices.json");
-const candidates = await read("./out/photo-candidates.json");
+const choices = await readOut("photo-choices.json");
+const candidates = await readOut("photo-candidates.json");
 const outDir = new URL("../../public/images/areas/", import.meta.url);
 await mkdir(outDir, { recursive: true });
 
 // Which file was saved for each area, so a rerun can skip finished downloads.
-const LOG = new URL("./out/photo-downloads.json", import.meta.url);
-const downloaded = await read("./out/photo-downloads.json").catch(() => ({}));
+const LOG = new URL("photo-downloads.json", OUT);
+const downloaded = await readOut("photo-downloads.json").catch(() => ({}));
 
 // Address of the photo at WIDTH pixels wide (Wikimedia only serves standard widths).
 // Smaller originals are used as they are.
@@ -96,5 +97,5 @@ for (const { area, candidates: list } of candidates) {
   console.log(`saved ${slug}.jpg`);
 }
 
-await writeFile(new URL("../../src/data/manchester/areaPhotos.json", import.meta.url), JSON.stringify(photos, null, 2) + "\n");
+await writeFile(PHOTOS_FILE, JSON.stringify(photos, null, 2) + "\n");
 console.log(`photos for ${Object.keys(photos).length} areas; written src/data/manchester/areaPhotos.json`);

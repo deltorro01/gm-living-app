@@ -15,6 +15,7 @@
 // by apply-photos.mjs). Nothing on the site changes.
 
 import { readFile, writeFile } from "node:fs/promises";
+import { CITY, args, OUT, AREAS_FILE, PHOTOS_FILE, SETTINGS_FOR_CITY, readOut, optionalOut } from "./city.mjs";
 
 const MAX_CANDIDATES = 4;
 const NEARBY_M = 1500;
@@ -23,7 +24,7 @@ const THUMB_WIDTH = 1280; // a standard Wikimedia thumbnail width
 // Wikimedia asks automated tools to identify themselves with a website address.
 const HEADERS = { "User-Agent": "WhereShouldILiveAreaGuides/1.0 (https://www.whereshouldiliveinthe.uk/) Node.js" };
 
-const areas = JSON.parse(await readFile(new URL("../../src/data/manchester/areas.json", import.meta.url), "utf8"));
+const areas = JSON.parse(await readFile(AREAS_FILE, "utf8"));
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function getJson(url) {
@@ -144,9 +145,9 @@ const results = areas.map((a) => {
   return { area: a.area, borough: a.borough, candidates: list };
 });
 
-await writeFile(new URL("./out/photo-candidates.json", import.meta.url), JSON.stringify(results, null, 2) + "\n");
+await writeFile(new URL("photo-candidates.json", OUT), JSON.stringify(results, null, 2) + "\n");
 const withAny = results.filter((r) => r.candidates.length).length;
 const withLead = results.filter((r) => r.candidates[0]?.why.startsWith("Wikipedia")).length;
 console.log(`areas with at least one usable photo: ${withAny} of ${areas.length} (Wikipedia lead photo usable: ${withLead})`);
 console.log(`none: ${results.filter((r) => !r.candidates.length).map((r) => r.area).join(", ") || "-"}`);
-console.log("written scripts/data/out/photo-candidates.json");
+console.log(`written photo-candidates.json for ${CITY}`);

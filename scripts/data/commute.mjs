@@ -21,10 +21,11 @@ import { readFile, writeFile } from "node:fs/promises";
 import { createInterface } from "node:readline";
 import { join } from "node:path";
 import { distanceKm } from "./geo.mjs";
+import { CITY, args, OUT, AREAS_FILE, PHOTOS_FILE, SETTINGS_FOR_CITY, readOut, optionalOut } from "./city.mjs";
 
 const TRAVEL_DATE = "20261201"; // Tuesday 1 December 2026
 const DEPART_TIMES = ["07:30", "07:45", "08:00", "08:15", "08:30"];
-const CITY_CENTRE = { lat: 53.4808, lng: -2.2384, name: "Piccadilly Gardens / Market Street" };
+const CITY_CENTRE = SETTINGS_FOR_CITY.cityCentre;
 const MAX_ACCESS_M = 1200;
 const MAX_TRANSFER_M = 400;
 const MAX_EGRESS_M = 1200;
@@ -33,10 +34,10 @@ const WALK_DETOUR = 1.25;
 const TRANSFER_BUFFER_MIN = 1;
 const WINDOW_END = "11:00";
 
-const dir = process.argv[2];
+const dir = args[0];
 if (!dir) throw new Error("Pass the folder holding the GTFS files");
 
-const locations = JSON.parse(await readFile(new URL("./out/locations.json", import.meta.url), "utf8"));
+const locations = JSON.parse(await readFile(new URL("locations.json", OUT), "utf8"));
 
 function parseCsvLine(line) {
   const cells = [];
@@ -240,11 +241,11 @@ const results = locations.map((loc) => {
 });
 
 await writeFile(
-  new URL("./out/commute.json", import.meta.url),
+  new URL("commute.json", OUT),
   JSON.stringify(
     { source: "TfGM GTFS (bus and Metrolink)", travelDate: TRAVEL_DATE, departTimes: DEPART_TIMES, cityCentre: CITY_CENTRE, results },
     null,
     2
   ) + "\n"
 );
-console.log("written scripts/data/out/commute.json");
+console.log(`written commute.json for ${CITY}`);

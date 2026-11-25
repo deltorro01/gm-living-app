@@ -1,0 +1,478 @@
+{
+  "source": "ONS Price Index of Private Rents",
+  "method": "modelled",
+  "official": {
+    "Halton": {
+      "month": "2026-10",
+      "rent": 756,
+      "twoBed": 692
+    },
+    "Knowsley": {
+      "month": "2026-10",
+      "rent": 863,
+      "twoBed": 772
+    },
+    "Liverpool": {
+      "month": "2026-10",
+      "rent": 919,
+      "twoBed": 842
+    },
+    "St Helens": {
+      "month": "2026-10",
+      "rent": 817,
+      "twoBed": 747
+    },
+    "Sefton": {
+      "month": "2026-10",
+      "rent": 942,
+      "twoBed": 817
+    },
+    "Wirral": {
+      "month": "2026-10",
+      "rent": 865,
+      "twoBed": 745
+    }
+  },
+  "results": [
+    {
+      "area": "Liverpool City Centre",
+      "borough": "Liverpool",
+      "priceLevel": 1,
+      "rent": 890,
+      "boroughOfficial": 919,
+      "month": "2026-10"
+    },
+    {
+      "area": "Baltic Triangle",
+      "borough": "Liverpool",
+      "priceLevel": 1.03,
+      "rent": 900,
+      "boroughOfficial": 919,
+      "month": "2026-10"
+    },
+    {
+      "area": "Georgian Quarter",
+      "borough": "Liverpool",
+      "priceLevel": 0.95,
+      "rent": 870,
+      "boroughOfficial": 919,
+      "month": "2026-10"
+    },
+    {
+      "area": "Toxteth",
+      "borough": "Liverpool",
+      "priceLevel": 1.07,
+      "rent": 920,
+      "boroughOfficial": 919,
+      "month": "2026-10"
+    },
+    {
+      "area": "Aigburth",
+      "borough": "Liverpool",
+      "priceLevel": 1.51,
+      "rent": 1090,
+      "boroughOfficial": 919,
+      "month": "2026-10"
+    },
+    {
+      "area": "Mossley Hill",
+      "borough": "Liverpool",
+      "priceLevel": 1.64,
+      "rent": 1140,
+      "boroughOfficial": 919,
+      "month": "2026-10"
+    },
+    {
+      "area": "Allerton",
+      "borough": "Liverpool",
+      "priceLevel": 1.48,
+      "rent": 1080,
+      "boroughOfficial": 919,
+      "month": "2026-10"
+    },
+    {
+      "area": "Woolton",
+      "borough": "Liverpool",
+      "priceLevel": 1.26,
+      "rent": 1000,
+      "boroughOfficial": 919,
+      "month": "2026-10"
+    },
+    {
+      "area": "Childwall",
+      "borough": "Liverpool",
+      "priceLevel": 1.29,
+      "rent": 1010,
+      "boroughOfficial": 919,
+      "month": "2026-10"
+    },
+    {
+      "area": "Wavertree",
+      "borough": "Liverpool",
+      "priceLevel": 1.32,
+      "rent": 1020,
+      "boroughOfficial": 919,
+      "month": "2026-10"
+    },
+    {
+      "area": "Garston",
+      "borough": "Liverpool",
+      "priceLevel": 1.17,
+      "rent": 960,
+      "boroughOfficial": 919,
+      "month": "2026-10"
+    },
+    {
+      "area": "Speke",
+      "borough": "Liverpool",
+      "priceLevel": 0.89,
+      "rent": 840,
+      "boroughOfficial": 919,
+      "month": "2026-10"
+    },
+    {
+      "area": "West Derby",
+      "borough": "Liverpool",
+      "priceLevel": 0.86,
+      "rent": 830,
+      "boroughOfficial": 919,
+      "month": "2026-10"
+    },
+    {
+      "area": "Old Swan",
+      "borough": "Liverpool",
+      "priceLevel": 0.96,
+      "rent": 870,
+      "boroughOfficial": 919,
+      "month": "2026-10"
+    },
+    {
+      "area": "Kensington",
+      "borough": "Liverpool",
+      "priceLevel": 0.81,
+      "rent": 800,
+      "boroughOfficial": 919,
+      "month": "2026-10"
+    },
+    {
+      "area": "Anfield",
+      "borough": "Liverpool",
+      "priceLevel": 0.74,
+      "rent": 770,
+      "boroughOfficial": 919,
+      "month": "2026-10"
+    },
+    {
+      "area": "Walton",
+      "borough": "Liverpool",
+      "priceLevel": 0.72,
+      "rent": 750,
+      "boroughOfficial": 919,
+      "month": "2026-10"
+    },
+    {
+      "area": "Fazakerley",
+      "borough": "Liverpool",
+      "priceLevel": 0.8,
+      "rent": 800,
+      "boroughOfficial": 919,
+      "month": "2026-10"
+    },
+    {
+      "area": "Birkenhead",
+      "borough": "Wirral",
+      "priceLevel": 0.67,
+      "rent": 690,
+      "boroughOfficial": 865,
+      "month": "2026-10"
+    },
+    {
+      "area": "Oxton",
+      "borough": "Wirral",
+      "priceLevel": 1.02,
+      "rent": 850,
+      "boroughOfficial": 865,
+      "month": "2026-10"
+    },
+    {
+      "area": "Prenton",
+      "borough": "Wirral",
+      "priceLevel": 1.03,
+      "rent": 850,
+      "boroughOfficial": 865,
+      "month": "2026-10"
+    },
+    {
+      "area": "Rock Ferry",
+      "borough": "Wirral",
+      "priceLevel": 0.81,
+      "rent": 760,
+      "boroughOfficial": 865,
+      "month": "2026-10"
+    },
+    {
+      "area": "Bebington",
+      "borough": "Wirral",
+      "priceLevel": 0.99,
+      "rent": 840,
+      "boroughOfficial": 865,
+      "month": "2026-10"
+    },
+    {
+      "area": "Bromborough",
+      "borough": "Wirral",
+      "priceLevel": 0.99,
+      "rent": 840,
+      "boroughOfficial": 865,
+      "month": "2026-10"
+    },
+    {
+      "area": "Eastham",
+      "borough": "Wirral",
+      "priceLevel": 0.96,
+      "rent": 820,
+      "boroughOfficial": 865,
+      "month": "2026-10"
+    },
+    {
+      "area": "Wallasey",
+      "borough": "Wirral",
+      "priceLevel": 1,
+      "rent": 840,
+      "boroughOfficial": 865,
+      "month": "2026-10"
+    },
+    {
+      "area": "New Brighton",
+      "borough": "Wirral",
+      "priceLevel": 1.06,
+      "rent": 870,
+      "boroughOfficial": 865,
+      "month": "2026-10"
+    },
+    {
+      "area": "Moreton",
+      "borough": "Wirral",
+      "priceLevel": 0.88,
+      "rent": 790,
+      "boroughOfficial": 865,
+      "month": "2026-10"
+    },
+    {
+      "area": "Upton",
+      "borough": "Wirral",
+      "priceLevel": 0.97,
+      "rent": 830,
+      "boroughOfficial": 865,
+      "month": "2026-10"
+    },
+    {
+      "area": "Greasby",
+      "borough": "Wirral",
+      "priceLevel": 1.03,
+      "rent": 850,
+      "boroughOfficial": 865,
+      "month": "2026-10"
+    },
+    {
+      "area": "Hoylake",
+      "borough": "Wirral",
+      "priceLevel": 1.66,
+      "rent": 1080,
+      "boroughOfficial": 865,
+      "month": "2026-10"
+    },
+    {
+      "area": "West Kirby",
+      "borough": "Wirral",
+      "priceLevel": 1.63,
+      "rent": 1070,
+      "boroughOfficial": 865,
+      "month": "2026-10"
+    },
+    {
+      "area": "Heswall",
+      "borough": "Wirral",
+      "priceLevel": 1.41,
+      "rent": 1000,
+      "boroughOfficial": 865,
+      "month": "2026-10"
+    },
+    {
+      "area": "Bootle",
+      "borough": "Sefton",
+      "priceLevel": 0.68,
+      "rent": 770,
+      "boroughOfficial": 942,
+      "month": "2026-10"
+    },
+    {
+      "area": "Litherland",
+      "borough": "Sefton",
+      "priceLevel": 0.82,
+      "rent": 840,
+      "boroughOfficial": 942,
+      "month": "2026-10"
+    },
+    {
+      "area": "Waterloo",
+      "borough": "Sefton",
+      "priceLevel": 1.25,
+      "rent": 1040,
+      "boroughOfficial": 942,
+      "month": "2026-10"
+    },
+    {
+      "area": "Crosby",
+      "borough": "Sefton",
+      "priceLevel": 1.16,
+      "rent": 1000,
+      "boroughOfficial": 942,
+      "month": "2026-10"
+    },
+    {
+      "area": "Maghull",
+      "borough": "Sefton",
+      "priceLevel": 1.03,
+      "rent": 940,
+      "boroughOfficial": 942,
+      "month": "2026-10"
+    },
+    {
+      "area": "Formby",
+      "borough": "Sefton",
+      "priceLevel": 1.27,
+      "rent": 1050,
+      "boroughOfficial": 942,
+      "month": "2026-10"
+    },
+    {
+      "area": "Ainsdale",
+      "borough": "Sefton",
+      "priceLevel": 0.98,
+      "rent": 920,
+      "boroughOfficial": 942,
+      "month": "2026-10"
+    },
+    {
+      "area": "Birkdale",
+      "borough": "Sefton",
+      "priceLevel": 1.17,
+      "rent": 1010,
+      "boroughOfficial": 942,
+      "month": "2026-10"
+    },
+    {
+      "area": "Southport",
+      "borough": "Sefton",
+      "priceLevel": 0.97,
+      "rent": 910,
+      "boroughOfficial": 942,
+      "month": "2026-10"
+    },
+    {
+      "area": "Huyton",
+      "borough": "Knowsley",
+      "priceLevel": 1.02,
+      "rent": 860,
+      "boroughOfficial": 863,
+      "month": "2026-10"
+    },
+    {
+      "area": "Prescot",
+      "borough": "Knowsley",
+      "priceLevel": 1.07,
+      "rent": 880,
+      "boroughOfficial": 863,
+      "month": "2026-10"
+    },
+    {
+      "area": "Whiston",
+      "borough": "Knowsley",
+      "priceLevel": 1.01,
+      "rent": 860,
+      "boroughOfficial": 863,
+      "month": "2026-10"
+    },
+    {
+      "area": "Halewood",
+      "borough": "Knowsley",
+      "priceLevel": 1.14,
+      "rent": 910,
+      "boroughOfficial": 863,
+      "month": "2026-10"
+    },
+    {
+      "area": "Kirkby",
+      "borough": "Knowsley",
+      "priceLevel": 0.88,
+      "rent": 800,
+      "boroughOfficial": 863,
+      "month": "2026-10"
+    },
+    {
+      "area": "St Helens",
+      "borough": "St Helens",
+      "priceLevel": 0.83,
+      "rent": 740,
+      "boroughOfficial": 817,
+      "month": "2026-10"
+    },
+    {
+      "area": "Eccleston",
+      "borough": "St Helens",
+      "priceLevel": 1.07,
+      "rent": 840,
+      "boroughOfficial": 817,
+      "month": "2026-10"
+    },
+    {
+      "area": "Rainhill",
+      "borough": "St Helens",
+      "priceLevel": 1.1,
+      "rent": 850,
+      "boroughOfficial": 817,
+      "month": "2026-10"
+    },
+    {
+      "area": "Haydock",
+      "borough": "St Helens",
+      "priceLevel": 0.89,
+      "rent": 770,
+      "boroughOfficial": 817,
+      "month": "2026-10"
+    },
+    {
+      "area": "Newton-le-Willows",
+      "borough": "St Helens",
+      "priceLevel": 1.04,
+      "rent": 830,
+      "boroughOfficial": 817,
+      "month": "2026-10"
+    },
+    {
+      "area": "Billinge",
+      "borough": "St Helens",
+      "priceLevel": 1.13,
+      "rent": 860,
+      "boroughOfficial": 817,
+      "month": "2026-10"
+    },
+    {
+      "area": "Widnes",
+      "borough": "Halton",
+      "priceLevel": 0.84,
+      "rent": 740,
+      "boroughOfficial": 756,
+      "month": "2026-10"
+    },
+    {
+      "area": "Runcorn",
+      "borough": "Halton",
+      "priceLevel": 0.94,
+      "rent": 780,
+      "boroughOfficial": 756,
+      "month": "2026-10"
+    }
+  ]
+}

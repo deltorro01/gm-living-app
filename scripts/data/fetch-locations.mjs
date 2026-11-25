@@ -7,8 +7,9 @@
 // Usage: node scripts/data/fetch-locations.mjs
 
 import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { CITY, args, OUT, AREAS_FILE, PHOTOS_FILE, SETTINGS_FOR_CITY, readOut, optionalOut } from "./city.mjs";
 
-const areas = JSON.parse(await readFile(new URL("../../src/data/manchester/areas.json", import.meta.url)));
+const areas = JSON.parse(await readFile(AREAS_FILE));
 
 // Where the area name is not the OS place name: search for this name instead,
 // and accept it in this borough (OS sometimes files a place under a neighbouring
@@ -71,8 +72,8 @@ function round(n) {
   return Math.round(n * 100000) / 100000;
 }
 
-await mkdir(new URL("./out/", import.meta.url), { recursive: true });
-await writeFile(new URL("./out/locations.json", import.meta.url), JSON.stringify(out, null, 2) + "\n");
+await mkdir(OUT, { recursive: true });
+await writeFile(new URL("locations.json", OUT), JSON.stringify(out, null, 2) + "\n");
 
 const missing = out.filter((o) => o.lat === null);
 console.log(`found ${out.length - missing.length} of ${out.length}`);

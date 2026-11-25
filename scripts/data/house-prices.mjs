@@ -21,30 +21,32 @@ import { readFile, writeFile } from "node:fs/promises";
 import { createInterface } from "node:readline";
 import { join } from "node:path";
 import { lookupPostcodes, distanceKm } from "./geo.mjs";
+import { CITY, args, OUT, AREAS_FILE, PHOTOS_FILE, SETTINGS_FOR_CITY, readOut, optionalOut } from "./city.mjs";
 
 const FROM_MONTH = "2025-09";
 const TO_MONTH = "2026-08";
 const RADII = [1.5, 2, 2.5, 3];
 const MIN_SALES = 30;
 
-const dir = process.argv[2];
+const dir = args[0];
 if (!dir) throw new Error("Pass the folder that holds pp-2025.csv and pp-2026.csv");
 
-const locations = JSON.parse(await readFile(new URL("./out/locations.json", import.meta.url)));
+const locations = JSON.parse(await readFile(new URL("locations.json", OUT)));
 
-// 1. Read Greater Manchester standard sales in the window.
+// 1. Read standard sales in the window, in the counties/districts set for this city (city.mjs).
+const { priceCounties, priceDistricts } = SETTINGS_FOR_CITY;
+const wanted = [...priceCounties, ...priceDistricts].map((n) => `"${n}"`);
 const sales = [];
 for (const file of ["pp-2025.csv", "pp-2026.csv"]) {
   const lines = createInterface({ input: createReadStream(join(dir, file)) });
   for await (const line of lines) {
-    if (!line.includes('"GREATER MANCHESTER"') && !line.includes('"ROSSENDALE"')) continue;
+    if (!wanted.some((w) => line.includes(w))) continue;
     const f = line.slice(1, -1).split('","');
     const [, price, date, postcode, type, , , , , , , , district, county, category] = f;
     const month = date.slice(0, 7);
-    // Rossendale (Lancashire) is included because Whitworth sits just over the boundary.
-    if ((county !== "GREATER MANCHESTER" && district !== "ROSSENDALE") || category !== "A") continue;
+    if ((!priceCounties.includes(county) && !priceDistricts.includes(district)) || category !== "A") continue;
     if (month < FROM_MONTH || month > TO_MONTH || !postcode) continue;
-    sales.push({ price: Number(price), postcode, type });
+    sales.push({ price: Number(price), postcode, type, district });
   }
 }
 console.log(`sales in window: ${sales.length}`);
@@ -61,6 +63,22 @@ function median(values) {
   return v.length % 2 ? v[mid] : (v[mid - 1] + v[mid]) / 2;
 }
 
+// Median price for each type of home (D, S, T, F) where there are at least 5 sales.
+const TYPES = ["D", "S", "T", "F"];
+function typeMedians(list) {
+  return Object.fromEntries(
+    TYPES.map((t) => {
+      const prices = list.filter((s) => s.type === t).map((s) => s.price);
+      return [t, prices.length >= 5 ? Math.round(median(prices) / 1000) * 1000 : null];
+    })
+  );
+}
+
+// The same for each borough as a whole (used to estimate rents: rents.mjs).
+const boroughTypeMedian = Object.fromEntries(
+  [...new Set(locations.map((l) => l.borough))].map((b) => [b, typeMedians(placed.filter((s) => s.district === b.toUpperCase()))])
+);
+
 const results = locations.map((loc) => {
   for (const radius of RADII) {
     const near = placed.filter((s) => distanceKm(loc, coords[s.postcode]) <= radius);
@@ -72,13 +90,21 @@ const results = locations.map((loc) => {
         sales: near.length,
         radiusKm: radius,
         flatShare: near.length ? Math.round((flats / near.length) * 100) : null,
+        // Share of sales by type of home (%): used for the home-mix ratings.
+        typeShare: Object.fromEntries(
+          [["detached", "D"], ["semi", "S"], ["terraced", "T"], ["flat", "F"]].map(([name, code]) => [
+            name,
+            near.length ? Math.round((near.filter((s) => s.type === code).length / near.length) * 100) : 0,
+          ])
+        ),
+        typeMedian: typeMedians(near),
       };
     }
   }
 });
 
 await writeFile(
-  new URL("./out/house-prices.json", import.meta.url),
-  JSON.stringify({ period: `${FROM_MONTH} to ${TO_MONTH}`, results }, null, 2) + "\n"
+  new URL("house-prices.json", OUT),
+  JSON.stringify({ period: `${FROM_MONTH} to ${TO_MONTH}`, boroughTypeMedian, results }, null, 2) + "\n"
 );
-console.log("written scripts/data/out/house-prices.json");
+console.log(`written house-prices.json for ${CITY}`);
