@@ -1,0 +1,503 @@
+[
+  {
+    "area": "Liverpool City Centre",
+    "borough": "Liverpool",
+    "found": true,
+    "type": "manual",
+    "lat": 53.4048,
+    "lng": -2.9847,
+    "elsewhere": [],
+    "note": "Church Street / Liverpool ONE, set by hand"
+  },
+  {
+    "area": "Baltic Triangle",
+    "borough": "Liverpool",
+    "found": true,
+    "type": "manual",
+    "lat": 53.3962,
+    "lng": -2.98,
+    "elsewhere": [],
+    "note": "Jamaica Street, set by hand"
+  },
+  {
+    "area": "Georgian Quarter",
+    "borough": "Liverpool",
+    "found": true,
+    "type": "manual",
+    "lat": 53.4005,
+    "lng": -2.9705,
+    "elsewhere": [],
+    "note": "Rodney Street / Hope Street, set by hand"
+  },
+  {
+    "area": "Toxteth",
+    "borough": "Liverpool",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.386788489068195,
+    "lng": -2.971782618344199,
+    "elsewhere": []
+  },
+  {
+    "area": "Aigburth",
+    "borough": "Liverpool",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.36594486186612,
+    "lng": -2.9170407454224443,
+    "elsewhere": []
+  },
+  {
+    "area": "Mossley Hill",
+    "borough": "Liverpool",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.3784126438534,
+    "lng": -2.917023043545868,
+    "elsewhere": []
+  },
+  {
+    "area": "Allerton",
+    "borough": "Liverpool",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.36857737550197,
+    "lng": -2.888692075803234,
+    "elsewhere": []
+  },
+  {
+    "area": "Woolton",
+    "borough": "Liverpool",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.37425738126754,
+    "lng": -2.869299862767328,
+    "elsewhere": []
+  },
+  {
+    "area": "Childwall",
+    "borough": "Liverpool",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.394658180143495,
+    "lng": -2.8808741334697774,
+    "elsewhere": []
+  },
+  {
+    "area": "Wavertree",
+    "borough": "Liverpool",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.396883846427194,
+    "lng": -2.9183225675424,
+    "elsewhere": []
+  },
+  {
+    "area": "Garston",
+    "borough": "Liverpool",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.353172611104284,
+    "lng": -2.8967998569760867,
+    "elsewhere": []
+  },
+  {
+    "area": "Speke",
+    "borough": "Liverpool",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.343631354046025,
+    "lng": -2.8594841314426387,
+    "elsewhere": []
+  },
+  {
+    "area": "West Derby",
+    "borough": "Liverpool",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.439696655437665,
+    "lng": -2.8923888496555947,
+    "elsewhere": []
+  },
+  {
+    "area": "Old Swan",
+    "borough": "Liverpool",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.41273063610205,
+    "lng": -2.912540762618559,
+    "elsewhere": []
+  },
+  {
+    "area": "Kensington",
+    "borough": "Liverpool",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.412059647635104,
+    "lng": -2.9478961981983915,
+    "elsewhere": []
+  },
+  {
+    "area": "Anfield",
+    "borough": "Liverpool",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.43224556826956,
+    "lng": -2.9539296196088896,
+    "elsewhere": []
+  },
+  {
+    "area": "Walton",
+    "borough": "Liverpool",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.4446,
+    "lng": -2.9763,
+    "elsewhere": [],
+    "note": "OS files the point under Sefton (boundary); it is Walton, Liverpool"
+  },
+  {
+    "area": "Fazakerley",
+    "borough": "Liverpool",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.46005001476526,
+    "lng": -2.9355000649164147,
+    "elsewhere": []
+  },
+  {
+    "area": "Birkenhead",
+    "borough": "Wirral",
+    "found": true,
+    "type": "Town",
+    "lat": 53.39384905963721,
+    "lng": -3.0144866597650553,
+    "elsewhere": []
+  },
+  {
+    "area": "Oxton",
+    "borough": "Wirral",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.38171969557293,
+    "lng": -3.0522342893216803,
+    "elsewhere": []
+  },
+  {
+    "area": "Prenton",
+    "borough": "Wirral",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.368535215205604,
+    "lng": -3.042741339287501,
+    "elsewhere": []
+  },
+  {
+    "area": "Rock Ferry",
+    "borough": "Wirral",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.372354015560646,
+    "lng": -3.0094664693860405,
+    "elsewhere": []
+  },
+  {
+    "area": "Bebington",
+    "borough": "Wirral",
+    "found": true,
+    "type": "Town",
+    "lat": 53.33213126602321,
+    "lng": -2.9777925081156296,
+    "elsewhere": []
+  },
+  {
+    "area": "Bromborough",
+    "borough": "Wirral",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.33425424901555,
+    "lng": -2.977600799710851,
+    "elsewhere": []
+  },
+  {
+    "area": "Eastham",
+    "borough": "Wirral",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.317404751046496,
+    "lng": -2.9626246009541832,
+    "elsewhere": []
+  },
+  {
+    "area": "Wallasey",
+    "borough": "Wirral",
+    "found": true,
+    "type": "Town",
+    "lat": 53.423379282723104,
+    "lng": -3.064895649532208,
+    "elsewhere": []
+  },
+  {
+    "area": "New Brighton",
+    "borough": "Wirral",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.43414879292654,
+    "lng": -3.0434290650807907,
+    "elsewhere": []
+  },
+  {
+    "area": "Moreton",
+    "borough": "Wirral",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.40126292839962,
+    "lng": -3.11161698241986,
+    "elsewhere": []
+  },
+  {
+    "area": "Upton",
+    "borough": "Wirral",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.384585756143096,
+    "lng": -3.1021913859366204,
+    "elsewhere": []
+  },
+  {
+    "area": "Greasby",
+    "borough": "Wirral",
+    "found": true,
+    "type": "Village",
+    "lat": 53.37725754235876,
+    "lng": -3.119800641288046,
+    "elsewhere": []
+  },
+  {
+    "area": "Hoylake",
+    "borough": "Wirral",
+    "found": true,
+    "type": "Town",
+    "lat": 53.394662221566605,
+    "lng": -3.174788063549411,
+    "elsewhere": []
+  },
+  {
+    "area": "West Kirby",
+    "borough": "Wirral",
+    "found": true,
+    "type": "Town",
+    "lat": 53.372995272832625,
+    "lng": -3.1842023371664094,
+    "elsewhere": []
+  },
+  {
+    "area": "Heswall",
+    "borough": "Wirral",
+    "found": true,
+    "type": "Town",
+    "lat": 53.32736978541123,
+    "lng": -3.0963764000151026,
+    "elsewhere": []
+  },
+  {
+    "area": "Bootle",
+    "borough": "Sefton",
+    "found": true,
+    "type": "Town",
+    "lat": 53.4545025732949,
+    "lng": -2.991384824947089,
+    "elsewhere": []
+  },
+  {
+    "area": "Litherland",
+    "borough": "Sefton",
+    "found": true,
+    "type": "Town",
+    "lat": 53.47099524666843,
+    "lng": -3.000236064923999,
+    "elsewhere": []
+  },
+  {
+    "area": "Waterloo",
+    "borough": "Sefton",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.47605873621872,
+    "lng": -3.030580218175724,
+    "elsewhere": []
+  },
+  {
+    "area": "Crosby",
+    "borough": "Sefton",
+    "found": true,
+    "type": "Town",
+    "lat": 53.476323380375376,
+    "lng": -3.022796771951031,
+    "elsewhere": []
+  },
+  {
+    "area": "Maghull",
+    "borough": "Sefton",
+    "found": true,
+    "type": "Town",
+    "lat": 53.51573425719203,
+    "lng": -2.944795040596633,
+    "elsewhere": []
+  },
+  {
+    "area": "Formby",
+    "borough": "Sefton",
+    "found": true,
+    "type": "Town",
+    "lat": 53.55710454532561,
+    "lng": -3.060084752168105,
+    "elsewhere": []
+  },
+  {
+    "area": "Ainsdale",
+    "borough": "Sefton",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.60201404531114,
+    "lng": -3.0404300367855184,
+    "elsewhere": []
+  },
+  {
+    "area": "Birkdale",
+    "borough": "Sefton",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.629094720854894,
+    "lng": -3.014512149685421,
+    "elsewhere": []
+  },
+  {
+    "area": "Southport",
+    "borough": "Sefton",
+    "found": true,
+    "type": "Town",
+    "lat": 53.64728546528409,
+    "lng": -3.0073241965886552,
+    "elsewhere": []
+  },
+  {
+    "area": "Huyton",
+    "borough": "Knowsley",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.415059564399684,
+    "lng": -2.8363396826190774,
+    "elsewhere": []
+  },
+  {
+    "area": "Prescot",
+    "borough": "Knowsley",
+    "found": true,
+    "type": "Town",
+    "lat": 53.42962639089961,
+    "lng": -2.8055460955526024,
+    "elsewhere": []
+  },
+  {
+    "area": "Whiston",
+    "borough": "Knowsley",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.4168159796922,
+    "lng": -2.79502740595446,
+    "elsewhere": []
+  },
+  {
+    "area": "Halewood",
+    "borough": "Knowsley",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.36260184063561,
+    "lng": -2.8335986826393404,
+    "elsewhere": []
+  },
+  {
+    "area": "Kirkby",
+    "borough": "Knowsley",
+    "found": true,
+    "type": "Town",
+    "lat": 53.48219042985001,
+    "lng": -2.8918792086490637,
+    "elsewhere": []
+  },
+  {
+    "area": "St Helens",
+    "borough": "St Helens",
+    "found": true,
+    "type": "Town",
+    "lat": 53.45533805538021,
+    "lng": -2.738188853665826,
+    "elsewhere": []
+  },
+  {
+    "area": "Eccleston",
+    "borough": "St Helens",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.45600309842485,
+    "lng": -2.7764826913785576,
+    "elsewhere": []
+  },
+  {
+    "area": "Rainhill",
+    "borough": "St Helens",
+    "found": true,
+    "type": "Suburban Area",
+    "lat": 53.41371909010167,
+    "lng": -2.765496486937661,
+    "elsewhere": []
+  },
+  {
+    "area": "Haydock",
+    "borough": "St Helens",
+    "found": true,
+    "type": "Town",
+    "lat": 53.4664672406601,
+    "lng": -2.6757175520406014,
+    "elsewhere": []
+  },
+  {
+    "area": "Newton-le-Willows",
+    "borough": "St Helens",
+    "found": true,
+    "type": "Town",
+    "lat": 53.45407996619571,
+    "lng": -2.6449959439257653,
+    "elsewhere": []
+  },
+  {
+    "area": "Billinge",
+    "borough": "St Helens",
+    "found": true,
+    "type": "Town",
+    "lat": 53.49382185716905,
+    "lng": -2.7109566348997016,
+    "elsewhere": []
+  },
+  {
+    "area": "Widnes",
+    "borough": "Halton",
+    "found": true,
+    "type": "Town",
+    "lat": 53.3621,
+    "lng": -2.7341,
+    "elsewhere": [],
+    "note": "Halton is a unitary authority"
+  },
+  {
+    "area": "Runcorn",
+    "borough": "Halton",
+    "found": true,
+    "type": "Town",
+    "lat": 53.3417,
+    "lng": -2.7313,
+    "elsewhere": [],
+    "note": "Halton is a unitary authority"
+  }
+]
