@@ -1,98 +1,122 @@
-// Lifestyle measures for each area from OpenStreetMap (via the Overpass API).
+// Lifestyle measures for each area from OpenStreetMap, using downloaded
+// Geofabrik "free" Shapefile extracts (no online queries).
 //
 // For each area's map point it records, within RADIUS_M (about a mile) unless noted:
 //   nightlife   bars, pubs and nightclubs
 //   cafes       cafés
-//   culture     museums, galleries, theatres, cinemas, arts centres, libraries
-//   busyness    shops + other amenities, and km of main roads (for "quietness")
+//   culture     museums, theatres, cinemas, arts centres, libraries
+//   amenities   all shops and amenities (how busy the area is, for "quietness")
+//   mainRoadKm  km of motorway, trunk and primary roads (also for "quietness")
 //   greenShare  % of land that is green: parks, playing fields, woods, fields,
-//               meadows, heath, golf courses, nature reserves, beaches.
-//               Countryside counts, not just parks.
-//   cycleKm     km of cycle paths and cycle lanes within CYCLE_RADIUS_M
+//               grass, meadows, heath, scrub, allotments, cemeteries, golf
+//               courses, nature reserves and beaches. Countryside counts.
+//   cycleKm     km of cycle paths within CYCLE_RADIUS_M
 //   motorwayKm  straight-line km to the nearest motorway junction
-//   station     whether there is a railway station within STATION_RADIUS_M
+//   station     a railway station within STATION_RADIUS_M (and its name)
 //
 // These are raw measures; apply.mjs turns them into 1-5 ratings.
-// Map data © OpenStreetMap contributors, available under the Open Database Licence.
+// Map data © OpenStreetMap contributors, Open Database Licence; extracts by Geofabrik.
 //
-// Usage: node scripts/data/osm-ratings.mjs --city=liverpool
-// Writes osm-ratings.json in the city's out folder. Queries are sent slowly,
-// one at a time, as the public Overpass service asks.
+// Usage: node scripts/data/osm-ratings.mjs <extract folder> [<extract folder> ...] --city=liverpool
+//   Each folder is an unzipped Geofabrik *-latest-free.shp.zip
+//   (e.g. merseyside and cheshire for Liverpool City Region).
+// Writes osm-ratings.json in the city's out folder.
 
 import { writeFile } from "node:fs/promises";
-import { CITY, OUT, readOut } from "./city.mjs";
+import { join } from "node:path";
+import { CITY, OUT, args, readOut } from "./city.mjs";
 import { distanceKm, toBNG } from "./geo.mjs";
+import { readShapefile } from "./shapefile.mjs";
 
 const RADIUS_M = 1000;
 const CYCLE_RADIUS_M = 1500;
-const STATION_RADIUS_M = 1200;
-const JUNCTION_SEARCH_M = 20000;
-const PAUSE_MS = 2500;
-const ENDPOINT = "https://overpass-api.de/api/interpreter";
-const HEADERS = { "User-Agent": "area-guide-data-script/1.0 (Node.js; small batch)", "Content-Type": "application/x-www-form-urlencoded" };
+const STATION_RADIUS_M = 1600; // about a mile
 
+const NIGHTLIFE = new Set(["pub", "bar", "nightclub"]);
+const CULTURE = new Set(["museum", "theatre", "cinema", "arts_centre", "library"]);
+const GREEN_LANDUSE = new Set(["grass", "forest", "scrub", "farmland", "park", "meadow", "heath", "recreation_ground", "allotments", "nature_reserve", "cemetery", "orchard", "vineyard"]);
+const GREEN_POIS_A = new Set(["park", "pitch", "playground", "golf_course", "garden", "nature_reserve", "dog_park"]);
+const GREEN_NATURAL = new Set(["beach", "heath", "scrub", "wood", "grassland", "wetland"]);
+
+if (!args.length) throw new Error("Pass one or more unzipped Geofabrik extract folders");
 const locations = await readOut("locations.json");
-const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-async function overpass(query) {
-  for (let attempt = 1; attempt <= 5; attempt++) {
-    await sleep(PAUSE_MS);
-    const res = await fetch(ENDPOINT, { method: "POST", headers: HEADERS, body: "data=" + encodeURIComponent(query) });
-    if (res.ok) return res.json();
-    console.log(`  Overpass busy (${res.status}), waiting ${30 * attempt}s`);
-    await sleep(30000 * attempt);
+// Area of interest: all area points plus a margin, to skip far-away features.
+const margin = 0.06;
+const box = [
+  Math.min(...locations.map((l) => l.lng)) - margin,
+  Math.min(...locations.map((l) => l.lat)) - margin,
+  Math.max(...locations.map((l) => l.lng)) + margin,
+  Math.max(...locations.map((l) => l.lat)) + margin,
+];
+const near = ([lng, lat]) => lng >= box[0] && lng <= box[2] && lat >= box[1] && lat <= box[3];
+const bboxNear = (b) => b[2] >= box[0] && b[0] <= box[2] && b[3] >= box[1] && b[1] <= box[3];
+const centroid = (ring) => [ring.reduce((s, p) => s + p[0], 0) / ring.length, ring.reduce((s, p) => s + p[1], 0) / ring.length];
+
+// Collect what we need from every extract (features on a boundary can appear
+// in two extracts; OpenStreetMap ids are used to count each only once).
+const pois = new Map(); // osm_id -> { kind, lng, lat }
+const greens = []; // { bbox, rings in metres }
+const mainRoads = [];
+const cycleways = [];
+const junctions = [];
+const stations = new Map();
+const seenGreen = new Set();
+const seenLine = new Set();
+
+const ringsToMetres = (parts) => parts.map((r) => r.map(([lng, lat]) => toBNG(lat, lng)).map(({ e, n }) => [e, n]));
+
+for (const dir of args) {
+  const layer = (name) => readShapefile(join(dir, name));
+  for (const f of layer("gis_osm_pois_free_1")) {
+    if (near(f.point)) pois.set(f.props.osm_id, { kind: f.props.fclass, lng: f.point[0], lat: f.point[1] });
   }
-  throw new Error("Overpass did not respond; run again later");
+  for (const f of layer("gis_osm_pois_a_free_1")) {
+    if (!bboxNear(f.bbox)) continue;
+    const [lng, lat] = centroid(f.parts[0]);
+    pois.set(f.props.osm_id, { kind: f.props.fclass, lng, lat });
+    if (GREEN_POIS_A.has(f.props.fclass) && !seenGreen.has(f.props.osm_id)) {
+      seenGreen.add(f.props.osm_id);
+      greens.push({ bbox: f.bbox, rings: ringsToMetres(f.parts) });
+    }
+  }
+  for (const name of ["gis_osm_landuse_a_free_1", "gis_osm_natural_a_free_1"]) {
+    const wanted = name.includes("landuse") ? GREEN_LANDUSE : GREEN_NATURAL;
+    for (const f of layer(name)) {
+      if (!wanted.has(f.props.fclass) || !bboxNear(f.bbox) || seenGreen.has(f.props.osm_id)) continue;
+      seenGreen.add(f.props.osm_id);
+      greens.push({ bbox: f.bbox, rings: ringsToMetres(f.parts) });
+    }
+  }
+  for (const f of layer("gis_osm_roads_free_1")) {
+    if (!bboxNear(f.bbox) || seenLine.has(f.props.osm_id)) continue;
+    const c = f.props.fclass;
+    if (c === "motorway" || c === "trunk" || c === "primary") (seenLine.add(f.props.osm_id), mainRoads.push(f.parts));
+    else if (c === "cycleway") (seenLine.add(f.props.osm_id), cycleways.push(f.parts));
+  }
+  for (const f of layer("gis_osm_traffic_free_1")) {
+    if (f.props.fclass === "motorway_junction") junctions.push({ lng: f.point[0], lat: f.point[1] });
+  }
+  for (const f of layer("gis_osm_transport_free_1")) {
+    if (f.props.fclass === "railway_station" && near(f.point)) stations.set(f.props.osm_id, { name: f.props.name, lng: f.point[0], lat: f.point[1] });
+  }
 }
+console.log(`loaded: ${pois.size} places, ${greens.length} green areas, ${mainRoads.length} main roads, ${cycleways.length} cycleways, ${junctions.length} motorway junctions, ${stations.size} stations`);
 
-const GREEN =
-  'way(around:R,LAT,LNG)[leisure~"^(park|garden|playground|pitch|recreation_ground|common|nature_reserve|golf_course)$"];' +
-  'way(around:R,LAT,LNG)[landuse~"^(grass|meadow|forest|farmland|recreation_ground|village_green|cemetery|allotments|orchard)$"];' +
-  'way(around:R,LAT,LNG)[natural~"^(wood|scrub|heath|grassland|wetland|beach|sand)$"];' +
-  'relation(around:R,LAT,LNG)[leisure~"^(park|nature_reserve|golf_course|common)$"];' +
-  'relation(around:R,LAT,LNG)[landuse~"^(grass|meadow|forest|farmland|recreation_ground)$"];' +
-  'relation(around:R,LAT,LNG)[natural~"^(wood|scrub|heath|grassland|wetland|beach)$"];';
+const P = (lng, lat) => ({ lat, lng });
 
-function buildQuery({ lat, lng }) {
-  const sub = (s, r = RADIUS_M) => s.replaceAll("R", r).replaceAll("LAT", lat).replaceAll("LNG", lng);
-  return `[out:json][timeout:120];
-${sub('nwr(around:R,LAT,LNG)[amenity~"^(bar|pub|nightclub)$"];')}out count;
-${sub('nwr(around:R,LAT,LNG)[amenity=cafe];')}out count;
-(${sub('nwr(around:R,LAT,LNG)[tourism~"^(museum|gallery)$"];nwr(around:R,LAT,LNG)[amenity~"^(theatre|cinema|arts_centre|library)$"];')});out count;
-(${sub("nwr(around:R,LAT,LNG)[shop];nwr(around:R,LAT,LNG)[amenity];")});out count;
-${sub('way(around:R,LAT,LNG)[highway~"^(motorway|trunk|primary)$"];')}out geom;
-(${sub('way(around:R,LAT,LNG)[highway=cycleway];way(around:R,LAT,LNG)[~"^cycleway(:both|:left|:right)?$"~"^(lane|track)$"];', CYCLE_RADIUS_M)});out geom;
-${sub("node(around:R,LAT,LNG)[highway=motorway_junction];", JUNCTION_SEARCH_M)}out;
-${sub("node(around:R,LAT,LNG)[railway=station];", STATION_RADIUS_M)}out;
-(${sub(GREEN)});out geom;`;
-}
-
-// Length (km) of the parts of ways whose segment midpoints lie within radiusM.
-function lengthKmWithin(ways, centre, radiusM) {
+function lengthKmWithin(lines, centre, radiusM) {
   let km = 0;
-  for (const w of ways) {
-    const g = w.geometry ?? [];
-    for (let i = 1; i < g.length; i++) {
-      const a = { lat: g[i - 1].lat, lng: g[i - 1].lon };
-      const b = { lat: g[i].lat, lng: g[i].lon };
-      const mid = { lat: (a.lat + b.lat) / 2, lng: (a.lng + b.lng) / 2 };
-      if (distanceKm(centre, mid) * 1000 <= radiusM) km += distanceKm(a, b);
+  for (const parts of lines) {
+    for (const line of parts) {
+      for (let i = 1; i < line.length; i++) {
+        const a = P(...line[i - 1]);
+        const b = P(...line[i]);
+        if (distanceKm(centre, P((line[i - 1][0] + line[i][0]) / 2, (line[i - 1][1] + line[i][1]) / 2)) * 1000 <= radiusM) km += distanceKm(a, b);
+      }
     }
   }
   return Math.round(km * 10) / 10;
-}
-
-// Green polygons as rings in metres (British National Grid), for point tests.
-function greenRings(elements) {
-  const rings = [];
-  const toXY = (pts) => pts.map((p) => toBNG(p.lat, p.lon)).map(({ e, n }) => [e, n]);
-  for (const el of elements) {
-    if (el.type === "way" && el.geometry?.length > 3) rings.push(toXY(el.geometry));
-    if (el.type === "relation") {
-      for (const m of el.members ?? []) if (m.role === "outer" && m.geometry?.length > 3) rings.push(toXY(m.geometry));
-    }
-  }
-  return rings;
 }
 
 function inside(x, y, ring) {
@@ -105,8 +129,14 @@ function inside(x, y, ring) {
   return hit;
 }
 
-function greenShare(rings, centre) {
+function greenShare(centre) {
   const { e, n } = toBNG(centre.lat, centre.lng);
+  // Only polygons whose bounding box overlaps the circle.
+  const dLat = RADIUS_M / 111000;
+  const dLng = RADIUS_M / (111000 * Math.cos((centre.lat * Math.PI) / 180));
+  const candidates = greens.filter(
+    (g) => g.bbox[2] >= centre.lng - dLng && g.bbox[0] <= centre.lng + dLng && g.bbox[3] >= centre.lat - dLat && g.bbox[1] <= centre.lat + dLat
+  );
   const STEP = 40;
   let samples = 0;
   let green = 0;
@@ -114,40 +144,34 @@ function greenShare(rings, centre) {
     for (let dy = -RADIUS_M; dy <= RADIUS_M; dy += STEP) {
       if (dx * dx + dy * dy > RADIUS_M * RADIUS_M) continue;
       samples++;
-      if (rings.some((r) => inside(e + dx, n + dy, r))) green++;
+      // A polygon's first ring is its outline; any later rings are holes.
+      if (candidates.some((g) => g.rings.reduce((hit, ring) => hit !== inside(e + dx, n + dy, ring), false))) green++;
     }
   }
   return Math.round((green / samples) * 1000) / 10;
 }
 
-const results = [];
-for (const [i, loc] of locations.entries()) {
-  const data = await overpass(buildQuery(loc));
-  const els = data.elements;
-  // Output order: 4 counts, then main roads, cycleways, junctions, stations, green.
-  const counts = els.filter((e) => e.type === "count").map((e) => Number(e.tags.total));
-  const rest = els.filter((e) => e.type !== "count");
-  const mainRoads = rest.filter((e) => e.type === "way" && /^(motorway|trunk|primary)$/.test(e.tags?.highway ?? ""));
-  const cycleWays = rest.filter((e) => e.type === "way" && (e.tags?.highway === "cycleway" || Object.keys(e.tags ?? {}).some((k) => k.startsWith("cycleway"))));
-  const junctions = rest.filter((e) => e.type === "node" && e.tags?.highway === "motorway_junction");
-  const stations = rest.filter((e) => e.type === "node" && e.tags?.railway === "station");
-  const greens = rest.filter((e) => !mainRoads.includes(e) && !cycleWays.includes(e) && !junctions.includes(e) && !stations.includes(e));
-
-  results.push({
+const results = locations.map((loc) => {
+  const within = (m) => [...pois.values()].filter((p) => distanceKm(loc, p) * 1000 <= m);
+  const local = within(RADIUS_M);
+  const nearStations = [...stations.values()].filter((s) => distanceKm(loc, s) * 1000 <= STATION_RADIUS_M);
+  return {
     area: loc.area,
-    nightlife: counts[0],
-    cafes: counts[1],
-    culture: counts[2],
-    amenities: counts[3],
+    nightlife: local.filter((p) => NIGHTLIFE.has(p.kind)).length,
+    cafes: local.filter((p) => p.kind === "cafe").length,
+    culture: local.filter((p) => CULTURE.has(p.kind)).length,
+    amenities: local.length,
     mainRoadKm: lengthKmWithin(mainRoads, loc, RADIUS_M),
-    cycleKm: lengthKmWithin(cycleWays, loc, CYCLE_RADIUS_M),
-    motorwayKm: junctions.length ? Math.round(Math.min(...junctions.map((j) => distanceKm(loc, { lat: j.lat, lng: j.lon }))) * 10) / 10 : null,
-    station: stations.length > 0,
-    stationNames: [...new Set(stations.map((s) => s.tags?.name).filter(Boolean))],
-    greenShare: greenShare(greenRings(greens), loc),
-  });
-  console.log(`${i + 1}/${locations.length} ${loc.area}`);
-}
+    cycleKm: lengthKmWithin(cycleways, loc, CYCLE_RADIUS_M),
+    motorwayKm: junctions.length ? Math.round(Math.min(...junctions.map((j) => distanceKm(loc, j))) * 10) / 10 : null,
+    station: nearStations.length > 0,
+    stationNames: [...new Set(nearStations.map((s) => s.name).filter(Boolean))],
+    greenShare: greenShare(loc),
+  };
+});
 
-await writeFile(new URL("osm-ratings.json", OUT), JSON.stringify({ source: "OpenStreetMap via Overpass", results }, null, 2) + "\n");
+await writeFile(
+  new URL("osm-ratings.json", OUT),
+  JSON.stringify({ source: "OpenStreetMap (Geofabrik extracts)", radiusM: RADIUS_M, results }, null, 2) + "\n"
+);
 console.log(`written osm-ratings.json for ${CITY}`);

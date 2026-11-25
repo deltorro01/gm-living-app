@@ -1,0 +1,855 @@
+{
+  "source": "OpenStreetMap (Geofabrik extracts)",
+  "radiusM": 1000,
+  "results": [
+    {
+      "area": "Liverpool City Centre",
+      "nightlife": 279,
+      "cafes": 119,
+      "culture": 25,
+      "amenities": 1869,
+      "mainRoadKm": 18,
+      "cycleKm": 7.7,
+      "motorwayKm": 1.3,
+      "station": true,
+      "stationNames": [
+        "Liverpool Lime Street",
+        "Liverpool James Street",
+        "Moorfields",
+        "Liverpool Central"
+      ],
+      "greenShare": 3.8
+    },
+    {
+      "area": "Baltic Triangle",
+      "nightlife": 167,
+      "cafes": 64,
+      "culture": 11,
+      "amenities": 905,
+      "mainRoadKm": 10.6,
+      "cycleKm": 4.4,
+      "motorwayKm": 2.2,
+      "station": true,
+      "stationNames": [
+        "Brunswick",
+        "Liverpool Lime Street",
+        "Liverpool James Street",
+        "Moorfields",
+        "Liverpool Central"
+      ],
+      "greenShare": 3.9
+    },
+    {
+      "area": "Georgian Quarter",
+      "nightlife": 184,
+      "cafes": 72,
+      "culture": 17,
+      "amenities": 911,
+      "mainRoadKm": 10.1,
+      "cycleKm": 6.3,
+      "motorwayKm": 1.9,
+      "station": true,
+      "stationNames": [
+        "Edge Hill",
+        "Liverpool Lime Street",
+        "Liverpool James Street",
+        "Moorfields",
+        "Liverpool Central"
+      ],
+      "greenShare": 7.3
+    },
+    {
+      "area": "Toxteth",
+      "nightlife": 16,
+      "cafes": 5,
+      "culture": 1,
+      "amenities": 203,
+      "mainRoadKm": 4.2,
+      "cycleKm": 1.9,
+      "motorwayKm": 3.4,
+      "station": true,
+      "stationNames": [
+        "Brunswick"
+      ],
+      "greenShare": 5.9
+    },
+    {
+      "area": "Aigburth",
+      "nightlife": 1,
+      "cafes": 5,
+      "culture": 1,
+      "amenities": 130,
+      "mainRoadKm": 3.9,
+      "cycleKm": 2,
+      "motorwayKm": 4.3,
+      "station": true,
+      "stationNames": [
+        "Cressington",
+        "Aigburth",
+        "Mossley Hill",
+        "West Allerton"
+      ],
+      "greenShare": 19.6
+    },
+    {
+      "area": "Mossley Hill",
+      "nightlife": 9,
+      "cafes": 3,
+      "culture": 2,
+      "amenities": 158,
+      "mainRoadKm": 2,
+      "cycleKm": 1.7,
+      "motorwayKm": 3,
+      "station": true,
+      "stationNames": [
+        "Mossley Hill",
+        "West Allerton"
+      ],
+      "greenShare": 25.8
+    },
+    {
+      "area": "Allerton",
+      "nightlife": 2,
+      "cafes": 0,
+      "culture": 0,
+      "amenities": 29,
+      "mainRoadKm": 1.2,
+      "cycleKm": 0.8,
+      "motorwayKm": 3.7,
+      "station": true,
+      "stationNames": [
+        "West Allerton",
+        "Liverpool South Parkway"
+      ],
+      "greenShare": 42
+    },
+    {
+      "area": "Woolton",
+      "nightlife": 8,
+      "cafes": 1,
+      "culture": 2,
+      "amenities": 64,
+      "mainRoadKm": 3.2,
+      "cycleKm": 2.4,
+      "motorwayKm": 3.4,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 29.6
+    },
+    {
+      "area": "Childwall",
+      "nightlife": 1,
+      "cafes": 3,
+      "culture": 0,
+      "amenities": 96,
+      "mainRoadKm": 0,
+      "cycleKm": 4.2,
+      "motorwayKm": 1.5,
+      "station": true,
+      "stationNames": [
+        "Broad Green"
+      ],
+      "greenShare": 23.6
+    },
+    {
+      "area": "Wavertree",
+      "nightlife": 20,
+      "cafes": 8,
+      "culture": 1,
+      "amenities": 197,
+      "mainRoadKm": 1.9,
+      "cycleKm": 3.4,
+      "motorwayKm": 1.5,
+      "station": true,
+      "stationNames": [
+        "Wavertree Technology Park"
+      ],
+      "greenShare": 22.3
+    },
+    {
+      "area": "Garston",
+      "nightlife": 9,
+      "cafes": 8,
+      "culture": 1,
+      "amenities": 143,
+      "mainRoadKm": 4.2,
+      "cycleKm": 2.7,
+      "motorwayKm": 3.5,
+      "station": true,
+      "stationNames": [
+        "Cressington",
+        "Liverpool South Parkway"
+      ],
+      "greenShare": 15.6
+    },
+    {
+      "area": "Speke",
+      "nightlife": 4,
+      "cafes": 5,
+      "culture": 0,
+      "amenities": 88,
+      "mainRoadKm": 3.8,
+      "cycleKm": 7.8,
+      "motorwayKm": 1.1,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 17.2
+    },
+    {
+      "area": "West Derby",
+      "nightlife": 1,
+      "cafes": 2,
+      "culture": 0,
+      "amenities": 56,
+      "mainRoadKm": 0,
+      "cycleKm": 3.1,
+      "motorwayKm": 2.3,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 57.7
+    },
+    {
+      "area": "Old Swan",
+      "nightlife": 9,
+      "cafes": 9,
+      "culture": 1,
+      "amenities": 241,
+      "mainRoadKm": 11.5,
+      "cycleKm": 4.3,
+      "motorwayKm": 0.8,
+      "station": true,
+      "stationNames": [
+        "Wavertree Technology Park",
+        "Broad Green"
+      ],
+      "greenShare": 6.6
+    },
+    {
+      "area": "Kensington",
+      "nightlife": 14,
+      "cafes": 7,
+      "culture": 2,
+      "amenities": 406,
+      "mainRoadKm": 9.1,
+      "cycleKm": 3.1,
+      "motorwayKm": 2.3,
+      "station": true,
+      "stationNames": [
+        "Edge Hill"
+      ],
+      "greenShare": 18.1
+    },
+    {
+      "area": "Anfield",
+      "nightlife": 13,
+      "cafes": 2,
+      "culture": 1,
+      "amenities": 194,
+      "mainRoadKm": 4.9,
+      "cycleKm": 2.3,
+      "motorwayKm": 1.7,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 30.6
+    },
+    {
+      "area": "Walton",
+      "nightlife": 18,
+      "cafes": 4,
+      "culture": 1,
+      "amenities": 226,
+      "mainRoadKm": 14.2,
+      "cycleKm": 2.3,
+      "motorwayKm": 0.5,
+      "station": true,
+      "stationNames": [
+        "Bootle New Strand",
+        "Bootle Oriel Road",
+        "Kirkdale",
+        "Bank Hall",
+        "Walton"
+      ],
+      "greenShare": 13.9
+    },
+    {
+      "area": "Fazakerley",
+      "nightlife": 0,
+      "cafes": 5,
+      "culture": 0,
+      "amenities": 55,
+      "mainRoadKm": 1.9,
+      "cycleKm": 6.2,
+      "motorwayKm": 2.3,
+      "station": true,
+      "stationNames": [
+        "Fazakerley"
+      ],
+      "greenShare": 34.6
+    },
+    {
+      "area": "Birkenhead",
+      "nightlife": 23,
+      "cafes": 13,
+      "culture": 7,
+      "amenities": 194,
+      "mainRoadKm": 12.7,
+      "cycleKm": 5.3,
+      "motorwayKm": 2.1,
+      "station": true,
+      "stationNames": [
+        "Birkenhead Central",
+        "Green Lane",
+        "Hamilton Square",
+        "Conway Park"
+      ],
+      "greenShare": 5.6
+    },
+    {
+      "area": "Oxton",
+      "nightlife": 5,
+      "cafes": 2,
+      "culture": 1,
+      "amenities": 96,
+      "mainRoadKm": 0.5,
+      "cycleKm": 0.8,
+      "motorwayKm": 1.6,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 19.1
+    },
+    {
+      "area": "Prenton",
+      "nightlife": 5,
+      "cafes": 1,
+      "culture": 0,
+      "amenities": 94,
+      "mainRoadKm": 1.5,
+      "cycleKm": 1.3,
+      "motorwayKm": 1.6,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 34
+    },
+    {
+      "area": "Rock Ferry",
+      "nightlife": 7,
+      "cafes": 5,
+      "culture": 0,
+      "amenities": 113,
+      "mainRoadKm": 4.3,
+      "cycleKm": 0.2,
+      "motorwayKm": 3.7,
+      "station": true,
+      "stationNames": [
+        "Green Lane",
+        "Rock Ferry"
+      ],
+      "greenShare": 14.5
+    },
+    {
+      "area": "Bebington",
+      "nightlife": 2,
+      "cafes": 4,
+      "culture": 1,
+      "amenities": 90,
+      "mainRoadKm": 4.1,
+      "cycleKm": 9.8,
+      "motorwayKm": 2.7,
+      "station": true,
+      "stationNames": [
+        "Bromborough Rake",
+        "Spital",
+        "Bromborough"
+      ],
+      "greenShare": 16.9
+    },
+    {
+      "area": "Bromborough",
+      "nightlife": 2,
+      "cafes": 5,
+      "culture": 2,
+      "amenities": 87,
+      "mainRoadKm": 3.9,
+      "cycleKm": 10.5,
+      "motorwayKm": 2.7,
+      "station": true,
+      "stationNames": [
+        "Bromborough Rake",
+        "Spital",
+        "Bromborough"
+      ],
+      "greenShare": 14.8
+    },
+    {
+      "area": "Eastham",
+      "nightlife": 1,
+      "cafes": 1,
+      "culture": 2,
+      "amenities": 57,
+      "mainRoadKm": 2.5,
+      "cycleKm": 3.3,
+      "motorwayKm": 1.5,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 45
+    },
+    {
+      "area": "Wallasey",
+      "nightlife": 5,
+      "cafes": 6,
+      "culture": 1,
+      "amenities": 174,
+      "mainRoadKm": 8.7,
+      "cycleKm": 8.7,
+      "motorwayKm": 0.8,
+      "station": true,
+      "stationNames": [
+        "Wallasey Village",
+        "Wallasey Grove Road"
+      ],
+      "greenShare": 20
+    },
+    {
+      "area": "New Brighton",
+      "nightlife": 17,
+      "cafes": 13,
+      "culture": 4,
+      "amenities": 192,
+      "mainRoadKm": 2.4,
+      "cycleKm": 2.3,
+      "motorwayKm": 2.4,
+      "station": true,
+      "stationNames": [
+        "New Brighton"
+      ],
+      "greenShare": 21.3
+    },
+    {
+      "area": "Moreton",
+      "nightlife": 6,
+      "cafes": 4,
+      "culture": 1,
+      "amenities": 152,
+      "mainRoadKm": 5.9,
+      "cycleKm": 2.5,
+      "motorwayKm": 1,
+      "station": true,
+      "stationNames": [
+        "Leasowe",
+        "Moreton"
+      ],
+      "greenShare": 6.4
+    },
+    {
+      "area": "Upton",
+      "nightlife": 6,
+      "cafes": 5,
+      "culture": 0,
+      "amenities": 163,
+      "mainRoadKm": 5.9,
+      "cycleKm": 4.5,
+      "motorwayKm": 1.1,
+      "station": true,
+      "stationNames": [
+        "Upton"
+      ],
+      "greenShare": 15
+    },
+    {
+      "area": "Greasby",
+      "nightlife": 4,
+      "cafes": 0,
+      "culture": 1,
+      "amenities": 56,
+      "mainRoadKm": 0,
+      "cycleKm": 4.2,
+      "motorwayKm": 2.3,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 33.2
+    },
+    {
+      "area": "Hoylake",
+      "nightlife": 8,
+      "cafes": 14,
+      "culture": 0,
+      "amenities": 235,
+      "mainRoadKm": 2.1,
+      "cycleKm": 1,
+      "motorwayKm": 4.9,
+      "station": true,
+      "stationNames": [
+        "Meols",
+        "Manor Road",
+        "Hoylake"
+      ],
+      "greenShare": 50.9
+    },
+    {
+      "area": "West Kirby",
+      "nightlife": 10,
+      "cafes": 11,
+      "culture": 2,
+      "amenities": 235,
+      "mainRoadKm": 2.2,
+      "cycleKm": 2.7,
+      "motorwayKm": 6,
+      "station": true,
+      "stationNames": [
+        "West Kirby"
+      ],
+      "greenShare": 26
+    },
+    {
+      "area": "Heswall",
+      "nightlife": 12,
+      "cafes": 11,
+      "culture": 1,
+      "amenities": 153,
+      "mainRoadKm": 2.9,
+      "cycleKm": 1.7,
+      "motorwayKm": 4.5,
+      "station": true,
+      "stationNames": [
+        "Heswall"
+      ],
+      "greenShare": 15.6
+    },
+    {
+      "area": "Bootle",
+      "nightlife": 12,
+      "cafes": 6,
+      "culture": 1,
+      "amenities": 231,
+      "mainRoadKm": 12.9,
+      "cycleKm": 4.6,
+      "motorwayKm": 1.3,
+      "station": true,
+      "stationNames": [
+        "Seaforth & Litherland",
+        "Bootle New Strand",
+        "Bootle Oriel Road"
+      ],
+      "greenShare": 10.6
+    },
+    {
+      "area": "Litherland",
+      "nightlife": 4,
+      "cafes": 0,
+      "culture": 0,
+      "amenities": 68,
+      "mainRoadKm": 6.1,
+      "cycleKm": 11.2,
+      "motorwayKm": 0.7,
+      "station": true,
+      "stationNames": [
+        "Seaforth & Litherland"
+      ],
+      "greenShare": 19.7
+    },
+    {
+      "area": "Waterloo",
+      "nightlife": 16,
+      "cafes": 6,
+      "culture": 2,
+      "amenities": 273,
+      "mainRoadKm": 1.7,
+      "cycleKm": 3.6,
+      "motorwayKm": 1.2,
+      "station": true,
+      "stationNames": [
+        "Waterloo",
+        "Blundellsands & Crosby"
+      ],
+      "greenShare": 29.2
+    },
+    {
+      "area": "Crosby",
+      "nightlife": 15,
+      "cafes": 6,
+      "culture": 2,
+      "amenities": 257,
+      "mainRoadKm": 2.4,
+      "cycleKm": 7,
+      "motorwayKm": 1,
+      "station": true,
+      "stationNames": [
+        "Waterloo"
+      ],
+      "greenShare": 28.2
+    },
+    {
+      "area": "Maghull",
+      "nightlife": 4,
+      "cafes": 2,
+      "culture": 0,
+      "amenities": 113,
+      "mainRoadKm": 5.8,
+      "cycleKm": 3.9,
+      "motorwayKm": 2.2,
+      "station": true,
+      "stationNames": [
+        "Maghull",
+        "Maghull North"
+      ],
+      "greenShare": 17.5
+    },
+    {
+      "area": "Formby",
+      "nightlife": 8,
+      "cafes": 5,
+      "culture": 2,
+      "amenities": 142,
+      "mainRoadKm": 1.4,
+      "cycleKm": 6,
+      "motorwayKm": 9.9,
+      "station": true,
+      "stationNames": [
+        "Formby",
+        "Freshfield"
+      ],
+      "greenShare": 7.1
+    },
+    {
+      "area": "Ainsdale",
+      "nightlife": 11,
+      "cafes": 4,
+      "culture": 0,
+      "amenities": 132,
+      "mainRoadKm": 2,
+      "cycleKm": 3.2,
+      "motorwayKm": 13.2,
+      "station": true,
+      "stationNames": [
+        "Ainsdale"
+      ],
+      "greenShare": 23.4
+    },
+    {
+      "area": "Birkdale",
+      "nightlife": 5,
+      "cafes": 4,
+      "culture": 0,
+      "amenities": 145,
+      "mainRoadKm": 3.6,
+      "cycleKm": 3.1,
+      "motorwayKm": 14.6,
+      "station": true,
+      "stationNames": [
+        "Birkdale",
+        "Hillside"
+      ],
+      "greenShare": 2.9
+    },
+    {
+      "area": "Southport",
+      "nightlife": 37,
+      "cafes": 50,
+      "culture": 7,
+      "amenities": 706,
+      "mainRoadKm": 3.6,
+      "cycleKm": 3.7,
+      "motorwayKm": 16.2,
+      "station": true,
+      "stationNames": [
+        "Southport",
+        "Southport Princes Park",
+        "Southport Marine Parade",
+        "Birkdale"
+      ],
+      "greenShare": 13.8
+    },
+    {
+      "area": "Huyton",
+      "nightlife": 6,
+      "cafes": 7,
+      "culture": 1,
+      "amenities": 239,
+      "mainRoadKm": 2.2,
+      "cycleKm": 4.1,
+      "motorwayKm": 1.7,
+      "station": true,
+      "stationNames": [
+        "Huyton",
+        "Roby"
+      ],
+      "greenShare": 18.4
+    },
+    {
+      "area": "Prescot",
+      "nightlife": 15,
+      "cafes": 8,
+      "culture": 2,
+      "amenities": 218,
+      "mainRoadKm": 8.3,
+      "cycleKm": 5.4,
+      "motorwayKm": 1,
+      "station": true,
+      "stationNames": [
+        "Prescot",
+        "Knowsley Safari Park Train Station"
+      ],
+      "greenShare": 25.1
+    },
+    {
+      "area": "Whiston",
+      "nightlife": 2,
+      "cafes": 6,
+      "culture": 1,
+      "amenities": 155,
+      "mainRoadKm": 1.4,
+      "cycleKm": 5.7,
+      "motorwayKm": 1.7,
+      "station": true,
+      "stationNames": [
+        "Whiston",
+        "Prescot"
+      ],
+      "greenShare": 36.4
+    },
+    {
+      "area": "Halewood",
+      "nightlife": 2,
+      "cafes": 0,
+      "culture": 1,
+      "amenities": 68,
+      "mainRoadKm": 1.8,
+      "cycleKm": 8.9,
+      "motorwayKm": 1.7,
+      "station": true,
+      "stationNames": [
+        "Hunts Cross",
+        "Halewood"
+      ],
+      "greenShare": 25.1
+    },
+    {
+      "area": "Kirkby",
+      "nightlife": 4,
+      "cafes": 0,
+      "culture": 1,
+      "amenities": 77,
+      "mainRoadKm": 5.3,
+      "cycleKm": 8.7,
+      "motorwayKm": 1.1,
+      "station": true,
+      "stationNames": [
+        "Kirkby",
+        "Headbolt Lane"
+      ],
+      "greenShare": 23.6
+    },
+    {
+      "area": "St Helens",
+      "nightlife": 37,
+      "cafes": 17,
+      "culture": 7,
+      "amenities": 482,
+      "mainRoadKm": 8.1,
+      "cycleKm": 5.6,
+      "motorwayKm": 1.8,
+      "station": true,
+      "stationNames": [
+        "St Helens Central"
+      ],
+      "greenShare": 15.9
+    },
+    {
+      "area": "Eccleston",
+      "nightlife": 3,
+      "cafes": 1,
+      "culture": 2,
+      "amenities": 89,
+      "mainRoadKm": 0,
+      "cycleKm": 1.1,
+      "motorwayKm": 2.8,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 29
+    },
+    {
+      "area": "Rainhill",
+      "nightlife": 6,
+      "cafes": 0,
+      "culture": 2,
+      "amenities": 63,
+      "mainRoadKm": 2.1,
+      "cycleKm": 0,
+      "motorwayKm": 1.4,
+      "station": true,
+      "stationNames": [
+        "Rainhill"
+      ],
+      "greenShare": 40.5
+    },
+    {
+      "area": "Haydock",
+      "nightlife": 0,
+      "cafes": 1,
+      "culture": 1,
+      "amenities": 47,
+      "mainRoadKm": 5.3,
+      "cycleKm": 10.3,
+      "motorwayKm": 1.1,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 34.7
+    },
+    {
+      "area": "Newton-le-Willows",
+      "nightlife": 3,
+      "cafes": 1,
+      "culture": 1,
+      "amenities": 134,
+      "mainRoadKm": 2.2,
+      "cycleKm": 3.1,
+      "motorwayKm": 1.8,
+      "station": true,
+      "stationNames": [
+        "Earlestown"
+      ],
+      "greenShare": 35
+    },
+    {
+      "area": "Billinge",
+      "nightlife": 6,
+      "cafes": 1,
+      "culture": 2,
+      "amenities": 58,
+      "mainRoadKm": 2.1,
+      "cycleKm": 0,
+      "motorwayKm": 3.1,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 61.4
+    },
+    {
+      "area": "Widnes",
+      "nightlife": 15,
+      "cafes": 10,
+      "culture": 2,
+      "amenities": 239,
+      "mainRoadKm": 10.6,
+      "cycleKm": 18.2,
+      "motorwayKm": 0.5,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 13.9
+    },
+    {
+      "area": "Runcorn",
+      "nightlife": 16,
+      "cafes": 9,
+      "culture": 3,
+      "amenities": 348,
+      "mainRoadKm": 5.5,
+      "cycleKm": 16.4,
+      "motorwayKm": 0.5,
+      "station": true,
+      "stationNames": [
+        "Runcorn"
+      ],
+      "greenShare": 10.6
+    }
+  ]
+}
