@@ -61,7 +61,7 @@ export function CompareView({ areas, settings, money, onRemove, onClose }) {
   return (
     <section className="panel compare-view" aria-label="Area comparison">
       <div className="row-between wrap-gap">
-        <h2 style={{ margin: 0 }}>Compare areas</h2>
+        <h2 className="heading-flush">Compare areas</h2>
         <button type="button" className="btn btn-secondary" onClick={onClose}>
           Close comparison
         </button>

@@ -1,4 +1,4 @@
-import React, { Suspense, lazy, useEffect, useMemo, useState } from "react";
+import { Suspense, lazy, useEffect, useMemo, useState } from "react";
 import areas from "./areas.json";
 import "./styles.css";
 import { readSettings, writeSettings } from "./urlState.js";
@@ -33,13 +33,15 @@ function scoreBand(score) {
 }
 
 function SliderField({ label, value, min, max, step = 1, onChange, format }) {
+  const id = `slider-${label.toLowerCase().replace(/[^a-z]+/g, "-")}`;
   return (
     <div className="field-group">
       <div className="row-between small-gap">
-        <label>{label}</label>
+        <label htmlFor={id}>{label}</label>
         <span className="slider-value">{format ? format(value) : value}</span>
       </div>
       <input
+        id={id}
         type="range"
         min={min}
         max={max}
@@ -231,16 +233,16 @@ export default function App() {
       const lifeStageScore = getLifeStageScore(area, lifeStage, scores);
 
       const finalScore = clamp(
-  scores.affordability * 0.18 +
-    lifeStageScore * 0.32 +
-    scores.commute * 0.11 +
-    scores.nightlife * 0.07 +
-    scores.green * 0.07 +
-    scores.value * 0.07 +
-    scores.schools * 0.06 +
-    scores.cycling * 0.04 +
-    scores.safety * 0.08
-);
+        scores.affordability * 0.18 +
+          lifeStageScore * 0.32 +
+          scores.commute * 0.11 +
+          scores.nightlife * 0.07 +
+          scores.green * 0.07 +
+          scores.value * 0.07 +
+          scores.schools * 0.06 +
+          scores.cycling * 0.04 +
+          scores.safety * 0.08
+      );
 
       return {
         ...area,
@@ -346,35 +348,15 @@ export default function App() {
   return (
     <div className="app-shell">
       <div className="page-wrap">
-        <div className="panel" style={{ marginBottom: "24px" }}>
-          <div className="row-between wrap-gap">
-            <div>
-              <div className="eyebrow">Where Should I Live In Greater Manchester</div>
-              <h1 style={{ marginBottom: "8px" }}>
-                Find places that fit how you want to live
-            </h1>
+        <div className="panel section-gap">
+          <div className="eyebrow">Where Should I Live In Greater Manchester</div>
+          <h1 className="page-title">Find places that fit how you want to live</h1>
+          <p className="muted page-intro">Set the basics, then open more preferences when needed.</p>
 
-              <p className="muted" style={{ marginTop: 0 }}>
-                Set the basics, then open more preferences when needed.
-            </p>
-            </div>
-          </div>
-
-          <div
-            className="sticky-top-filters"
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-              gap: "16px",
-              marginTop: "20px",
-            }}
-          >
+          <div className="sticky-top-filters field-grid">
             <div className="field-group">
-              <label>Life stage</label>
-              <select
-                value={lifeStage}
-                onChange={(e) => setLifeStage(e.target.value)}
-              >
+              <label htmlFor="life-stage">Life stage</label>
+              <select id="life-stage" value={lifeStage} onChange={(e) => setLifeStage(e.target.value)}>
                 <option value="young-professional">Young professional</option>
                 <option value="family">Family</option>
                 <option value="first-time-buyer">First-time buyer</option>
@@ -387,18 +369,16 @@ export default function App() {
               <div className="button-row two-up">
                 <button
                   type="button"
-                  className={
-                    budgetType === "rent" ? "btn btn-primary" : "btn btn-secondary"
-                  }
+                  className={budgetType === "rent" ? "btn btn-primary" : "btn btn-secondary"}
+                  aria-pressed={budgetType === "rent"}
                   onClick={() => setBudgetType("rent")}
                 >
                   Rent
                 </button>
                 <button
                   type="button"
-                  className={
-                    budgetType === "buy" ? "btn btn-primary" : "btn btn-secondary"
-                  }
+                  className={budgetType === "buy" ? "btn btn-primary" : "btn btn-secondary"}
+                  aria-pressed={budgetType === "buy"}
                   onClick={() => setBudgetType("buy")}
                 >
                   Buy
@@ -429,8 +409,9 @@ export default function App() {
             )}
 
             <div className="field-group">
-              <label>Commute preference</label>
+              <label htmlFor="commute-preference">Commute preference</label>
               <select
+                id="commute-preference"
                 value={commutePreference}
                 onChange={(e) => setCommutePreference(e.target.value)}
               >
@@ -445,75 +426,35 @@ export default function App() {
             <button
               type="button"
               className={showAdvanced ? "btn btn-primary more-filters-btn" : "btn btn-secondary more-filters-btn"}
+              aria-expanded={showAdvanced}
               onClick={() => setShowAdvanced(!showAdvanced)}
             >
-            {showAdvanced ? "Hide more preferences" : "More preferences"}
+              {showAdvanced ? "Hide more preferences" : "More preferences"}
             </button>
           </div>
 
           {showAdvanced && (
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-                gap: "16px",
-                marginTop: "20px",
-              }}
-            >
-              <SliderField
-                label="Nightlife"
-                value={nightlifePriority}
-                min={1}
-                max={5}
-                onChange={setNightlifePriority}
-              />
-              <SliderField
-                label="Green space"
-                value={greenPriority}
-                min={1}
-                max={5}
-                onChange={setGreenPriority}
-              />
-              <SliderField
-                label="Value for money"
-                value={valuePriority}
-                min={1}
-                max={5}
-                onChange={setValuePriority}
-              />
-              <SliderField
-                label="Schools"
-                value={schoolPriority}
-                min={1}
-                max={5}
-                onChange={setSchoolPriority}
-              />
-
-              <SliderField
-                label="Safety"
-                value={safetyPriority}
-                min={1}
-                max={5}
-                onChange={setSafetyPriority}
-              />
-
-              <SliderField
-                label="Cycling"
-                value={cyclingPriority}
-                min={1}
-                max={5}
-                onChange={setCyclingPriority}
-              />
-
+            <div className="field-grid">
+              <SliderField label="Nightlife" value={nightlifePriority} min={1} max={5} onChange={setNightlifePriority} />
+              <SliderField label="Green space" value={greenPriority} min={1} max={5} onChange={setGreenPriority} />
+              <SliderField label="Value for money" value={valuePriority} min={1} max={5} onChange={setValuePriority} />
+              <SliderField label="Schools" value={schoolPriority} min={1} max={5} onChange={setSchoolPriority} />
+              <SliderField label="Safety" value={safetyPriority} min={1} max={5} onChange={setSafetyPriority} />
+              <SliderField label="Cycling" value={cyclingPriority} min={1} max={5} onChange={setCyclingPriority} />
             </div>
           )}
         </div>
 
         <div className="panel refine-panel">
           <div className="row-between wrap-gap">
-            <h2 style={{ margin: 0 }}>Refine your results</h2>
+            <h2 className="heading-flush">Refine your results</h2>
             <div className="button-row">
-              <button type="button" className={showMap ? "btn btn-primary" : "btn btn-secondary"} aria-pressed={showMap} onClick={() => setShowMap(!showMap)}>
+              <button
+                type="button"
+                className={showMap ? "btn btn-primary" : "btn btn-secondary"}
+                aria-pressed={showMap}
+                onClick={() => setShowMap(!showMap)}
+              >
                 {showMap ? "Hide map" : "Show map"}
               </button>
               <button type="button" className="btn btn-secondary" onClick={copyLink}>
@@ -545,7 +486,7 @@ export default function App() {
           </div>
 
           {filtersOn && (
-            <p className="muted compact" style={{ marginTop: "12px" }}>
+            <p className="muted compact filter-note">
               {hiddenCount} of {results.length} areas hidden by these filters.{" "}
               <button type="button" className="link-btn" onClick={clearFilters}>
                 Clear filters
@@ -554,7 +495,7 @@ export default function App() {
           )}
 
           {showMap && (
-            <div style={{ marginTop: "16px" }}>
+            <div className="map-wrap">
               <Suspense fallback={<p className="muted">Loading map…</p>}>
                 <AreaMap areas={filtered} budgetType={budgetType} money={money} />
               </Suspense>
@@ -598,12 +539,7 @@ export default function App() {
 
                   <p className="fit-label">{scoreBand(area.match)}</p>
 
-                  <p className="muted compact">
-                    Rent {money(area.averageRent)} pcm · Buy {money(area.averageHousePrice)} · Commute{" "}
-                    {area.commuteCityMinutes} mins
-                  </p>
-
-                  <AreaTags area={area} />
+                  <AreaDetails area={area} budgetType={budgetType} />
 
                   <WhyThisMatch area={area} settings={settings} />
 
@@ -640,12 +576,7 @@ export default function App() {
                             <span className="tag dark">{scoreBand(area.match)}</span>
                           </div>
 
-                          <p className="muted compact">
-                            Rent {money(area.averageRent)} pcm · Buy {money(area.averageHousePrice)} · Commute{" "}
-                            {area.commuteCityMinutes} mins
-                          </p>
-
-                          <AreaTags area={area} />
+                          <AreaDetails area={area} budgetType={budgetType} />
 
                           <WhyThisMatch area={area} settings={settings} />
 
@@ -662,15 +593,23 @@ export default function App() {
                     ))}
                   </div>
 
-                  <div style={{ marginTop: "20px", display: "flex", gap: "10px" }}>
+                  <div className="list-actions">
                     {3 + visibleCount < filtered.length && (
-                      <button type="button" className="btn btn-primary" onClick={() => setVisibleCount((prev) => prev + 10)}>
+                      <button
+                        type="button"
+                        className="btn btn-primary"
+                        onClick={() => setVisibleCount((prev) => prev + 10)}
+                      >
                         Show more areas
                       </button>
                     )}
 
                     {visibleCount > DEFAULT_VISIBLE && (
-                      <button type="button" className="btn btn-secondary" onClick={() => setVisibleCount(DEFAULT_VISIBLE)}>
+                      <button
+                        type="button"
+                        className="btn btn-secondary"
+                        onClick={() => setVisibleCount(DEFAULT_VISIBLE)}
+                      >
                         Show fewer areas
                       </button>
                     )}
@@ -711,25 +650,54 @@ export default function App() {
   );
 }
 
-function AreaTags({ area }) {
+// Ratings shown on each card, in order of how much they matter to most people.
+const CARD_RATINGS = [
+  ["safety", "Safety"],
+  ["schools", "Schools"],
+  ["greenSpace", "Green space"],
+  ["value", "Value"],
+  ["nightlife", "Nightlife"],
+  ["cycling", "Cycling"],
+];
+
+// Price line, ratings as dots and transport badges for one result card.
+function AreaDetails({ area, budgetType }) {
+  const rent = `${money(area.averageRent)} a month`;
+  const price = money(area.averageHousePrice);
   return (
     <>
-      <div className="tag-row">
-        <span className="tag">Nightlife {area.nightlife}/5</span>
-        <span className="tag">Green {area.greenSpace}/5</span>
-        <span className="tag">Value {area.value}/5</span>
-        <span className="tag">Cycling {area.cycling}/5</span>
-        <span className="tag">Schools {area.schools}/5</span>
-        <span className="tag">Safety {area.safety}/5</span>
-        {area.tram ? <span className="tag">Tram</span> : null}
-        {area.train ? <span className="tag">Train</span> : null}
-      </div>
+      <p className="price-line">
+        {budgetType === "rent" ? (
+          <>
+            <strong>{rent}</strong> · Buy {price}
+          </>
+        ) : (
+          <>
+            <strong>{price}</strong> · Rent {rent}
+          </>
+        )}{" "}
+        · About {area.commuteCityMinutes} mins to the city centre
+      </p>
 
-      <div className="tag-row">
-        <span className="tag">Affordability {area.breakdown.affordability}</span>
-        <span className="tag">Lifestyle {area.breakdown.lifestyle}</span>
-        <span className="tag">Commute {area.breakdown.commute}</span>
-      </div>
+      <ul className="rating-dots">
+        {CARD_RATINGS.map(([field, label]) => (
+          <li key={field}>
+            <span className="rating-dots-label">{label}</span>
+            <span className="dots" role="img" aria-label={`${area[field]} out of 5`}>
+              {[1, 2, 3, 4, 5].map((n) => (
+                <span key={n} className={n <= area[field] ? "dot on" : "dot"} />
+              ))}
+            </span>
+          </li>
+        ))}
+      </ul>
+
+      {(area.tram || area.train) && (
+        <div className="transport-badges">
+          {area.tram && <span className="tag">Tram stop</span>}
+          {area.train && <span className="tag">Train station</span>}
+        </div>
+      )}
     </>
   );
 }

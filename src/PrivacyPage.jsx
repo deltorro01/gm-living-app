@@ -17,7 +17,7 @@ export default function PrivacyPage() {
           <a href="/">Home</a> <span aria-hidden="true">›</span> <span aria-current="page">Privacy</span>
         </nav>
 
-        <div className="panel" style={{ marginBottom: "24px" }}>
+        <div className="panel section-gap">
           <h1>Privacy notice</h1>
           <p className="muted">Last updated: {PRIVACY_UPDATED}</p>
 

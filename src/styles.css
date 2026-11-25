@@ -1217,3 +1217,111 @@ hr,
     width: 100%;
   }
 }
+
+/* ---- Layout helpers (replace former inline styles) ---- */
+
+.section-gap {
+  margin-bottom: 24px;
+}
+
+.heading-flush {
+  margin: 0;
+}
+
+.spaced-top {
+  margin-top: 20px;
+}
+
+.page-title {
+  margin-bottom: 8px;
+}
+
+.page-intro {
+  margin-top: 0;
+}
+
+.field-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.filter-note {
+  margin-top: 12px;
+}
+
+.map-wrap {
+  margin-top: 16px;
+}
+
+.list-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* ---- Result card details ---- */
+
+.price-line {
+  margin: 10px 0 12px;
+  color: var(--text-soft);
+  font-size: 14px;
+}
+
+.price-line strong {
+  color: var(--text);
+  font-size: 16px;
+}
+
+.rating-dots {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px 24px;
+  max-width: 560px;
+}
+
+@media (max-width: 720px) {
+  .rating-dots {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.rating-dots li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.rating-dots-label {
+  color: var(--text-soft);
+}
+
+.dots {
+  display: inline-flex;
+  gap: 3px;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: rgba(148, 163, 184, 0.35);
+}
+
+.dot.on {
+  background: var(--primary);
+}
+
+.transport-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}

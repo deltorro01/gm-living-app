@@ -169,7 +169,7 @@ export default function AreaPage({ area, areas, photo }) {
           <span aria-hidden="true">›</span> <span aria-current="page">{area.area}</span>
         </nav>
 
-        <div className="panel" style={{ marginBottom: "24px" }}>
+        <div className="panel section-gap">
           {photo && (
             <figure className="area-photo">
               <img src={photo.src} width={photo.width} height={photo.height} alt={photo.alt} fetchpriority="high" />
@@ -223,7 +223,7 @@ export default function AreaPage({ area, areas, photo }) {
           </div>
         </div>
 
-        <div className="panel" style={{ marginBottom: "24px" }}>
+        <div className="panel section-gap">
           <h2>How {area.area} rates</h2>
           <p className="muted">Ratings from 1 to 5 compare the 86 areas in Greater Manchester covered by this site.</p>
           <ul className="rating-list">
@@ -245,7 +245,7 @@ export default function AreaPage({ area, areas, photo }) {
           <p className="muted compact">* Estimate. Safety and schools are based on official data.</p>
         </div>
 
-        <div className="panel" style={{ marginBottom: "24px" }}>
+        <div className="panel section-gap">
           <h2>Where these figures come from</h2>
           <dl className="source-list">
             {plainSources(area).map(([label, text]) => (
@@ -263,7 +263,7 @@ export default function AreaPage({ area, areas, photo }) {
           </p>
         </div>
 
-        <div className="panel" style={{ marginBottom: "24px" }}>
+        <div className="panel section-gap">
           <h2>Areas near {area.area}</h2>
           <ul className="area-link-list">
             {nearby.map((a) => (
@@ -286,7 +286,7 @@ export default function AreaPage({ area, areas, photo }) {
             </>
           )}
 
-          <p style={{ marginTop: "20px" }}>
+          <p className="spaced-top">
             <a href="/manchester" className="btn btn-secondary">
               Compare all 86 areas
             </a>
