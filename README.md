@@ -25,7 +25,7 @@ To create the production build, run `npm run build`. The output goes to the `dis
 - `src/areas.json`: the area dataset that the app uses. Edit this file to change area data.
 - `index.html`: the home page. It includes a short fallback text that search engines can read.
 - `manchester.html`: the Manchester page served at `/manchester`, with the same fallback text.
-- `vercel.json`: routing for the Manchester page.
+- `vercel.json`: routing for the Manchester page, and the security headers sent with every page. The Content-Security-Policy lists the only outside places the site may load from (Google Analytics and OpenStreetMap map tiles). If you add another outside service, such as a font, video or new analytics tool, add it there too or the browser will block it.
 - `public/`: files served as they are, such as the favicon, robots file and the Manchester share image.
 - `SCORING.md`: how the match score is calculated.
 - `src/AreaPage.jsx`: the guide page for each area (for example `/manchester/ancoats`). These are plain pages built at build time and load no JavaScript.

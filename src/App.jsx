@@ -11,6 +11,8 @@ import SiteFooter from "./SiteFooter.jsx";
 const AreaMap = lazy(() => import("./AreaMap.jsx"));
 
 const BOROUGHS = [...new Set(areas.map((a) => a.borough))].sort();
+const AREA_NAMES = new Set(areas.map((a) => a.area));
+const compareCountFromLink = (names) => new Set(names.filter((name) => AREA_NAMES.has(name))).size;
 
 function money(value) {
   return new Intl.NumberFormat("en-GB", {
@@ -202,13 +204,14 @@ export default function App() {
   const [visibleCount, setVisibleCount] = useState(DEFAULT_VISIBLE);
 
   // Page filters (hide areas; they don't change scores)
-  const [borough, setBorough] = useState(initial.borough);
+  // Shared links are untrusted: keep only real boroughs and area names.
+  const [borough, setBorough] = useState(BOROUGHS.includes(initial.borough) ? initial.borough : "");
   const [withinBudget, setWithinBudget] = useState(initial.withinBudget);
   const [tramOnly, setTramOnly] = useState(initial.tramOnly);
   const [trainOnly, setTrainOnly] = useState(initial.trainOnly);
 
-  const [compare, setCompare] = useState(initial.compare);
-  const [showCompare, setShowCompare] = useState(initial.compare.length >= 2);
+  const [compare, setCompare] = useState(() => [...new Set(initial.compare)].filter((name) => AREA_NAMES.has(name)));
+  const [showCompare, setShowCompare] = useState(() => compareCountFromLink(initial.compare) >= 2);
   const [showMap, setShowMap] = useState(false);
   const [linkCopied, setLinkCopied] = useState(false);
 
