@@ -1,6 +1,6 @@
 {
   "source": "TfGM GTFS (bus and Metrolink)",
-  "travelDate": "20261208",
+  "travelDate": "20261215",
   "departTimes": [
     "07:30",
     "07:45",
@@ -18,72 +18,72 @@
       "area": "Liverpool City Centre",
       "doorToDoorMinutes": 0,
       "onBoardMinutes": 0,
-      "accessStops": 143
+      "accessStops": 147
     },
     {
       "area": "Baltic Triangle",
       "doorToDoorMinutes": 15,
       "onBoardMinutes": 2,
-      "accessStops": 112
+      "accessStops": 114
     },
     {
       "area": "Georgian Quarter",
       "doorToDoorMinutes": 13,
       "onBoardMinutes": 6,
-      "accessStops": 147
+      "accessStops": 149
     },
     {
       "area": "Toxteth",
       "doorToDoorMinutes": 20,
       "onBoardMinutes": 9,
-      "accessStops": 87
+      "accessStops": 88
     },
     {
       "area": "Aigburth",
-      "doorToDoorMinutes": 37,
-      "onBoardMinutes": 26,
-      "accessStops": 30
+      "doorToDoorMinutes": 30,
+      "onBoardMinutes": 13,
+      "accessStops": 33
     },
     {
       "area": "Mossley Hill",
-      "doorToDoorMinutes": 36,
-      "onBoardMinutes": 27,
-      "accessStops": 57
+      "doorToDoorMinutes": 25,
+      "onBoardMinutes": 14,
+      "accessStops": 59
     },
     {
       "area": "Allerton",
-      "doorToDoorMinutes": 49,
-      "onBoardMinutes": 37,
-      "accessStops": 47
+      "doorToDoorMinutes": 36,
+      "onBoardMinutes": 22,
+      "accessStops": 48
     },
     {
       "area": "Woolton",
-      "doorToDoorMinutes": 49,
-      "onBoardMinutes": 41,
+      "doorToDoorMinutes": 44,
+      "onBoardMinutes": 33,
       "accessStops": 66
     },
     {
       "area": "Childwall",
-      "doorToDoorMinutes": 49,
-      "onBoardMinutes": 34,
+      "doorToDoorMinutes": 48,
+      "onBoardMinutes": 30,
       "accessStops": 72
     },
     {
       "area": "Wavertree",
       "doorToDoorMinutes": 31,
-      "onBoardMinutes": 18,
-      "accessStops": 78
+      "onBoardMinutes": 16,
+      "accessStops": 79
     },
     {
       "area": "Garston",
-      "doorToDoorMinutes": 40,
-      "onBoardMinutes": 33,
-      "accessStops": 54
+      "doorToDoorMinutes": 28,
+      "onBoardMinutes": 20,
+      "accessStops": 56
     },
     {
       "area": "Speke",
-      "doorToDoorMinutes": 50,
-      "onBoardMinutes": 43,
+      "doorToDoorMinutes": 42,
+      "onBoardMinutes": 31,
       "accessStops": 64
     },
     {
@@ -94,15 +94,15 @@
     },
     {
       "area": "Old Swan",
-      "doorToDoorMinutes": 35,
-      "onBoardMinutes": 25,
-      "accessStops": 78
+      "doorToDoorMinutes": 34,
+      "onBoardMinutes": 22,
+      "accessStops": 79
     },
     {
       "area": "Kensington",
       "doorToDoorMinutes": 21,
       "onBoardMinutes": 11,
-      "accessStops": 65
+      "accessStops": 66
     },
     {
       "area": "Anfield",
@@ -112,237 +112,237 @@
     },
     {
       "area": "Walton",
-      "doorToDoorMinutes": 34,
-      "onBoardMinutes": 21,
-      "accessStops": 109
+      "doorToDoorMinutes": 32,
+      "onBoardMinutes": 15,
+      "accessStops": 111
     },
     {
       "area": "Fazakerley",
-      "doorToDoorMinutes": 63,
-      "onBoardMinutes": 44,
-      "accessStops": 61
+      "doorToDoorMinutes": 51,
+      "onBoardMinutes": 31,
+      "accessStops": 62
     },
     {
       "area": "Birkenhead",
-      "doorToDoorMinutes": 26,
-      "onBoardMinutes": 13,
-      "accessStops": 60
+      "doorToDoorMinutes": 16,
+      "onBoardMinutes": 3,
+      "accessStops": 63
     },
     {
       "area": "Oxton",
-      "doorToDoorMinutes": 42,
-      "onBoardMinutes": 30,
+      "doorToDoorMinutes": 40,
+      "onBoardMinutes": 28,
       "accessStops": 84
     },
     {
       "area": "Prenton",
-      "doorToDoorMinutes": 42,
-      "onBoardMinutes": 25,
+      "doorToDoorMinutes": 37,
+      "onBoardMinutes": 21,
       "accessStops": 82
     },
     {
       "area": "Rock Ferry",
-      "doorToDoorMinutes": 41,
-      "onBoardMinutes": 23,
-      "accessStops": 64
+      "doorToDoorMinutes": 27,
+      "onBoardMinutes": 11,
+      "accessStops": 65
     },
     {
       "area": "Bebington",
-      "doorToDoorMinutes": 56,
-      "onBoardMinutes": 47,
-      "accessStops": 59
+      "doorToDoorMinutes": 46,
+      "onBoardMinutes": 37,
+      "accessStops": 60
     },
     {
       "area": "Bromborough",
-      "doorToDoorMinutes": 56,
-      "onBoardMinutes": 46,
-      "accessStops": 56
+      "doorToDoorMinutes": 46,
+      "onBoardMinutes": 35,
+      "accessStops": 57
     },
     {
       "area": "Eastham",
-      "doorToDoorMinutes": 76,
-      "onBoardMinutes": 59,
+      "doorToDoorMinutes": 59,
+      "onBoardMinutes": 42,
       "accessStops": 70
     },
     {
       "area": "Wallasey",
-      "doorToDoorMinutes": 42,
-      "onBoardMinutes": 33,
-      "accessStops": 78
+      "doorToDoorMinutes": 36,
+      "onBoardMinutes": 23,
+      "accessStops": 80
     },
     {
       "area": "New Brighton",
-      "doorToDoorMinutes": 42,
-      "onBoardMinutes": 33,
-      "accessStops": 92
+      "doorToDoorMinutes": 40,
+      "onBoardMinutes": 31,
+      "accessStops": 93
     },
     {
       "area": "Moreton",
-      "doorToDoorMinutes": 49,
-      "onBoardMinutes": 39,
-      "accessStops": 88
+      "doorToDoorMinutes": 41,
+      "onBoardMinutes": 26,
+      "accessStops": 90
     },
     {
       "area": "Upton",
-      "doorToDoorMinutes": 50,
-      "onBoardMinutes": 39,
+      "doorToDoorMinutes": 47,
+      "onBoardMinutes": 35,
       "accessStops": 56
     },
     {
       "area": "Greasby",
       "doorToDoorMinutes": 54,
-      "onBoardMinutes": 44,
+      "onBoardMinutes": 43,
       "accessStops": 36
     },
     {
       "area": "Hoylake",
-      "doorToDoorMinutes": 65,
-      "onBoardMinutes": 54,
-      "accessStops": 14
+      "doorToDoorMinutes": 41,
+      "onBoardMinutes": 27,
+      "accessStops": 16
     },
     {
       "area": "West Kirby",
-      "doorToDoorMinutes": 68,
-      "onBoardMinutes": 57,
-      "accessStops": 47
+      "doorToDoorMinutes": 41,
+      "onBoardMinutes": 28,
+      "accessStops": 48
     },
     {
       "area": "Heswall",
-      "doorToDoorMinutes": 64,
-      "onBoardMinutes": 49,
+      "doorToDoorMinutes": 60,
+      "onBoardMinutes": 46,
       "accessStops": 71
     },
     {
       "area": "Bootle",
-      "doorToDoorMinutes": 27,
-      "onBoardMinutes": 20,
-      "accessStops": 127
+      "doorToDoorMinutes": 26,
+      "onBoardMinutes": 18,
+      "accessStops": 129
     },
     {
       "area": "Litherland",
-      "doorToDoorMinutes": 41,
-      "onBoardMinutes": 29,
-      "accessStops": 67
+      "doorToDoorMinutes": 40,
+      "onBoardMinutes": 26,
+      "accessStops": 68
     },
     {
       "area": "Waterloo",
-      "doorToDoorMinutes": 48,
-      "onBoardMinutes": 38,
-      "accessStops": 37
+      "doorToDoorMinutes": 44,
+      "onBoardMinutes": 29,
+      "accessStops": 38
     },
     {
       "area": "Crosby",
-      "doorToDoorMinutes": 48,
-      "onBoardMinutes": 37,
-      "accessStops": 45
+      "doorToDoorMinutes": 44,
+      "onBoardMinutes": 34,
+      "accessStops": 46
     },
     {
       "area": "Maghull",
-      "doorToDoorMinutes": 70,
-      "onBoardMinutes": 59,
+      "doorToDoorMinutes": 48,
+      "onBoardMinutes": 39,
       "accessStops": 62
     },
     {
       "area": "Formby",
-      "doorToDoorMinutes": 84,
-      "onBoardMinutes": 69,
-      "accessStops": 88
+      "doorToDoorMinutes": 59,
+      "onBoardMinutes": 34,
+      "accessStops": 89
     },
     {
       "area": "Ainsdale",
-      "doorToDoorMinutes": 98,
-      "onBoardMinutes": 85,
-      "accessStops": 46
+      "doorToDoorMinutes": 59,
+      "onBoardMinutes": 41,
+      "accessStops": 47
     },
     {
       "area": "Birkdale",
-      "doorToDoorMinutes": 98,
-      "onBoardMinutes": 86,
-      "accessStops": 78
+      "doorToDoorMinutes": 74,
+      "onBoardMinutes": 46,
+      "accessStops": 80
     },
     {
       "area": "Southport",
-      "doorToDoorMinutes": 103,
-      "onBoardMinutes": 90,
-      "accessStops": 75
+      "doorToDoorMinutes": 74,
+      "onBoardMinutes": 50,
+      "accessStops": 76
     },
     {
       "area": "Huyton",
-      "doorToDoorMinutes": 61,
-      "onBoardMinutes": 50,
-      "accessStops": 123
+      "doorToDoorMinutes": 46,
+      "onBoardMinutes": 20,
+      "accessStops": 124
     },
     {
       "area": "Prescot",
-      "doorToDoorMinutes": 70,
-      "onBoardMinutes": 59,
-      "accessStops": 67
+      "doorToDoorMinutes": 51,
+      "onBoardMinutes": 26,
+      "accessStops": 68
     },
     {
       "area": "Whiston",
-      "doorToDoorMinutes": 75,
-      "onBoardMinutes": 65,
-      "accessStops": 86
+      "doorToDoorMinutes": 49,
+      "onBoardMinutes": 23,
+      "accessStops": 88
     },
     {
       "area": "Halewood",
-      "doorToDoorMinutes": 74,
-      "onBoardMinutes": 64,
-      "accessStops": 51
+      "doorToDoorMinutes": 55,
+      "onBoardMinutes": 36,
+      "accessStops": 52
     },
     {
       "area": "Kirkby",
-      "doorToDoorMinutes": 68,
-      "onBoardMinutes": 58,
-      "accessStops": 93
+      "doorToDoorMinutes": 37,
+      "onBoardMinutes": 21,
+      "accessStops": 94
     },
     {
       "area": "St Helens",
-      "doorToDoorMinutes": 94,
-      "onBoardMinutes": 77,
-      "accessStops": 91
+      "doorToDoorMinutes": 60,
+      "onBoardMinutes": 36,
+      "accessStops": 92
     },
     {
       "area": "Eccleston",
-      "doorToDoorMinutes": 109,
-      "onBoardMinutes": 93,
+      "doorToDoorMinutes": 80,
+      "onBoardMinutes": 60,
       "accessStops": 59
     },
     {
       "area": "Rainhill",
-      "doorToDoorMinutes": 88,
-      "onBoardMinutes": 70,
-      "accessStops": 36
+      "doorToDoorMinutes": 59,
+      "onBoardMinutes": 35,
+      "accessStops": 37
     },
     {
       "area": "Haydock",
-      "doorToDoorMinutes": 111,
-      "onBoardMinutes": 100,
+      "doorToDoorMinutes": 70,
+      "onBoardMinutes": 55,
       "accessStops": 35
     },
     {
       "area": "Newton-le-Willows",
-      "doorToDoorMinutes": 117,
-      "onBoardMinutes": 106,
-      "accessStops": 73
+      "doorToDoorMinutes": 64,
+      "onBoardMinutes": 47,
+      "accessStops": 74
     },
     {
       "area": "Billinge",
-      "doorToDoorMinutes": 120,
-      "onBoardMinutes": 107,
+      "doorToDoorMinutes": 84,
+      "onBoardMinutes": 69,
       "accessStops": 42
     },
     {
       "area": "Widnes",
-      "doorToDoorMinutes": 86,
-      "onBoardMinutes": 77,
+      "doorToDoorMinutes": 59,
+      "onBoardMinutes": 46,
       "accessStops": 51
     },
     {
       "area": "Runcorn",
-      "doorToDoorMinutes": 91,
-      "onBoardMinutes": 77,
-      "accessStops": 64
+      "doorToDoorMinutes": 49,
+      "onBoardMinutes": 24,
+      "accessStops": 65
     }
   ]
 }

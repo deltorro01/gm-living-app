@@ -103,3 +103,18 @@ export function distanceKm(a, b) {
     Math.sin(dLat / 2) ** 2 + Math.cos(toRad(a.lat)) * Math.cos(toRad(b.lat)) * Math.sin(dLng / 2) ** 2;
   return 2 * R * Math.asin(Math.sqrt(h));
 }
+
+// British National Grid easting/northing -> WGS84 latitude/longitude, by
+// refining a first guess with toBNG until it lands on the same grid point
+// (converges to well under a metre in a few steps).
+export function fromBNG(e, n) {
+  const rad = Math.PI / 180;
+  let lat = 49 + (n + 100000) / 111320;
+  let lng = -2 + (e - 400000) / (111320 * Math.cos(lat * rad));
+  for (let i = 0; i < 8; i++) {
+    const p = toBNG(lat, lng);
+    lat += (n - p.n) / 111320;
+    lng += (e - p.e) / (111320 * Math.cos(lat * rad));
+  }
+  return { lat, lng };
+}
