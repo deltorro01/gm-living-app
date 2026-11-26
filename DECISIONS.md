@@ -17,6 +17,7 @@ One line per decision: what was decided, why, and the commit where it happened. 
 - **Contact address.** The footer and privacy notice use `contact@whereshouldiliveinthe.uk`. (`6b00fc6`)
 - **Map view.** A results map (Leaflet with OpenStreetMap tiles) is built, and only downloads when opened. This replaces the earlier note that a map was missing from the code. (see `src/AreaMap.jsx`)
 - **Handover features still open.** The original handover's seven non-negotiables and the "MediaCity / Salford Quays" and "Remote / flexible" commute options are not implemented. The app uses "Hybrid" and "Work from home" instead. The handover is not the source of truth for these.
+- **Site header.** Every page has the same header (`src/SiteHeader.jsx`): the purple pin logo, the site name, and a menu with Home and a Cities dropdown built from `src/cities.js`. The dropdown is a plain `<details>` element so it works on the pages that load no app JavaScript. The header is not sticky, because the finder already has sticky filters. It replaces the "Where Should I Live In…" eyebrow text; the finder eyebrow now shows just the region name. (this commit)
 
 ## Open
 

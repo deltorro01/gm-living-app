@@ -3,6 +3,7 @@
 // JavaScript in the browser.
 
 import { areaPath } from "./slug.js";
+import SiteHeader from "./SiteHeader.jsx";
 import SiteFooter from "./SiteFooter.jsx";
 import { isInCentre, commuteShort } from "./commuteText.js";
 
@@ -189,6 +190,7 @@ export default function AreaPage({ area, areas, photo, city }) {
 
   return (
     <div className="app-shell">
+      <SiteHeader current={city.id} />
       <div className="page-wrap area-page">
         <nav className="breadcrumb" aria-label="Breadcrumb">
           <a href="/">Home</a> <span aria-hidden="true">›</span> <a href={city.path}>{`${city.name} areas`}</a>{" "}
