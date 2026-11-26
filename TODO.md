@@ -4,7 +4,7 @@ Open items only. When an item is done, mark it `[x]` and add the commit hash. Do
 
 ## Next
 
-- [ ] Check the live site after the latest deploy: the home page city chooser, `/manchester`, `/liverpool`, the results map, the area guide pages, the favicon and the share images.
+- [x] Check the live site after the latest deploy: the home page city chooser, `/manchester`, `/liverpool`, the results map, the area guide pages, the favicon and the share images. (`3c9da6e`)
 - [ ] Decide the product name (see `DECISIONS.md`).
 
 ## Clean-up (once confirmed unused)
@@ -19,7 +19,8 @@ Open items only. When an item is done, mark it `[x]` and add the commit hash. Do
 
 ## Data
 
-- [ ] Green space: not yet updated for either city. It needs combining with OS Open Built Up Areas before use (see `README.md`).
+- [x] Green space for Liverpool: calculated from OpenStreetMap by `osm-ratings.mjs`. (`426bfc5`)
+- [ ] Green space for Manchester: still hand-set. Either measure it from OpenStreetMap like Liverpool (needs the free Greater Manchester extract from Geofabrik, about 92 MB), or combine OS Open Greenspace with OS Open Built Up Areas (see `README.md`).
 - [ ] Refresh figures when new official data is published, using the steps in `README.md`.
 
 ## Later
