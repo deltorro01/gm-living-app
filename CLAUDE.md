@@ -20,6 +20,7 @@ Stack: React 18, Vite 6, Framer Motion, Lucide React, Leaflet (results map), pla
 - `src/data/<city>/areas.json`: each city's dataset. This is the only place area data lives. It includes `BuyURL` and `RentURL`, which must be kept.
 - `src/explain.js`, `src/ResultParts.jsx`, `src/bands.js`, `src/urlState.js`: explanations, result panels, fit labels, and settings shared in the web address.
 - `src/AreaMap.jsx`: the results map. `src/AreaPage.jsx`: the guide page for each area.
+- `src/SiteHeader.jsx`: the header on every page (logo, site name, Home and Cities menu).
 - `src/HomePage.jsx`, `src/SiteFooter.jsx`, `src/PrivacyPage.jsx`, `src/site.js`: home page, footer, privacy notice, site-wide settings.
 - `public/consent.js`: the cookie banner. Google Analytics only loads after "Accept".
 - `scripts/prerender.mjs`: the build step described above. `scripts/data/`: scripts that calculate the figures from official data.
@@ -46,5 +47,6 @@ Stack: React 18, Vite 6, Framer Motion, Lucide React, Leaflet (results map), pla
 
 - Don't add paid services (for example, a paid map provider) without listing costs and alternatives first.
 - Don't add dependencies unless they're clearly needed. Say why.
+- Don't load fonts from Google Fonts or another outside server. Montserrat and Hind are self-hosted (see `README.md`).
 - Don't treat area scores or prices as verified live market data. Many ratings are hand-set estimates; the README lists which figures come from official data.
 </content>
