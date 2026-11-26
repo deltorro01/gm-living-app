@@ -1,6 +1,7 @@
 // The home page at /: choose a city, then go to its finder. Rendered to static
 // HTML at build time by scripts/prerender.mjs; it loads no app JavaScript.
 
+import SiteHeader from "./SiteHeader.jsx";
 import SiteFooter from "./SiteFooter.jsx";
 import { PhotoCredit } from "./AreaPage.jsx";
 
@@ -8,9 +9,9 @@ import { PhotoCredit } from "./AreaPage.jsx";
 export default function HomePage({ cities }) {
   return (
     <div className="app-shell">
+      <SiteHeader current="home" />
       <div className="page-wrap home-page">
         <div className="panel section-gap">
-          <div className="eyebrow">Where Should I Live In The UK</div>
           <h1 className="page-title">Find the right place to live</h1>
           <p className="intro-text">
             Tell us your budget, commute and what matters to you, and we'll rank the areas by how well they fit. Rents,

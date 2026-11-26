@@ -4,6 +4,7 @@ import { readSettings, writeSettings } from "./urlState.js";
 import { WhyThisMatch, CompareButton, CompareView } from "./ResultParts.jsx";
 import { fitBand } from "./bands.js";
 import { areaPath } from "./slug.js";
+import SiteHeader from "./SiteHeader.jsx";
 import SiteFooter from "./SiteFooter.jsx";
 import { commuteLabel } from "./commuteText.js";
 
@@ -352,9 +353,10 @@ export default function App({ city, areas }) {
 
   return (
     <div className="app-shell">
+      <SiteHeader current={city.id} />
       <div className="page-wrap">
         <div className="panel section-gap">
-          <div className="eyebrow">{`Where Should I Live In ${city.regionInSentence ?? city.region}`}</div>
+          <div className="eyebrow">{city.region}</div>
           <h1 className="page-title">Find places that fit how you want to live</h1>
           <p className="muted page-intro">
             Set the basics, then open more preferences when needed. <a href="/">Change city</a>

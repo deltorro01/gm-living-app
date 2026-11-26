@@ -4,6 +4,7 @@
 // Keep this in step with what the site actually does. If a new service is
 // added (for example a different analytics tool or a contact form), update it.
 
+import SiteHeader from "./SiteHeader.jsx";
 import SiteFooter from "./SiteFooter.jsx";
 import { SITE_NAME, CONTACT_EMAIL, PRIVACY_UPDATED } from "./site.js";
 
@@ -12,6 +13,7 @@ const ext = { target: "_blank", rel: "noopener noreferrer" };
 export default function PrivacyPage() {
   return (
     <div className="app-shell">
+      <SiteHeader />
       <div className="page-wrap text-page">
         <nav className="breadcrumb" aria-label="Breadcrumb">
           <a href="/">Home</a> <span aria-hidden="true">›</span> <span aria-current="page">Privacy</span>
