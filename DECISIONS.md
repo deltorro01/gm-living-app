@@ -18,6 +18,7 @@ One line per decision: what was decided, why, and the commit where it happened. 
 - **Map view.** A results map (Leaflet with OpenStreetMap tiles) is built, and only downloads when opened. This replaces the earlier note that a map was missing from the code. (see `src/AreaMap.jsx`)
 - **Handover features still open.** The original handover's seven non-negotiables and the "MediaCity / Salford Quays" and "Remote / flexible" commute options are not implemented. The app uses "Hybrid" and "Work from home" instead. The handover is not the source of truth for these.
 - **Site header.** Every page has the same header (`src/SiteHeader.jsx`): the purple pin logo, the site name, and a menu with Home and a Cities dropdown built from `src/cities.js`. The dropdown is a plain `<details>` element so it works on the pages that load no app JavaScript. The header is not sticky, because the finder already has sticky filters. It replaces the "Where Should I Live In…" eyebrow text; the finder eyebrow now shows just the region name. (this commit)
+- **Fonts.** Headings (and the site name in the header) use Montserrat; everything else uses Hind. They are self-hosted through the `@fontsource-variable/montserrat` and `@fontsource/hind` packages rather than loaded from Google Fonts, so visitors' browsers don't contact Google and the Content-Security-Policy and privacy notice don't change. Hind has no extra-bold, so weight 800 text shows in bold (700). Replaces the earlier Inter setting, which was never actually loaded. (this commit)
 
 ## Open
 

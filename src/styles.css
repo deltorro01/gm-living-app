@@ -1,5 +1,15 @@
+/* Fonts are served from this site (not Google Fonts), so no visitor data goes
+   to a font provider. Hind has no 800 weight; 800 text shows in Hind 700. */
+@import "@fontsource-variable/montserrat/wght.css";
+@import "@fontsource/hind/400.css";
+@import "@fontsource/hind/500.css";
+@import "@fontsource/hind/600.css";
+@import "@fontsource/hind/700.css";
+
 :root {
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-heading: "Montserrat Variable", Montserrat, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-body: Hind, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: var(--font-body);
   --bg: #f3f7fc;
   --bg-accent: #eaf2ff;
   --surface: rgba(255, 255, 255, 0.82);
@@ -151,6 +161,14 @@ a:focus-visible {
   border-radius: 999px;
   background: linear-gradient(135deg, #60a5fa, #2563eb);
   box-shadow: 0 0 0 6px rgba(37, 99, 235, 0.1);
+}
+
+h1,
+h2,
+h3,
+h4,
+.site-title {
+  font-family: var(--font-heading);
 }
 
 h1,
