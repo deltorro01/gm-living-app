@@ -1,0 +1,463 @@
+[
+  {
+    "area": "Leeds City Centre",
+    "borough": "Leeds",
+    "lat": 53.7967,
+    "lng": -1.54286,
+    "matchType": "manual",
+    "note": "Briggate, set from a postcode (LS1 6HD)"
+  },
+  {
+    "area": "Headingley",
+    "borough": "Leeds",
+    "lat": 53.81727,
+    "lng": -1.57759,
+    "matchType": "Suburban Area"
+  },
+  {
+    "area": "Hyde Park",
+    "borough": "Leeds",
+    "lat": 53.81254,
+    "lng": -1.56371,
+    "matchType": "Suburban Area"
+  },
+  {
+    "area": "Chapel Allerton",
+    "borough": "Leeds",
+    "lat": 53.8335,
+    "lng": -1.54277,
+    "matchType": "Suburban Area"
+  },
+  {
+    "area": "Roundhay",
+    "borough": "Leeds",
+    "lat": 53.83307,
+    "lng": -1.49639,
+    "matchType": "Suburban Area"
+  },
+  {
+    "area": "Meanwood",
+    "borough": "Leeds",
+    "lat": 53.8325,
+    "lng": -1.56109,
+    "matchType": "Suburban Area"
+  },
+  {
+    "area": "Kirkstall",
+    "borough": "Leeds",
+    "lat": 53.82148,
+    "lng": -1.60406,
+    "matchType": "Suburban Area"
+  },
+  {
+    "area": "Horsforth",
+    "borough": "Leeds",
+    "lat": 53.83662,
+    "lng": -1.64349,
+    "matchType": "Other Settlement"
+  },
+  {
+    "area": "Alwoodley",
+    "borough": "Leeds",
+    "lat": 53.85169,
+    "lng": -1.54086,
+    "matchType": "Suburban Area"
+  },
+  {
+    "area": "Moortown",
+    "borough": "Leeds",
+    "lat": 53.8424,
+    "lng": -1.53632,
+    "matchType": "Suburban Area"
+  },
+  {
+    "area": "Otley",
+    "borough": "Leeds",
+    "lat": 53.90567,
+    "lng": -1.69439,
+    "matchType": "Town"
+  },
+  {
+    "area": "Guiseley",
+    "borough": "Leeds",
+    "lat": 53.8742,
+    "lng": -1.71293,
+    "matchType": "Town"
+  },
+  {
+    "area": "Yeadon",
+    "borough": "Leeds",
+    "lat": 53.86605,
+    "lng": -1.68498,
+    "matchType": "Town"
+  },
+  {
+    "area": "Wetherby",
+    "borough": "Leeds",
+    "lat": 53.92852,
+    "lng": -1.38691,
+    "matchType": "Town"
+  },
+  {
+    "area": "Boston Spa",
+    "borough": "Leeds",
+    "lat": 53.9047,
+    "lng": -1.34618,
+    "matchType": "Village"
+  },
+  {
+    "area": "Garforth",
+    "borough": "Leeds",
+    "lat": 53.79212,
+    "lng": -1.38831,
+    "matchType": "Town"
+  },
+  {
+    "area": "Rothwell",
+    "borough": "Leeds",
+    "lat": 53.7484,
+    "lng": -1.47652,
+    "matchType": "Town"
+  },
+  {
+    "area": "Morley",
+    "borough": "Leeds",
+    "lat": 53.74914,
+    "lng": -1.60227,
+    "matchType": "Town"
+  },
+  {
+    "area": "Pudsey",
+    "borough": "Leeds",
+    "lat": 53.79663,
+    "lng": -1.66297,
+    "matchType": "Town"
+  },
+  {
+    "area": "Armley",
+    "borough": "Leeds",
+    "lat": 53.79943,
+    "lng": -1.58457,
+    "matchType": "Suburban Area"
+  },
+  {
+    "area": "Bramley",
+    "borough": "Leeds",
+    "lat": 53.80881,
+    "lng": -1.63227,
+    "matchType": "Suburban Area"
+  },
+  {
+    "area": "Beeston",
+    "borough": "Leeds",
+    "lat": 53.77016,
+    "lng": -1.57203,
+    "matchType": "Suburban Area"
+  },
+  {
+    "area": "Cross Gates",
+    "borough": "Leeds",
+    "lat": 53.80839,
+    "lng": -1.45974,
+    "matchType": "Suburban Area"
+  },
+  {
+    "area": "Harehills",
+    "borough": "Leeds",
+    "lat": 53.80979,
+    "lng": -1.51009,
+    "matchType": "Suburban Area"
+  },
+  {
+    "area": "Bradford City Centre",
+    "borough": "Bradford",
+    "lat": 53.79233,
+    "lng": -1.7533,
+    "matchType": "manual",
+    "note": "Centenary Square, set from a postcode (BD1 1HY)"
+  },
+  {
+    "area": "Saltaire",
+    "borough": "Bradford",
+    "lat": 53.83805,
+    "lng": -1.79053,
+    "matchType": "manual",
+    "note": "Victoria Road by Saltaire station, set from a postcode (not in OS Open Names) (BD18 4PP)"
+  },
+  {
+    "area": "Shipley",
+    "borough": "Bradford",
+    "lat": 53.8339,
+    "lng": -1.77862,
+    "matchType": "Town"
+  },
+  {
+    "area": "Baildon",
+    "borough": "Bradford",
+    "lat": 53.85341,
+    "lng": -1.76631,
+    "matchType": "Town"
+  },
+  {
+    "area": "Bingley",
+    "borough": "Bradford",
+    "lat": 53.84658,
+    "lng": -1.83652,
+    "matchType": "Town"
+  },
+  {
+    "area": "Ilkley",
+    "borough": "Bradford",
+    "lat": 53.92449,
+    "lng": -1.82314,
+    "matchType": "Town"
+  },
+  {
+    "area": "Burley-in-Wharfedale",
+    "borough": "Bradford",
+    "lat": 53.91378,
+    "lng": -1.75004,
+    "matchType": "Village"
+  },
+  {
+    "area": "Keighley",
+    "borough": "Bradford",
+    "lat": 53.86747,
+    "lng": -1.90962,
+    "matchType": "Town"
+  },
+  {
+    "area": "Haworth",
+    "borough": "Bradford",
+    "lat": 53.83152,
+    "lng": -1.95599,
+    "matchType": "Village"
+  },
+  {
+    "area": "Thornton",
+    "borough": "Bradford",
+    "lat": 53.79043,
+    "lng": -1.85197,
+    "matchType": "Village"
+  },
+  {
+    "area": "Queensbury",
+    "borough": "Bradford",
+    "lat": 53.76819,
+    "lng": -1.84722,
+    "matchType": "Village"
+  },
+  {
+    "area": "Idle",
+    "borough": "Bradford",
+    "lat": 53.83477,
+    "lng": -1.72949,
+    "matchType": "Suburban Area"
+  },
+  {
+    "area": "Heaton",
+    "borough": "Bradford",
+    "lat": 53.81366,
+    "lng": -1.79203,
+    "matchType": "Suburban Area"
+  },
+  {
+    "area": "Wibsey",
+    "borough": "Bradford",
+    "lat": 53.76662,
+    "lng": -1.77696,
+    "matchType": "Suburban Area"
+  },
+  {
+    "area": "Wakefield City Centre",
+    "borough": "Wakefield",
+    "lat": 53.68318,
+    "lng": -1.49839,
+    "matchType": "manual",
+    "note": "the Bull Ring, set from a postcode (WF1 1HB)"
+  },
+  {
+    "area": "Sandal",
+    "borough": "Wakefield",
+    "lat": 53.66021,
+    "lng": -1.48687,
+    "matchType": "Suburban Area"
+  },
+  {
+    "area": "Outwood",
+    "borough": "Wakefield",
+    "lat": 53.71131,
+    "lng": -1.49801,
+    "matchType": "Suburban Area"
+  },
+  {
+    "area": "Ossett",
+    "borough": "Wakefield",
+    "lat": 53.68018,
+    "lng": -1.5803,
+    "matchType": "Town"
+  },
+  {
+    "area": "Horbury",
+    "borough": "Wakefield",
+    "lat": 53.66098,
+    "lng": -1.55523,
+    "matchType": "Town"
+  },
+  {
+    "area": "Normanton",
+    "borough": "Wakefield",
+    "lat": 53.69981,
+    "lng": -1.4155,
+    "matchType": "Town"
+  },
+  {
+    "area": "Castleford",
+    "borough": "Wakefield",
+    "lat": 53.7258,
+    "lng": -1.35354,
+    "matchType": "Town"
+  },
+  {
+    "area": "Pontefract",
+    "borough": "Wakefield",
+    "lat": 53.69237,
+    "lng": -1.30964,
+    "matchType": "Town"
+  },
+  {
+    "area": "Hemsworth",
+    "borough": "Wakefield",
+    "lat": 53.61369,
+    "lng": -1.35349,
+    "matchType": "Town"
+  },
+  {
+    "area": "Huddersfield Town Centre",
+    "borough": "Kirklees",
+    "lat": 53.64842,
+    "lng": -1.78445,
+    "matchType": "manual",
+    "note": "St George's Square, set from a postcode (HD1 1JB)"
+  },
+  {
+    "area": "Lindley",
+    "borough": "Kirklees",
+    "lat": 53.65868,
+    "lng": -1.82174,
+    "matchType": "Suburban Area"
+  },
+  {
+    "area": "Almondbury",
+    "borough": "Kirklees",
+    "lat": 53.63541,
+    "lng": -1.74839,
+    "matchType": "Suburban Area"
+  },
+  {
+    "area": "Honley",
+    "borough": "Kirklees",
+    "lat": 53.60414,
+    "lng": -1.79199,
+    "matchType": "Village"
+  },
+  {
+    "area": "Holmfirth",
+    "borough": "Kirklees",
+    "lat": 53.57024,
+    "lng": -1.78764,
+    "matchType": "Town"
+  },
+  {
+    "area": "Marsden",
+    "borough": "Kirklees",
+    "lat": 53.60015,
+    "lng": -1.92876,
+    "matchType": "Village"
+  },
+  {
+    "area": "Mirfield",
+    "borough": "Kirklees",
+    "lat": 53.67426,
+    "lng": -1.69605,
+    "matchType": "Town"
+  },
+  {
+    "area": "Dewsbury",
+    "borough": "Kirklees",
+    "lat": 53.69172,
+    "lng": -1.62769,
+    "matchType": "Town"
+  },
+  {
+    "area": "Batley",
+    "borough": "Kirklees",
+    "lat": 53.71444,
+    "lng": -1.6337,
+    "matchType": "Town"
+  },
+  {
+    "area": "Cleckheaton",
+    "borough": "Kirklees",
+    "lat": 53.72339,
+    "lng": -1.71356,
+    "matchType": "Town"
+  },
+  {
+    "area": "Halifax Town Centre",
+    "borough": "Calderdale",
+    "lat": 53.72207,
+    "lng": -1.85636,
+    "matchType": "manual",
+    "note": "the Piece Hall, set from a postcode (HX1 1RE)"
+  },
+  {
+    "area": "Sowerby Bridge",
+    "borough": "Calderdale",
+    "lat": 53.70528,
+    "lng": -1.93737,
+    "matchType": "Town"
+  },
+  {
+    "area": "Ripponden",
+    "borough": "Calderdale",
+    "lat": 53.67474,
+    "lng": -1.94132,
+    "matchType": "Village"
+  },
+  {
+    "area": "Hebden Bridge",
+    "borough": "Calderdale",
+    "lat": 53.74114,
+    "lng": -2.01382,
+    "matchType": "Town"
+  },
+  {
+    "area": "Todmorden",
+    "borough": "Calderdale",
+    "lat": 53.71366,
+    "lng": -2.09783,
+    "matchType": "Town"
+  },
+  {
+    "area": "Elland",
+    "borough": "Calderdale",
+    "lat": 53.68466,
+    "lng": -1.83659,
+    "matchType": "Town"
+  },
+  {
+    "area": "Brighouse",
+    "borough": "Calderdale",
+    "lat": 53.7023,
+    "lng": -1.7849,
+    "matchType": "Town"
+  },
+  {
+    "area": "Hipperholme",
+    "borough": "Calderdale",
+    "lat": 53.72556,
+    "lng": -1.8155,
+    "matchType": "Suburban Area"
+  }
+]

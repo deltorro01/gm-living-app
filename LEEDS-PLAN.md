@@ -1,6 +1,6 @@
 # Plan: add Leeds (West Yorkshire)
 
-Status: draft, waiting for approval. Nothing has been built yet.
+Status: approved, including the five work locations. Step 1 (area list) in progress on the `leeds` branch.
 
 ## What we're adding
 

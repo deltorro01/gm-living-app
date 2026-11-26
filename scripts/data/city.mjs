@@ -42,6 +42,14 @@ const SETTINGS = {
     // near a boundary and the nearest district isn't the one the area is known by.
     rightmoveOutcodes: { "Georgian Quarter": "L8", Kensington: "L7", Allerton: "L18", Aigburth: "L17", Bebington: "CH63", Crosby: "L23" },
   },
+  leeds: {
+    // West Yorkshire. Prices, timetable date, work locations and Rightmove
+    // districts are filled in at step 2 of LEEDS-PLAN.md; the area list and map
+    // points (step 1) only need this entry to exist.
+    priceCounties: ["WEST YORKSHIRE"],
+    priceDistricts: [],
+    wikiCounties: ["West Yorkshire"],
+  },
 };
 
 export const SETTINGS_FOR_CITY = SETTINGS[CITY];
