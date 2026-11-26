@@ -15,7 +15,7 @@ Open items only. When an item is done, mark it `[x]` and add the commit hash. Do
 ## Decisions needed
 
 - [ ] Commute option names: the app says "Hybrid" and "Work from home", the handover says "MediaCity / Salford Quays" and "Remote / flexible".
-- [ ] Leeds area list: approve the draft of about 60 areas (step 1 of `LEEDS-PLAN.md`).
+- [x] Leeds area list: approve the draft of about 60 areas (step 1 of `LEEDS-PLAN.md`). Approved: 65 areas, in `scripts/data/leeds/area-list.json`.
 - [x] Leeds work locations: approve commute times to five centres (Leeds, Bradford, Wakefield, Huddersfield, Halifax) and the "Where do you work?" choice in the finder. This changes which journey time feeds the commute score, so it needs sign-off (see `LEEDS-PLAN.md`). Approved.
 - [ ] Non-negotiables: the app has tram-only and train-only settings. The handover lists seven requirements, and the rest are not implemented. Adding any changes rankings.
 

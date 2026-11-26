@@ -1,6 +1,6 @@
 # Plan: add Leeds (West Yorkshire)
 
-Status: approved, including the five work locations. Step 1 (area list) in progress on the `leeds` branch.
+Status: approved, including the five work locations. Step 1 (area list, 65 areas) done and approved. Step 2 in progress on the `leeds` branch.
 
 ## What we're adding
 

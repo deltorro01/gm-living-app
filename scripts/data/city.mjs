@@ -43,12 +43,29 @@ const SETTINGS = {
     rightmoveOutcodes: { "Georgian Quarter": "L8", Kensington: "L7", Allerton: "L18", Aigburth: "L17", Bebington: "CH63", Crosby: "L23" },
   },
   leeds: {
-    // West Yorkshire. Prices, timetable date, work locations and Rightmove
-    // districts are filled in at step 2 of LEEDS-PLAN.md; the area list and map
-    // points (step 1) only need this entry to exist.
-    priceCounties: ["WEST YORKSHIRE"],
+    // West Yorkshire, plus neighbouring counties so areas near a boundary
+    // (e.g. Wetherby, Boston Spa, Ilkley, Hemsworth, Todmorden, Marsden) get
+    // nearby sales.
+    priceCounties: ["WEST YORKSHIRE", "NORTH YORKSHIRE", "SOUTH YORKSHIRE", "GREATER MANCHESTER", "LANCASHIRE"],
     priceDistricts: [],
+    // The main commute destination (the "Leeds city centre" work location).
+    cityCentre: { lat: 53.7967, lng: -1.54286, name: "Briggate" },
+    // Commute times are worked out to each of these (approved, see DECISIONS.md).
+    // Each point is a postcode at the spot named, looked up on postcodes.io.
+    workLocations: [
+      { id: "leeds", name: "Leeds city centre", lat: 53.7967, lng: -1.54286, spot: "Briggate", postcode: "LS1 6HD" },
+      { id: "bradford", name: "Bradford city centre", lat: 53.79233, lng: -1.7533, spot: "Centenary Square", postcode: "BD1 1HY" },
+      { id: "wakefield", name: "Wakefield city centre", lat: 53.68318, lng: -1.49839, spot: "the Bull Ring", postcode: "WF1 1HB" },
+      { id: "huddersfield", name: "Huddersfield town centre", lat: 53.64842, lng: -1.78445, spot: "St George's Square", postcode: "HD1 1JB" },
+      { id: "halifax", name: "Halifax town centre", lat: 53.72207, lng: -1.85636, spot: "the Piece Hall", postcode: "HX1 1RE" },
+    ],
+    // Tuesday 15 Dec 2026, as for Liverpool: first full week of the December
+    // 2026 rail timetable. Check the Yorkshire bus timetable has a normal
+    // number of trips on this day before relying on it (step 4).
+    travelDate: "20261215",
     wikiCounties: ["West Yorkshire"],
+    // Hand-set Rightmove postcode districts, added at step 7 where needed.
+    rightmoveOutcodes: {},
   },
 };
 
