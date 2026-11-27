@@ -64,6 +64,9 @@ const SETTINGS = {
     // number of trips on this day before relying on it (step 4).
     travelDate: "20261215",
     wikiCounties: ["West Yorkshire"],
+    // Ofsted lists West Yorkshire under "North East, Yorkshire and the Humber".
+    // North West is included for schools just over the border from Todmorden and Marsden.
+    ofstedRegions: ["Yorkshire and the Humber", "North West"],
     // Hand-set Rightmove postcode districts, added at step 7 where needed.
     rightmoveOutcodes: {},
   },

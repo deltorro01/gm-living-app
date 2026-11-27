@@ -28,6 +28,10 @@ import { readFile, writeFile } from "node:fs/promises";
 import { lookupPostcodes, distanceKm } from "./geo.mjs";
 import { CITY, args, OUT, AREAS_FILE, PHOTOS_FILE, SETTINGS_FOR_CITY, readOut, optionalOut } from "./city.mjs";
 
+// Ofsted regions to read (matched as part of the "Ofsted region" column), set
+// per city in city.mjs. Default: North West (Manchester and Liverpool).
+const OFSTED_REGIONS = SETTINGS_FOR_CITY.ofstedRegions ?? ["North West"];
+
 const PRIMARY_KM = 2;
 const SECONDARY_KM = 3;
 const MIN_PRIMARY = 3; // widen the circle until at least this many
@@ -109,7 +113,7 @@ for (const line of lines) {
   const r = parseCsvLine(line);
   const phase = r[iPhase];
   if (phase !== "Primary" && phase !== "Secondary") continue;
-  if (!r[iRegion].includes("North West")) continue;
+  if (!OFSTED_REGIONS.some((name) => r[iRegion].includes(name))) continue;
   const s = schoolScore(r);
   if (!s) continue;
   schools.push({ name: r[iName], phase, postcode: r[iPostcode], pupils: Number(r[iPupils]) || 0, ...s });
@@ -117,7 +121,7 @@ for (const line of lines) {
 
 const coords = await lookupPostcodes([...new Set(schools.map((s) => s.postcode))]);
 const placed = schools.filter((s) => coords[s.postcode]).map((s) => ({ ...s, ...coords[s.postcode] }));
-console.log(`North West primary/secondary schools with a usable grade: ${schools.length} (placed: ${placed.length})`);
+console.log(`${OFSTED_REGIONS.join(" / ")} primary/secondary schools with a usable grade: ${schools.length} (placed: ${placed.length})`);
 
 function weightedAverage(list) {
   const w = list.reduce((s, x) => s + (x.pupils || 1), 0);
