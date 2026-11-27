@@ -64,8 +64,8 @@
     {
       "area": "Roundhay",
       "borough": "Leeds",
-      "priceLevel": 1.45,
-      "rent": 1320,
+      "priceLevel": 1.4,
+      "rent": 1300,
       "boroughOfficial": 1148,
       "month": "2026-09"
     },
@@ -121,7 +121,7 @@
       "area": "Guiseley",
       "borough": "Leeds",
       "priceLevel": 1.26,
-      "rent": 1230,
+      "rent": 1240,
       "boroughOfficial": 1148,
       "month": "2026-09"
     },
@@ -145,7 +145,7 @@
       "area": "Boston Spa",
       "borough": "Leeds",
       "priceLevel": 1.43,
-      "rent": 1310,
+      "rent": 1320,
       "boroughOfficial": 1148,
       "month": "2026-09"
     },
@@ -496,8 +496,8 @@
     {
       "area": "Sowerby Bridge",
       "borough": "Calderdale",
-      "priceLevel": 1.02,
-      "rent": 740,
+      "priceLevel": 0.99,
+      "rent": 730,
       "boroughOfficial": 760,
       "month": "2026-09"
     },

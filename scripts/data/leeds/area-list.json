@@ -3,7 +3,7 @@
   { "area": "Headingley", "borough": "Leeds" },
   { "area": "Hyde Park", "borough": "Leeds" },
   { "area": "Chapel Allerton", "borough": "Leeds" },
-  { "area": "Roundhay", "borough": "Leeds" },
+  { "area": "Roundhay", "borough": "Leeds", "postcode": "LS8 2DQ", "note": "Street Lane shops, set from a postcode (the OS point is 1.4 km east, by the park)" },
   { "area": "Meanwood", "borough": "Leeds" },
   { "area": "Kirkstall", "borough": "Leeds" },
   { "area": "Horsforth", "borough": "Leeds" },
@@ -61,7 +61,7 @@
   { "area": "Cleckheaton", "borough": "Kirklees" },
 
   { "area": "Halifax Town Centre", "borough": "Calderdale", "postcode": "HX1 1RE", "note": "the Piece Hall, set from a postcode" },
-  { "area": "Sowerby Bridge", "borough": "Calderdale" },
+  { "area": "Sowerby Bridge", "borough": "Calderdale", "postcode": "HX6 2AA", "note": "Wharf Street, set from a postcode (the OS point is 1.9 km west of the town centre)" },
   { "area": "Ripponden", "borough": "Calderdale" },
   { "area": "Hebden Bridge", "borough": "Calderdale" },
   { "area": "Todmorden", "borough": "Calderdale" },

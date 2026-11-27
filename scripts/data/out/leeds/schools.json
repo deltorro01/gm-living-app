@@ -39,12 +39,12 @@
     },
     {
       "area": "Roundhay",
-      "primarySchools": 6,
+      "primarySchools": 9,
       "primaryKm": 2,
       "secondarySchools": 4,
       "secondaryKm": 3,
       "reportCards": 1,
-      "score": 3.32
+      "score": 3.84
     },
     {
       "area": "Meanwood",
@@ -525,12 +525,12 @@
     },
     {
       "area": "Sowerby Bridge",
-      "primarySchools": 5,
+      "primarySchools": 8,
       "primaryKm": 2,
-      "secondarySchools": 2,
+      "secondarySchools": 4,
       "secondaryKm": 3,
-      "reportCards": 0,
-      "score": 3.41
+      "reportCards": 1,
+      "score": 3.25
     },
     {
       "area": "Ripponden",

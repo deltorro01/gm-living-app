@@ -1,0 +1,941 @@
+{
+  "source": "OpenStreetMap (Geofabrik extracts)",
+  "radiusM": 1000,
+  "results": [
+    {
+      "area": "Leeds City Centre",
+      "nightlife": 184,
+      "cafes": 134,
+      "culture": 24,
+      "amenities": 2358,
+      "mainRoadKm": 14.6,
+      "cycleKm": 36,
+      "motorwayKm": 0.6,
+      "station": true,
+      "stationNames": [
+        "Leeds"
+      ],
+      "greenShare": 6.9
+    },
+    {
+      "area": "Headingley",
+      "nightlife": 13,
+      "cafes": 29,
+      "culture": 2,
+      "amenities": 468,
+      "mainRoadKm": 1.9,
+      "cycleKm": 6.8,
+      "motorwayKm": 2.3,
+      "station": true,
+      "stationNames": [
+        "Burley Park",
+        "Headingley"
+      ],
+      "greenShare": 11.4
+    },
+    {
+      "area": "Hyde Park",
+      "nightlife": 15,
+      "cafes": 41,
+      "culture": 10,
+      "amenities": 584,
+      "mainRoadKm": 2.9,
+      "cycleKm": 8.4,
+      "motorwayKm": 1.3,
+      "station": true,
+      "stationNames": [
+        "Burley Park"
+      ],
+      "greenShare": 20.3
+    },
+    {
+      "area": "Chapel Allerton",
+      "nightlife": 9,
+      "cafes": 14,
+      "culture": 2,
+      "amenities": 286,
+      "mainRoadKm": 4.4,
+      "cycleKm": 4.4,
+      "motorwayKm": 3.1,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 10.2
+    },
+    {
+      "area": "Roundhay",
+      "nightlife": 4,
+      "cafes": 5,
+      "culture": 0,
+      "amenities": 235,
+      "mainRoadKm": 2.1,
+      "cycleKm": 5.9,
+      "motorwayKm": 5,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 41.1
+    },
+    {
+      "area": "Meanwood",
+      "nightlife": 10,
+      "cafes": 9,
+      "culture": 0,
+      "amenities": 265,
+      "mainRoadKm": 0,
+      "cycleKm": 4.9,
+      "motorwayKm": 3.2,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 20.1
+    },
+    {
+      "area": "Kirkstall",
+      "nightlife": 7,
+      "cafes": 8,
+      "culture": 1,
+      "amenities": 265,
+      "mainRoadKm": 2.6,
+      "cycleKm": 6,
+      "motorwayKm": 2.1,
+      "station": true,
+      "stationNames": [
+        "Headingley",
+        "Kirkstall Forge"
+      ],
+      "greenShare": 39.2
+    },
+    {
+      "area": "Horsforth",
+      "nightlife": 15,
+      "cafes": 17,
+      "culture": 3,
+      "amenities": 375,
+      "mainRoadKm": 4.4,
+      "cycleKm": 4,
+      "motorwayKm": 3.8,
+      "station": true,
+      "stationNames": [
+        "Horsforth"
+      ],
+      "greenShare": 29
+    },
+    {
+      "area": "Alwoodley",
+      "nightlife": 3,
+      "cafes": 4,
+      "culture": 1,
+      "amenities": 189,
+      "mainRoadKm": 7.4,
+      "cycleKm": 4.9,
+      "motorwayKm": 5.2,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 30
+    },
+    {
+      "area": "Moortown",
+      "nightlife": 2,
+      "cafes": 9,
+      "culture": 1,
+      "amenities": 250,
+      "mainRoadKm": 8,
+      "cycleKm": 6.1,
+      "motorwayKm": 4.2,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 13.6
+    },
+    {
+      "area": "Otley",
+      "nightlife": 19,
+      "cafes": 27,
+      "culture": 5,
+      "amenities": 550,
+      "mainRoadKm": 4.1,
+      "cycleKm": 1.5,
+      "motorwayKm": 11.1,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 38.4
+    },
+    {
+      "area": "Guiseley",
+      "nightlife": 10,
+      "cafes": 15,
+      "culture": 2,
+      "amenities": 383,
+      "mainRoadKm": 3.8,
+      "cycleKm": 0.8,
+      "motorwayKm": 8.1,
+      "station": true,
+      "stationNames": [
+        "Guiseley"
+      ],
+      "greenShare": 27.2
+    },
+    {
+      "area": "Yeadon",
+      "nightlife": 15,
+      "cafes": 5,
+      "culture": 2,
+      "amenities": 288,
+      "mainRoadKm": 3.3,
+      "cycleKm": 2.4,
+      "motorwayKm": 6.9,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 25
+    },
+    {
+      "area": "Wetherby",
+      "nightlife": 11,
+      "cafes": 11,
+      "culture": 2,
+      "amenities": 315,
+      "mainRoadKm": 8.7,
+      "cycleKm": 6.9,
+      "motorwayKm": 1.6,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 42.9
+    },
+    {
+      "area": "Boston Spa",
+      "nightlife": 6,
+      "cafes": 5,
+      "culture": 1,
+      "amenities": 129,
+      "mainRoadKm": 2,
+      "cycleKm": 1.9,
+      "motorwayKm": 1.9,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 49.9
+    },
+    {
+      "area": "Garforth",
+      "nightlife": 12,
+      "cafes": 7,
+      "culture": 1,
+      "amenities": 222,
+      "mainRoadKm": 3.3,
+      "cycleKm": 3,
+      "motorwayKm": 1.9,
+      "station": true,
+      "stationNames": [
+        "Garforth",
+        "East Garforth"
+      ],
+      "greenShare": 29.7
+    },
+    {
+      "area": "Rothwell",
+      "nightlife": 6,
+      "cafes": 3,
+      "culture": 2,
+      "amenities": 170,
+      "mainRoadKm": 3.3,
+      "cycleKm": 2.5,
+      "motorwayKm": 1.9,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 50.5
+    },
+    {
+      "area": "Morley",
+      "nightlife": 30,
+      "cafes": 16,
+      "culture": 1,
+      "amenities": 285,
+      "mainRoadKm": 3,
+      "cycleKm": 0.1,
+      "motorwayKm": 2,
+      "station": true,
+      "stationNames": [
+        "Morley"
+      ],
+      "greenShare": 13.8
+    },
+    {
+      "area": "Pudsey",
+      "nightlife": 24,
+      "cafes": 20,
+      "culture": 1,
+      "amenities": 343,
+      "mainRoadKm": 3.1,
+      "cycleKm": 3,
+      "motorwayKm": 0.7,
+      "station": true,
+      "stationNames": [
+        "New Pudsey"
+      ],
+      "greenShare": 14.2
+    },
+    {
+      "area": "Armley",
+      "nightlife": 13,
+      "cafes": 17,
+      "culture": 4,
+      "amenities": 388,
+      "mainRoadKm": 5.3,
+      "cycleKm": 11.8,
+      "motorwayKm": 1.5,
+      "station": true,
+      "stationNames": [
+        "Burley Park"
+      ],
+      "greenShare": 23.5
+    },
+    {
+      "area": "Bramley",
+      "nightlife": 11,
+      "cafes": 7,
+      "culture": 1,
+      "amenities": 285,
+      "mainRoadKm": 7.1,
+      "cycleKm": 6.8,
+      "motorwayKm": 0.8,
+      "station": true,
+      "stationNames": [
+        "Bramley"
+      ],
+      "greenShare": 14.8
+    },
+    {
+      "area": "Beeston",
+      "nightlife": 7,
+      "cafes": 8,
+      "culture": 1,
+      "amenities": 215,
+      "mainRoadKm": 10,
+      "cycleKm": 7.5,
+      "motorwayKm": 0.9,
+      "station": true,
+      "stationNames": [
+        "Cottingley"
+      ],
+      "greenShare": 18
+    },
+    {
+      "area": "Cross Gates",
+      "nightlife": 9,
+      "cafes": 11,
+      "culture": 1,
+      "amenities": 403,
+      "mainRoadKm": 4,
+      "cycleKm": 11.7,
+      "motorwayKm": 3.1,
+      "station": true,
+      "stationNames": [
+        "Cross Gates"
+      ],
+      "greenShare": 19.7
+    },
+    {
+      "area": "Harehills",
+      "nightlife": 6,
+      "cafes": 26,
+      "culture": 3,
+      "amenities": 400,
+      "mainRoadKm": 2.8,
+      "cycleKm": 8.6,
+      "motorwayKm": 1.8,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 17.6
+    },
+    {
+      "area": "Bradford City Centre",
+      "nightlife": 49,
+      "cafes": 25,
+      "culture": 19,
+      "amenities": 468,
+      "mainRoadKm": 13.1,
+      "cycleKm": 8.5,
+      "motorwayKm": 2.3,
+      "station": true,
+      "stationNames": [
+        "Bradford Forster Square",
+        "Bradford Interchange"
+      ],
+      "greenShare": 4.2
+    },
+    {
+      "area": "Saltaire",
+      "nightlife": 18,
+      "cafes": 23,
+      "culture": 4,
+      "amenities": 482,
+      "mainRoadKm": 3,
+      "cycleKm": 4.4,
+      "motorwayKm": 2.6,
+      "station": true,
+      "stationNames": [
+        "Shipley",
+        "Saltaire"
+      ],
+      "greenShare": 28.1
+    },
+    {
+      "area": "Shipley",
+      "nightlife": 22,
+      "cafes": 26,
+      "culture": 4,
+      "amenities": 531,
+      "mainRoadKm": 7,
+      "cycleKm": 4.9,
+      "motorwayKm": 3.5,
+      "station": true,
+      "stationNames": [
+        "Shipley",
+        "Saltaire"
+      ],
+      "greenShare": 20
+    },
+    {
+      "area": "Baildon",
+      "nightlife": 5,
+      "cafes": 0,
+      "culture": 1,
+      "amenities": 66,
+      "mainRoadKm": 0,
+      "cycleKm": 0.2,
+      "motorwayKm": 4.2,
+      "station": true,
+      "stationNames": [
+        "Baildon"
+      ],
+      "greenShare": 33.1
+    },
+    {
+      "area": "Bingley",
+      "nightlife": 18,
+      "cafes": 11,
+      "culture": 2,
+      "amenities": 311,
+      "mainRoadKm": 4,
+      "cycleKm": 4.5,
+      "motorwayKm": 0.2,
+      "station": true,
+      "stationNames": [
+        "Bingley",
+        "Crossflatts"
+      ],
+      "greenShare": 30.1
+    },
+    {
+      "area": "Ilkley",
+      "nightlife": 16,
+      "cafes": 17,
+      "culture": 10,
+      "amenities": 790,
+      "mainRoadKm": 2,
+      "cycleKm": 1,
+      "motorwayKm": 8.5,
+      "station": true,
+      "stationNames": [
+        "Ilkley"
+      ],
+      "greenShare": 34.3
+    },
+    {
+      "area": "Burley-in-Wharfedale",
+      "nightlife": 4,
+      "cafes": 3,
+      "culture": 1,
+      "amenities": 128,
+      "mainRoadKm": 4.9,
+      "cycleKm": 0.5,
+      "motorwayKm": 9.1,
+      "station": true,
+      "stationNames": [
+        "Burley-in-Wharfedale"
+      ],
+      "greenShare": 48.1
+    },
+    {
+      "area": "Keighley",
+      "nightlife": 21,
+      "cafes": 13,
+      "culture": 5,
+      "amenities": 436,
+      "mainRoadKm": 5.7,
+      "cycleKm": 0.8,
+      "motorwayKm": 5.3,
+      "station": true,
+      "stationNames": [
+        "Ingrow (West)",
+        "Keighley"
+      ],
+      "greenShare": 17.6
+    },
+    {
+      "area": "Haworth",
+      "nightlife": 9,
+      "cafes": 8,
+      "culture": 1,
+      "amenities": 120,
+      "mainRoadKm": 1,
+      "cycleKm": 0,
+      "motorwayKm": 8.2,
+      "station": true,
+      "stationNames": [
+        "Haworth",
+        "Oakworth"
+      ],
+      "greenShare": 21.1
+    },
+    {
+      "area": "Thornton",
+      "nightlife": 5,
+      "cafes": 1,
+      "culture": 1,
+      "amenities": 56,
+      "mainRoadKm": 0,
+      "cycleKm": 2,
+      "motorwayKm": 6.2,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 21.3
+    },
+    {
+      "area": "Queensbury",
+      "nightlife": 6,
+      "cafes": 1,
+      "culture": 0,
+      "amenities": 53,
+      "mainRoadKm": 4.2,
+      "cycleKm": 0.9,
+      "motorwayKm": 5.6,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 27.8
+    },
+    {
+      "area": "Idle",
+      "nightlife": 10,
+      "cafes": 0,
+      "culture": 2,
+      "amenities": 75,
+      "mainRoadKm": 2.1,
+      "cycleKm": 2,
+      "motorwayKm": 4.7,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 18.1
+    },
+    {
+      "area": "Heaton",
+      "nightlife": 2,
+      "cafes": 1,
+      "culture": 0,
+      "amenities": 103,
+      "mainRoadKm": 0,
+      "cycleKm": 0,
+      "motorwayKm": 4.2,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 22.6
+    },
+    {
+      "area": "Wibsey",
+      "nightlife": 10,
+      "cafes": 2,
+      "culture": 1,
+      "amenities": 117,
+      "mainRoadKm": 2.5,
+      "cycleKm": 0.5,
+      "motorwayKm": 1,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 14.2
+    },
+    {
+      "area": "Wakefield City Centre",
+      "nightlife": 61,
+      "cafes": 44,
+      "culture": 8,
+      "amenities": 841,
+      "mainRoadKm": 11.3,
+      "cycleKm": 9.6,
+      "motorwayKm": 3.7,
+      "station": true,
+      "stationNames": [
+        "Wakefield Kirkgate",
+        "Wakefield Westgate"
+      ],
+      "greenShare": 8.4
+    },
+    {
+      "area": "Sandal",
+      "nightlife": 4,
+      "cafes": 3,
+      "culture": 1,
+      "amenities": 131,
+      "mainRoadKm": 2.6,
+      "cycleKm": 3.7,
+      "motorwayKm": 2.8,
+      "station": true,
+      "stationNames": [
+        "Sandal and Agbrigg"
+      ],
+      "greenShare": 43.8
+    },
+    {
+      "area": "Outwood",
+      "nightlife": 9,
+      "cafes": 2,
+      "culture": 0,
+      "amenities": 118,
+      "mainRoadKm": 2.1,
+      "cycleKm": 1.3,
+      "motorwayKm": 2,
+      "station": true,
+      "stationNames": [
+        "Outwood"
+      ],
+      "greenShare": 36
+    },
+    {
+      "area": "Ossett",
+      "nightlife": 14,
+      "cafes": 9,
+      "culture": 0,
+      "amenities": 311,
+      "mainRoadKm": 0.7,
+      "cycleKm": 1.4,
+      "motorwayKm": 1.2,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 21.6
+    },
+    {
+      "area": "Horbury",
+      "nightlife": 12,
+      "cafes": 7,
+      "culture": 1,
+      "amenities": 163,
+      "mainRoadKm": 2.4,
+      "cycleKm": 1.9,
+      "motorwayKm": 1.9,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 32.8
+    },
+    {
+      "area": "Normanton",
+      "nightlife": 10,
+      "cafes": 7,
+      "culture": 1,
+      "amenities": 193,
+      "mainRoadKm": 0,
+      "cycleKm": 2.9,
+      "motorwayKm": 1.4,
+      "station": true,
+      "stationNames": [
+        "Normanton"
+      ],
+      "greenShare": 24.3
+    },
+    {
+      "area": "Castleford",
+      "nightlife": 20,
+      "cafes": 28,
+      "culture": 2,
+      "amenities": 380,
+      "mainRoadKm": 5.3,
+      "cycleKm": 8.5,
+      "motorwayKm": 2.4,
+      "station": true,
+      "stationNames": [
+        "Castleford"
+      ],
+      "greenShare": 18.5
+    },
+    {
+      "area": "Pontefract",
+      "nightlife": 39,
+      "cafes": 29,
+      "culture": 3,
+      "amenities": 608,
+      "mainRoadKm": 5.5,
+      "cycleKm": 4.1,
+      "motorwayKm": 2.1,
+      "station": true,
+      "stationNames": [
+        "Pontefract Tanshelf",
+        "Pontefract Baghill",
+        "Pontefract Monkhill"
+      ],
+      "greenShare": 17.6
+    },
+    {
+      "area": "Hemsworth",
+      "nightlife": 10,
+      "cafes": 6,
+      "culture": 1,
+      "amenities": 124,
+      "mainRoadKm": 0,
+      "cycleKm": 0.6,
+      "motorwayKm": 7.2,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 34.4
+    },
+    {
+      "area": "Huddersfield Town Centre",
+      "nightlife": 40,
+      "cafes": 31,
+      "culture": 4,
+      "amenities": 605,
+      "mainRoadKm": 13.4,
+      "cycleKm": 6,
+      "motorwayKm": 3.9,
+      "station": true,
+      "stationNames": [
+        "Huddersfield"
+      ],
+      "greenShare": 9.1
+    },
+    {
+      "area": "Lindley",
+      "nightlife": 9,
+      "cafes": 4,
+      "culture": 1,
+      "amenities": 125,
+      "mainRoadKm": 4,
+      "cycleKm": 1.6,
+      "motorwayKm": 1.6,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 12.6
+    },
+    {
+      "area": "Almondbury",
+      "nightlife": 4,
+      "cafes": 3,
+      "culture": 1,
+      "amenities": 110,
+      "mainRoadKm": 0.3,
+      "cycleKm": 0,
+      "motorwayKm": 6.2,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 35.4
+    },
+    {
+      "area": "Honley",
+      "nightlife": 6,
+      "cafes": 2,
+      "culture": 2,
+      "amenities": 107,
+      "mainRoadKm": 3.1,
+      "cycleKm": 0,
+      "motorwayKm": 7.7,
+      "station": true,
+      "stationNames": [
+        "Honley"
+      ],
+      "greenShare": 48.5
+    },
+    {
+      "area": "Holmfirth",
+      "nightlife": 17,
+      "cafes": 10,
+      "culture": 2,
+      "amenities": 208,
+      "mainRoadKm": 3.9,
+      "cycleKm": 0,
+      "motorwayKm": 11.1,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 60.6
+    },
+    {
+      "area": "Marsden",
+      "nightlife": 6,
+      "cafes": 7,
+      "culture": 2,
+      "amenities": 134,
+      "mainRoadKm": 2.1,
+      "cycleKm": 0.1,
+      "motorwayKm": 6.4,
+      "station": true,
+      "stationNames": [
+        "Marsden"
+      ],
+      "greenShare": 58.9
+    },
+    {
+      "area": "Mirfield",
+      "nightlife": 6,
+      "cafes": 3,
+      "culture": 1,
+      "amenities": 125,
+      "mainRoadKm": 2.1,
+      "cycleKm": 2,
+      "motorwayKm": 4.3,
+      "station": true,
+      "stationNames": [
+        "Mirfield"
+      ],
+      "greenShare": 30.5
+    },
+    {
+      "area": "Dewsbury",
+      "nightlife": 10,
+      "cafes": 6,
+      "culture": 2,
+      "amenities": 234,
+      "mainRoadKm": 7.8,
+      "cycleKm": 6,
+      "motorwayKm": 4.2,
+      "station": true,
+      "stationNames": [
+        "Dewsbury"
+      ],
+      "greenShare": 22.8
+    },
+    {
+      "area": "Batley",
+      "nightlife": 11,
+      "cafes": 2,
+      "culture": 1,
+      "amenities": 168,
+      "mainRoadKm": 2.2,
+      "cycleKm": 1,
+      "motorwayKm": 3.5,
+      "station": true,
+      "stationNames": [
+        "Batley"
+      ],
+      "greenShare": 20
+    },
+    {
+      "area": "Cleckheaton",
+      "nightlife": 12,
+      "cafes": 1,
+      "culture": 1,
+      "amenities": 109,
+      "mainRoadKm": 4.3,
+      "cycleKm": 3.9,
+      "motorwayKm": 1.4,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 28.9
+    },
+    {
+      "area": "Halifax Town Centre",
+      "nightlife": 53,
+      "cafes": 28,
+      "culture": 8,
+      "amenities": 457,
+      "mainRoadKm": 7.9,
+      "cycleKm": 0.6,
+      "motorwayKm": 3.8,
+      "station": true,
+      "stationNames": [
+        "Halifax"
+      ],
+      "greenShare": 17.3
+    },
+    {
+      "area": "Sowerby Bridge",
+      "nightlife": 18,
+      "cafes": 6,
+      "culture": 1,
+      "amenities": 180,
+      "mainRoadKm": 4.8,
+      "cycleKm": 1.2,
+      "motorwayKm": 4.9,
+      "station": true,
+      "stationNames": [
+        "Sowerby Bridge"
+      ],
+      "greenShare": 27
+    },
+    {
+      "area": "Ripponden",
+      "nightlife": 7,
+      "cafes": 0,
+      "culture": 0,
+      "amenities": 35,
+      "mainRoadKm": 3,
+      "cycleKm": 0,
+      "motorwayKm": 5.4,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 24.1
+    },
+    {
+      "area": "Hebden Bridge",
+      "nightlife": 16,
+      "cafes": 21,
+      "culture": 5,
+      "amenities": 307,
+      "mainRoadKm": 3.3,
+      "cycleKm": 2.3,
+      "motorwayKm": 12.3,
+      "station": true,
+      "stationNames": [
+        "Hebden Bridge"
+      ],
+      "greenShare": 35.2
+    },
+    {
+      "area": "Todmorden",
+      "nightlife": 18,
+      "cafes": 11,
+      "culture": 3,
+      "amenities": 350,
+      "mainRoadKm": 3.2,
+      "cycleKm": 2.7,
+      "motorwayKm": 10.5,
+      "station": true,
+      "stationNames": [
+        "Todmorden"
+      ],
+      "greenShare": 36.2
+    },
+    {
+      "area": "Elland",
+      "nightlife": 8,
+      "cafes": 6,
+      "culture": 2,
+      "amenities": 132,
+      "mainRoadKm": 6.1,
+      "cycleKm": 5.6,
+      "motorwayKm": 0.6,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 24.6
+    },
+    {
+      "area": "Brighouse",
+      "nightlife": 23,
+      "cafes": 17,
+      "culture": 1,
+      "amenities": 319,
+      "mainRoadKm": 8.3,
+      "cycleKm": 2.7,
+      "motorwayKm": 2.2,
+      "station": true,
+      "stationNames": [
+        "Brighouse"
+      ],
+      "greenShare": 31.7
+    },
+    {
+      "area": "Hipperholme",
+      "nightlife": 5,
+      "cafes": 0,
+      "culture": 1,
+      "amenities": 44,
+      "mainRoadKm": 4.9,
+      "cycleKm": 0,
+      "motorwayKm": 4.2,
+      "station": false,
+      "stationNames": [],
+      "greenShare": 35.1
+    }
+  ]
+}

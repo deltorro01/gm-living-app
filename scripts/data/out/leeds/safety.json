@@ -3,10 +3,10 @@
   "results": [
     {
       "area": "Leeds City Centre",
-      "neighbourhoods": 20,
-      "population": 42399,
-      "crimeDecile": 3.3,
-      "crimeScore": 0.677
+      "neighbourhoods": 21,
+      "population": 44437,
+      "crimeDecile": 3.2,
+      "crimeScore": 0.686
     },
     {
       "area": "Headingley",
@@ -31,10 +31,10 @@
     },
     {
       "area": "Roundhay",
-      "neighbourhoods": 18,
-      "population": 28404,
-      "crimeDecile": 3.9,
-      "crimeScore": 0.472
+      "neighbourhoods": 17,
+      "population": 26084,
+      "crimeDecile": 6,
+      "crimeScore": -0.107
     },
     {
       "area": "Meanwood",
@@ -164,17 +164,17 @@
     },
     {
       "area": "Harehills",
-      "neighbourhoods": 35,
-      "population": 65704,
+      "neighbourhoods": 36,
+      "population": 67742,
       "crimeDecile": 1.6,
-      "crimeScore": 1.387
+      "crimeScore": 1.372
     },
     {
       "area": "Bradford City Centre",
-      "neighbourhoods": 21,
-      "population": 41291,
+      "neighbourhoods": 22,
+      "population": 42902,
       "crimeDecile": 1.3,
-      "crimeScore": 1.37
+      "crimeScore": 1.371
     },
     {
       "area": "Saltaire",
@@ -262,10 +262,10 @@
     },
     {
       "area": "Wibsey",
-      "neighbourhoods": 30,
-      "population": 51775,
+      "neighbourhoods": 31,
+      "population": 53205,
       "crimeDecile": 1.9,
-      "crimeScore": 1.099
+      "crimeScore": 1.134
     },
     {
       "area": "Wakefield City Centre",
@@ -381,17 +381,17 @@
     },
     {
       "area": "Dewsbury",
-      "neighbourhoods": 21,
-      "population": 36145,
-      "crimeDecile": 3.5,
-      "crimeScore": 0.58
+      "neighbourhoods": 23,
+      "population": 39557,
+      "crimeDecile": 3.3,
+      "crimeScore": 0.658
     },
     {
       "area": "Batley",
-      "neighbourhoods": 26,
-      "population": 42825,
-      "crimeDecile": 3.6,
-      "crimeScore": 0.505
+      "neighbourhoods": 27,
+      "population": 45178,
+      "crimeDecile": 3.4,
+      "crimeScore": 0.536
     },
     {
       "area": "Cleckheaton",
@@ -409,10 +409,10 @@
     },
     {
       "area": "Sowerby Bridge",
-      "neighbourhoods": 8,
-      "population": 12258,
-      "crimeDecile": 3.1,
-      "crimeScore": 0.613
+      "neighbourhoods": 14,
+      "population": 22598,
+      "crimeDecile": 4.2,
+      "crimeScore": 0.371
     },
     {
       "area": "Ripponden",

@@ -31,9 +31,10 @@
   {
     "area": "Roundhay",
     "borough": "Leeds",
-    "lat": 53.83307,
-    "lng": -1.49639,
-    "matchType": "Suburban Area"
+    "lat": 53.84427,
+    "lng": -1.50787,
+    "matchType": "manual",
+    "note": "Street Lane shops, set from a postcode (the OS point is 1.4 km east, by the park) (LS8 2DQ)"
   },
   {
     "area": "Meanwood",
@@ -414,9 +415,10 @@
   {
     "area": "Sowerby Bridge",
     "borough": "Calderdale",
-    "lat": 53.70528,
-    "lng": -1.93737,
-    "matchType": "Town"
+    "lat": 53.70828,
+    "lng": -1.90887,
+    "matchType": "manual",
+    "note": "Wharf Street, set from a postcode (the OS point is 1.9 km west of the town centre) (HX6 2AA)"
   },
   {
     "area": "Ripponden",

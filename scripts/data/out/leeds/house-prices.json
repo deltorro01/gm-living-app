@@ -111,21 +111,21 @@
     },
     {
       "area": "Roundhay",
-      "medianPrice": 365000,
-      "sales": 170,
+      "medianPrice": 381000,
+      "sales": 232,
       "radiusKm": 1.5,
-      "flatShare": 27,
+      "flatShare": 25,
       "typeShare": {
-        "detached": 24,
-        "semi": 37,
-        "terraced": 12,
-        "flat": 27
+        "detached": 23,
+        "semi": 43,
+        "terraced": 9,
+        "flat": 25
       },
       "typeMedian": {
-        "D": 737000,
-        "S": 385000,
-        "T": 280000,
-        "F": 181000
+        "D": 532000,
+        "S": 408000,
+        "T": 362000,
+        "F": 170000
       }
     },
     {
@@ -1137,21 +1137,21 @@
     },
     {
       "area": "Sowerby Bridge",
-      "medianPrice": 195000,
-      "sales": 98,
+      "medianPrice": 175000,
+      "sales": 209,
       "radiusKm": 1.5,
-      "flatShare": 2,
+      "flatShare": 9,
       "typeShare": {
-        "detached": 10,
-        "semi": 33,
-        "terraced": 55,
-        "flat": 2
+        "detached": 11,
+        "semi": 27,
+        "terraced": 54,
+        "flat": 9
       },
       "typeMedian": {
-        "D": 468000,
-        "S": 222000,
-        "T": 166000,
-        "F": null
+        "D": 445000,
+        "S": 239000,
+        "T": 153000,
+        "F": 121000
       }
     },
     {
