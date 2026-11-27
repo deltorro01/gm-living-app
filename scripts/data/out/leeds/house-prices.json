@@ -1,0 +1,1272 @@
+{
+  "period": "2025-09 to 2026-08",
+  "boroughTypeMedian": {
+    "Leeds": {
+      "D": 430000,
+      "S": 263000,
+      "T": 200000,
+      "F": 149000
+    },
+    "Bradford": {
+      "D": 370000,
+      "S": 202000,
+      "T": 155000,
+      "F": 120000
+    },
+    "Wakefield": {
+      "D": 335000,
+      "S": 205000,
+      "T": 155000,
+      "F": 105000
+    },
+    "Kirklees": {
+      "D": 375000,
+      "S": 225000,
+      "T": 165000,
+      "F": 110000
+    },
+    "Calderdale": {
+      "D": 401000,
+      "S": 225000,
+      "T": 163000,
+      "F": 128000
+    }
+  },
+  "results": [
+    {
+      "area": "Leeds City Centre",
+      "medianPrice": 175000,
+      "sales": 222,
+      "radiusKm": 1.5,
+      "flatShare": 89,
+      "typeShare": {
+        "detached": 0,
+        "semi": 3,
+        "terraced": 9,
+        "flat": 89
+      },
+      "typeMedian": {
+        "D": null,
+        "S": 164000,
+        "T": 212000,
+        "F": 175000
+      }
+    },
+    {
+      "area": "Headingley",
+      "medianPrice": 240000,
+      "sales": 347,
+      "radiusKm": 1.5,
+      "flatShare": 25,
+      "typeShare": {
+        "detached": 4,
+        "semi": 31,
+        "terraced": 41,
+        "flat": 25
+      },
+      "typeMedian": {
+        "D": 430000,
+        "S": 294000,
+        "T": 226000,
+        "F": 166000
+      }
+    },
+    {
+      "area": "Hyde Park",
+      "medianPrice": 216000,
+      "sales": 214,
+      "radiusKm": 1.5,
+      "flatShare": 26,
+      "typeShare": {
+        "detached": 4,
+        "semi": 21,
+        "terraced": 50,
+        "flat": 26
+      },
+      "typeMedian": {
+        "D": 363000,
+        "S": 281000,
+        "T": 210000,
+        "F": 167000
+      }
+    },
+    {
+      "area": "Chapel Allerton",
+      "medianPrice": 330000,
+      "sales": 339,
+      "radiusKm": 1.5,
+      "flatShare": 19,
+      "typeShare": {
+        "detached": 9,
+        "semi": 49,
+        "terraced": 22,
+        "flat": 19
+      },
+      "typeMedian": {
+        "D": 433000,
+        "S": 363000,
+        "T": 294000,
+        "F": 185000
+      }
+    },
+    {
+      "area": "Roundhay",
+      "medianPrice": 365000,
+      "sales": 170,
+      "radiusKm": 1.5,
+      "flatShare": 27,
+      "typeShare": {
+        "detached": 24,
+        "semi": 37,
+        "terraced": 12,
+        "flat": 27
+      },
+      "typeMedian": {
+        "D": 737000,
+        "S": 385000,
+        "T": 280000,
+        "F": 181000
+      }
+    },
+    {
+      "area": "Meanwood",
+      "medianPrice": 309000,
+      "sales": 322,
+      "radiusKm": 1.5,
+      "flatShare": 22,
+      "typeShare": {
+        "detached": 11,
+        "semi": 45,
+        "terraced": 22,
+        "flat": 22
+      },
+      "typeMedian": {
+        "D": 440000,
+        "S": 353000,
+        "T": 283000,
+        "F": 180000
+      }
+    },
+    {
+      "area": "Kirkstall",
+      "medianPrice": 239000,
+      "sales": 265,
+      "radiusKm": 1.5,
+      "flatShare": 12,
+      "typeShare": {
+        "detached": 4,
+        "semi": 55,
+        "terraced": 29,
+        "flat": 12
+      },
+      "typeMedian": {
+        "D": 370000,
+        "S": 260000,
+        "T": 227000,
+        "F": 154000
+      }
+    },
+    {
+      "area": "Horsforth",
+      "medianPrice": 305000,
+      "sales": 293,
+      "radiusKm": 1.5,
+      "flatShare": 12,
+      "typeShare": {
+        "detached": 12,
+        "semi": 40,
+        "terraced": 37,
+        "flat": 12
+      },
+      "typeMedian": {
+        "D": 525000,
+        "S": 347000,
+        "T": 276000,
+        "F": 170000
+      }
+    },
+    {
+      "area": "Alwoodley",
+      "medianPrice": 330000,
+      "sales": 248,
+      "radiusKm": 1.5,
+      "flatShare": 31,
+      "typeShare": {
+        "detached": 17,
+        "semi": 50,
+        "terraced": 3,
+        "flat": 31
+      },
+      "typeMedian": {
+        "D": 490000,
+        "S": 365000,
+        "T": 259000,
+        "F": 150000
+      }
+    },
+    {
+      "area": "Moortown",
+      "medianPrice": 333000,
+      "sales": 341,
+      "radiusKm": 1.5,
+      "flatShare": 27,
+      "typeShare": {
+        "detached": 10,
+        "semi": 52,
+        "terraced": 11,
+        "flat": 27
+      },
+      "typeMedian": {
+        "D": 475000,
+        "S": 386000,
+        "T": 289000,
+        "F": 159000
+      }
+    },
+    {
+      "area": "Otley",
+      "medianPrice": 299000,
+      "sales": 136,
+      "radiusKm": 1.5,
+      "flatShare": 7,
+      "typeShare": {
+        "detached": 18,
+        "semi": 32,
+        "terraced": 43,
+        "flat": 7
+      },
+      "typeMedian": {
+        "D": 535000,
+        "S": 300000,
+        "T": 270000,
+        "F": 157000
+      }
+    },
+    {
+      "area": "Guiseley",
+      "medianPrice": 295000,
+      "sales": 196,
+      "radiusKm": 1.5,
+      "flatShare": 13,
+      "typeShare": {
+        "detached": 14,
+        "semi": 37,
+        "terraced": 36,
+        "flat": 13
+      },
+      "typeMedian": {
+        "D": 600000,
+        "S": 330000,
+        "T": 254000,
+        "F": 166000
+      }
+    },
+    {
+      "area": "Yeadon",
+      "medianPrice": 246000,
+      "sales": 256,
+      "radiusKm": 1.5,
+      "flatShare": 11,
+      "typeShare": {
+        "detached": 10,
+        "semi": 42,
+        "terraced": 38,
+        "flat": 11
+      },
+      "typeMedian": {
+        "D": 373000,
+        "S": 261000,
+        "T": 235000,
+        "F": 134000
+      }
+    },
+    {
+      "area": "Wetherby",
+      "medianPrice": 365000,
+      "sales": 183,
+      "radiusKm": 1.5,
+      "flatShare": 20,
+      "typeShare": {
+        "detached": 38,
+        "semi": 23,
+        "terraced": 19,
+        "flat": 20
+      },
+      "typeMedian": {
+        "D": 500000,
+        "S": 330000,
+        "T": 244000,
+        "F": 217000
+      }
+    },
+    {
+      "area": "Boston Spa",
+      "medianPrice": 465000,
+      "sales": 91,
+      "radiusKm": 1.5,
+      "flatShare": 9,
+      "typeShare": {
+        "detached": 51,
+        "semi": 20,
+        "terraced": 21,
+        "flat": 9
+      },
+      "typeMedian": {
+        "D": 658000,
+        "S": 335000,
+        "T": 265000,
+        "F": 218000
+      }
+    },
+    {
+      "area": "Garforth",
+      "medianPrice": 280000,
+      "sales": 189,
+      "radiusKm": 1.5,
+      "flatShare": 4,
+      "typeShare": {
+        "detached": 26,
+        "semi": 55,
+        "terraced": 15,
+        "flat": 4
+      },
+      "typeMedian": {
+        "D": 450000,
+        "S": 265000,
+        "T": 208000,
+        "F": 157000
+      }
+    },
+    {
+      "area": "Rothwell",
+      "medianPrice": 274000,
+      "sales": 170,
+      "radiusKm": 1.5,
+      "flatShare": 2,
+      "typeShare": {
+        "detached": 30,
+        "semi": 47,
+        "terraced": 21,
+        "flat": 2
+      },
+      "typeMedian": {
+        "D": 370000,
+        "S": 242000,
+        "T": 198000,
+        "F": null
+      }
+    },
+    {
+      "area": "Morley",
+      "medianPrice": 209000,
+      "sales": 362,
+      "radiusKm": 1.5,
+      "flatShare": 17,
+      "typeShare": {
+        "detached": 20,
+        "semi": 27,
+        "terraced": 36,
+        "flat": 17
+      },
+      "typeMedian": {
+        "D": 390000,
+        "S": 235000,
+        "T": 178000,
+        "F": 115000
+      }
+    },
+    {
+      "area": "Pudsey",
+      "medianPrice": 223000,
+      "sales": 379,
+      "radiusKm": 1.5,
+      "flatShare": 12,
+      "typeShare": {
+        "detached": 8,
+        "semi": 33,
+        "terraced": 47,
+        "flat": 12
+      },
+      "typeMedian": {
+        "D": 385000,
+        "S": 260000,
+        "T": 206000,
+        "F": 139000
+      }
+    },
+    {
+      "area": "Armley",
+      "medianPrice": 170000,
+      "sales": 247,
+      "radiusKm": 1.5,
+      "flatShare": 14,
+      "typeShare": {
+        "detached": 3,
+        "semi": 21,
+        "terraced": 62,
+        "flat": 14
+      },
+      "typeMedian": {
+        "D": 325000,
+        "S": 220000,
+        "T": 170000,
+        "F": 90000
+      }
+    },
+    {
+      "area": "Bramley",
+      "medianPrice": 193000,
+      "sales": 341,
+      "radiusKm": 1.5,
+      "flatShare": 8,
+      "typeShare": {
+        "detached": 6,
+        "semi": 42,
+        "terraced": 44,
+        "flat": 8
+      },
+      "typeMedian": {
+        "D": 295000,
+        "S": 214000,
+        "T": 179000,
+        "F": 114000
+      }
+    },
+    {
+      "area": "Beeston",
+      "medianPrice": 180000,
+      "sales": 171,
+      "radiusKm": 1.5,
+      "flatShare": 5,
+      "typeShare": {
+        "detached": 6,
+        "semi": 40,
+        "terraced": 49,
+        "flat": 5
+      },
+      "typeMedian": {
+        "D": 285000,
+        "S": 202000,
+        "T": 151000,
+        "F": 108000
+      }
+    },
+    {
+      "area": "Cross Gates",
+      "medianPrice": 245000,
+      "sales": 377,
+      "radiusKm": 1.5,
+      "flatShare": 7,
+      "typeShare": {
+        "detached": 8,
+        "semi": 67,
+        "terraced": 17,
+        "flat": 7
+      },
+      "typeMedian": {
+        "D": 352000,
+        "S": 250000,
+        "T": 210000,
+        "F": 136000
+      }
+    },
+    {
+      "area": "Harehills",
+      "medianPrice": 160000,
+      "sales": 242,
+      "radiusKm": 1.5,
+      "flatShare": 6,
+      "typeShare": {
+        "detached": 2,
+        "semi": 29,
+        "terraced": 64,
+        "flat": 6
+      },
+      "typeMedian": {
+        "D": null,
+        "S": 210000,
+        "T": 140000,
+        "F": 114000
+      }
+    },
+    {
+      "area": "Bradford City Centre",
+      "medianPrice": 100000,
+      "sales": 111,
+      "radiusKm": 1.5,
+      "flatShare": 34,
+      "typeShare": {
+        "detached": 0,
+        "semi": 9,
+        "terraced": 57,
+        "flat": 34
+      },
+      "typeMedian": {
+        "D": null,
+        "S": 130000,
+        "T": 110000,
+        "F": 56000
+      }
+    },
+    {
+      "area": "Saltaire",
+      "medianPrice": 228000,
+      "sales": 273,
+      "radiusKm": 1.5,
+      "flatShare": 19,
+      "typeShare": {
+        "detached": 16,
+        "semi": 25,
+        "terraced": 40,
+        "flat": 19
+      },
+      "typeMedian": {
+        "D": 430000,
+        "S": 238000,
+        "T": 211000,
+        "F": 108000
+      }
+    },
+    {
+      "area": "Shipley",
+      "medianPrice": 187000,
+      "sales": 318,
+      "radiusKm": 1.5,
+      "flatShare": 17,
+      "typeShare": {
+        "detached": 7,
+        "semi": 32,
+        "terraced": 44,
+        "flat": 17
+      },
+      "typeMedian": {
+        "D": 400000,
+        "S": 210000,
+        "T": 195000,
+        "F": 102000
+      }
+    },
+    {
+      "area": "Baildon",
+      "medianPrice": 280000,
+      "sales": 231,
+      "radiusKm": 1.5,
+      "flatShare": 6,
+      "typeShare": {
+        "detached": 23,
+        "semi": 47,
+        "terraced": 23,
+        "flat": 6
+      },
+      "typeMedian": {
+        "D": 450000,
+        "S": 280000,
+        "T": 210000,
+        "F": 93000
+      }
+    },
+    {
+      "area": "Bingley",
+      "medianPrice": 224000,
+      "sales": 236,
+      "radiusKm": 1.5,
+      "flatShare": 16,
+      "typeShare": {
+        "detached": 14,
+        "semi": 36,
+        "terraced": 34,
+        "flat": 16
+      },
+      "typeMedian": {
+        "D": 440000,
+        "S": 280000,
+        "T": 188000,
+        "F": 122000
+      }
+    },
+    {
+      "area": "Ilkley",
+      "medianPrice": 379000,
+      "sales": 208,
+      "radiusKm": 1.5,
+      "flatShare": 30,
+      "typeShare": {
+        "detached": 20,
+        "semi": 22,
+        "terraced": 28,
+        "flat": 30
+      },
+      "typeMedian": {
+        "D": 789000,
+        "S": 516000,
+        "T": 351000,
+        "F": 231000
+      }
+    },
+    {
+      "area": "Burley-in-Wharfedale",
+      "medianPrice": 435000,
+      "sales": 109,
+      "radiusKm": 1.5,
+      "flatShare": 6,
+      "typeShare": {
+        "detached": 38,
+        "semi": 18,
+        "terraced": 39,
+        "flat": 6
+      },
+      "typeMedian": {
+        "D": 570000,
+        "S": 420000,
+        "T": 321000,
+        "F": 197000
+      }
+    },
+    {
+      "area": "Keighley",
+      "medianPrice": 135000,
+      "sales": 211,
+      "radiusKm": 1.5,
+      "flatShare": 1,
+      "typeShare": {
+        "detached": 7,
+        "semi": 32,
+        "terraced": 60,
+        "flat": 1
+      },
+      "typeMedian": {
+        "D": 250000,
+        "S": 165000,
+        "T": 110000,
+        "F": null
+      }
+    },
+    {
+      "area": "Haworth",
+      "medianPrice": 225000,
+      "sales": 128,
+      "radiusKm": 1.5,
+      "flatShare": 2,
+      "typeShare": {
+        "detached": 16,
+        "semi": 27,
+        "terraced": 56,
+        "flat": 2
+      },
+      "typeMedian": {
+        "D": 364000,
+        "S": 245000,
+        "T": 181000,
+        "F": null
+      }
+    },
+    {
+      "area": "Thornton",
+      "medianPrice": 201000,
+      "sales": 100,
+      "radiusKm": 1.5,
+      "flatShare": 0,
+      "typeShare": {
+        "detached": 22,
+        "semi": 38,
+        "terraced": 40,
+        "flat": 0
+      },
+      "typeMedian": {
+        "D": 288000,
+        "S": 208000,
+        "T": 172000,
+        "F": null
+      }
+    },
+    {
+      "area": "Queensbury",
+      "medianPrice": 202000,
+      "sales": 169,
+      "radiusKm": 1.5,
+      "flatShare": 1,
+      "typeShare": {
+        "detached": 24,
+        "semi": 28,
+        "terraced": 47,
+        "flat": 1
+      },
+      "typeMedian": {
+        "D": 360000,
+        "S": 235000,
+        "T": 138000,
+        "F": null
+      }
+    },
+    {
+      "area": "Idle",
+      "medianPrice": 200000,
+      "sales": 452,
+      "radiusKm": 1.5,
+      "flatShare": 8,
+      "typeShare": {
+        "detached": 18,
+        "semi": 41,
+        "terraced": 33,
+        "flat": 8
+      },
+      "typeMedian": {
+        "D": 363000,
+        "S": 205000,
+        "T": 180000,
+        "F": 138000
+      }
+    },
+    {
+      "area": "Heaton",
+      "medianPrice": 145000,
+      "sales": 144,
+      "radiusKm": 1.5,
+      "flatShare": 7,
+      "typeShare": {
+        "detached": 12,
+        "semi": 33,
+        "terraced": 49,
+        "flat": 7
+      },
+      "typeMedian": {
+        "D": 378000,
+        "S": 175000,
+        "T": 127000,
+        "F": 87000
+      }
+    },
+    {
+      "area": "Wibsey",
+      "medianPrice": 160000,
+      "sales": 415,
+      "radiusKm": 1.5,
+      "flatShare": 2,
+      "typeShare": {
+        "detached": 8,
+        "semi": 44,
+        "terraced": 46,
+        "flat": 2
+      },
+      "typeMedian": {
+        "D": 280000,
+        "S": 180000,
+        "T": 135000,
+        "F": 72000
+      }
+    },
+    {
+      "area": "Wakefield City Centre",
+      "medianPrice": 161000,
+      "sales": 204,
+      "radiusKm": 1.5,
+      "flatShare": 25,
+      "typeShare": {
+        "detached": 9,
+        "semi": 28,
+        "terraced": 38,
+        "flat": 25
+      },
+      "typeMedian": {
+        "D": 333000,
+        "S": 217000,
+        "T": 145000,
+        "F": 101000
+      }
+    },
+    {
+      "area": "Sandal",
+      "medianPrice": 235000,
+      "sales": 121,
+      "radiusKm": 1.5,
+      "flatShare": 13,
+      "typeShare": {
+        "detached": 36,
+        "semi": 31,
+        "terraced": 21,
+        "flat": 13
+      },
+      "typeMedian": {
+        "D": 395000,
+        "S": 228000,
+        "T": 141000,
+        "F": 91000
+      }
+    },
+    {
+      "area": "Outwood",
+      "medianPrice": 226000,
+      "sales": 214,
+      "radiusKm": 1.5,
+      "flatShare": 3,
+      "typeShare": {
+        "detached": 28,
+        "semi": 42,
+        "terraced": 27,
+        "flat": 3
+      },
+      "typeMedian": {
+        "D": 350000,
+        "S": 225000,
+        "T": 173000,
+        "F": 98000
+      }
+    },
+    {
+      "area": "Ossett",
+      "medianPrice": 214000,
+      "sales": 243,
+      "radiusKm": 1.5,
+      "flatShare": 8,
+      "typeShare": {
+        "detached": 23,
+        "semi": 42,
+        "terraced": 27,
+        "flat": 8
+      },
+      "typeMedian": {
+        "D": 320000,
+        "S": 221000,
+        "T": 180000,
+        "F": 125000
+      }
+    },
+    {
+      "area": "Horbury",
+      "medianPrice": 220000,
+      "sales": 163,
+      "radiusKm": 1.5,
+      "flatShare": 3,
+      "typeShare": {
+        "detached": 27,
+        "semi": 35,
+        "terraced": 35,
+        "flat": 3
+      },
+      "typeMedian": {
+        "D": 378000,
+        "S": 235000,
+        "T": 170000,
+        "F": 122000
+      }
+    },
+    {
+      "area": "Normanton",
+      "medianPrice": 205000,
+      "sales": 217,
+      "radiusKm": 1.5,
+      "flatShare": 2,
+      "typeShare": {
+        "detached": 25,
+        "semi": 39,
+        "terraced": 33,
+        "flat": 2
+      },
+      "typeMedian": {
+        "D": 320000,
+        "S": 205000,
+        "T": 150000,
+        "F": 85000
+      }
+    },
+    {
+      "area": "Castleford",
+      "medianPrice": 155000,
+      "sales": 244,
+      "radiusKm": 1.5,
+      "flatShare": 2,
+      "typeShare": {
+        "detached": 10,
+        "semi": 27,
+        "terraced": 61,
+        "flat": 2
+      },
+      "typeMedian": {
+        "D": 292000,
+        "S": 192000,
+        "T": 135000,
+        "F": 109000
+      }
+    },
+    {
+      "area": "Pontefract",
+      "medianPrice": 200000,
+      "sales": 249,
+      "radiusKm": 1.5,
+      "flatShare": 10,
+      "typeShare": {
+        "detached": 31,
+        "semi": 40,
+        "terraced": 19,
+        "flat": 10
+      },
+      "typeMedian": {
+        "D": 340000,
+        "S": 200000,
+        "T": 151000,
+        "F": 92000
+      }
+    },
+    {
+      "area": "Hemsworth",
+      "medianPrice": 180000,
+      "sales": 117,
+      "radiusKm": 1.5,
+      "flatShare": 7,
+      "typeShare": {
+        "detached": 24,
+        "semi": 40,
+        "terraced": 29,
+        "flat": 7
+      },
+      "typeMedian": {
+        "D": 276000,
+        "S": 190000,
+        "T": 130000,
+        "F": 98000
+      }
+    },
+    {
+      "area": "Huddersfield Town Centre",
+      "medianPrice": 135000,
+      "sales": 160,
+      "radiusKm": 1.5,
+      "flatShare": 14,
+      "typeShare": {
+        "detached": 7,
+        "semi": 15,
+        "terraced": 64,
+        "flat": 14
+      },
+      "typeMedian": {
+        "D": 370000,
+        "S": 190000,
+        "T": 130000,
+        "F": 105000
+      }
+    },
+    {
+      "area": "Lindley",
+      "medianPrice": 225000,
+      "sales": 307,
+      "radiusKm": 1.5,
+      "flatShare": 11,
+      "typeShare": {
+        "detached": 22,
+        "semi": 33,
+        "terraced": 34,
+        "flat": 11
+      },
+      "typeMedian": {
+        "D": 380000,
+        "S": 240000,
+        "T": 173000,
+        "F": 139000
+      }
+    },
+    {
+      "area": "Almondbury",
+      "medianPrice": 185000,
+      "sales": 206,
+      "radiusKm": 1.5,
+      "flatShare": 4,
+      "typeShare": {
+        "detached": 18,
+        "semi": 33,
+        "terraced": 45,
+        "flat": 4
+      },
+      "typeMedian": {
+        "D": 334000,
+        "S": 195000,
+        "T": 155000,
+        "F": 107000
+      }
+    },
+    {
+      "area": "Honley",
+      "medianPrice": 270000,
+      "sales": 145,
+      "radiusKm": 1.5,
+      "flatShare": 2,
+      "typeShare": {
+        "detached": 37,
+        "semi": 25,
+        "terraced": 37,
+        "flat": 2
+      },
+      "typeMedian": {
+        "D": 395000,
+        "S": 241000,
+        "T": 225000,
+        "F": null
+      }
+    },
+    {
+      "area": "Holmfirth",
+      "medianPrice": 268000,
+      "sales": 104,
+      "radiusKm": 1.5,
+      "flatShare": 12,
+      "typeShare": {
+        "detached": 29,
+        "semi": 26,
+        "terraced": 34,
+        "flat": 12
+      },
+      "typeMedian": {
+        "D": 428000,
+        "S": 265000,
+        "T": 248000,
+        "F": 198000
+      }
+    },
+    {
+      "area": "Marsden",
+      "medianPrice": 238000,
+      "sales": 59,
+      "radiusKm": 1.5,
+      "flatShare": 3,
+      "typeShare": {
+        "detached": 20,
+        "semi": 10,
+        "terraced": 66,
+        "flat": 3
+      },
+      "typeMedian": {
+        "D": 530000,
+        "S": 271000,
+        "T": 210000,
+        "F": null
+      }
+    },
+    {
+      "area": "Mirfield",
+      "medianPrice": 240000,
+      "sales": 205,
+      "radiusKm": 1.5,
+      "flatShare": 12,
+      "typeShare": {
+        "detached": 26,
+        "semi": 34,
+        "terraced": 28,
+        "flat": 12
+      },
+      "typeMedian": {
+        "D": 372000,
+        "S": 250000,
+        "T": 175000,
+        "F": 114000
+      }
+    },
+    {
+      "area": "Dewsbury",
+      "medianPrice": 173000,
+      "sales": 169,
+      "radiusKm": 1.5,
+      "flatShare": 12,
+      "typeShare": {
+        "detached": 17,
+        "semi": 37,
+        "terraced": 34,
+        "flat": 12
+      },
+      "typeMedian": {
+        "D": 285000,
+        "S": 215000,
+        "T": 145000,
+        "F": 83000
+      }
+    },
+    {
+      "area": "Batley",
+      "medianPrice": 159000,
+      "sales": 158,
+      "radiusKm": 1.5,
+      "flatShare": 7,
+      "typeShare": {
+        "detached": 12,
+        "semi": 30,
+        "terraced": 51,
+        "flat": 7
+      },
+      "typeMedian": {
+        "D": 350000,
+        "S": 180000,
+        "T": 130000,
+        "F": 80000
+      }
+    },
+    {
+      "area": "Cleckheaton",
+      "medianPrice": 205000,
+      "sales": 233,
+      "radiusKm": 1.5,
+      "flatShare": 9,
+      "typeShare": {
+        "detached": 23,
+        "semi": 32,
+        "terraced": 36,
+        "flat": 9
+      },
+      "typeMedian": {
+        "D": 343000,
+        "S": 212000,
+        "T": 158000,
+        "F": 115000
+      }
+    },
+    {
+      "area": "Halifax Town Centre",
+      "medianPrice": 151000,
+      "sales": 230,
+      "radiusKm": 1.5,
+      "flatShare": 21,
+      "typeShare": {
+        "detached": 9,
+        "semi": 13,
+        "terraced": 57,
+        "flat": 21
+      },
+      "typeMedian": {
+        "D": 426000,
+        "S": 200000,
+        "T": 145000,
+        "F": 119000
+      }
+    },
+    {
+      "area": "Sowerby Bridge",
+      "medianPrice": 195000,
+      "sales": 98,
+      "radiusKm": 1.5,
+      "flatShare": 2,
+      "typeShare": {
+        "detached": 10,
+        "semi": 33,
+        "terraced": 55,
+        "flat": 2
+      },
+      "typeMedian": {
+        "D": 468000,
+        "S": 222000,
+        "T": 166000,
+        "F": null
+      }
+    },
+    {
+      "area": "Ripponden",
+      "medianPrice": 265000,
+      "sales": 75,
+      "radiusKm": 1.5,
+      "flatShare": 17,
+      "typeShare": {
+        "detached": 31,
+        "semi": 19,
+        "terraced": 33,
+        "flat": 17
+      },
+      "typeMedian": {
+        "D": 460000,
+        "S": 334000,
+        "T": 225000,
+        "F": 136000
+      }
+    },
+    {
+      "area": "Hebden Bridge",
+      "medianPrice": 250000,
+      "sales": 108,
+      "radiusKm": 1.5,
+      "flatShare": 12,
+      "typeShare": {
+        "detached": 6,
+        "semi": 12,
+        "terraced": 70,
+        "flat": 12
+      },
+      "typeMedian": {
+        "D": 358000,
+        "S": 364000,
+        "T": 238000,
+        "F": 170000
+      }
+    },
+    {
+      "area": "Todmorden",
+      "medianPrice": 189000,
+      "sales": 138,
+      "radiusKm": 1.5,
+      "flatShare": 6,
+      "typeShare": {
+        "detached": 7,
+        "semi": 21,
+        "terraced": 66,
+        "flat": 6
+      },
+      "typeMedian": {
+        "D": 418000,
+        "S": 235000,
+        "T": 173000,
+        "F": 223000
+      }
+    },
+    {
+      "area": "Elland",
+      "medianPrice": 178000,
+      "sales": 145,
+      "radiusKm": 1.5,
+      "flatShare": 15,
+      "typeShare": {
+        "detached": 16,
+        "semi": 22,
+        "terraced": 47,
+        "flat": 15
+      },
+      "typeMedian": {
+        "D": 345000,
+        "S": 220000,
+        "T": 165000,
+        "F": 99000
+      }
+    },
+    {
+      "area": "Brighouse",
+      "medianPrice": 190000,
+      "sales": 250,
+      "radiusKm": 1.5,
+      "flatShare": 5,
+      "typeShare": {
+        "detached": 15,
+        "semi": 32,
+        "terraced": 48,
+        "flat": 5
+      },
+      "typeMedian": {
+        "D": 378000,
+        "S": 246000,
+        "T": 154000,
+        "F": 142000
+      }
+    },
+    {
+      "area": "Hipperholme",
+      "medianPrice": 260000,
+      "sales": 111,
+      "radiusKm": 1.5,
+      "flatShare": 2,
+      "typeShare": {
+        "detached": 28,
+        "semi": 38,
+        "terraced": 32,
+        "flat": 2
+      },
+      "typeMedian": {
+        "D": 425000,
+        "S": 259000,
+        "T": 166000,
+        "F": null
+      }
+    }
+  ]
+}

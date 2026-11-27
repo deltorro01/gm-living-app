@@ -1,0 +1,460 @@
+{
+  "source": "English Indices of Deprivation 2025, Crime domain",
+  "results": [
+    {
+      "area": "Leeds City Centre",
+      "neighbourhoods": 20,
+      "population": 42399,
+      "crimeDecile": 3.3,
+      "crimeScore": 0.677
+    },
+    {
+      "area": "Headingley",
+      "neighbourhoods": 32,
+      "population": 54441,
+      "crimeDecile": 3.5,
+      "crimeScore": 0.545
+    },
+    {
+      "area": "Hyde Park",
+      "neighbourhoods": 31,
+      "population": 58357,
+      "crimeDecile": 3.4,
+      "crimeScore": 0.539
+    },
+    {
+      "area": "Chapel Allerton",
+      "neighbourhoods": 25,
+      "population": 41491,
+      "crimeDecile": 5,
+      "crimeScore": 0.185
+    },
+    {
+      "area": "Roundhay",
+      "neighbourhoods": 18,
+      "population": 28404,
+      "crimeDecile": 3.9,
+      "crimeScore": 0.472
+    },
+    {
+      "area": "Meanwood",
+      "neighbourhoods": 25,
+      "population": 40716,
+      "crimeDecile": 5,
+      "crimeScore": 0.183
+    },
+    {
+      "area": "Kirkstall",
+      "neighbourhoods": 23,
+      "population": 39310,
+      "crimeDecile": 2.9,
+      "crimeScore": 0.752
+    },
+    {
+      "area": "Horsforth",
+      "neighbourhoods": 15,
+      "population": 26577,
+      "crimeDecile": 6,
+      "crimeScore": -0.119
+    },
+    {
+      "area": "Alwoodley",
+      "neighbourhoods": 22,
+      "population": 34896,
+      "crimeDecile": 6.4,
+      "crimeScore": -0.174
+    },
+    {
+      "area": "Moortown",
+      "neighbourhoods": 27,
+      "population": 44342,
+      "crimeDecile": 6.2,
+      "crimeScore": -0.114
+    },
+    {
+      "area": "Otley",
+      "neighbourhoods": 11,
+      "population": 17207,
+      "crimeDecile": 6.9,
+      "crimeScore": -0.396
+    },
+    {
+      "area": "Guiseley",
+      "neighbourhoods": 12,
+      "population": 20667,
+      "crimeDecile": 6.1,
+      "crimeScore": -0.159
+    },
+    {
+      "area": "Yeadon",
+      "neighbourhoods": 16,
+      "population": 24114,
+      "crimeDecile": 5.4,
+      "crimeScore": 0.009
+    },
+    {
+      "area": "Wetherby",
+      "neighbourhoods": 8,
+      "population": 12029,
+      "crimeDecile": 7.3,
+      "crimeScore": -0.693
+    },
+    {
+      "area": "Boston Spa",
+      "neighbourhoods": 5,
+      "population": 8448,
+      "crimeDecile": 7.3,
+      "crimeScore": -0.482
+    },
+    {
+      "area": "Garforth",
+      "neighbourhoods": 10,
+      "population": 15978,
+      "crimeDecile": 7,
+      "crimeScore": -0.429
+    },
+    {
+      "area": "Rothwell",
+      "neighbourhoods": 11,
+      "population": 16547,
+      "crimeDecile": 3.6,
+      "crimeScore": 0.48
+    },
+    {
+      "area": "Morley",
+      "neighbourhoods": 20,
+      "population": 33928,
+      "crimeDecile": 4.1,
+      "crimeScore": 0.386
+    },
+    {
+      "area": "Pudsey",
+      "neighbourhoods": 21,
+      "population": 33590,
+      "crimeDecile": 4,
+      "crimeScore": 0.411
+    },
+    {
+      "area": "Armley",
+      "neighbourhoods": 24,
+      "population": 40417,
+      "crimeDecile": 2.2,
+      "crimeScore": 1.082
+    },
+    {
+      "area": "Bramley",
+      "neighbourhoods": 27,
+      "population": 41970,
+      "crimeDecile": 1.7,
+      "crimeScore": 1.118
+    },
+    {
+      "area": "Beeston",
+      "neighbourhoods": 19,
+      "population": 33999,
+      "crimeDecile": 2.6,
+      "crimeScore": 0.936
+    },
+    {
+      "area": "Cross Gates",
+      "neighbourhoods": 26,
+      "population": 42284,
+      "crimeDecile": 2.2,
+      "crimeScore": 1.101
+    },
+    {
+      "area": "Harehills",
+      "neighbourhoods": 35,
+      "population": 65704,
+      "crimeDecile": 1.6,
+      "crimeScore": 1.387
+    },
+    {
+      "area": "Bradford City Centre",
+      "neighbourhoods": 21,
+      "population": 41291,
+      "crimeDecile": 1.3,
+      "crimeScore": 1.37
+    },
+    {
+      "area": "Saltaire",
+      "neighbourhoods": 17,
+      "population": 27417,
+      "crimeDecile": 3.2,
+      "crimeScore": 0.739
+    },
+    {
+      "area": "Shipley",
+      "neighbourhoods": 22,
+      "population": 35588,
+      "crimeDecile": 2.8,
+      "crimeScore": 0.824
+    },
+    {
+      "area": "Baildon",
+      "neighbourhoods": 10,
+      "population": 16559,
+      "crimeDecile": 5.5,
+      "crimeScore": 0.085
+    },
+    {
+      "area": "Bingley",
+      "neighbourhoods": 12,
+      "population": 20886,
+      "crimeDecile": 5.2,
+      "crimeScore": 0.072
+    },
+    {
+      "area": "Ilkley",
+      "neighbourhoods": 9,
+      "population": 15170,
+      "crimeDecile": 7,
+      "crimeScore": -0.536
+    },
+    {
+      "area": "Burley-in-Wharfedale",
+      "neighbourhoods": 5,
+      "population": 7607,
+      "crimeDecile": 8.2,
+      "crimeScore": -0.765
+    },
+    {
+      "area": "Keighley",
+      "neighbourhoods": 24,
+      "population": 39983,
+      "crimeDecile": 2.2,
+      "crimeScore": 1.03
+    },
+    {
+      "area": "Haworth",
+      "neighbourhoods": 7,
+      "population": 11378,
+      "crimeDecile": 5.5,
+      "crimeScore": -0.022
+    },
+    {
+      "area": "Thornton",
+      "neighbourhoods": 5,
+      "population": 8499,
+      "crimeDecile": 2.4,
+      "crimeScore": 0.757
+    },
+    {
+      "area": "Queensbury",
+      "neighbourhoods": 8,
+      "population": 13316,
+      "crimeDecile": 4.3,
+      "crimeScore": 0.374
+    },
+    {
+      "area": "Idle",
+      "neighbourhoods": 23,
+      "population": 39560,
+      "crimeDecile": 3,
+      "crimeScore": 0.811
+    },
+    {
+      "area": "Heaton",
+      "neighbourhoods": 27,
+      "population": 54414,
+      "crimeDecile": 2.8,
+      "crimeScore": 0.687
+    },
+    {
+      "area": "Wibsey",
+      "neighbourhoods": 30,
+      "population": 51775,
+      "crimeDecile": 1.9,
+      "crimeScore": 1.099
+    },
+    {
+      "area": "Wakefield City Centre",
+      "neighbourhoods": 21,
+      "population": 39075,
+      "crimeDecile": 2.5,
+      "crimeScore": 0.923
+    },
+    {
+      "area": "Sandal",
+      "neighbourhoods": 11,
+      "population": 17956,
+      "crimeDecile": 4,
+      "crimeScore": 0.468
+    },
+    {
+      "area": "Outwood",
+      "neighbourhoods": 13,
+      "population": 24263,
+      "crimeDecile": 5.3,
+      "crimeScore": 0.018
+    },
+    {
+      "area": "Ossett",
+      "neighbourhoods": 16,
+      "population": 23653,
+      "crimeDecile": 4.3,
+      "crimeScore": 0.324
+    },
+    {
+      "area": "Horbury",
+      "neighbourhoods": 12,
+      "population": 18175,
+      "crimeDecile": 4.2,
+      "crimeScore": 0.378
+    },
+    {
+      "area": "Normanton",
+      "neighbourhoods": 15,
+      "population": 25042,
+      "crimeDecile": 4.5,
+      "crimeScore": 0.305
+    },
+    {
+      "area": "Castleford",
+      "neighbourhoods": 16,
+      "population": 26080,
+      "crimeDecile": 2.1,
+      "crimeScore": 1.025
+    },
+    {
+      "area": "Pontefract",
+      "neighbourhoods": 18,
+      "population": 31555,
+      "crimeDecile": 3.5,
+      "crimeScore": 0.629
+    },
+    {
+      "area": "Hemsworth",
+      "neighbourhoods": 6,
+      "population": 9674,
+      "crimeDecile": 2,
+      "crimeScore": 0.985
+    },
+    {
+      "area": "Huddersfield Town Centre",
+      "neighbourhoods": 21,
+      "population": 39639,
+      "crimeDecile": 2.6,
+      "crimeScore": 0.819
+    },
+    {
+      "area": "Lindley",
+      "neighbourhoods": 20,
+      "population": 34128,
+      "crimeDecile": 5.2,
+      "crimeScore": 0.056
+    },
+    {
+      "area": "Almondbury",
+      "neighbourhoods": 16,
+      "population": 25592,
+      "crimeDecile": 3.4,
+      "crimeScore": 0.554
+    },
+    {
+      "area": "Honley",
+      "neighbourhoods": 8,
+      "population": 12776,
+      "crimeDecile": 5.7,
+      "crimeScore": -0.126
+    },
+    {
+      "area": "Holmfirth",
+      "neighbourhoods": 8,
+      "population": 14416,
+      "crimeDecile": 6.3,
+      "crimeScore": -0.194
+    },
+    {
+      "area": "Marsden",
+      "neighbourhoods": 3,
+      "population": 4645,
+      "crimeDecile": 4.4,
+      "crimeScore": 0.3
+    },
+    {
+      "area": "Mirfield",
+      "neighbourhoods": 11,
+      "population": 18317,
+      "crimeDecile": 4.7,
+      "crimeScore": 0.189
+    },
+    {
+      "area": "Dewsbury",
+      "neighbourhoods": 21,
+      "population": 36145,
+      "crimeDecile": 3.5,
+      "crimeScore": 0.58
+    },
+    {
+      "area": "Batley",
+      "neighbourhoods": 26,
+      "population": 42825,
+      "crimeDecile": 3.6,
+      "crimeScore": 0.505
+    },
+    {
+      "area": "Cleckheaton",
+      "neighbourhoods": 13,
+      "population": 22007,
+      "crimeDecile": 3.9,
+      "crimeScore": 0.511
+    },
+    {
+      "area": "Halifax Town Centre",
+      "neighbourhoods": 20,
+      "population": 31831,
+      "crimeDecile": 3,
+      "crimeScore": 0.761
+    },
+    {
+      "area": "Sowerby Bridge",
+      "neighbourhoods": 8,
+      "population": 12258,
+      "crimeDecile": 3.1,
+      "crimeScore": 0.613
+    },
+    {
+      "area": "Ripponden",
+      "neighbourhoods": 5,
+      "population": 8416,
+      "crimeDecile": 7.1,
+      "crimeScore": -0.447
+    },
+    {
+      "area": "Hebden Bridge",
+      "neighbourhoods": 6,
+      "population": 8862,
+      "crimeDecile": 6.3,
+      "crimeScore": -0.179
+    },
+    {
+      "area": "Todmorden",
+      "neighbourhoods": 8,
+      "population": 12197,
+      "crimeDecile": 3.6,
+      "crimeScore": 0.456
+    },
+    {
+      "area": "Elland",
+      "neighbourhoods": 10,
+      "population": 17232,
+      "crimeDecile": 4.1,
+      "crimeScore": 0.429
+    },
+    {
+      "area": "Brighouse",
+      "neighbourhoods": 13,
+      "population": 19756,
+      "crimeDecile": 4.2,
+      "crimeScore": 0.266
+    },
+    {
+      "area": "Hipperholme",
+      "neighbourhoods": 10,
+      "population": 16186,
+      "crimeDecile": 6,
+      "crimeScore": -0.131
+    }
+  ]
+}

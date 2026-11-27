@@ -1,0 +1,553 @@
+{
+  "source": "ONS Price Index of Private Rents",
+  "method": "modelled",
+  "official": {
+    "Bradford": {
+      "month": "2026-09",
+      "rent": 739,
+      "twoBed": 670
+    },
+    "Calderdale": {
+      "month": "2026-09",
+      "rent": 760,
+      "twoBed": 688
+    },
+    "Kirklees": {
+      "month": "2026-09",
+      "rent": 784,
+      "twoBed": 714
+    },
+    "Leeds": {
+      "month": "2026-09",
+      "rent": 1148,
+      "twoBed": 977
+    },
+    "Wakefield": {
+      "month": "2026-09",
+      "rent": 810,
+      "twoBed": 730
+    }
+  },
+  "results": [
+    {
+      "area": "Leeds City Centre",
+      "borough": "Leeds",
+      "priceLevel": 1.15,
+      "rent": 1180,
+      "boroughOfficial": 1148,
+      "month": "2026-09"
+    },
+    {
+      "area": "Headingley",
+      "borough": "Leeds",
+      "priceLevel": 1.12,
+      "rent": 1160,
+      "boroughOfficial": 1148,
+      "month": "2026-09"
+    },
+    {
+      "area": "Hyde Park",
+      "borough": "Leeds",
+      "priceLevel": 1.06,
+      "rent": 1130,
+      "boroughOfficial": 1148,
+      "month": "2026-09"
+    },
+    {
+      "area": "Chapel Allerton",
+      "borough": "Leeds",
+      "priceLevel": 1.34,
+      "rent": 1270,
+      "boroughOfficial": 1148,
+      "month": "2026-09"
+    },
+    {
+      "area": "Roundhay",
+      "borough": "Leeds",
+      "priceLevel": 1.45,
+      "rent": 1320,
+      "boroughOfficial": 1148,
+      "month": "2026-09"
+    },
+    {
+      "area": "Meanwood",
+      "borough": "Leeds",
+      "priceLevel": 1.29,
+      "rent": 1250,
+      "boroughOfficial": 1148,
+      "month": "2026-09"
+    },
+    {
+      "area": "Kirkstall",
+      "borough": "Leeds",
+      "priceLevel": 1.03,
+      "rent": 1120,
+      "boroughOfficial": 1148,
+      "month": "2026-09"
+    },
+    {
+      "area": "Horsforth",
+      "borough": "Leeds",
+      "priceLevel": 1.31,
+      "rent": 1260,
+      "boroughOfficial": 1148,
+      "month": "2026-09"
+    },
+    {
+      "area": "Alwoodley",
+      "borough": "Leeds",
+      "priceLevel": 1.23,
+      "rent": 1220,
+      "boroughOfficial": 1148,
+      "month": "2026-09"
+    },
+    {
+      "area": "Moortown",
+      "borough": "Leeds",
+      "priceLevel": 1.32,
+      "rent": 1260,
+      "boroughOfficial": 1148,
+      "month": "2026-09"
+    },
+    {
+      "area": "Otley",
+      "borough": "Leeds",
+      "priceLevel": 1.24,
+      "rent": 1230,
+      "boroughOfficial": 1148,
+      "month": "2026-09"
+    },
+    {
+      "area": "Guiseley",
+      "borough": "Leeds",
+      "priceLevel": 1.26,
+      "rent": 1230,
+      "boroughOfficial": 1148,
+      "month": "2026-09"
+    },
+    {
+      "area": "Yeadon",
+      "borough": "Leeds",
+      "priceLevel": 1.04,
+      "rent": 1120,
+      "boroughOfficial": 1148,
+      "month": "2026-09"
+    },
+    {
+      "area": "Wetherby",
+      "borough": "Leeds",
+      "priceLevel": 1.25,
+      "rent": 1230,
+      "boroughOfficial": 1148,
+      "month": "2026-09"
+    },
+    {
+      "area": "Boston Spa",
+      "borough": "Leeds",
+      "priceLevel": 1.43,
+      "rent": 1310,
+      "boroughOfficial": 1148,
+      "month": "2026-09"
+    },
+    {
+      "area": "Garforth",
+      "borough": "Leeds",
+      "priceLevel": 1.02,
+      "rent": 1110,
+      "boroughOfficial": 1148,
+      "month": "2026-09"
+    },
+    {
+      "area": "Rothwell",
+      "borough": "Leeds",
+      "priceLevel": 0.92,
+      "rent": 1050,
+      "boroughOfficial": 1148,
+      "month": "2026-09"
+    },
+    {
+      "area": "Morley",
+      "borough": "Leeds",
+      "priceLevel": 0.87,
+      "rent": 1030,
+      "boroughOfficial": 1148,
+      "month": "2026-09"
+    },
+    {
+      "area": "Pudsey",
+      "borough": "Leeds",
+      "priceLevel": 0.99,
+      "rent": 1100,
+      "boroughOfficial": 1148,
+      "month": "2026-09"
+    },
+    {
+      "area": "Armley",
+      "borough": "Leeds",
+      "priceLevel": 0.81,
+      "rent": 990,
+      "boroughOfficial": 1148,
+      "month": "2026-09"
+    },
+    {
+      "area": "Bramley",
+      "borough": "Leeds",
+      "priceLevel": 0.84,
+      "rent": 1010,
+      "boroughOfficial": 1148,
+      "month": "2026-09"
+    },
+    {
+      "area": "Beeston",
+      "borough": "Leeds",
+      "priceLevel": 0.75,
+      "rent": 950,
+      "boroughOfficial": 1148,
+      "month": "2026-09"
+    },
+    {
+      "area": "Cross Gates",
+      "borough": "Leeds",
+      "priceLevel": 0.95,
+      "rent": 1070,
+      "boroughOfficial": 1148,
+      "month": "2026-09"
+    },
+    {
+      "area": "Harehills",
+      "borough": "Leeds",
+      "priceLevel": 0.73,
+      "rent": 940,
+      "boroughOfficial": 1148,
+      "month": "2026-09"
+    },
+    {
+      "area": "Bradford City Centre",
+      "borough": "Bradford",
+      "priceLevel": 0.62,
+      "rent": 550,
+      "boroughOfficial": 739,
+      "month": "2026-09"
+    },
+    {
+      "area": "Saltaire",
+      "borough": "Bradford",
+      "priceLevel": 1.2,
+      "rent": 760,
+      "boroughOfficial": 739,
+      "month": "2026-09"
+    },
+    {
+      "area": "Shipley",
+      "borough": "Bradford",
+      "priceLevel": 1.11,
+      "rent": 730,
+      "boroughOfficial": 739,
+      "month": "2026-09"
+    },
+    {
+      "area": "Baildon",
+      "borough": "Bradford",
+      "priceLevel": 1.3,
+      "rent": 800,
+      "boroughOfficial": 739,
+      "month": "2026-09"
+    },
+    {
+      "area": "Bingley",
+      "borough": "Bradford",
+      "priceLevel": 1.24,
+      "rent": 780,
+      "boroughOfficial": 739,
+      "month": "2026-09"
+    },
+    {
+      "area": "Ilkley",
+      "borough": "Bradford",
+      "priceLevel": 2.2,
+      "rent": 1030,
+      "boroughOfficial": 739,
+      "month": "2026-09"
+    },
+    {
+      "area": "Burley-in-Wharfedale",
+      "borough": "Bradford",
+      "priceLevel": 1.85,
+      "rent": 950,
+      "boroughOfficial": 739,
+      "month": "2026-09"
+    },
+    {
+      "area": "Keighley",
+      "borough": "Bradford",
+      "priceLevel": 0.74,
+      "rent": 600,
+      "boroughOfficial": 739,
+      "month": "2026-09"
+    },
+    {
+      "area": "Haworth",
+      "borough": "Bradford",
+      "priceLevel": 1.15,
+      "rent": 750,
+      "boroughOfficial": 739,
+      "month": "2026-09"
+    },
+    {
+      "area": "Thornton",
+      "borough": "Bradford",
+      "priceLevel": 1.01,
+      "rent": 700,
+      "boroughOfficial": 739,
+      "month": "2026-09"
+    },
+    {
+      "area": "Queensbury",
+      "borough": "Bradford",
+      "priceLevel": 0.99,
+      "rent": 690,
+      "boroughOfficial": 739,
+      "month": "2026-09"
+    },
+    {
+      "area": "Idle",
+      "borough": "Bradford",
+      "priceLevel": 1.07,
+      "rent": 720,
+      "boroughOfficial": 739,
+      "month": "2026-09"
+    },
+    {
+      "area": "Heaton",
+      "borough": "Bradford",
+      "priceLevel": 0.85,
+      "rent": 640,
+      "boroughOfficial": 739,
+      "month": "2026-09"
+    },
+    {
+      "area": "Wibsey",
+      "borough": "Bradford",
+      "priceLevel": 0.87,
+      "rent": 650,
+      "boroughOfficial": 739,
+      "month": "2026-09"
+    },
+    {
+      "area": "Wakefield City Centre",
+      "borough": "Wakefield",
+      "priceLevel": 0.98,
+      "rent": 800,
+      "boroughOfficial": 810,
+      "month": "2026-09"
+    },
+    {
+      "area": "Sandal",
+      "borough": "Wakefield",
+      "priceLevel": 1.06,
+      "rent": 830,
+      "boroughOfficial": 810,
+      "month": "2026-09"
+    },
+    {
+      "area": "Outwood",
+      "borough": "Wakefield",
+      "priceLevel": 1.08,
+      "rent": 840,
+      "boroughOfficial": 810,
+      "month": "2026-09"
+    },
+    {
+      "area": "Ossett",
+      "borough": "Wakefield",
+      "priceLevel": 1.08,
+      "rent": 840,
+      "boroughOfficial": 810,
+      "month": "2026-09"
+    },
+    {
+      "area": "Horbury",
+      "borough": "Wakefield",
+      "priceLevel": 1.12,
+      "rent": 860,
+      "boroughOfficial": 810,
+      "month": "2026-09"
+    },
+    {
+      "area": "Normanton",
+      "borough": "Wakefield",
+      "priceLevel": 0.97,
+      "rent": 800,
+      "boroughOfficial": 810,
+      "month": "2026-09"
+    },
+    {
+      "area": "Castleford",
+      "borough": "Wakefield",
+      "priceLevel": 0.89,
+      "rent": 760,
+      "boroughOfficial": 810,
+      "month": "2026-09"
+    },
+    {
+      "area": "Pontefract",
+      "borough": "Wakefield",
+      "priceLevel": 0.98,
+      "rent": 800,
+      "boroughOfficial": 810,
+      "month": "2026-09"
+    },
+    {
+      "area": "Hemsworth",
+      "borough": "Wakefield",
+      "priceLevel": 0.88,
+      "rent": 760,
+      "boroughOfficial": 810,
+      "month": "2026-09"
+    },
+    {
+      "area": "Huddersfield Town Centre",
+      "borough": "Kirklees",
+      "priceLevel": 0.83,
+      "rent": 710,
+      "boroughOfficial": 784,
+      "month": "2026-09"
+    },
+    {
+      "area": "Lindley",
+      "borough": "Kirklees",
+      "priceLevel": 1.07,
+      "rent": 800,
+      "boroughOfficial": 784,
+      "month": "2026-09"
+    },
+    {
+      "area": "Almondbury",
+      "borough": "Kirklees",
+      "priceLevel": 0.91,
+      "rent": 740,
+      "boroughOfficial": 784,
+      "month": "2026-09"
+    },
+    {
+      "area": "Honley",
+      "borough": "Kirklees",
+      "priceLevel": 1.17,
+      "rent": 840,
+      "boroughOfficial": 784,
+      "month": "2026-09"
+    },
+    {
+      "area": "Holmfirth",
+      "borough": "Kirklees",
+      "priceLevel": 1.35,
+      "rent": 900,
+      "boroughOfficial": 784,
+      "month": "2026-09"
+    },
+    {
+      "area": "Marsden",
+      "borough": "Kirklees",
+      "priceLevel": 1.29,
+      "rent": 880,
+      "boroughOfficial": 784,
+      "month": "2026-09"
+    },
+    {
+      "area": "Mirfield",
+      "borough": "Kirklees",
+      "priceLevel": 1.06,
+      "rent": 800,
+      "boroughOfficial": 784,
+      "month": "2026-09"
+    },
+    {
+      "area": "Dewsbury",
+      "borough": "Kirklees",
+      "priceLevel": 0.87,
+      "rent": 720,
+      "boroughOfficial": 784,
+      "month": "2026-09"
+    },
+    {
+      "area": "Batley",
+      "borough": "Kirklees",
+      "priceLevel": 0.8,
+      "rent": 700,
+      "boroughOfficial": 784,
+      "month": "2026-09"
+    },
+    {
+      "area": "Cleckheaton",
+      "borough": "Kirklees",
+      "priceLevel": 0.95,
+      "rent": 760,
+      "boroughOfficial": 784,
+      "month": "2026-09"
+    },
+    {
+      "area": "Halifax Town Centre",
+      "borough": "Calderdale",
+      "priceLevel": 0.91,
+      "rent": 700,
+      "boroughOfficial": 760,
+      "month": "2026-09"
+    },
+    {
+      "area": "Sowerby Bridge",
+      "borough": "Calderdale",
+      "priceLevel": 1.02,
+      "rent": 740,
+      "boroughOfficial": 760,
+      "month": "2026-09"
+    },
+    {
+      "area": "Ripponden",
+      "borough": "Calderdale",
+      "priceLevel": 1.27,
+      "rent": 820,
+      "boroughOfficial": 760,
+      "month": "2026-09"
+    },
+    {
+      "area": "Hebden Bridge",
+      "borough": "Calderdale",
+      "priceLevel": 1.43,
+      "rent": 870,
+      "boroughOfficial": 760,
+      "month": "2026-09"
+    },
+    {
+      "area": "Todmorden",
+      "borough": "Calderdale",
+      "priceLevel": 1.1,
+      "rent": 760,
+      "boroughOfficial": 760,
+      "month": "2026-09"
+    },
+    {
+      "area": "Elland",
+      "borough": "Calderdale",
+      "priceLevel": 0.94,
+      "rent": 710,
+      "boroughOfficial": 760,
+      "month": "2026-09"
+    },
+    {
+      "area": "Brighouse",
+      "borough": "Calderdale",
+      "priceLevel": 1,
+      "rent": 730,
+      "boroughOfficial": 760,
+      "month": "2026-09"
+    },
+    {
+      "area": "Hipperholme",
+      "borough": "Calderdale",
+      "priceLevel": 1.08,
+      "rent": 760,
+      "boroughOfficial": 760,
+      "month": "2026-09"
+    }
+  ]
+}
